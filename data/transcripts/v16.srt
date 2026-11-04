@@ -1,0 +1,608 @@
+1
+00:00:00,000 --> 00:00:05,060
+Google, IBM y Andrew Ng han invertido muchos recursos en investigar cómo hablar de la
+
+2
+00:00:05,060 --> 00:00:10,679
+inteligencia artificial. Y después de analizar sus cursos, sus papers y sus guías internas,
+
+3
+00:00:10,679 --> 00:00:16,039
+llegué a una conclusión que me dejó helado. El 90% de los usuarios da instrucciones a
+
+4
+00:00:16,039 --> 00:00:22,839
+el GPT o GEMINI mal, por eso nunca consiguen resultados. Y no es tu culpa. Nadie te enseñó
+
+5
+00:00:22,839 --> 00:00:28,320
+que existe un sistema, un método científico y empírico para escribir prompts que funcionen.
+
+6
+00:00:28,320 --> 00:00:34,679
+Y hoy te voy a desvelar ese sistema completo. He pasado más de 15 horas analizando los mejores
+
+7
+00:00:34,679 --> 00:00:40,320
+cursos de Promengeniering del mundo, el de Deep Learning, Andrew Ng, el de IBM y el curso de
+
+8
+00:00:40,320 --> 00:00:47,159
+Google, para condensar todo el conocimiento en 15 minutos. Si te quedas, serán los 15 minutos
+
+9
+00:00:47,159 --> 00:00:52,120
+más valiosos que vas a invertir esta semana. Y empezamos con algo en que las tres fuentes
+
+10
+00:00:52,120 --> 00:00:53,880
+coinciden y que es la base de todo.
+
+11
+00:00:53,880 --> 00:01:03,240
+Si solo pudiera recordar una cosa de este vídeo que sea esto. Google, IBM y Andrew Ng,
+
+12
+00:01:03,240 --> 00:01:09,359
+los tres, ponen este principio como el número uno. Claridad, concreción y especificidad.
+
+13
+00:01:09,359 --> 00:01:15,439
+Suena obvio, ¿verdad? Pero déjame mostrarte la diferencia. Fíjate en este Prome. La
+
+14
+00:01:15,439 --> 00:01:19,800
+inteligencia artificial es capaz de elaborar una respuesta larga, pero muy poco relevante,
+
+15
+00:01:19,959 --> 00:01:25,399
+nada útil. En cambio, mirate el resultado con este Prome. Aquí le doy la ubicación,
+
+16
+00:01:25,399 --> 00:01:30,239
+el público objetivo, lo que quiero mejorar y el presupuesto. Gemini vuelve a responder.
+
+17
+00:01:30,239 --> 00:01:36,239
+Me da las cinco ideas y un resumen con el presupuesto. La respuesta es más relevante
+
+18
+00:01:36,239 --> 00:01:42,359
+y ajustada. ¿Por qué sucede esto? IBM lo llama a las cuatro dimensiones. Claridad,
+
+19
+00:01:42,519 --> 00:01:49,680
+contexto, precisión y rol. Andrew Ng dice instrucciones claras y específicas y Google
+
+20
+00:01:49,680 --> 00:01:56,000
+te dice que sea simple y directo. Todos dicen lo mismo. Dile exactamente qué quieres. Pero
+
+21
+00:01:56,000 --> 00:02:04,640
+claridad, sin contexto, es como dar direcciones sin retirar el estilo. IBM descubrió que la mayoría
+
+22
+00:02:04,640 --> 00:02:09,719
+de usuarios omiten el contexto por completo. Asumen que la inteligencia artificial va a
+
+23
+00:02:09,719 --> 00:02:15,439
+adivinar y no funciona así. Mira la diferencia. Yo le puedo pedir que me escriba un post para
+
+24
+00:02:15,439 --> 00:02:20,400
+LinkedIn. El resultado es un texto genérico que podría publicar cualquier persona de cualquier
+
+25
+00:02:20,400 --> 00:02:29,159
+industria. En cambio, si le doy un perfil profesional, una especialidad, una audiencia, un tema, un estilo
+
+26
+00:02:29,159 --> 00:02:35,680
+y una extensión en un mismo prome, fijaos cómo la calidad de la respuesta cambia radicalmente.
+
+27
+00:02:36,080 --> 00:02:42,040
+Fija la audiencia, menciona el tema, desarrolla el enfoque alrededor del punto clave y señala el
+
+28
+00:02:42,040 --> 00:02:47,200
+problema. Y aquí está la regla que enseña Google. ¿Te has dado cuenta, verdad? Mientras más
+
+29
+00:02:47,200 --> 00:02:52,040
+información le das, menos tiene que adivinar. Y la inteligencia artificial, cuando adivina,
+
+30
+00:02:52,040 --> 00:02:58,080
+casi siempre se equivoca. La mayoría de alucinaciones son simplemente por falta de contexto. Ahora,
+
+31
+00:02:58,080 --> 00:03:02,640
+¿qué pasa cuando quieres un estilo muy específico que no puedes describir con palabras?
+
+32
+00:03:06,040 --> 00:03:11,360
+Andrew Ng llama esto Field Shoot Prompting, o lo que es lo mismo, instrucciones con ejemplos,
+
+33
+00:03:11,360 --> 00:03:17,439
+y es donde muchos usuarios avanzados empiezan a sacar ventaja real, por dos motivos. Vamos a
+
+34
+00:03:17,439 --> 00:03:22,680
+ver primero en qué consiste. En lugar de describir lo que quieres, le muestras a la inteligencia
+
+35
+00:03:22,680 --> 00:03:29,000
+artificial cómo lo quieres. Imagina que escribes una newsletter semanal y quieres mantener tu voz
+
+36
+00:03:29,000 --> 00:03:34,879
+consistente. En lugar de explicar tu tono, tomas dos o tres de tus mejores ediciones anteriores y
+
+37
+00:03:34,879 --> 00:03:40,680
+le dices, aquí tienes tres ejemplos de cómo escribo. Acto seguido le das los tres ejemplos,
+
+38
+00:03:40,680 --> 00:03:46,879
+le proporcionas un tema y le pides que escriba usando el mismo estilo y tono. Y su respuesta
+
+39
+00:03:46,879 --> 00:03:51,960
+incluye los elementos clave de los tres ejemplos, una revelación personal reciente, una acción
+
+40
+00:03:51,960 --> 00:03:58,000
+sorprendente y un cierre que genera curiosidad. Y es que IBM lo resume así. Mostrar es mejor que
+
+41
+00:03:58,000 --> 00:04:04,560
+decir, un ejemplo vale más que mil palabras, es más preciso y completo, y aquí viene lo
+
+42
+00:04:04,560 --> 00:04:09,840
+interesante. Los ejemplos ni tan siquiera tienen por qué ser perfectos, solo necesitan tener el
+
+43
+00:04:09,840 --> 00:04:14,640
+formato correcto y proporcionar la inteligencia artificial una cantidad suficiente de ellos.
+
+44
+00:04:14,640 --> 00:04:20,680
+Esta técnica funciona genial para tareas simples. Pero ¿qué pasa con problemas complejos que
+
+45
+00:04:20,680 --> 00:04:25,759
+necesitan razonamiento? Y antes de continuar, si quieres profundizar más en la redacción de
+
+46
+00:04:25,759 --> 00:04:30,680
+PROMS efectivos, quiero recomendarte el recurso del patrocinador de este vídeo, HubSpot.
+
+47
+00:04:30,840 --> 00:04:35,840
+Ingeniería de PROMS avanzada para chat gpt. Tienes el enlace en la descripción.
+
+48
+00:04:35,840 --> 00:04:40,680
+Lo que más me gusta es que usa el mismo enfoque que estamos viendo hoy, priorizar estructuras
+
+49
+00:04:40,680 --> 00:04:46,519
+claras y usar contexto específico. Incluye marcos diferentes y muy interesantes, como el rosas,
+
+50
+00:04:46,519 --> 00:04:53,519
+rol, objetivo, situación, acción esperada, secuencia, que es básicamente una plantilla
+
+51
+00:04:53,519 --> 00:04:58,079
+para no olvidarte de ningún elemento. Y también tiene técnicas que vamos a ver en un momento,
+
+52
+00:04:58,079 --> 00:05:02,519
+pero con ejemplos hechos y aplicados al marketing, ventas y creación de contenido.
+
+53
+00:05:02,519 --> 00:05:06,599
+Si quieres plantillas listas para aplicar todo esto sin tener que empezar de cero,
+
+54
+00:05:06,599 --> 00:05:10,279
+puedes descargarlo gratis desde el enlace que encontrarás en la descripción.
+
+55
+00:05:12,919 --> 00:05:18,399
+IBM y Android G coinciden que uno de los avances más importantes en los últimos años es lo que
+
+56
+00:05:18,399 --> 00:05:24,319
+llaman Chain of Thought o cadena de pensamiento. Los modelos de lenguaje, por defecto, responden lo
+
+57
+00:05:24,319 --> 00:05:29,279
+primero que se les ocurre, como un niño que dice lo que piensa sin filtro. El problema es que para
+
+58
+00:05:29,279 --> 00:05:34,120
+tareas complejas esto genera errores, ya que lo primero que se les ocurre condiciona lo que van
+
+59
+00:05:34,120 --> 00:05:39,600
+a decir. Y si empiezan por ejemplo por un sí, cuando deberían haber dicho un no, es muy fácil que se
+
+60
+00:05:39,600 --> 00:05:45,759
+confundan y no puedan corregirse. La solución más simple es la limitación, se llama zero shot
+
+61
+00:05:45,759 --> 00:05:53,319
+chain of thought, y consiste simplemente en añadir un piensa paso a paso a tu instrucción. Por ejemplo,
+
+62
+00:05:53,319 --> 00:05:59,560
+con un prompt como este imagina que tienes una tienda online, le das todas las métricas clave y
+
+63
+00:05:59,560 --> 00:06:05,600
+quieres que identifique el punto más problemático, si le añades piensa paso a paso, responde así,
+
+64
+00:06:05,600 --> 00:06:12,639
+hace un análisis y diagnóstico de cada una de las variables, identifica el problema y te dice cómo
+
+65
+00:06:12,639 --> 00:06:19,159
+procedería. ¿Lo ves? Le estás dando permiso al modelo para poder procesar antes de responder.
+
+66
+00:06:19,760 --> 00:06:24,960
+Y esta técnica está muy bien, pero hay una sustancialmente mejor, sobre todo para tareas
+
+67
+00:06:24,960 --> 00:06:33,960
+creativas. La versión avanzada se llama few shot chain of thought y consiste en darle
+
+68
+00:06:33,960 --> 00:06:39,760
+ejemplos de problemas similares ya resueltos paso a paso. El modelo aprende tu método de
+
+69
+00:06:39,760 --> 00:06:45,160
+reazonamiento y puede replicarlo. Fíjate en este prompt, quiero que la inteligencia artificial
+
+70
+00:06:45,160 --> 00:06:51,000
+me ayude a tomar una decisión de contratación. Le explico mi reazonamiento paso a paso a la hora
+
+71
+00:06:51,000 --> 00:06:56,280
+de tomar una decisión de este tipo, le doy también la decisión final del ejemplo y le pido que me
+
+72
+00:06:56,280 --> 00:07:01,840
+ayude en otro escenario. Y ahora fijaos en la respuesta, evalúa las cuatro etapas de mi
+
+73
+00:07:01,840 --> 00:07:07,879
+reazonamiento, me da una opción de contratación en base a ellas y también su justificación.
+
+74
+00:07:07,879 --> 00:07:12,960
+¿Lo ves? Ahora el modelo sigue paso a paso tu estrategia de resolución de lo problema,
+
+75
+00:07:13,159 --> 00:07:18,719
+pero hay que tener una cosa muy clara, un giro importante. Con los modelos reazonadores,
+
+76
+00:07:18,719 --> 00:07:23,000
+que había de hoy so en la mayoría, no necesitas pedirle que piense paso a paso,
+
+77
+00:07:23,000 --> 00:07:28,359
+ya lo hace automáticamente. De hecho, si se lo pides obtienes respuestas más largas y a
+
+78
+00:07:28,359 --> 00:07:34,439
+veces redundantes. Menos es más con los últimos modelos, aunque aún es interesante detallar las
+
+79
+00:07:34,439 --> 00:07:39,560
+etapas clave de cómo quieres que resuelvan un proceso. Dicho esto, le podemos dar otra
+
+80
+00:07:39,560 --> 00:07:45,120
+vuelta de tuerca. Las cadenas de reazonamiento te dan un camino de reazonamiento, pero ¿qué pasa
+
+81
+00:07:45,120 --> 00:07:53,439
+cuando hay múltiples soluciones posibles? IBM enseña una técnica avanzada que pocas
+
+82
+00:07:53,439 --> 00:07:58,639
+personas conocen, el Trio of Thought o árbol de pensamientos. En lugar de pedirle a la
+
+83
+00:07:58,639 --> 00:08:03,560
+entidad artificial que siga un único camino de reazonamiento, le pides que explore varios
+
+84
+00:08:03,560 --> 00:08:09,439
+simultáneamente. Imagina que tienes que decidir cómo modizar tu podcast, que ya tiene una audiencia
+
+85
+00:08:09,519 --> 00:08:15,560
+pero cero ingresos. Puedes probar con un PROM como este, donde le pides que tenga en cuenta tres
+
+86
+00:08:15,560 --> 00:08:21,279
+estrategias radicalmente distintas. Para cada una de ellas estableces una línea de reazonamiento
+
+87
+00:08:21,279 --> 00:08:28,120
+entera. Y, finalmente, le pides que recomiende cuál de las tres es más recomendable. Fijaos cómo
+
+88
+00:08:28,120 --> 00:08:33,679
+desarrollado un modo detallado las tres estrategias según el plan establecido. Selecciona una como
+
+89
+00:08:33,679 --> 00:08:40,439
+ganadora. Me dará razones por las que descarta las otras dos. Justifica la lección y, finalmente,
+
+90
+00:08:40,439 --> 00:08:45,479
+hace una recomendación final sintética. El árbol de pensamientos es tu herramienta para
+
+91
+00:08:45,479 --> 00:08:51,319
+decisiones complejas donde no hay una respuesta correcta. Estrategia de negocio, diseño creativo,
+
+92
+00:08:51,319 --> 00:08:56,079
+problemas con múltiples variables. Cuando quieres ver el panorama completo antes de decidir,
+
+93
+00:08:56,079 --> 00:09:02,079
+esta es la técnica que debes usar. Y ahora ya tienes las técnicas, pero hay un último concepto
+
+94
+00:09:02,080 --> 00:09:11,280
+que lo cambia todo. IBM lo llama el ciclo de retroalimentación con el usuario. Android G
+
+95
+00:09:11,280 --> 00:09:16,759
+dice que el prompting es un proceso iterativo. Y Google va más allá con algo que llaman metaprompting.
+
+96
+00:09:16,759 --> 00:09:23,160
+El 90% de usuarios escriben un PROM, obtienen una respuesta mediocre y se van frustrados diciendo
+
+97
+00:09:23,160 --> 00:09:27,960
+que la inteligencia artificial no sirve para nada. Los expertos saben que el primer PROM es
+
+98
+00:09:27,960 --> 00:09:34,639
+solo el comienzo. Google enseña cuatro formas de mejorar un PROM que no funcionó. La primera,
+
+99
+00:09:34,639 --> 00:09:40,639
+revisa si te falta contexto o rol. ¿Le dijiste quién eres o para qué necesitas lo que te va a decir?
+
+100
+00:09:40,639 --> 00:09:47,519
+Dos, divide instrucciones largas en oraciones simples. Si tu PROM es un párrafo de 10 líneas,
+
+101
+00:09:47,519 --> 00:09:52,480
+la inteligencia artificial puede confundirse igual que una persona. Por ejemplo, en vez de enviar
+
+102
+00:09:52,480 --> 00:09:57,560
+una instrucción como esta, con toda la información mezclada y sin estructura, es mejor elaborar un
+
+103
+00:09:57,559 --> 00:10:03,439
+PROM como este, con el contexto concreto arriba y las instrucciones abajo como una lista.
+
+104
+00:10:03,439 --> 00:10:09,439
+En tercer lugar, prueba un enfoque diferente. Si escribeme un guión para mi vídeo te da resultados
+
+105
+00:10:09,439 --> 00:10:15,119
+genéricos, intenta con algo como imagina que eres un creador de contenido con 500.000 suscriptores
+
+106
+00:10:15,119 --> 00:10:20,119
+y escríbeme el guión como lo harías para tu canal. Y por último, la cuarta recomendación.
+
+107
+00:10:20,119 --> 00:10:26,479
+Añade restricciones. Las restricciones fuerzan creatividad. Máximo tres oraciones por párrafo.
+
+108
+00:10:26,560 --> 00:10:31,519
+No uses determinada palabra como por ejemplo revolucionario o increíble, o escríbelo como si fuera
+
+109
+00:10:31,519 --> 00:10:36,320
+un hilo de Twitter. Este tipo de restricciones hacen que el modelo te responda de un modo
+
+110
+00:10:36,320 --> 00:10:42,600
+diferente. Y por último, está otro truco más poderoso de todos, el metaprompting. Si no sabes
+
+111
+00:10:42,600 --> 00:10:48,440
+cómo escribir un PROM, pregúntelo en la inteligencia artificial y que ella lo escriba por ti. Por ejemplo, así.
+
+112
+00:10:48,440 --> 00:10:54,960
+Le pides lo que quieres conseguir. Por ejemplo, un sistema automatizado. Y luego le pides que te haga
+
+113
+00:10:54,960 --> 00:10:59,960
+todas las preguntas necesarias para entender cómo darte la mejor solución. Y como puedes ver,
+
+114
+00:10:59,960 --> 00:11:05,440
+automáticamente la inteligencia artificial te guía para recabar toda la información que tú
+
+115
+00:11:05,440 --> 00:11:10,400
+deberías haber incluido en la instrucción. La inteligencia artificial se convierte en tu copiloto.
+
+116
+00:11:10,400 --> 00:11:16,320
+Te hace las preguntas correctas para que tú le des la información precisa. Pero puedes ir incluso
+
+117
+00:11:16,320 --> 00:11:21,040
+un paso más allá. Puedes pedirle directamente que describa la instrucción para conseguir un
+
+118
+00:11:21,039 --> 00:11:27,039
+objetivo concreto. De modo que este es el sistema completo. Claridad, contexto,
+
+119
+00:11:27,039 --> 00:11:32,279
+ejemplos, razonamiento, más iteración. Los mismos principios que señalan Google, IBM y
+
+120
+00:11:32,279 --> 00:11:36,959
+Android. La diferencia entre quienes se quejan de que la inteligencia artificial no sirve y
+
+121
+00:11:36,959 --> 00:11:43,839
+quienes ahorran horas cada semana. Pero lo mejor será demostrárselo con un ejemplo donde todo esto se ve junto.
+
+122
+00:11:43,840 --> 00:11:53,120
+Vamos a construir una instrucción real usando todo lo que aprendimos. El escenario es el siguiente.
+
+123
+00:11:53,120 --> 00:11:58,440
+Eres un fotógrafo freelance y necesitas escribir una propuesta para un cliente corporativo que
+
+124
+00:11:58,440 --> 00:12:04,080
+quiere fotos para su página web. Puedes probar con un PROM como este. Un PROM donde definimos
+
+125
+00:12:04,080 --> 00:12:10,960
+claramente un rol, un contexto muy específico, el objetivo a cumplir, con su tarea principal y
+
+126
+00:12:10,960 --> 00:12:17,879
+todas las subtareas, restricciones de lo que no queremos que haga e incluso un ejemplo. ¿Ves la
+
+127
+00:12:17,879 --> 00:12:24,200
+diferencia? Escribir una instrucción como esta toma apenas 90 segundos. Pero te genera una propuesta
+
+128
+00:12:24,200 --> 00:12:29,480
+que normalmente te llevaría 30 minutos. Y lo mejor, puedes guardar esta estructura como una
+
+129
+00:12:29,480 --> 00:12:36,040
+plantilla y reutilizarla con cada cliente nuevo. Vamos con otro ejemplo incluso más interesante,
+
+130
+00:12:36,199 --> 00:12:41,399
+porque aquí no hace falta ni plantilla. Vamos a crear una instrucción de sistema que se apoya
+
+131
+00:12:41,399 --> 00:12:45,879
+en algunas de las técnicas que no hemos visto en este ejemplo para utilizarla dentro de un
+
+132
+00:12:45,879 --> 00:12:51,319
+asistente de inteligencia artificial. ¿Y el asistente es este? Un asistente al que se le mandamos un
+
+133
+00:12:51,319 --> 00:12:56,759
+paper científico como este, un paper que por ejemplo explica el diseño de 17 pruebas para entrenar
+
+134
+00:12:56,759 --> 00:13:03,079
+a agentes de inteligencia artificial, automáticamente nos genera una respuesta como esta. Una respuesta
+
+135
+00:13:03,080 --> 00:13:08,280
+donde vemos dos guiones con una estructura concreta de cuatro párrafos y donde la análisis del
+
+136
+00:13:08,280 --> 00:13:13,840
+primer guión sirve para mejorar el segundo. Y la verdad es que no lo hace nada mal, podéis pausar
+
+137
+00:13:13,840 --> 00:13:19,160
+el vídeo para leerlo con calma. Pero la clave es entender cómo consigo que el asistente funcione
+
+138
+00:13:19,160 --> 00:13:24,240
+mejor gracias a una combinación de cadena de pensamiento y few-shoot prompting. Y es que,
+
+139
+00:13:24,240 --> 00:13:29,759
+más allá de un prompt bien detallado, la clave de este asistente está en este archivo JSON,
+
+140
+00:13:29,919 --> 00:13:35,600
+un archivo que contiene ejemplos de guiones de real donde cada ejemplo tiene justificados todos y
+
+141
+00:13:35,600 --> 00:13:40,759
+cada uno de los párrafos. De este modo, el asistente entiende exactamente cómo crear y cómo
+
+142
+00:13:40,759 --> 00:13:46,360
+mejorar los guiones que escribe de un modo coherente. Y llegados a este punto, recuerda el
+
+143
+00:13:46,360 --> 00:13:51,840
+flujo, cladidad, contexto, ejemplos, razonamiento e iteración. Este es el sistema que separa
+
+144
+00:13:51,840 --> 00:13:56,360
+los usuarios inexpertos de los que realmente dominan la inteligencia artificial. Ahora,
+
+145
+00:13:56,360 --> 00:14:01,399
+tú tienes el mismo marco de trabajo que enseñan en los cursos de Google, IBM y Deep Learning.
+
+146
+00:14:01,399 --> 00:14:07,000
+La próxima vez que hablas, Gemini, ChatGPT o Cloud, no escribas lo primero que se te ocurra,
+
+147
+00:14:07,000 --> 00:14:12,240
+usa este sistema. Si este vídeo te gustó y quieres aprender cómo sacar provecho de la
+
+148
+00:14:12,240 --> 00:14:16,080
+inteligencia artificial en tu día a día, échale un vistazo a mi curso donde te explico
+
+149
+00:14:16,080 --> 00:14:21,240
+cómo sacar provecho a todas las herramientas de Google, Gemini, notebook lm, Google y estudio y
+
+150
+00:14:21,240 --> 00:14:27,320
+mucho más. Encontrarás toda la información en el enlace de la descripción. Y si quieres
+
+151
+00:14:27,320 --> 00:14:32,919
+descubrir cómo aplicar esto especialmente al notebook lm, te recomiendo que veas el siguiente vídeo.
+
+152
+00:14:32,919 --> 00:14:35,159
+Nos vemos en el próximo vídeo.
+

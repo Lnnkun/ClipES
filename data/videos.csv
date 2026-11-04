@@ -1,0 +1,21 @@
+﻿id,topic_id,topic,channel,title,url,duration_min,notes
+v01,1,大模型原理,Dot CSV,¿Qué es un LLM? Enormes Modelos del Lenguaje | Large Language Models,https://www.youtube.com/watch?v=Sz4qacFBHLk,15,2022年视频
+v02,1,大模型原理,Platzi,How LLMs work,https://www.youtube.com/watch?v=awGfhmsN7Lc,14,标题是自动翻译的英文，原标题待核对；一个人讲
+v03,1,大模型原理,Nate Gentile,¿Cómo funciona ChatGPT? La revolución de la Inteligencia Artificial,https://www.youtube.com/watch?v=FdZ8LKiJBhQ,50,时长按章节估算；偏长；2023年视频
+v04,2,提示词,Migue Baena IA,How to use Claude better than 99% of people,https://www.youtube.com/watch?v=u5-J3z0TUg0,21,标题是自动翻译的英文，原标题待核对；时长按章节估算；偏工具教学，话题归属待确认
+v05,2,提示词,EDteam,Curso gratis de prompt engineering (2026),https://www.youtube.com/watch?v=8Wqgr7Ry3dk,46,偏长
+v06,3,幻觉与可靠性,ITSitio Play,¿Qué son las alucinaciones de la IA?,https://www.youtube.com/watch?v=-RiJjDZj87o,10,时长9:37；两位主持人
+v07,4,RAG与embeddings,Oliver Nabani,¿Qué es RAG? Sube el nivel de un modelo de lenguaje,https://www.youtube.com/watch?v=tjcMv_CPIxA,8,时长7:31（搜索列表补）
+v08,4,RAG与embeddings,Codificando Bits,¿Qué son los EMBEDDINGS? | Grandes Modelos de Lenguaje,https://www.youtube.com/watch?v=h4GNDHC-s50,10,时长10:09（搜索列表，原为按章节估算的9）
+v09,5,微调,NullSafe Architect,Aprende a hacer fine-tuning de LLMs Open Source como Llama 3.2,https://www.youtube.com/watch?v=xMm66CnUVgw,23,时长22:34；屏幕操作演示，英文术语多
+v10,5,微调,codigofacilito,Introducción a Fine-Tuning,https://www.youtube.com/watch?v=VL4MEj0rbqI,24,时长24:20；页面显示Auto-dubbed，下载后要确认音频是西语原声；标题按封面文字填写
+v11,6,AI智能体,Alan Daitch,¿Qué es un AGENTE IA de Inteligencia Artificial EXPLICADO FÁCIL,https://www.youtube.com/watch?v=V8Wb3aijSdc,5,时长按章节估算；很短
+v12,6,AI智能体,Benjamín Cordero,Agentes IA en 18 minutos (lo que el 95% no entiende),https://www.youtube.com/watch?v=7HlfFHLoYK8,19,带推广内容；含较多英文术语
+v13,6,AI智能体,Platzi,What is an AI agent,https://www.youtube.com/watch?v=4bXNYw_dTeY,23,标题可能是自动翻译；时长23:03（搜索列表补）
+v14,1,大模型原理,Pero en Simple,¿Cómo piensa ChatGPT? Pero en simple,https://www.youtube.com/watch?v=AgIrhRb5gXM,5,【推荐】7.9万播放；疑似单人旁白的动画讲解；直接讲 LLM 如何生成回答，和 v01/v02 同话题；广告和英文术语未核实
+v16,2,提示词,Xavier Mitjana,Cómo ESCRIBIR PROMPTS perfectos 🚀 Aprende prompt engineering con el método de GOOGLE,https://www.youtube.com/watch?v=BRy7Z3ZoQZk,15,【推荐】10.9万播放；单人讲；显示过英文版标题，需确认原声；讲 Google 的提示词方法，偏概念
+v17,2,提示词,Cyberclick • Marketing Digital,La Fórmula del Prompt Perfecto para ChatGPT (Guía Definitiva),https://www.youtube.com/watch?v=p2PqfRte46k,11,【推荐】37万播放；较可能是原题；营销公司频道，可能有品牌推广；几个人讲未核实
+v20,3,幻觉与可靠性,Oliver Nabani,Por qué la IA se inventa cosas,https://www.youtube.com/watch?v=7slqA0O6Kfw,8,【推荐】8.8千播放，偏低；单人讲，主题最贴合；博主和 v07 相同但话题不同
+v21,3,幻觉与可靠性,NetMentor,"DOMINA la IA en 10 Minutos: Alucinaciones, Tokens y Contexto EXPLICADO FÁCIL.",https://www.youtube.com/watch?v=_Obv6vrXZmQ,11,【推荐】2.9千播放，偏低；疑似单人；一个视频讲幻觉、token、上下文三个概念，可同时用于话题1和3的跨视频提问
+v24,4,RAG与embeddings,Attekita Dev,RAG explicado: Cómo darle conocimiento a tus agentes de IA,https://www.youtube.com/watch?v=SWXa7z_64-g,14,【推荐】3.6万播放；疑似单人；新博主；另有英文版标题，需确认原声；标题带'agentes'，可能偏应用
+v26,5,微调,Christian Donaire | Nodd3r,Fine-tuning vs RAG vs Prompting: Cuál Usar Realmente en IA | Entrena Modelos LLM con Tus Datos,https://www.youtube.com/watch?v=lU4Yk6BG9IQ,19,【推荐】2.6千播放，偏低；疑似单人；三种方法的对比，同时覆盖话题2/4/5，适合出跨视频题

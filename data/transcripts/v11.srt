@@ -1,0 +1,216 @@
+1
+00:00:00,000 --> 00:00:26,039
+Cada vez escuchamos más palabras raras, agentes, workflows, LLMs, suena que te quieren
+
+2
+00:00:26,039 --> 00:00:30,960
+marear con tecnicismos pero no es tan complicado. Este vídeo es para vos, que ya usas Inteligencia
+
+3
+00:00:30,960 --> 00:00:34,759
+Artificial en tu día a día, pero no querés leer un manual técnico para entender de qué
+
+4
+00:00:34,759 --> 00:00:39,600
+se trata esto de los agentes. Te lo resumo en tres niveles. Primero, los modelos de lenguaje,
+
+5
+00:00:39,600 --> 00:00:45,120
+lo que ya conoces como chat gpt, después los brujos de trabajo, automatizaciones con pasos
+
+6
+00:00:45,120 --> 00:00:50,120
+fijos y por último los agentes Inteligencia Artificial, que empiezan a tomar decisiones
+
+7
+00:00:50,120 --> 00:00:55,320
+sin consultarte a cada rato, con ejemplos de la vida real y nada de ciencia ficción. Vamos,
+
+8
+00:00:55,479 --> 00:01:01,159
+Nivel 1, modelos de lenguaje, LLMs. Los modelos de lenguaje como chat gpt o
+
+9
+00:01:01,159 --> 00:01:06,480
+Gemini están diseñados para una cosa, generar texto a partir de lo que le pedís. Punto,
+
+10
+00:01:06,480 --> 00:01:11,719
+¿cómo funcionan? Vos escribís algo, ellos responde con lo que aprendieron en su entrenamiento.
+
+11
+00:01:11,719 --> 00:01:17,319
+Vamos con un ejemplo simple, le pedís armame un mensaje para invitar a alguien a cenar,
+
+12
+00:01:17,319 --> 00:01:22,400
+respuesta un texto amable mucho más educado de lo que escribirías en whatsapp.
+
+13
+00:01:22,440 --> 00:01:28,800
+Ahora, si le preguntas, ¿a qué hora es mi cena mañana? Se clava porque no tienes la respuesta.
+
+14
+00:01:28,800 --> 00:01:33,760
+¿Cuáles son las invitaciones de los LLMs? Primero, no ven tu datos personales,
+
+15
+00:01:33,760 --> 00:01:38,800
+ni el calendario, ni el mail, ni los archivos. Segundo, son reactivos,
+
+16
+00:01:38,800 --> 00:01:42,560
+solo contestan cuando vos le tiras un prompt. Vamos con el Nivel 2,
+
+17
+00:01:42,560 --> 00:01:48,480
+plujos de trabajo, workflows. ¿Qué pasa si armamos un camino para que hagan más cosas?
+
+18
+00:01:48,560 --> 00:01:51,120
+Ejemplo, cada vez que te pregunte por un evento,
+
+19
+00:01:51,120 --> 00:01:56,439
+revisa mi Google Calendar antes de contestar. Si le decís, ¿cuándo me junto con Carla?
+
+20
+00:01:56,439 --> 00:02:01,159
+Funciona, pero si después preguntas ¿qué clima va a ser ese día? Se rompe,
+
+21
+00:02:01,159 --> 00:02:06,159
+porque nunca leíste permiso para mirar el pronóstico. Así trabajan los workflows,
+
+22
+00:02:06,159 --> 00:02:11,000
+siguen instrucciones fijas, no improvisan y si no está escrito no pasa.
+
+23
+00:02:11,000 --> 00:02:14,480
+Ejemplo real, revisar una planilla de ventas en Google Sheets,
+
+24
+00:02:14,479 --> 00:02:19,359
+pasar los datos por un modelo de inteligencia artificial para armar un resumen y mandártelo
+
+25
+00:02:19,359 --> 00:02:24,919
+por WhatsApp con un bot. Eso es un workflow, puede tener 3 pasos o 300, pero siempre es lo mismo.
+
+26
+00:02:24,919 --> 00:02:29,799
+El humano es el que define el guión. Dato que se escucha mucho, RAG, no es magia,
+
+27
+00:02:29,799 --> 00:02:33,079
+es simplemente decirle a la inteligencia artificial antes de contestar,
+
+28
+00:02:33,079 --> 00:02:38,159
+fíjate en este documento o buscá en tal fuente. Nivel 3, agentes de inteligencia artificial.
+
+29
+00:02:38,159 --> 00:02:44,359
+Acá la cosa cambia, ya no sos vos el que decide cada paso. El agente piensa y actúa por su cuenta,
+
+30
+00:02:44,360 --> 00:02:48,880
+¿Qué hace un agente? Número 1, piensa, decide la estrategia. Ejemplo,
+
+31
+00:02:48,880 --> 00:02:54,000
+uso links o copia el texto entero. Número 2, actúa, elige herramientas y las usa.
+
+32
+00:02:54,000 --> 00:02:56,600
+Por ejemplo, prefiere Google Sheets antes que Google Docs.
+
+33
+00:02:56,600 --> 00:03:02,080
+Y número 3, itera, se autocorrije. Si el resultado no lo convence, lo reescribe hasta mejorarlo.
+
+34
+00:03:02,080 --> 00:03:07,920
+Vamos con un caso realista. Le das un objetivo, publica un resumen entretenido de mis ventas
+
+35
+00:03:07,920 --> 00:03:10,680
+semanales. ¿Qué va a hacer? Primero consulta tus bases de datos.
+
+36
+00:03:10,840 --> 00:03:15,319
+Después genera un borrador. Después de eso, se lo pasa a otra inteligencia artificial que lo
+
+37
+00:03:15,319 --> 00:03:20,240
+critica con criterios de post atractivo. Por último, ajusta el texto y lo vuelve a probar.
+
+38
+00:03:20,240 --> 00:03:24,560
+Como resultado, tenés un post listo sin que vos tengas que revisar línea por línea.
+
+39
+00:03:24,560 --> 00:03:31,439
+¿Y por qué se dice que esto es React? Porque la gente debe razonar y después tiene que actuar.
+
+40
+00:03:31,439 --> 00:03:37,120
+React. Así de simple. Vamos con otro ejemplo. Un bot de mails. ¿Qué hace lo siguiente?
+
+41
+00:03:37,280 --> 00:03:42,439
+Primero, lee los mensajes entrantes. Después decide si son urgentes o no. Redacta. Una respuesta.
+
+42
+00:03:42,439 --> 00:03:45,920
+En base a eso. Y evalúa si quedó bien antes de enviarla.
+
+43
+00:03:45,920 --> 00:03:51,039
+Lo que antes hacía un asistente humano con varias horas, ahora lo resuelve una gente en segundos.
+
+44
+00:03:51,039 --> 00:03:54,159
+Vamos entonces con un resumen final. Primero, modelo de lenguaje.
+
+45
+00:03:54,159 --> 00:03:57,439
+LLM. Responden lo que les pedís, pero no saben nada de vos.
+
+46
+00:03:57,439 --> 00:04:01,840
+Segundo, Workflows. Automatizan varios pasos seguidos pero sin criterio propio.
+
+47
+00:04:01,840 --> 00:04:05,439
+Y número 3, agentes. Reciben un objetivo y hacen todo. Pensar,
+
+48
+00:04:05,439 --> 00:04:09,840
+decidir, ejecutar, revisar. La diferencia no es sólo técnica sino también conceptual.
+
+49
+00:04:09,840 --> 00:04:15,400
+Estamos pasando de asistentes obedientes a colaboradores digitales que trabajan de forma
+
+50
+00:04:15,400 --> 00:04:21,160
+autónoma. La pregunta ya no es si la inteligencia artificial puede hacer estas cosas. Es qué es
+
+51
+00:04:21,160 --> 00:04:25,360
+lo que queremos que haga por nosotros. Y si te sirvió esta explicación, mi nombre es Alan
+
+52
+00:04:25,360 --> 00:04:29,839
+Deich y todas las semanas subo vídeos para enseñar y reflexionar sobre inteligencia artificial y
+
+53
+00:04:29,839 --> 00:04:34,480
+tecnología. Te invito a que te suscribas en mi canal para no perderte lo que se viene.
+
+54
+00:04:34,480 --> 00:04:35,640
+Nos vemos la próxima.
+

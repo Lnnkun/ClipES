@@ -1,0 +1,532 @@
+1
+00:00:00,000 --> 00:00:10,660
+Llevamos utilizando la inteligencia artificial durante varios años, pero muy pocos se preocupan en entender cómo funcionan los modelos del lenguaje o las LLM.
+
+2
+00:00:11,040 --> 00:00:20,240
+¿Recuerdas ese momento donde le pediste a la IA que te generase un código en C sharp y en medio del código hay una función específica que no existe?
+
+3
+00:00:20,879 --> 00:00:35,239
+Pues bueno, eso vamos a ver hoy, porque no hace falta saber todo de cómo funciona, pero unas nociones básicas, o con unas nociones básicas, ya puedes tomar mejores decisiones técnicas, lo cual es lo verdaderamente importante.
+
+4
+00:00:35,239 --> 00:00:46,560
+En este post, con el que iniciamos el contenido del curso de C sharp con IA, veremos tres preguntas que solemos dar por entendidas, pero veremos si las entendemos de verdad.
+
+5
+00:00:46,880 --> 00:00:54,520
+La primera de todas es por qué la inteligencia artificial tiene alucinaciones y esto es un bug o es una funcionalidad.
+
+6
+00:00:55,219 --> 00:01:06,000
+Para comprender por qué las LLM alucinan, tenemos que comprender que son modelos diseñados para detectar o predecir las probabilidades de que una palabra siga otra.
+
+7
+00:01:06,000 --> 00:01:09,840
+Bueno, no exactamente una palabra, sino los tokens.
+
+8
+00:01:10,240 --> 00:01:15,400
+Por ello, alucina, porque no sabe qué es lo cierto o lo que no.
+
+9
+00:01:16,280 --> 00:01:23,040
+Debido a esto, podemos decir que alucinar es una consecuencia del diseño de las propias LLM.
+
+10
+00:01:23,439 --> 00:01:29,240
+Obviamente, para implementaciones prácticas no queremos que la IA alucine ni invente información.
+
+11
+00:01:29,600 --> 00:01:39,280
+Los modelos más populares van alucinando cada vez menos y menos y menos, aunque en otros modelos tenemos formas de mitigar estas alucinaciones.
+
+12
+00:01:39,519 --> 00:01:43,680
+Hay formas muy sencillas, que es básicamente hacer preguntas muy específicas.
+
+13
+00:01:43,680 --> 00:01:52,960
+La respuesta se centrará únicamente en esos términos, mientras que son preguntas más ambiguas, pues van a ir rellenando huecos con lo que le parezca.
+
+14
+00:01:53,320 --> 00:01:58,879
+Esto es básicamente lo mismo al ejemplo este que se ve o hazme Facebook sin errores.
+
+15
+00:01:58,879 --> 00:02:01,240
+Vale, hazme Facebook sin errores, una pregunta muy ambigua.
+
+16
+00:02:01,679 --> 00:02:10,719
+Pero si tú coges y dices, hazme una ventana de login que tenga un text post aquí, otro text post aquí de este color y de este otro color.
+
+17
+00:02:11,680 --> 00:02:15,319
+Esto lo va a hacer bien, mientras que el otro va a alucinar y va a hacer lo que quiera.
+
+18
+00:02:15,719 --> 00:02:26,599
+Otra parte es la temperatura, que es el parámetro que ajusta la aleatoriedad a elegir para el siguiente token y cuanto más baja sea más determinista.
+
+19
+00:02:27,079 --> 00:02:37,560
+Por supuesto, recientemente, con la llegada de RAG nos permite obligar a recuperar fuentes y citar, por lo tanto estamos mitigando estas alucinaciones.
+
+20
+00:02:37,560 --> 00:02:43,719
+Y me gustaría que dejaras abajo en los comentarios si tú has tenido situaciones donde la IA se ha puesto a alucinar y os la ha aliado partísima.
+
+21
+00:02:43,719 --> 00:02:50,759
+Quizás enviado código a producción donde... Ops, eso no lo leí, porque esto pasa.
+
+22
+00:02:51,079 --> 00:03:00,919
+Pero sigamos, porque la segunda pregunta o la segunda parte de este vídeo es entender si la LLM o el LLM sabe de dónde saca la información.
+
+23
+00:03:00,919 --> 00:03:06,919
+Si llevas tiempo trabajando con modelos de lenguaje, esta es una respuesta que ha cambiado recientemente.
+
+24
+00:03:06,919 --> 00:03:13,479
+Por defecto, la LLM o un LLM no sabe de dónde saca la información.
+
+25
+00:03:13,799 --> 00:03:25,079
+Todo lo que un modelo de lenguaje aprende se difumina en pesos, tras el entrenamiento, y no lleva información de la procedencia,
+
+26
+00:03:25,079 --> 00:03:29,719
+por lo que no podemos saber si lo que estamos leyendo es de una fuente fiable.
+
+27
+00:03:29,719 --> 00:03:35,479
+Recientemente, con la llegada de RAG, que es lo que mencionaba en el punto anterior, o de las búsquedas en vivo,
+
+28
+00:03:35,479 --> 00:03:44,599
+lo que estamos haciendo es leer documentos o webs, donde obligamos a contestar únicamente con lo leído en dichos documentos.
+
+29
+00:03:44,599 --> 00:03:50,679
+Y en ese caso podemos adjuntar la fuente ya que forma parte del contexto de la respuesta.
+
+30
+00:03:50,679 --> 00:03:55,079
+Esto pasa así cuando tú le mandas una fuente y le pides que compruebe cosas.
+
+31
+00:03:55,079 --> 00:04:02,280
+Pero si tú haces preguntas normales y corrientes a chat gpt a los modelos rápidos, por ejemplo chat gpt, como un ejemplo de modelo,
+
+32
+00:04:02,439 --> 00:04:05,960
+siga alucinando un poco.
+
+33
+00:04:05,960 --> 00:04:10,039
+Pero chat gpt no es el único que alucina, porque quien debe estar al tanto de dónde sacar la información,
+
+34
+00:04:10,039 --> 00:04:16,759
+eres tú. Y si quieres aprender sobre sistemas distribuidos, la mejor forma es con mi libro Construyendo sistemas distribuidos,
+
+35
+00:04:16,759 --> 00:04:22,600
+o si estás más en el rollo de punto net, la guía completa de desarrollo flesta con punto net,
+
+36
+00:04:22,600 --> 00:04:27,240
+ambos libros disponibles en mi web de forma digital o en Amazon de forma física.
+
+37
+00:04:27,400 --> 00:04:33,400
+Pero sigamos, porque el último punto que vamos a ver aquí es los tokens.
+
+38
+00:04:33,400 --> 00:04:41,800
+Los tokens es como los modelos de lenguaje procesan los textos y cada token son simplemente una secuencia de letras.
+
+39
+00:04:41,800 --> 00:04:45,720
+Estos tokens son las unidades de lectura y escrituras.
+
+40
+00:04:45,720 --> 00:04:51,400
+En los idiomas nos regimos por letras y de la misma forma que tú no puedes escribir media letra,
+
+41
+00:04:51,560 --> 00:04:55,560
+los tokens funcionan igual para un LLM.
+
+42
+00:04:55,560 --> 00:04:57,560
+No puedes escribir medio token.
+
+43
+00:04:57,560 --> 00:05:03,560
+Cuando envías un texto a un LLM, este texto no se procesa tal cual, sino que se tokeniza,
+
+44
+00:05:03,560 --> 00:05:07,079
+donde cada una de las palabras tienen diferentes pesos.
+
+45
+00:05:07,079 --> 00:05:13,079
+Normalmente van por la frecuencia de estas palabras y las que son más raras y complejas,
+
+46
+00:05:13,079 --> 00:05:17,479
+a lo mejor es más de un token, a lo mejor es parte de la palabra en dos cosas así.
+
+47
+00:05:17,560 --> 00:05:19,560
+De hecho, podemos ver un ejemplo.
+
+48
+00:05:19,560 --> 00:05:25,560
+Open AI tiene una plataforma o tiene una herramienta donde te muestra cómo funciona el token.
+
+49
+00:05:25,560 --> 00:05:29,560
+Aquí le he pasado un texto muy sencillo donde básicamente te lo tokeniza.
+
+50
+00:05:29,560 --> 00:05:33,560
+De estos 380 caracteres son 70 tokens.
+
+51
+00:05:33,560 --> 00:05:37,560
+Como vemos, diferentes versiones hacen diferentes tokens.
+
+52
+00:05:37,560 --> 00:05:41,560
+Como lo que pasa en el LLM, el LLM se lo hace en el LLM.
+
+53
+00:05:41,639 --> 00:05:45,639
+Aquí podemos ver la división.
+
+54
+00:05:45,639 --> 00:05:49,639
+Como palabras simples como 1 o funcionan, son un token.
+
+55
+00:05:49,639 --> 00:05:53,639
+Mientras que abordaremos, son 2 tokens.
+
+56
+00:05:53,639 --> 00:05:57,639
+O distribuido como palabra que no es extremadamente larga, son 2 tokens.
+
+57
+00:05:57,639 --> 00:06:01,639
+Porque son palabras más complejas.
+
+58
+00:06:01,639 --> 00:06:05,639
+El LLM es un token que se lo hace en el LLM.
+
+59
+00:06:05,719 --> 00:06:11,719
+En la última presentación de ChagPT5, se mostró un contexto de 400.000 tokens en la API.
+
+60
+00:06:11,719 --> 00:06:15,719
+Cuando presentaron cursor, ponía 400k.
+
+61
+00:06:15,719 --> 00:06:17,719
+Eso es básicamente el contexto.
+
+62
+00:06:17,719 --> 00:06:21,719
+Y por ejemplo, la API de ChagPT soporta 256.000 tokens.
+
+63
+00:06:21,719 --> 00:06:25,719
+Y ahora, si lo que pasa es que el LLM no es extremadamente larga,
+
+64
+00:06:25,719 --> 00:06:27,719
+son 2 tokens.
+
+65
+00:06:27,719 --> 00:06:29,719
+Porque son palabras más complejas.
+
+66
+00:06:29,719 --> 00:06:33,719
+El uso de tokens es importante porque tienen una relación directa con el contexto.
+
+67
+00:06:33,800 --> 00:06:37,800
+Y se lo soporta 256.000 tokens.
+
+68
+00:06:37,800 --> 00:06:41,800
+Otras herramientas como Cloudy, ahora mismo, tienen 200.000 tokens de contexto.
+
+69
+00:06:41,800 --> 00:06:45,800
+Y estas cifras pueden variar por proveedor y cambiar con el tiempo.
+
+70
+00:06:45,800 --> 00:06:49,800
+Así que es importante tener esto en cuenta.
+
+71
+00:06:49,800 --> 00:06:53,800
+Estoy diciendo ahora que son 400.000, pero si ves este vídeo en 2 años,
+
+72
+00:06:53,800 --> 00:06:57,800
+la realidad es que va a ser muchísimo más.
+
+73
+00:06:57,800 --> 00:07:00,800
+Pero qué es este contexto?
+
+74
+00:07:00,879 --> 00:07:06,879
+Pueden absorber o entender a la vez para predecir el siguiente token.
+
+75
+00:07:06,879 --> 00:07:10,879
+Como has visto, un párrafo, ese párrafo era uno de mis libros,
+
+76
+00:07:10,879 --> 00:07:13,879
+son aproximadamente 70 tokens.
+
+77
+00:07:13,879 --> 00:07:18,879
+Así que para rellenar 256.000 o 400.000, necesitamos muchísimo texto.
+
+78
+00:07:18,879 --> 00:07:22,879
+Por ello, en aplicaciones como ChagPT, podemos tener memoria o historial.
+
+79
+00:07:22,879 --> 00:07:26,879
+Porque detrás el sistema añade lo que sabe sobre nosotros al contexto.
+
+80
+00:07:26,959 --> 00:07:30,959
+Dentro de lo que viene siendo programación,
+
+81
+00:07:30,959 --> 00:07:34,959
+tener este contexto tan grande hace que las LLMS
+
+82
+00:07:34,959 --> 00:07:38,959
+sean capaces de crear aplicaciones pequeñas
+
+83
+00:07:38,959 --> 00:07:42,959
+y entender más o menos cierto nivel de aplicaciones medianas.
+
+84
+00:07:42,959 --> 00:07:46,959
+Con aplicaciones grandes, todavía no funciona bien,
+
+85
+00:07:46,959 --> 00:07:50,959
+precisamente por el límite de contexto.
+
+86
+00:07:50,959 --> 00:07:54,959
+Porque 400.000 tokens son muchos, pero si te pasas,
+
+87
+00:07:55,039 --> 00:07:59,039
+el modelo pierde el contexto.
+
+88
+00:07:59,039 --> 00:08:03,039
+Tenemos 400.000 tokens, tienes 1000 más,
+
+89
+00:08:03,039 --> 00:08:07,039
+por lo que los 1000 antiguos los quita.
+
+90
+00:08:07,039 --> 00:08:11,039
+Entonces, al cortar lo que no cabe, pues ya no funciona todo igual.
+
+91
+00:08:11,039 --> 00:08:15,039
+Por supuesto, a más contexto,
+
+92
+00:08:15,039 --> 00:08:19,039
+más coste, porque esto no viene gratis.
+
+93
+00:08:19,039 --> 00:08:23,039
+Y no solo es coste monetario, sino que la latencia
+
+94
+00:08:23,120 --> 00:08:27,120
+también es importante. Tienen una dependencia directa
+
+95
+00:08:27,120 --> 00:08:31,120
+con el coste de computación.
+
+96
+00:08:31,120 --> 00:08:35,120
+Sin olvidarnos el tema de que a más contexto
+
+97
+00:08:35,120 --> 00:08:39,120
+más probabilidad es hay de que lo importante se diluya.
+
+98
+00:08:39,120 --> 00:08:43,120
+Esto quiere decir que si tú tienes, yo qué sé,
+
+99
+00:08:43,120 --> 00:08:47,120
+por ponerlo como un ejemplo de una comparación real,
+
+100
+00:08:47,120 --> 00:08:51,120
+podría ser, tú imagínate que yo te digo que te tienes que leer un libro
+
+101
+00:08:51,200 --> 00:08:55,200
+y te tienes que resumir. Si yo te digo que me resumas un libro,
+
+102
+00:08:55,200 --> 00:08:59,200
+el resumen va a contener menos detalles, que si te digo
+
+103
+00:08:59,200 --> 00:09:03,200
+léete este capítulo, que son 5 páginas y resúmelo.
+
+104
+00:09:03,200 --> 00:09:07,200
+Los detalles del libro van a ser
+
+105
+00:09:07,200 --> 00:09:11,200
+menores mientras que si tú lo haces de 5 páginas
+
+106
+00:09:11,200 --> 00:09:15,200
+van a tener mucho más detalles. Exactamente lo mismo
+
+107
+00:09:15,200 --> 00:09:19,200
+es el tema de que se diluyan las cosas.
+
+108
+00:09:19,280 --> 00:09:23,280
+Por lo que a lo mejor algo se le pasa por encima, porque tiene
+
+109
+00:09:23,280 --> 00:09:27,280
+mucho contexto y muchas cosas que tener en cuenta a la hora de
+
+110
+00:09:27,280 --> 00:09:31,280
+hacer todos los cálculos. Porque internamente
+
+111
+00:09:31,280 --> 00:09:35,280
+lo que hace la LLM es cada token le asigna un peso,
+
+112
+00:09:35,280 --> 00:09:39,280
+hay unos sesgos de posición y a cuanto más texto
+
+113
+00:09:39,280 --> 00:09:43,280
+más ruido, se recomienda poner listas numeradas,
+
+114
+00:09:43,280 --> 00:09:47,280
+porque internamente cada punto en una lista le da
+
+115
+00:09:47,279 --> 00:09:51,279
+peso y como que no se diluye tanto.
+
+116
+00:09:51,279 --> 00:09:55,279
+Internamente lo que hace es ir balanceando todo.
+
+117
+00:09:55,279 --> 00:09:59,279
+Si tú le pones un bullet point, el LLM entiende que
+
+118
+00:09:59,279 --> 00:10:03,279
+el bullet point es importante, más importante que un parrazo random
+
+119
+00:10:03,279 --> 00:10:07,279
+en medio de la nada. Yo espero que esto sea entendido.
+
+120
+00:10:07,279 --> 00:10:11,279
+Me gustaría que dejaras abajo en los comentarios qué es lo que te desconcierta a ti de los LLM.
+
+121
+00:10:11,279 --> 00:10:15,279
+Dejas tus preguntas y las podemos abordar en los siguientes vídeos.
+
+122
+00:10:15,279 --> 00:10:19,279
+Y finalmente vamos a finalizar con una pequeña conclusión.
+
+123
+00:10:19,279 --> 00:10:23,279
+Querido utilizar este vídeo como un vídeo introductorio a la nueva serie dentro de la web
+
+124
+00:10:23,279 --> 00:10:27,279
+y el canal de Youtube, donde aprenderemos a trabajar con IA y C sharp.
+
+125
+00:10:27,279 --> 00:10:31,279
+Con estos tres pilares ya estás capacitado para trabajar
+
+126
+00:10:31,279 --> 00:10:35,279
+y comprender el porqué de todo lo que estamos realizando o todo lo que vamos a
+
+127
+00:10:35,279 --> 00:10:39,279
+ver en los siguientes vídeos de la IA. Así que si te ha gustado
+
+128
+00:10:39,279 --> 00:10:43,279
+no lo sabes, denme un like, suscríbete si no lo estás, compártelo.
+
+129
+00:10:43,279 --> 00:10:47,279
+Muchísimos, ya lo sabes que tengo mis dos libros construyendo sistemas distribuidos
+
+130
+00:10:47,279 --> 00:10:51,279
+y la guía completa de desarrollo Fullstack con punto net disponible en mi web
+
+131
+00:10:51,279 --> 00:10:55,279
+de forma digital, que por cierto si eres usuario en premium tienen un descuento
+
+132
+00:10:55,279 --> 00:10:59,279
+o de forma física en Amazon. Y bueno, esto ha sido todo.
+
+133
+00:10:59,279 --> 00:11:03,279
+Un saludo y adiós.
+

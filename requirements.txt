@@ -1,0 +1,15 @@
+# 先安装 CUDA 版 PyTorch，再装下面这些依赖：
+#   pip install torch --index-url https://download.pytorch.org/whl/cu128
+# 然后：pip install -r requirements.txt
+
+openai-whisper>=20250625
+sentence-transformers>=6.2
+chromadb>=1.5.9
+python-dotenv>=1.2
+openai>=1.0
+pydantic>=2.0
+fastapi>=0.115
+python-multipart>=0.0.9
+uvicorn[standard]>=0.30
+streamlit>=1.38
+requests>=2.31

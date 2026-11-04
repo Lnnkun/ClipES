@@ -1,0 +1,2040 @@
+1
+00:00:00,000 --> 00:00:03,800
+Puedes llevar meses usando Cloud y seguir haciendo a mano tareas
+
+2
+00:00:03,800 --> 00:00:05,719
+que podrías dejarle a él.
+
+3
+00:00:05,719 --> 00:00:09,120
+Preparar documentos, organizar archivos o incluso construir
+
+4
+00:00:09,120 --> 00:00:10,839
+una herramienta para tu trabajo.
+
+5
+00:00:10,839 --> 00:00:14,120
+Pero para aprovechar todo eso, necesitas conocer algo más
+
+6
+00:00:14,120 --> 00:00:16,240
+que el cuadro donde escribes las preguntas.
+
+7
+00:00:16,240 --> 00:00:19,240
+En este vídeo te voy a enseñar cómo utilizarlo paso a paso,
+
+8
+00:00:19,240 --> 00:00:22,320
+qué modelo elegir, cómo conseguir mejores respuestas
+
+9
+00:00:22,320 --> 00:00:24,560
+y cómo encargarle trabajos completos.
+
+10
+00:00:24,560 --> 00:00:26,920
+Y al final, vamos a crear nuestra propia aplicación
+
+11
+00:00:26,920 --> 00:00:28,719
+sin escribir el código nosotros.
+
+12
+00:00:28,799 --> 00:00:30,239
+Vamos a empezar con un atajo.
+
+13
+00:00:30,239 --> 00:00:33,320
+Traer el contexto que ya tienes en ChagPT o en Gemini
+
+14
+00:00:33,320 --> 00:00:35,839
+para no tener que explicárselo todo otra vez.
+
+15
+00:00:39,840 --> 00:00:42,439
+Si llevas meses usando ChagPT o Gemini,
+
+16
+00:00:42,439 --> 00:00:45,280
+seguramente ya les has contado a qué te dedicas,
+
+17
+00:00:45,280 --> 00:00:48,439
+cómo te gusta trabajar o qué proyectos tienes entre manos.
+
+18
+00:00:48,439 --> 00:00:51,679
+Bien, pues puedes traer parte de ese contexto aquí.
+
+19
+00:00:51,679 --> 00:00:54,960
+Entramos en ajustes y buscamos el apartado de memoria.
+
+20
+00:00:54,960 --> 00:00:56,759
+Dentro tienes la opción de importar
+
+21
+00:00:56,759 --> 00:00:58,480
+desde otra inteligencia artificial.
+
+22
+00:00:58,479 --> 00:01:02,399
+Al abrirla aparece un prompt, es decir, una instrucción para la IA.
+
+23
+00:01:02,399 --> 00:01:04,399
+Lo copias en la herramienta que utilizabas
+
+24
+00:01:04,399 --> 00:01:06,599
+para que reúna lo que recuerda sobre ti.
+
+25
+00:01:06,599 --> 00:01:09,679
+Revisas la respuesta, quitas lo que no quieras trasladar
+
+26
+00:01:09,679 --> 00:01:11,879
+y pegas el texto de vuelta en Cloud.
+
+27
+00:01:11,879 --> 00:01:14,280
+Después pulsas en Añadir a la memoria.
+
+28
+00:01:14,280 --> 00:01:16,840
+Así importas un resumen de tu profesión,
+
+29
+00:01:16,840 --> 00:01:18,719
+tus preferencias o tus proyectos.
+
+30
+00:01:18,719 --> 00:01:21,120
+Las conversaciones completas no se trasladan.
+
+31
+00:01:21,120 --> 00:01:24,640
+Puedes revisar lo que ha guardado y corregirlo si hace falta.
+
+32
+00:01:24,640 --> 00:01:26,599
+Activa también la generación de memoria
+
+33
+00:01:26,599 --> 00:01:29,919
+para que Cloud recuerde contexto de futuras conversaciones.
+
+34
+00:01:29,919 --> 00:01:32,759
+La búsqueda de chats anteriores, si tu plan la incluye,
+
+35
+00:01:32,759 --> 00:01:35,280
+sirve para consultar lo que hayas hablado aquí.
+
+36
+00:01:35,280 --> 00:01:37,799
+Con eso preparado, vamos a la pantalla principal.
+
+37
+00:01:40,879 --> 00:01:43,679
+Cloud tiene un plan gratuito con el que puedes empezar,
+
+38
+00:01:43,679 --> 00:01:47,519
+grabar el chat, crear proyectos y utilizar distintas funciones.
+
+39
+00:01:47,519 --> 00:01:51,560
+La diferencia está en los límites y en las herramientas y modelos disponibles.
+
+40
+00:01:51,560 --> 00:01:53,799
+Para hacer el recorrido completo de este vídeo,
+
+41
+00:01:53,879 --> 00:01:55,719
+incluyendo CloudWork y CloudCode,
+
+42
+00:01:55,719 --> 00:01:57,840
+necesitas un plan de pago compatible.
+
+43
+00:01:57,840 --> 00:01:59,959
+El plan Pro ya incluye los dos.
+
+44
+00:01:59,959 --> 00:02:02,959
+Si estás empezando, yo probaría primero la versión gratuita.
+
+45
+00:02:02,959 --> 00:02:05,120
+Y si ves que lo utilizas para trabajar,
+
+46
+00:02:05,120 --> 00:02:08,240
+valoraría el plan Pro antes de saltar a un plan más caro.
+
+47
+00:02:08,240 --> 00:02:11,759
+El plan Max tiene sentido cuando necesitas bastante más uso
+
+48
+00:02:11,759 --> 00:02:14,039
+y te encuentras los límites con frecuencia.
+
+49
+00:02:14,039 --> 00:02:17,479
+También tiene límites, así que no lo confundas con una tarifa ilimitada.
+
+50
+00:02:17,479 --> 00:02:20,840
+No me voy a detener en precios concretos porque pueden cambiar.
+
+51
+00:02:20,840 --> 00:02:23,759
+Te dejo la página oficial con los planes en la descripción.
+
+52
+00:02:23,799 --> 00:02:26,840
+Lo que sí influye mucho en cuánto te dura ese uso
+
+53
+00:02:26,840 --> 00:02:29,840
+es esta selección que tienes junto al cuadro de texto.
+
+54
+00:02:34,039 --> 00:02:35,639
+Vamos con el selector de modelos
+
+55
+00:02:35,639 --> 00:02:38,039
+que al principio puede resultar un poco confuso.
+
+56
+00:02:38,039 --> 00:02:40,519
+Lo que elijas aquí influye en la respuesta,
+
+57
+00:02:40,519 --> 00:02:42,840
+en cuánto tarda y en cuánto uso consumes.
+
+58
+00:02:42,840 --> 00:02:44,719
+Si agotas el límite de tu plan,
+
+59
+00:02:44,719 --> 00:02:47,680
+puedes tener que esperar a que se restableca para continuar.
+
+60
+00:02:47,680 --> 00:02:50,399
+Por eso merece la pena entender estas dos opciones.
+
+61
+00:02:50,480 --> 00:02:54,039
+El modelo, que es la IA que responde y el esfuerzo,
+
+62
+00:02:54,039 --> 00:02:56,560
+que indica cuánto razonamiento dedica a la tarea.
+
+63
+00:02:56,560 --> 00:02:57,960
+Empezamos por el modelo.
+
+64
+00:02:57,960 --> 00:02:59,680
+Los números de versión van cambiando,
+
+65
+00:02:59,680 --> 00:03:03,280
+así que quédate con los nombres y con cuándo utilizar cada uno.
+
+66
+00:03:03,280 --> 00:03:06,840
+Haiku es el más rápido y puede servir para tareas sencillas.
+
+67
+00:03:06,840 --> 00:03:10,080
+Pero para trabajar habitualmente yo empezaría con SONET.
+
+68
+00:03:10,080 --> 00:03:11,480
+Sigue siendo bastante rápido
+
+69
+00:03:11,480 --> 00:03:13,759
+y la mejora en las respuestas suele compensar.
+
+70
+00:03:13,759 --> 00:03:16,680
+Es una buena opción para escribir, sumir documentos,
+
+71
+00:03:16,680 --> 00:03:18,360
+preparar ideas o resolver dudas.
+
+72
+00:03:18,440 --> 00:03:21,280
+Opus lo utilizaría para trabajos más exigentes,
+
+73
+00:03:21,280 --> 00:03:23,920
+especialmente cuando hay varios pasos relacionados.
+
+74
+00:03:23,920 --> 00:03:26,680
+Por ejemplo, revisar las solicitudes de varios clientes,
+
+75
+00:03:26,680 --> 00:03:28,320
+cruzarlas con nuestros servicios
+
+76
+00:03:28,320 --> 00:03:30,520
+y preparar una propuesta para cada uno.
+
+77
+00:03:30,520 --> 00:03:32,040
+Y después está Fable.
+
+78
+00:03:32,040 --> 00:03:34,520
+Su mayor consumo hace que convenga reservarlo
+
+79
+00:03:34,520 --> 00:03:37,240
+para cuando esa capacidad adicional aporte algo.
+
+80
+00:03:37,240 --> 00:03:39,440
+Si Opus se atasca con un problema difícil,
+
+81
+00:03:39,440 --> 00:03:41,600
+ahí puedes probar Fable y comparar.
+
+82
+00:03:41,600 --> 00:03:42,760
+Pero para simplificar,
+
+83
+00:03:42,760 --> 00:03:45,800
+si tienes el plan Pro, empieza con SONET para el día a día
+
+84
+00:03:45,800 --> 00:03:49,240
+y cambia solo a Opus cuando la tarea necesite más razonamiento.
+
+85
+00:03:49,240 --> 00:03:51,680
+Si tienes el plan Max y dispones de más uso,
+
+86
+00:03:51,680 --> 00:03:53,719
+puedes trabajar con Opus más a menudo,
+
+87
+00:03:53,719 --> 00:03:55,960
+especialmente en Cloud Code o en Code World.
+
+88
+00:03:55,960 --> 00:03:58,520
+Aún así, prueba SONET para tareas creativas
+
+89
+00:03:58,520 --> 00:04:01,320
+puede gustarte más cómo escribe o las ideas que propone.
+
+90
+00:04:01,320 --> 00:04:03,560
+La segunda opción es el nivel de esfuerzo.
+
+91
+00:04:03,560 --> 00:04:04,840
+Dentro del mismo modelo,
+
+92
+00:04:04,840 --> 00:04:08,439
+puedes ajustar cuánto razonamiento dedica antes de responder.
+
+93
+00:04:08,439 --> 00:04:11,560
+Subirlo suele consumir más uso y hacer que tarde más,
+
+94
+00:04:11,560 --> 00:04:13,720
+pero no garantiza una mejor respuesta.
+
+95
+00:04:13,800 --> 00:04:16,839
+Medio es un buen punto de partida para tareas cotidianas.
+
+96
+00:04:16,839 --> 00:04:20,560
+Alto tiene sentido para programación y análisis más exigentes.
+
+97
+00:04:20,560 --> 00:04:23,040
+Y extra alto, cuando esté disponible,
+
+98
+00:04:23,040 --> 00:04:26,639
+lo reservaría para trabajos largos en los que tenga que planificar,
+
+99
+00:04:26,639 --> 00:04:29,399
+ejecutar varios pasos y comprobar el resultado.
+
+100
+00:04:29,399 --> 00:04:32,360
+Por ejemplo, para convertir unas notas en un correo breve,
+
+101
+00:04:32,360 --> 00:04:33,639
+empezaría con medio.
+
+102
+00:04:33,639 --> 00:04:36,399
+Para construir un panel de clientes y comprobar
+
+103
+00:04:36,399 --> 00:04:39,600
+que guarda correctamente los datos, si puede compensar subirlo.
+
+104
+00:04:39,600 --> 00:04:41,800
+Poner el esfuerzo al máximo para todo
+
+105
+00:04:41,800 --> 00:04:44,240
+puede hacer que una tarea sencilla tarde mucho más
+
+106
+00:04:44,240 --> 00:04:45,560
+sin mejorar el resultado.
+
+107
+00:04:45,560 --> 00:04:48,960
+Incluso puede complicar una respuesta que necesitabas directa.
+
+108
+00:04:48,960 --> 00:04:51,800
+Empieza con un nivel acorde a la tarea y súbelo
+
+109
+00:04:51,800 --> 00:04:54,960
+si el análisis resulta superficial o el problema lo requiere.
+
+110
+00:04:54,960 --> 00:04:57,280
+Y antes de hacerlo, revisa también tu petición.
+
+111
+00:04:57,280 --> 00:05:00,480
+Si le falta información, pensar más nos resuelve ese problema.
+
+112
+00:05:00,480 --> 00:05:03,840
+Precisamente vamos a ver cómo darle mejores instrucciones.
+
+113
+00:05:07,080 --> 00:05:08,600
+Para conseguir buenos resultados,
+
+114
+00:05:08,600 --> 00:05:11,160
+no necesitas aprenderte una colección de fórmulas.
+
+115
+00:05:11,240 --> 00:05:13,240
+Hay dos hábitos que ayudan mucho.
+
+116
+00:05:13,240 --> 00:05:16,480
+Darle contexto y revisar sus respuestas con criterio.
+
+117
+00:05:16,480 --> 00:05:19,880
+Vamos a utilizar un negocio ficticio, L'Humbre Studio,
+
+118
+00:05:19,880 --> 00:05:23,080
+un estudio de fotografía de producto que trabaja con pequeñas marcas.
+
+119
+00:05:23,080 --> 00:05:25,880
+Si escribo Dame Ideas para Conseguir Clientes,
+
+120
+00:05:25,880 --> 00:05:27,920
+puede responder con una lista genérica.
+
+121
+00:05:27,920 --> 00:05:30,000
+Claude todavía no sabe que vendemos,
+
+122
+00:05:30,000 --> 00:05:32,320
+a quién nos dirigimos, ni qué recursos tenemos.
+
+123
+00:05:32,320 --> 00:05:35,560
+Ahora le explico que hacemos fotografía de producto en Murcia,
+
+124
+00:05:35,560 --> 00:05:38,120
+que buscamos marcas de cerámica y decoración.
+
+125
+00:05:38,199 --> 00:05:41,399
+Y que la campaña tiene que poder gestionarla una sola persona.
+
+126
+00:05:41,399 --> 00:05:43,680
+No necesitas redazarlo perfectamente.
+
+127
+00:05:43,680 --> 00:05:47,519
+Puedes pegar notas, juntar documentos o explicarlo como te salga.
+
+128
+00:05:47,519 --> 00:05:50,000
+Lo importante es que tenga la información relevante.
+
+129
+00:05:50,000 --> 00:05:51,879
+También puedes pedirle que la ordene.
+
+130
+00:05:51,879 --> 00:05:54,720
+Y si no sabes qué contarle, haz que te pregunte.
+
+131
+00:05:54,720 --> 00:05:56,519
+Quiero captar clientes para mi estudio.
+
+132
+00:05:56,519 --> 00:06:00,280
+Antes de proponerme una campaña, hazme hasta cinco preguntas,
+
+133
+00:06:00,280 --> 00:06:02,519
+de una en una, para entender mi situación.
+
+134
+00:06:02,519 --> 00:06:04,759
+Vamos respondiendo a todas las preguntas
+
+135
+00:06:04,759 --> 00:06:06,680
+y después le pedimos la propuesta.
+
+136
+00:06:06,680 --> 00:06:09,759
+El segundo hábito es no dar por buena la primera respuesta
+
+137
+00:06:09,759 --> 00:06:11,439
+solo porque suene convincente.
+
+138
+00:06:11,439 --> 00:06:14,160
+Trátala como un borrador que vais a trabajar juntos.
+
+139
+00:06:14,160 --> 00:06:17,000
+Por ejemplo, aquí propones regalar una foto extra
+
+140
+00:06:17,000 --> 00:06:19,879
+si un cliente nos recomienda y conseguimos otro encargo.
+
+141
+00:06:19,879 --> 00:06:22,079
+Puede funcionar, pero no sabe cuánto trabajo
+
+142
+00:06:22,079 --> 00:06:24,079
+nos supone ni si nos compensa.
+
+143
+00:06:24,079 --> 00:06:26,319
+Así que le pido que revise esa recomendación,
+
+144
+00:06:26,319 --> 00:06:29,000
+que detecte otras suposiciones y puntos débiles.
+
+145
+00:06:29,000 --> 00:06:30,280
+También en mi planteamiento
+
+146
+00:06:30,280 --> 00:06:33,199
+y que mejore la campaña manteniendo las dos horas semanales.
+
+147
+00:06:33,199 --> 00:06:35,720
+También puedes preguntarle qué información falta,
+
+148
+00:06:35,720 --> 00:06:38,880
+qué podría fallar o qué alternativa sería más realista.
+
+149
+00:06:38,880 --> 00:06:41,240
+La idea es que te ayude a detectar problemas,
+
+150
+00:06:41,240 --> 00:06:43,080
+además de desarrollar tus ideas.
+
+151
+00:06:43,080 --> 00:06:45,080
+Si tienes un ejemplo que te gusta,
+
+152
+00:06:45,080 --> 00:06:47,440
+ajúntalo y señala qué quieres conservar.
+
+153
+00:06:47,440 --> 00:06:49,480
+El tono, la extensión o la estructura.
+
+154
+00:06:49,480 --> 00:06:51,840
+Revisa el resultado, corrije con precisión
+
+155
+00:06:51,840 --> 00:06:54,400
+y comprueba los datos importantes en sus fuentes.
+
+156
+00:06:54,400 --> 00:06:58,200
+Ahora vamos a facilitarle ese contexto sin pegarlo todo a mano.
+
+157
+00:06:58,200 --> 00:07:01,000
+Por cierto, si creas una web con ChagPT o Codex
+
+158
+00:07:01,000 --> 00:07:04,760
+y después no sabes cómo publicarla ni cómo mantenerla actualizada,
+
+159
+00:07:04,800 --> 00:07:05,759
+mira esto.
+
+160
+00:07:05,759 --> 00:07:07,399
+Hostinger, que colabora con este vídeo,
+
+161
+00:07:07,399 --> 00:07:09,920
+tiene una integración llamada Hostinger Connector,
+
+162
+00:07:09,920 --> 00:07:12,719
+que permite publicar y gestionar tus proyectos
+
+163
+00:07:12,719 --> 00:07:15,079
+desde tu herramienta de inteligencia actividad.
+
+164
+00:07:15,079 --> 00:07:17,680
+Entramos desde el enlace que te dejo abajo en la descripción,
+
+165
+00:07:17,680 --> 00:07:19,680
+elegimos el plan Unlimited
+
+166
+00:07:19,680 --> 00:07:22,920
+y aplicamos el código Connector Maena antes de pagar.
+
+167
+00:07:22,920 --> 00:07:26,159
+Con esto tenemos casi 20 euros extra de descuento.
+
+168
+00:07:26,159 --> 00:07:28,399
+Connector está incluido sin coste adicional
+
+169
+00:07:28,399 --> 00:07:29,879
+con los planes compatibles,
+
+170
+00:07:29,879 --> 00:07:32,719
+así que si ya tienes uno, puedes utilizarlo con tu cuenta.
+
+171
+00:07:32,760 --> 00:07:35,760
+Ahora dentro de ChagPT nos vamos a complementos.
+
+172
+00:07:35,760 --> 00:07:38,280
+Buscamos Hostinger Connector, lo instalamos
+
+173
+00:07:38,280 --> 00:07:40,080
+e iniciamos sesión en Hostinger.
+
+174
+00:07:40,080 --> 00:07:43,040
+Revisamos los permisos y autorizamos la conexión,
+
+175
+00:07:43,040 --> 00:07:45,680
+sin copiar claves API ni configurar archivos.
+
+176
+00:07:45,680 --> 00:07:47,440
+Para enseñarte lo voy a crear una web
+
+177
+00:07:47,440 --> 00:07:49,120
+para un estudio de fotografía,
+
+178
+00:07:49,120 --> 00:07:52,320
+con una galería, sus servicios y una sección de contacto.
+
+179
+00:07:52,320 --> 00:07:54,520
+Cuando tenemos el diseño listo, le pedimos,
+
+180
+00:07:54,520 --> 00:07:56,680
+publica este proyecto en mi hosting,
+
+181
+00:07:56,680 --> 00:07:58,640
+comprobamos dónde va a publicarlo,
+
+182
+00:07:58,640 --> 00:08:00,600
+completamos los pasos que nos solicite
+
+183
+00:08:00,760 --> 00:08:03,200
+y abrimos el enlace para ver la web online.
+
+184
+00:08:03,200 --> 00:08:04,640
+Y ahora vienen los cambios.
+
+185
+00:08:04,640 --> 00:08:07,439
+Primero le pido que añada unas preguntas frecuentes,
+
+186
+00:08:07,439 --> 00:08:10,240
+revisamos el resultado y publicamos la actualización.
+
+187
+00:08:10,240 --> 00:08:13,120
+Después le digo, añade en la cabecera un botón
+
+188
+00:08:13,120 --> 00:08:14,879
+que lleve a la sección de contacto.
+
+189
+00:08:14,879 --> 00:08:18,200
+Lo actualizamos, recargamos la web y comprobamos que funciona.
+
+190
+00:08:18,200 --> 00:08:20,200
+Así puedes publicar y hacer cambios
+
+191
+00:08:20,200 --> 00:08:21,720
+desde la misma conversación,
+
+192
+00:08:21,720 --> 00:08:23,760
+ahorrandote entrar en varios paneles
+
+193
+00:08:23,760 --> 00:08:25,560
+y repetir pasos manualmente.
+
+194
+00:08:25,560 --> 00:08:27,200
+También puedes gestionar dominios,
+
+195
+00:08:27,200 --> 00:08:29,600
+productos de una tienda o campañas de email,
+
+196
+00:08:29,600 --> 00:08:31,760
+según los servicios que tengas contratados.
+
+197
+00:08:31,760 --> 00:08:35,879
+Para empezar, el plan al límite está desde 3,79€ al mes
+
+198
+00:08:35,879 --> 00:08:38,480
+al contratar 48 meses con pago anticipado.
+
+199
+00:08:38,480 --> 00:08:41,560
+En España incluye un dominio gratuito durante el primer año.
+
+200
+00:08:41,560 --> 00:08:44,080
+Además tienes 30 días de garantía de devolución
+
+201
+00:08:44,080 --> 00:08:45,840
+y puedes cancelar cuando quieras.
+
+202
+00:08:45,840 --> 00:08:47,480
+Entra desde el enlace de la descripción
+
+203
+00:08:47,480 --> 00:08:51,000
+y utiliza el código ConectorVaina10 para aplicar el descuento.
+
+204
+00:08:51,000 --> 00:08:53,200
+Así podrás publicar y actualizar tu web
+
+205
+00:08:53,200 --> 00:08:55,200
+directamente desde tu herramienta de IA.
+
+206
+00:08:55,200 --> 00:08:56,480
+Y ahora sí, seguimos.
+
+207
+00:09:00,200 --> 00:09:03,200
+Los conectores permiten utilizar otros servicios desde Cloud.
+
+208
+00:09:03,200 --> 00:09:05,519
+Entramos en Personalizar, Conectores
+
+209
+00:09:05,519 --> 00:09:08,080
+y aquí vemos la enorme cantidad de aplicaciones
+
+210
+00:09:08,080 --> 00:09:09,279
+que podemos conectar.
+
+211
+00:09:09,279 --> 00:09:10,800
+Buscamos la que nos interese,
+
+212
+00:09:10,800 --> 00:09:12,320
+pulsamos en el botón del más
+
+213
+00:09:12,320 --> 00:09:15,480
+y simplemente iniciamos sesión y autorizamos la conexión.
+
+214
+00:09:15,480 --> 00:09:17,920
+Puedes conectar, Gmail para consultar correos,
+
+215
+00:09:17,920 --> 00:09:20,759
+Calendar para trabajar con tu agenda o Google Drive
+
+216
+00:09:20,759 --> 00:09:22,320
+para acceder a documentos.
+
+217
+00:09:22,320 --> 00:09:25,279
+Así puedes pedirle que revise los mensajes de un cliente,
+
+218
+00:09:25,279 --> 00:09:27,000
+encuentre lo que habéis acordado
+
+219
+00:09:27,000 --> 00:09:29,639
+o consulte ejemplos de cómo sueles responder.
+
+220
+00:09:29,639 --> 00:09:32,679
+También hay conectores para herramientas de notas de reuniones,
+
+221
+00:09:32,679 --> 00:09:33,759
+como Fireflies,
+
+222
+00:09:33,759 --> 00:09:36,720
+de las que puede extraer decisiones y tareas pendientes.
+
+223
+00:09:36,720 --> 00:09:37,720
+Para esta demostración,
+
+224
+00:09:37,720 --> 00:09:41,080
+he guardado en Google Drive una solicitud de una marca de cerámica.
+
+225
+00:09:41,080 --> 00:09:42,919
+Le pedimos que encuentre ese documento
+
+226
+00:09:42,919 --> 00:09:45,039
+y nos diga qué necesita el cliente,
+
+227
+00:09:45,039 --> 00:09:46,159
+qué información falta
+
+228
+00:09:46,159 --> 00:09:49,000
+y qué deberíamos aclarar antes de preparar la propuesta.
+
+229
+00:09:49,000 --> 00:09:50,799
+Aquí ya nos resume el encargo.
+
+230
+00:09:50,799 --> 00:09:52,679
+6 piezas y 12 fotografías.
+
+231
+00:09:52,679 --> 00:09:54,799
+También señala qué falta por confirmar
+
+232
+00:09:54,879 --> 00:09:57,719
+y propone tres preguntas antes de preparar la propuesta.
+
+233
+00:09:57,719 --> 00:10:00,559
+Y desde este enlace podemos abrir el documento en Drive
+
+234
+00:10:00,559 --> 00:10:01,799
+y comprobar los datos.
+
+235
+00:10:01,799 --> 00:10:02,799
+Esa es la ventaja,
+
+236
+00:10:02,799 --> 00:10:05,559
+consultar la información donde ya la tenemos guardada.
+
+237
+00:10:05,559 --> 00:10:08,519
+Pero los conectores también pueden añadir capacidades.
+
+238
+00:10:08,519 --> 00:10:11,199
+Cloud no incorpora un generador propio de imágenes
+
+239
+00:10:11,199 --> 00:10:13,079
+como si lo tienen ChagPT o Gemini,
+
+240
+00:10:13,079 --> 00:10:16,279
+pero podemos conectarlo a un servicio que sí las genere.
+
+241
+00:10:16,279 --> 00:10:17,519
+Por ejemplo, Higgsfield.
+
+242
+00:10:17,519 --> 00:10:19,719
+Si lo añadimos como conector personalizado,
+
+243
+00:10:19,719 --> 00:10:21,000
+entramos en Añadir,
+
+244
+00:10:21,000 --> 00:10:22,240
+conector personalizado,
+
+245
+00:10:22,240 --> 00:10:23,279
+le ponemos un nombre
+
+246
+00:10:23,360 --> 00:10:26,000
+y pegamos la dirección de su servidor mcp.
+
+247
+00:10:26,000 --> 00:10:27,839
+Qué facilita el propio Higgsfield.
+
+248
+00:10:27,839 --> 00:10:29,879
+Después completamos el inicio de sesión.
+
+249
+00:10:29,879 --> 00:10:31,839
+En mi caso me dice que ya lo tengo conectado.
+
+250
+00:10:31,839 --> 00:10:33,720
+Y mcp, por si no lo he dicho antes,
+
+251
+00:10:33,720 --> 00:10:35,480
+es el sistema que permite a Cloud
+
+252
+00:10:35,480 --> 00:10:37,159
+comunicarse con esa herramienta.
+
+253
+00:10:37,159 --> 00:10:39,399
+Ahora podemos pedir una referencia visual
+
+254
+00:10:39,399 --> 00:10:42,240
+para nuestra sesión cerámica sobre un fondo de arena
+
+255
+00:10:42,240 --> 00:10:44,240
+con luz lateral y sombras suaves.
+
+256
+00:10:44,240 --> 00:10:46,399
+Cloud le encarga la generación a Higgsfield
+
+257
+00:10:46,399 --> 00:10:48,720
+utilizando las condiciones de esa cuenta.
+
+258
+00:10:48,720 --> 00:10:51,039
+Y aquí tenemos nuestra imagen.
+
+259
+00:10:51,039 --> 00:10:53,679
+Así, cada vez que necesito imágenes o vídeos,
+
+260
+00:10:53,679 --> 00:10:56,159
+Cloud me las genera a través de ese conector.
+
+261
+00:10:56,159 --> 00:10:58,679
+Ahora vamos a organizar la información del estudio
+
+262
+00:10:58,679 --> 00:11:00,519
+que necesitaremos una y otra vez.
+
+263
+00:11:04,439 --> 00:11:07,159
+Hasta ahora hemos utilizado conversaciones sueltas.
+
+264
+00:11:07,159 --> 00:11:08,839
+Para un trabajo al que vas a volver,
+
+265
+00:11:08,839 --> 00:11:10,319
+conviene crear un proyecto,
+
+266
+00:11:10,319 --> 00:11:12,240
+un espacio con sus propios chats,
+
+267
+00:11:12,240 --> 00:11:14,599
+archivos, instrucciones y memoria.
+
+268
+00:11:14,599 --> 00:11:16,079
+Puedes separar tu negocio,
+
+269
+00:11:16,079 --> 00:11:18,279
+tus estudios y tus asuntos personales.
+
+270
+00:11:18,279 --> 00:11:20,879
+Por ejemplo, tendría sentido tener mis guiones de YouTube
+
+271
+00:11:20,919 --> 00:11:23,639
+en un proyecto y la gestión de colaboraciones en otro.
+
+272
+00:11:23,639 --> 00:11:26,120
+Cada proyecto tiene su propio espacio de memoria.
+
+273
+00:11:26,120 --> 00:11:29,320
+Lo que trabajas en uno se mantiene separado de los demás
+
+274
+00:11:29,320 --> 00:11:30,720
+y de los chats normales.
+
+275
+00:11:30,720 --> 00:11:33,720
+Así evitas mezclar contextos que no tienen relación.
+
+276
+00:11:33,720 --> 00:11:34,960
+Para una pregunta puntual,
+
+277
+00:11:34,960 --> 00:11:37,879
+puedes seguir utilizando un chat fuera de los proyectos.
+
+278
+00:11:37,879 --> 00:11:39,480
+Vamos al apartado de proyectos,
+
+279
+00:11:39,480 --> 00:11:42,519
+creamos uno nuevo y lo vamos a llamar Lumbre Studio.
+
+280
+00:11:42,519 --> 00:11:44,360
+Dentro preparamos las instrucciones
+
+281
+00:11:44,360 --> 00:11:45,879
+y los archivos de referencia.
+
+282
+00:11:45,879 --> 00:11:48,960
+Las instrucciones indican cómo debe trabajar Cloud.
+
+283
+00:11:48,960 --> 00:11:51,360
+Aquí le decimos que nos ayude con propuestas
+
+284
+00:11:51,360 --> 00:11:53,240
+y comunicaciones para clientes,
+
+285
+00:11:53,240 --> 00:11:56,440
+que escriba en español, de España y con un tono cercano.
+
+286
+00:11:56,440 --> 00:11:58,240
+También que consulte nuestros documentos
+
+287
+00:11:58,240 --> 00:12:00,400
+antes de hablar de servicios o condiciones
+
+288
+00:12:00,400 --> 00:12:03,480
+y que marque como pendiente lo que no esté confirmado.
+
+289
+00:12:03,480 --> 00:12:05,720
+Esto se aplica dentro de este proyecto.
+
+290
+00:12:05,720 --> 00:12:07,720
+Las instrucciones generales de la cuenta
+
+291
+00:12:07,720 --> 00:12:11,080
+sirven para preferencias que quieras mantener en todas partes.
+
+292
+00:12:11,080 --> 00:12:13,840
+Si una indicación solo tiene sentido para tu negocio,
+
+293
+00:12:13,840 --> 00:12:15,200
+colócala aquí.
+
+294
+00:12:15,200 --> 00:12:17,519
+Después subimos los archivos del proyecto,
+
+295
+00:12:17,519 --> 00:12:19,720
+la presentación del estudio, la guía de tono
+
+296
+00:12:19,720 --> 00:12:22,480
+y el documento de servicios y proceso de trabajo.
+
+297
+00:12:22,480 --> 00:12:24,840
+Así estarán disponibles para las conversaciones
+
+298
+00:12:24,840 --> 00:12:26,840
+que abramos dentro de este proyecto.
+
+299
+00:12:26,840 --> 00:12:29,559
+También podrías añadir ejemplos de propuestas,
+
+300
+00:12:29,559 --> 00:12:31,720
+informes o documentación técnica.
+
+301
+00:12:31,720 --> 00:12:33,960
+Ahora abrimos un chat dentro del proyecto,
+
+302
+00:12:33,960 --> 00:12:36,840
+adjuntamos la solicitud del cliente de cerámica
+
+303
+00:12:36,840 --> 00:12:38,879
+y le pedimos una propuesta breve
+
+304
+00:12:38,879 --> 00:12:40,439
+y un correo para acompañarla.
+
+305
+00:12:40,439 --> 00:12:42,079
+Podemos hacer una petición corta
+
+306
+00:12:42,079 --> 00:12:44,840
+porque las instrucciones y los documentos del estudio
+
+307
+00:12:44,840 --> 00:12:46,079
+ya están disponibles.
+
+308
+00:12:46,120 --> 00:12:49,120
+Para otro cliente abrimos otro chat en este mismo proyecto
+
+309
+00:12:49,120 --> 00:12:50,759
+y adjuntamos su solicitud.
+
+310
+00:12:50,759 --> 00:12:53,160
+No hace falta volver a subir los documentos generales
+
+311
+00:12:53,160 --> 00:12:55,120
+ni explicar otra vez cómo trabajamos.
+
+312
+00:12:55,120 --> 00:12:57,000
+Además, con la memoria activada,
+
+313
+00:12:57,000 --> 00:13:00,240
+Cloud puede conservar contexto entre conversaciones del proyecto
+
+314
+00:13:00,240 --> 00:13:02,840
+para datos que deban mantenerse con precisión,
+
+315
+00:13:02,840 --> 00:13:05,000
+utiliza los archivos o las instrucciones.
+
+316
+00:13:05,000 --> 00:13:06,680
+Ya tenemos el contexto preparado,
+
+317
+00:13:06,680 --> 00:13:09,360
+pero quizá seguimos repitiendo el mismo procedimiento
+
+318
+00:13:09,360 --> 00:13:10,200
+con cada cliente.
+
+319
+00:13:10,200 --> 00:13:12,520
+Eso lo podemos convertir en una habilidad.
+
+320
+00:13:16,320 --> 00:13:18,400
+Imagina que cada vez que llega una solicitud,
+
+321
+00:13:18,400 --> 00:13:20,320
+hacemos lo mismo, revisaré el encargo,
+
+322
+00:13:20,320 --> 00:13:22,720
+detectar lo que falta, preparar la propuesta
+
+323
+00:13:22,720 --> 00:13:24,879
+y luego redactar el correo de respuesta.
+
+324
+00:13:24,879 --> 00:13:26,920
+Bien, pues podemos guardar ese procedimiento
+
+325
+00:13:26,920 --> 00:13:28,560
+como una habilidad o skill.
+
+326
+00:13:28,560 --> 00:13:31,080
+El proyecto reúne el contexto del estudio.
+
+327
+00:13:31,080 --> 00:13:32,960
+La habilidad recoge los pasos
+
+328
+00:13:32,960 --> 00:13:35,840
+para realizar una tarea de una forma determinada.
+
+329
+00:13:35,840 --> 00:13:38,520
+Lo más práctico es crearla a partir de un trabajo
+
+330
+00:13:38,520 --> 00:13:40,680
+que ya hayas afinado en una conversación.
+
+331
+00:13:40,680 --> 00:13:43,040
+En nuestro ejemplo, primero pedimos la propuesta
+
+332
+00:13:43,040 --> 00:13:45,720
+para la marca de cerámica y después la ajustamos.
+
+333
+00:13:45,759 --> 00:13:47,519
+Le pedimos que sea más breve,
+
+334
+00:13:47,519 --> 00:13:49,560
+separando lo confirmado de lo pendiente
+
+335
+00:13:49,560 --> 00:13:51,800
+y terminando con un siguiente paso claro.
+
+336
+00:13:51,800 --> 00:13:53,240
+Cuando el resultado nos sirva,
+
+337
+00:13:53,240 --> 00:13:54,720
+es entonces cuando le decimos,
+
+338
+00:13:54,720 --> 00:13:57,080
+convierte este proceso en una habilidad
+
+339
+00:13:57,080 --> 00:13:58,639
+llamada propuesta de sesión.
+
+340
+00:13:58,639 --> 00:14:00,840
+Incluye los pasos, el formato final
+
+341
+00:14:00,840 --> 00:14:02,519
+y las correcciones que hemos hecho
+
+342
+00:14:02,519 --> 00:14:04,240
+para repetirlo con otros clientes.
+
+343
+00:14:04,240 --> 00:14:05,720
+Si tuvieras algún problema con esto,
+
+344
+00:14:05,720 --> 00:14:07,480
+comprueba antes en ajustes,
+
+345
+00:14:07,480 --> 00:14:09,440
+dentro de capacidades que esté habilitada
+
+346
+00:14:09,440 --> 00:14:11,960
+la ejecución de código y la creación de archivos.
+
+347
+00:14:11,960 --> 00:14:14,360
+Aquí nos muestra las instrucciones de la habilidad.
+
+348
+00:14:14,360 --> 00:14:17,159
+Podemos revisar qué información debe consultar,
+
+349
+00:14:17,159 --> 00:14:18,680
+cómo debe preparar la propuesta
+
+350
+00:14:18,680 --> 00:14:20,800
+y qué condiciones no puede inventar.
+
+351
+00:14:20,800 --> 00:14:22,399
+Pulsamos en guardar habilidad
+
+352
+00:14:22,399 --> 00:14:24,440
+y después comprobamos en personalizar,
+
+353
+00:14:24,440 --> 00:14:27,519
+dentro de habilidades que aparezca y que esté activada.
+
+354
+00:14:27,519 --> 00:14:29,759
+Ahora abrimos otro chat dentro del proyecto,
+
+355
+00:14:29,759 --> 00:14:32,720
+adjuntamos la solicitud de la marca de las velas
+
+356
+00:14:32,720 --> 00:14:35,879
+y le pedimos que utilice la habilidad que acabamos de crear.
+
+357
+00:14:35,879 --> 00:14:38,759
+Debería aplicar el procedimiento guardado a los nuevos datos.
+
+358
+00:14:38,759 --> 00:14:40,440
+Revisamos que mantenga el formato
+
+359
+00:14:40,440 --> 00:14:42,680
+y que no arrastre información del cliente anterior.
+
+360
+00:14:42,679 --> 00:14:45,919
+En este caso, la propuesta debe corresponder a velas bruma
+
+361
+00:14:45,919 --> 00:14:48,239
+y recoger sus 16 imágenes.
+
+362
+00:14:48,239 --> 00:14:51,759
+Además, una habilidad también puede utilizar conectores.
+
+363
+00:14:51,759 --> 00:14:53,279
+Vamos a ampliar la nuestra
+
+364
+00:14:53,279 --> 00:14:56,199
+para que, después de preparar la propuesta y el correo,
+
+365
+00:14:56,199 --> 00:14:59,279
+guarde ambos en un documento dentro de Google Drive.
+
+366
+00:14:59,279 --> 00:15:02,919
+Le pedimos que utilice una carpeta llamada Propuestas Lumbre,
+
+367
+00:15:02,919 --> 00:15:05,599
+que identifique cada documento con el nombre del cliente
+
+368
+00:15:05,599 --> 00:15:07,919
+y que nos devuelva el enlace para abrirlo.
+
+369
+00:15:07,919 --> 00:15:09,559
+Guardamos la habilidad actualizada
+
+370
+00:15:09,559 --> 00:15:11,879
+y la probamos en un chat nuevo del proyecto.
+
+371
+00:15:11,879 --> 00:15:13,679
+Ahora le pedimos que utilice la habilidad
+
+372
+00:15:13,679 --> 00:15:15,240
+y que guarde el documento en Drive.
+
+373
+00:15:15,240 --> 00:15:16,559
+Desde el enlace que nos devuelve,
+
+374
+00:15:16,559 --> 00:15:20,159
+podemos abrirlo y comprobar que contiene las propuestas y el correo.
+
+375
+00:15:20,159 --> 00:15:23,439
+Así, tenemos el trabajo preparado y archivado en su carpeta.
+
+376
+00:15:23,439 --> 00:15:24,960
+Cloud puede aplicar habilidades
+
+377
+00:15:24,960 --> 00:15:27,399
+cuando reconoce que encajan con tu petición.
+
+378
+00:15:27,399 --> 00:15:30,279
+También puedes pedir una expresamente por su nombre,
+
+379
+00:15:30,279 --> 00:15:31,240
+como acabamos de hacer.
+
+380
+00:15:31,240 --> 00:15:33,600
+Así, reduces las instrucciones que repites
+
+381
+00:15:33,600 --> 00:15:35,919
+y reutilizas el trabajo que ya has afinado.
+
+382
+00:15:35,919 --> 00:15:38,519
+Ahora, vamos a encargarle tareas más amplias.
+
+383
+00:15:42,439 --> 00:15:45,320
+Y es que hasta ahora hemos trabajado conversando con Cloud.
+
+384
+00:15:45,320 --> 00:15:48,200
+Preguntamos, revisamos la respuesta y vamos afinando.
+
+385
+00:15:48,200 --> 00:15:51,279
+Con CloudWork podemos delegarle un encargo completo.
+
+386
+00:15:51,279 --> 00:15:52,679
+Es lo que llamamos una gente,
+
+387
+00:15:52,679 --> 00:15:55,600
+una IA que puede planificar y utilizar herramientas
+
+388
+00:15:55,600 --> 00:15:57,439
+para avanzar hacia un objetivo.
+
+389
+00:15:57,439 --> 00:16:00,399
+Aquí lo importante es explicarle qué quieres conseguir,
+
+390
+00:16:00,399 --> 00:16:02,679
+darle acceso a la información necesaria
+
+391
+00:16:02,679 --> 00:16:05,159
+y definir que debe entregarte al terminar.
+
+392
+00:16:05,159 --> 00:16:08,480
+Por ejemplo, le digo, revisa estas solicitudes de clientes,
+
+393
+00:16:08,480 --> 00:16:09,840
+organiza la información
+
+394
+00:16:09,840 --> 00:16:11,759
+y prepara una tabla de seguimiento
+
+395
+00:16:11,799 --> 00:16:13,840
+con un borrador de respuesta para cada uno.
+
+396
+00:16:13,840 --> 00:16:16,319
+A partir de ahí Cloud puede elaborar un plan,
+
+397
+00:16:16,319 --> 00:16:19,240
+dividir el trabajo en tareas e ir completándolas.
+
+398
+00:16:19,240 --> 00:16:20,519
+En encargos más amplios,
+
+399
+00:16:20,519 --> 00:16:23,000
+puede repartir partes entre subagentes,
+
+400
+00:16:23,000 --> 00:16:25,879
+otros asistentes de IA que trabajan en paralelo.
+
+401
+00:16:25,879 --> 00:16:29,319
+Puede seguir el progreso, responder si necesita alguna aclaración
+
+402
+00:16:29,319 --> 00:16:31,480
+o intervenir para cambiar el rumbo.
+
+403
+00:16:31,480 --> 00:16:34,120
+Al terminar, revisas los documentos que ha preparado.
+
+404
+00:16:34,120 --> 00:16:36,399
+Aquí tenemos el seguimiento de los cuatro clientes,
+
+405
+00:16:36,399 --> 00:16:39,559
+con lo que pide cada uno y lo que falta por confirmar.
+
+406
+00:16:39,559 --> 00:16:41,720
+Fíjate, en el primer cliente, en Albor,
+
+407
+00:16:41,759 --> 00:16:43,879
+ha recogido la actualización del encargo
+
+408
+00:16:43,879 --> 00:16:47,320
+y ahora aparecen ocho piezas y 16 fotografías.
+
+409
+00:16:47,320 --> 00:16:50,560
+También ha preparado un borrador de respuesta para cada cliente.
+
+410
+00:16:50,560 --> 00:16:52,160
+Aquí incorpora ese cambio
+
+411
+00:16:52,160 --> 00:16:55,680
+y pregunta por los datos pendientes antes de cerrar la propuesta.
+
+412
+00:16:55,680 --> 00:16:57,680
+Le hemos dado un objetivo y los archivos
+
+413
+00:16:57,680 --> 00:17:00,560
+y ha organizado la información y creado los documentos.
+
+414
+00:17:00,560 --> 00:17:03,120
+Ahora nos toca revisarlos antes de utilizarlos.
+
+415
+00:17:03,120 --> 00:17:05,839
+Esto sirve para mucho más que responder a clientes,
+
+416
+00:17:05,839 --> 00:17:08,240
+investigar un tema, consultando varias fuentes,
+
+417
+00:17:08,240 --> 00:17:10,880
+analizar y ordenar archivos, preparar informes,
+
+418
+00:17:10,880 --> 00:17:13,800
+crear paneles de seguimiento o planificar contenidos.
+
+419
+00:17:13,800 --> 00:17:15,280
+Para realizar ese trabajo,
+
+420
+00:17:15,280 --> 00:17:17,720
+CodeWork puede utilizar un entorno en la nube,
+
+421
+00:17:17,720 --> 00:17:20,960
+donde ejecuta herramientas y crea archivos durante la sesión.
+
+422
+00:17:20,960 --> 00:17:23,560
+Así puede avanzar en tareas con varios pasos
+
+423
+00:17:23,560 --> 00:17:25,840
+y continuar aunque cierres el ordenador.
+
+424
+00:17:25,840 --> 00:17:27,200
+Desde la aplicación de escritorio,
+
+425
+00:17:27,200 --> 00:17:30,040
+también puedes darle acceso a una carpeta de tu equipo
+
+426
+00:17:30,040 --> 00:17:32,400
+para que lea, cree o modifique archivos.
+
+427
+00:17:32,400 --> 00:17:33,960
+Ese acceso a tu ordenador
+
+428
+00:17:33,960 --> 00:17:36,880
+necesita que la aplicación permanezca abierta y conectada,
+
+429
+00:17:36,880 --> 00:17:39,040
+aunque la sesión esté funcionando en la nube.
+
+430
+00:17:39,079 --> 00:17:41,319
+Si quieres dejarlo trabajando y marcharte,
+
+431
+00:17:41,319 --> 00:17:44,039
+utiliza documentos disponibles en su entorno
+
+432
+00:17:44,039 --> 00:17:46,240
+o mediante conectores como Google Drive.
+
+433
+00:17:46,240 --> 00:17:49,319
+Y otra función muy útil son las tareas programadas.
+
+434
+00:17:49,319 --> 00:17:52,920
+Puedes definir un trabajo y hacer que se repita a una hora determinada,
+
+435
+00:17:52,920 --> 00:17:54,759
+sin escribir la petición cada vez.
+
+436
+00:17:54,759 --> 00:17:57,519
+Además, puede utilizar las habilidades que ya has preparado.
+
+437
+00:17:57,519 --> 00:17:59,319
+Por ejemplo, cada lunes por la mañana
+
+438
+00:17:59,319 --> 00:18:02,879
+podría revisar nuevas solicitudes en una carpeta de Google Drive,
+
+439
+00:18:02,879 --> 00:18:05,319
+aplicar nuestra habilidad que acabamos de crear
+
+440
+00:18:05,319 --> 00:18:07,960
+y guardar los documentos para que los revisemos.
+
+441
+00:18:07,960 --> 00:18:09,759
+Aquí indicamos qué debe hacer,
+
+442
+00:18:09,759 --> 00:18:11,640
+de dónde debe obtener la información
+
+443
+00:18:11,640 --> 00:18:13,360
+y dónde guardar los resultados.
+
+444
+00:18:13,360 --> 00:18:15,600
+Después, elegimos la frecuencia y la hora.
+
+445
+00:18:15,600 --> 00:18:17,600
+Guardamos la tarea y queda programada
+
+446
+00:18:17,600 --> 00:18:19,759
+para ejecutarse con esas instrucciones.
+
+447
+00:18:19,759 --> 00:18:22,079
+Estas ejecuciones se realizan en la nube,
+
+448
+00:18:22,079 --> 00:18:25,200
+así que no deben depender de una carpeta local de tu ordenador.
+
+449
+00:18:29,200 --> 00:18:31,240
+Con CodeWork hemos delegado un trabajo.
+
+450
+00:18:31,240 --> 00:18:34,680
+Con CloudCode podemos construir una herramienta para hacerlo.
+
+451
+00:18:34,680 --> 00:18:36,880
+Puedes crear aplicaciones, páginas web,
+
+452
+00:18:36,920 --> 00:18:39,440
+automatizaciones, extensiones del navegador
+
+453
+00:18:39,440 --> 00:18:42,280
+o pequeñas utilidades describiendo lo que necesitas.
+
+454
+00:18:42,280 --> 00:18:44,680
+Cloud escribe el código y puede ejecutarlo,
+
+455
+00:18:44,680 --> 00:18:46,960
+comprobar el resultado y corregir errores.
+
+456
+00:18:46,960 --> 00:18:49,320
+Le explicas en español qué quieres construir,
+
+457
+00:18:49,320 --> 00:18:52,280
+cómo debería funcionar y qué necesitas ver en pantalla.
+
+458
+00:18:52,280 --> 00:18:54,480
+Para una primera prueba, elige algo sencillo
+
+459
+00:18:54,480 --> 00:18:57,440
+que te resulte útil y cuyo funcionamiento puedas comprobar.
+
+460
+00:18:57,440 --> 00:18:59,840
+Por ejemplo, una calculadora de presupuestos,
+
+461
+00:18:59,840 --> 00:19:03,240
+un organizador de archivos o un panel para gestionar encargos.
+
+462
+00:19:03,240 --> 00:19:06,120
+Vamos a crear ese panel para nuestro estudio de fotografía.
+
+463
+00:19:06,159 --> 00:19:08,679
+Utilizaremos la aplicación de escritorio en Windows.
+
+464
+00:19:08,679 --> 00:19:11,000
+Entramos en Code, elegimos local
+
+465
+00:19:11,000 --> 00:19:13,399
+y seleccionamos una carpeta nueva para el proyecto.
+
+466
+00:19:13,399 --> 00:19:15,519
+Ahí guardará los archivos de la aplicación.
+
+467
+00:19:15,519 --> 00:19:18,279
+Antes de enviar la petición, activamos el modo Plan.
+
+468
+00:19:18,279 --> 00:19:20,279
+Así puede estudiar lo que necesitamos
+
+469
+00:19:20,279 --> 00:19:21,959
+y proponer cómo construirlo
+
+470
+00:19:21,959 --> 00:19:23,919
+antes de empezar a modificar el código.
+
+471
+00:19:23,919 --> 00:19:26,799
+Ahora le pedimos un panel donde añadir solicitudes,
+
+472
+00:19:26,799 --> 00:19:28,719
+ver qué necesita cada cliente
+
+473
+00:19:28,719 --> 00:19:30,759
+y cambiar su estado entre nueva,
+
+474
+00:19:30,759 --> 00:19:32,679
+preparando propuesta y enviada.
+
+475
+00:19:32,679 --> 00:19:34,439
+También queremos buscar por nombre
+
+476
+00:19:34,519 --> 00:19:36,880
+y conservar los datos al cerrar y volver a abrir.
+
+477
+00:19:36,880 --> 00:19:39,440
+Revisamos el plan y aclaramos lo que haga falta.
+
+478
+00:19:39,440 --> 00:19:41,279
+Cuando encaje, salimos del modo Plan
+
+479
+00:19:41,279 --> 00:19:42,759
+y le pedimos que lo construya.
+
+480
+00:19:42,759 --> 00:19:45,240
+Cloud crea los archivos y escribe el código.
+
+481
+00:19:45,240 --> 00:19:48,559
+Pues abrimos la aplicación y probamos lo que le hemos pedido.
+
+482
+00:19:48,559 --> 00:19:50,840
+Añadir una solicitud, cambiar su estado,
+
+483
+00:19:50,840 --> 00:19:53,240
+buscar un cliente y recargar para comprobar
+
+484
+00:19:53,240 --> 00:19:54,360
+que conserva los datos.
+
+485
+00:19:54,360 --> 00:19:56,200
+Si algo falla o queremos cambiarlo,
+
+486
+00:19:56,200 --> 00:19:58,160
+se lo explicamos con palabras normales.
+
+487
+00:19:58,160 --> 00:20:00,600
+Por ejemplo, le puedo decir que haga más visible
+
+488
+00:20:00,600 --> 00:20:02,120
+el botón de nueva solicitud
+
+489
+00:20:02,199 --> 00:20:05,079
+y que añada un filtro para ver solo las pendientes.
+
+490
+00:20:05,079 --> 00:20:06,239
+Para esta primera versión,
+
+491
+00:20:06,239 --> 00:20:08,399
+le pedimos que guarde los datos en el navegador.
+
+492
+00:20:08,399 --> 00:20:10,919
+Si después queremos compartirla con un equipo
+
+493
+00:20:10,919 --> 00:20:13,799
+o sincronizar dispositivos, podemos ampliar el proyecto.
+
+494
+00:20:13,799 --> 00:20:16,279
+También existe la opción de trabajar en la nube
+
+495
+00:20:16,279 --> 00:20:19,039
+con un repositorio, donde se guarda el código del proyecto.
+
+496
+00:20:19,039 --> 00:20:20,039
+Para esta primera prueba,
+
+497
+00:20:20,039 --> 00:20:22,159
+utilizamos una carpeta de nuestro ordenador.
+
+498
+00:20:22,159 --> 00:20:23,599
+Piensa en una herramienta pequeña
+
+499
+00:20:23,599 --> 00:20:25,599
+que te ahorraría trabajo y empieza por ahí.
+
+500
+00:20:25,599 --> 00:20:27,000
+Describe lo que necesitas,
+
+501
+00:20:27,000 --> 00:20:28,799
+revisa el plan y prueba el resultado.
+
+502
+00:20:29,240 --> 00:20:31,799
+Para empezar, elige una tarea que repitas cada semana
+
+503
+00:20:31,799 --> 00:20:33,200
+y prueba hacerla con el contexto
+
+504
+00:20:33,200 --> 00:20:34,960
+y los archivos que utilizas de beta.
+
+505
+00:20:34,960 --> 00:20:36,599
+Cuando consigas un resultado útil,
+
+506
+00:20:36,599 --> 00:20:38,680
+guarda ese proceso y ve ampliándolo.
+
+507
+00:20:38,680 --> 00:20:40,839
+Te dejo en la descripción los prongs y los archivos
+
+508
+00:20:40,839 --> 00:20:42,919
+para que puedas repetir los ejemplos.
+
+509
+00:20:42,919 --> 00:20:44,919
+Y si quieres ver cada paso con más detalle,
+
+510
+00:20:44,919 --> 00:20:47,720
+te dejo también en la descripción mi tutorial completo de Cloud.
+

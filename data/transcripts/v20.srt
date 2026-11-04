@@ -1,0 +1,552 @@
+1
+00:00:00,000 --> 00:00:04,280
+¿Te has preguntado alguna vez por qué chat gpt parece que puede escribirte una tesis doctoral
+
+2
+00:00:04,280 --> 00:00:06,719
+pero luego a veces falla sumando dos y dos?
+
+3
+00:00:06,719 --> 00:00:11,200
+Es como ese amigo brillante que todos tenemos que es capaz de resolver ecuaciones diferenciales
+
+4
+00:00:11,200 --> 00:00:13,280
+pero luego se pierde volviendo a casa.
+
+5
+00:00:13,280 --> 00:00:17,039
+La inteligencia artificial está en todas partes pero hay algo fascinante y perturbador
+
+6
+00:00:17,039 --> 00:00:19,160
+en sus errores que hoy vamos a descubrir.
+
+7
+00:00:25,719 --> 00:00:28,760
+Estamos viviendo un momento único en el mundo de la tecnología.
+
+8
+00:00:28,760 --> 00:00:33,560
+Las inteligencias artificial generativas están por todas partes desde escribiendo código,
+
+9
+00:00:33,560 --> 00:00:37,679
+generando imágenes, respondiendo preguntas y son increíbles más allá de que les quede
+
+10
+00:00:37,679 --> 00:00:39,000
+mucho por mejorar.
+
+11
+00:00:39,000 --> 00:00:41,719
+Para muchos nos está suponiendo un antes y un después.
+
+12
+00:00:41,719 --> 00:00:43,120
+Pero hay algo que llama la atención.
+
+13
+00:00:43,120 --> 00:00:46,480
+Cuanto más avanzadas se vuelven, más extraños son sus errores.
+
+14
+00:00:46,480 --> 00:00:50,439
+No es que fallen más, es que fallan de forma que nos dejan con la boca abierta.
+
+15
+00:00:50,439 --> 00:00:54,040
+Según un estudio reciente de la Universidad Politécnica de Valencia y Cambridge, los modelos
+
+16
+00:00:54,040 --> 00:00:58,680
+más avanzados como gpt4, clodo y eminy están mostrando un patrón que es un poco
+
+17
+00:00:58,759 --> 00:00:59,920
+desconcertante.
+
+18
+00:00:59,920 --> 00:01:03,640
+Resolven problemas complejos con facilidad pero otro pieza en contarias simples.
+
+19
+00:01:03,640 --> 00:01:08,560
+Es como el Aston Martin de 2024 que se defiende muy bien en velocidad punta pero falla estrepitosamente
+
+20
+00:01:08,560 --> 00:01:09,560
+en curva lenta.
+
+21
+00:01:09,560 --> 00:01:13,439
+El otro día preparando este vídeo le pedí a HGPT que me ayudara con algunos datos históricos
+
+22
+00:01:13,439 --> 00:01:15,480
+sobre la inteligencia artificial.
+
+23
+00:01:15,480 --> 00:01:20,439
+Todo iba genial hasta que de repente se inventan conferencias que nunca existieron y a citar
+
+24
+00:01:20,439 --> 00:01:23,439
+investigadores que no conseguía localizar por redes.
+
+25
+00:01:23,439 --> 00:01:27,240
+Lo más gracioso es que lo hacía con una seguridad aplastante, me recuerdo un poco como a Raúl
+
+26
+00:01:27,359 --> 00:01:31,479
+Cima sinventándose historias en un bar pero las cuenta también que casi te las crees.
+
+27
+00:01:31,479 --> 00:01:34,119
+Y no es algo que solo me haya pasado a mí.
+
+28
+00:01:34,119 --> 00:01:37,959
+En los últimos meses hemos visto decenas de comentarios con situaciones similares,
+
+29
+00:01:37,959 --> 00:01:43,439
+desde respuestas matemáticas incorrectas presentadas además con una confianza del 100%, hasta textos
+
+30
+00:01:43,439 --> 00:01:47,199
+que parecían perfectos pero que mezclaban eventos de diferentes décadas como si el
+
+31
+00:01:47,199 --> 00:01:48,439
+tiempo fuera un batido.
+
+32
+00:01:48,439 --> 00:01:53,560
+De hecho, en la propia página de HGPT justo debajo del chat pone en letra no tan pequeña,
+
+33
+00:01:53,640 --> 00:01:57,680
+chat GPT puede cometer errores considera verificar la información importante.
+
+34
+00:01:57,680 --> 00:02:01,120
+Vamos a entender la situación porque los errores de la inteligencia artificial no son
+
+35
+00:02:01,120 --> 00:02:04,000
+como los errores humanos y esto es fundamental entenderlo.
+
+36
+00:02:04,000 --> 00:02:07,040
+Imagina que la inteligencia artificial es como un músico de jazz.
+
+37
+00:02:07,040 --> 00:02:12,120
+No está leyendo una partitura, está improvisando, basándose en todos los patrones que ha aprendido.
+
+38
+00:02:12,120 --> 00:02:13,920
+Improvisación y patrones.
+
+39
+00:02:13,920 --> 00:02:17,360
+Cuando una inteligencia artificial genera una respuesta no está buscando en una base de
+
+40
+00:02:17,360 --> 00:02:21,039
+datos como lo haría Google, en realidad lo que está es jugando a una especie de juego
+
+41
+00:02:21,039 --> 00:02:25,679
+de probabilidades decidiendo palabra por palabra que es lo que tiene sentido decir a
+
+42
+00:02:25,679 --> 00:02:26,679
+continuación.
+
+43
+00:02:26,679 --> 00:02:30,239
+Es como jugara completa la frase pero millones de veces por segundo.
+
+44
+00:02:30,239 --> 00:02:33,799
+Cuando la inteligencia artificial se pone a hacer esta especie de freestyle aparece en
+
+45
+00:02:33,799 --> 00:02:35,560
+lo que llamamos alucinaciones.
+
+46
+00:02:35,560 --> 00:02:38,879
+Llamamos así a este término porque da la sensación de que la inteligencia artificial
+
+47
+00:02:38,879 --> 00:02:42,319
+nos cuenta cosas en función de una visión alterada del mundo.
+
+48
+00:02:42,319 --> 00:02:45,359
+Pero este término, aunque es popular, no es del todo preciso.
+
+49
+00:02:45,359 --> 00:02:49,719
+La inteligencia artificial no está alucinando porque para empezar no ve ni percibe nada.
+
+50
+00:02:49,800 --> 00:02:52,479
+Lo que ocurre es más parecido a cuando intentas recordar un sueño.
+
+51
+00:02:52,479 --> 00:02:56,919
+Tu cerebro rellena los huecos con información que parece coherente pero que puede que no
+
+52
+00:02:56,919 --> 00:02:57,919
+sea real.
+
+53
+00:02:57,919 --> 00:03:01,639
+Pues eso mismo es lo que hace en ocasiones la inteligencia artificial al improvisar una
+
+54
+00:03:01,639 --> 00:03:05,039
+respuesta ante un hueco donde no hay un patrón claro de respuesta.
+
+55
+00:03:05,039 --> 00:03:09,120
+Lo rellena con algo que a nivel de entrenamiento que ha recibido parece que tiene sentido.
+
+56
+00:03:09,120 --> 00:03:10,439
+Sea real o no.
+
+57
+00:03:10,439 --> 00:03:14,639
+Por eso a veces a cierta y nos da ideas interesantes pero otras mezcla cosas que no tienen ningún
+
+58
+00:03:14,639 --> 00:03:15,639
+sentido.
+
+59
+00:03:15,639 --> 00:03:16,639
+Los datos son muy claros.
+
+60
+00:03:16,759 --> 00:03:20,519
+Con los estudios recientes los modelos avanzados pueden resolver problemas de lógica compleja
+
+61
+00:03:20,519 --> 00:03:23,159
+con una precisión de hasta el 95%.
+
+62
+00:03:23,159 --> 00:03:27,239
+Pero luego fallan en operaciones matemáticas básicas hasta en un 30% de los casos.
+
+63
+00:03:27,239 --> 00:03:28,239
+Esto por qué ocurre?
+
+64
+00:03:28,239 --> 00:03:32,359
+Pues simplemente por cómo es su arquitectura, estructura o diseño o como lo queramos llamar.
+
+65
+00:03:32,359 --> 00:03:34,479
+Piensen ello como en una red de carreteras.
+
+66
+00:03:34,479 --> 00:03:39,479
+Las conexiones para resolver problemas complejos y conocidos son como autopistas bien bavimentadas,
+
+67
+00:03:39,479 --> 00:03:41,639
+construidas con mucho cuidado durante el entrenamiento.
+
+68
+00:03:41,639 --> 00:03:45,639
+Pero las tareas más simples son como caminos secundarios que el modelo tiene que sortear
+
+69
+00:03:45,639 --> 00:03:49,559
+sobre la marcha y hay ahí donde pueden surgir esos pequeños desvíos inesperados.
+
+70
+00:03:49,559 --> 00:03:52,079
+Las limitaciones estructurales son otro factor crucial.
+
+71
+00:03:52,079 --> 00:03:55,719
+La inteligencia artificial que estamos utilizando a día de hoy está atrapada en su momento
+
+72
+00:03:55,719 --> 00:03:56,719
+de entrenamiento.
+
+73
+00:03:56,719 --> 00:03:58,679
+Es como una foto fija de conocimiento.
+
+74
+00:03:58,679 --> 00:04:02,839
+No puede realmente aprender de sus conversaciones contigo y no tiene un modelo real del mundo
+
+75
+00:04:02,839 --> 00:04:03,839
+físico.
+
+76
+00:04:03,839 --> 00:04:07,159
+Por eso puede decirte con total convicción que los gatos tienen seis patas.
+
+77
+00:04:07,159 --> 00:04:10,759
+Si ese patrón de palabras le parece estadísticamente probable con el contexto.
+
+78
+00:04:10,759 --> 00:04:13,639
+Por ejemplo porque vea que tú le estás dando datos incorrectos.
+
+79
+00:04:13,639 --> 00:04:17,959
+Y la parte más fascinante de todo esto es la paradoja de la complejidad y es que cuanto
+
+80
+00:04:17,959 --> 00:04:21,759
+más potentes hacemos estos modelos, más sofisticados son sus errores.
+
+81
+00:04:21,759 --> 00:04:27,240
+Es como si darles más capacidad de improvisación, también le di ese formas más creativas de
+
+82
+00:04:27,240 --> 00:04:28,240
+equivocarse.
+
+83
+00:04:28,240 --> 00:04:29,439
+Pero vamos a ir un pasito más allá.
+
+84
+00:04:29,439 --> 00:04:31,360
+¿Qué significa todo esto para nosotros?
+
+85
+00:04:31,360 --> 00:04:35,479
+Porque una cosa es entender por qué la inteligencia artificial se equivoca y otra muy distinta es
+
+86
+00:04:35,479 --> 00:04:37,360
+saber qué hacer con ello.
+
+87
+00:04:37,360 --> 00:04:41,839
+OpenAI acaba de lanzar su serie O1 que en principio aborda alguno de estos problemas.
+
+88
+00:04:41,839 --> 00:04:42,839
+La idea es fascinante.
+
+89
+00:04:42,839 --> 00:04:47,239
+Han diseñado un sistema que piensa más tiempo y se organiza antes de responder.
+
+90
+00:04:47,239 --> 00:04:50,679
+Es como si lo hubieran dado a la inteligencia artificial en la capacidad de decir espera,
+
+91
+00:04:50,679 --> 00:04:54,279
+déjame reflexionar sobre esto y pensar varias opciones y ahora te respondo.
+
+92
+00:04:54,279 --> 00:04:58,799
+Los primeros resultados muestran una reducción que es muy significativa en los errores básicos,
+
+93
+00:04:58,799 --> 00:05:02,319
+pero y aquí viene nuestra paradoja, siguen apareciendo nuevos tipos de fallo que nadie
+
+94
+00:05:02,319 --> 00:05:03,319
+había previsto.
+
+95
+00:05:03,319 --> 00:05:07,399
+Microsoft también está en la carrera desarrollando sistemas de detección de errores en tiempo
+
+96
+00:05:07,399 --> 00:05:08,399
+real.
+
+97
+00:05:08,399 --> 00:05:11,159
+Es como tener un corrector automático pero para inteligencia artificial.
+
+98
+00:05:11,160 --> 00:05:13,760
+Es como que funciona a un nivel mucho más profundo.
+
+99
+00:05:13,760 --> 00:05:17,400
+Sin embargo, esto nos lleva a una pregunta incómoda y es que estamos creando sistemas
+
+100
+00:05:17,400 --> 00:05:21,280
+cada vez más complejos solo para corregir los errores de otros sistemas cada vez más
+
+101
+00:05:21,280 --> 00:05:22,280
+complejos.
+
+102
+00:05:22,280 --> 00:05:26,400
+El gui de la cuestión, quizás estamos enfocando todo esto desde un ángulo equivocado.
+
+103
+00:05:26,400 --> 00:05:30,640
+No se trata de eliminar completamente los errores, algo que probablemente sea imposible,
+
+104
+00:05:30,640 --> 00:05:34,200
+sino de aprender a trabajar con estas herramientas entendiendo sus limitaciones.
+
+105
+00:05:34,200 --> 00:05:38,720
+Lo he dicho muchas veces, nunca esperarías una respuesta perfecta y exacta de un compañero
+
+106
+00:05:38,720 --> 00:05:42,600
+de trabajo de tu jefe, pues tampoco deberías esperarla de una inteligencia artificial.
+
+107
+00:05:42,600 --> 00:05:44,200
+Y a partir de aquí, ¿a dónde vamos?
+
+108
+00:05:44,200 --> 00:05:47,760
+Bueno, los expertos apuntan que en un futuro vamos a tener inteligencias artificiales que
+
+109
+00:05:47,760 --> 00:05:50,440
+serán más transparentes sobre sus propias limitaciones.
+
+110
+00:05:50,440 --> 00:05:54,040
+Imagina una inteligencia artificial que te diga, mira, sobre este tema solo estoy seguro
+
+111
+00:05:54,040 --> 00:05:57,280
+al 60% y quizás deberías verificar esto por tu cuenta.
+
+112
+00:05:57,280 --> 00:06:00,440
+Las últimas versiones de algunos modelos están empezando a incorporar algo que se
+
+113
+00:06:00,440 --> 00:06:02,120
+llama calibración de confianza.
+
+114
+00:06:02,120 --> 00:06:06,040
+Es como darle a una inteligencia artificial un medidor de su propia incertidumbre.
+
+115
+00:06:06,120 --> 00:06:07,520
+Y los resultados son prometedores.
+
+116
+00:06:07,520 --> 00:06:12,560
+En algunas pruebas estos sistemas son capaces de reducir sus errores hasta en un 40% simplemente
+
+117
+00:06:12,560 --> 00:06:14,720
+porque saben que no saben algo.
+
+118
+00:06:14,720 --> 00:06:18,720
+Pero el verdadero cambio vendrá cuando empecemos a ver la inteligencia artificial no como un
+
+119
+00:06:18,720 --> 00:06:23,080
+oráculo infalible, sino como una herramienta de amplificación de nuestras propias capacidades.
+
+120
+00:06:23,080 --> 00:06:26,520
+Es como ese compañero de trabajo que tiene grandes ideas pero que necesita que alguien
+
+121
+00:06:26,520 --> 00:06:28,080
+siempre le revise los números.
+
+122
+00:06:28,080 --> 00:06:31,560
+Y aquí es donde entraste un juego, porque entender estos errores no es solamente una
+
+123
+00:06:31,560 --> 00:06:32,960
+curiosidad técnica.
+
+124
+00:06:32,959 --> 00:06:35,839
+Es fundamental para navegar el mundo que estamos construyendo.
+
+125
+00:06:35,839 --> 00:06:40,639
+La próxima vez que uses una inteligencia artificial recuerda que no estás hablando
+
+126
+00:06:40,639 --> 00:06:44,919
+con un sabio todo poderoso, sino con una herramienta increíblemente potente que como
+
+127
+00:06:44,919 --> 00:06:47,120
+nosotros también está aprendiendo a su manera.
+
+128
+00:06:47,120 --> 00:06:48,120
+¿Te hagas una pregunta?
+
+129
+00:06:48,120 --> 00:06:52,359
+¿Te has encontrado alguna vez con algún error curioso con la inteligencia artificial?
+
+130
+00:06:52,359 --> 00:06:55,519
+Cuéntamelo en los comentarios si este tipo de contenido te parece interesante.
+
+131
+00:06:55,519 --> 00:07:00,039
+Ya sabes, like, suscríbete y activa la campanita para no perderte nuestros próximos vídeos
+
+132
+00:07:00,040 --> 00:07:03,879
+donde seguiremos explorando cómo la tecnología está cambiando nuestro mundo.
+
+133
+00:07:03,879 --> 00:07:07,600
+Y si quieres apoyar el canal y tener acceso a contenido exclusivo sobre la inteligencia
+
+134
+00:07:07,600 --> 00:07:11,280
+artificial y tecnología, échale un vistazo a nuestro patrón, el link está justo abajo
+
+135
+00:07:11,280 --> 00:07:12,280
+en la descripción.
+
+136
+00:07:12,280 --> 00:07:14,000
+Nos vemos en el próximo vídeo.
+
+137
+00:07:14,000 --> 00:07:15,000
+Un saludo.
+
+138
+00:07:15,000 --> 00:07:16,000
+Chao.
+

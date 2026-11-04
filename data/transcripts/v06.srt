@@ -1,0 +1,728 @@
+1
+00:00:00,000 --> 00:00:02,000
+¿Esto es real o no es real?
+
+2
+00:00:05,000 --> 00:00:08,000
+¿Qué son las alucinaciones de la Inteligencia Artificial?
+
+3
+00:00:08,000 --> 00:00:15,000
+Una alucinación, podemos decir, lo que es cuando el modelo que está respondiéndote por del otro lado entiende
+
+4
+00:00:15,000 --> 00:00:20,000
+que la unión de textos o la unión de conceptos es real.
+
+5
+00:00:20,000 --> 00:00:24,000
+Y aunque realmente eso no es real, un caso muy conocido pasa al ámbito de salud.
+
+6
+00:00:24,000 --> 00:00:31,000
+El salud se está empezando a aplicar este tipo de inteligencias al concepto de detectar enfermedades antes de que suceda.
+
+7
+00:00:31,000 --> 00:00:36,000
+Pero ¿qué pasa? Cuando mezcla tanta información que pueden ser papers propios o información real,
+
+8
+00:00:36,000 --> 00:00:40,000
+al cruzar toda esa información genera nuevo contenido porque es un modelo generativo
+
+9
+00:00:40,000 --> 00:00:45,000
+y ese nuevo contenido no siempre es real, pero para el modelo es real como que os dejo en.
+
+10
+00:00:45,000 --> 00:00:50,000
+Por eso hay una persona que es el especialista, se supone en el ámbito que está respondiendo
+
+11
+00:00:50,000 --> 00:00:53,000
+que puede entender esto es real o no es real.
+
+12
+00:00:53,000 --> 00:00:56,000
+Estamos cruzando información que es cierta que se puede cruzar
+
+13
+00:00:56,000 --> 00:00:59,000
+o realmente lo que me está diciendo es una alucinación.
+
+14
+00:00:59,000 --> 00:01:05,000
+Es un concepto de creado de cruces de información real, pero que cuando termina generándose no está real.
+
+15
+00:01:05,000 --> 00:01:09,000
+¿Pero hay personas resolviendo esos problemas en tiempo real?
+
+16
+00:01:09,000 --> 00:01:13,000
+En tiempo real, probablemente en el ámbito de salud, sí, porque es muy crítico,
+
+17
+00:01:13,000 --> 00:01:17,000
+no podemos liberar síntomas o enfermedades a un médico,
+
+18
+00:01:17,000 --> 00:01:20,000
+pasado solamente en lo que te dice el modelo, o ya al menos,
+
+19
+00:01:20,000 --> 00:01:24,000
+entonces hay personas especializadas en la materia de la que está respondiendo
+
+20
+00:01:24,000 --> 00:01:29,000
+que tiene que tomar la respuesta del modelo y decir, esperen un minuto, lo reviso y te responde.
+
+21
+00:01:29,000 --> 00:01:32,000
+El tiempo real, lo que es el concepto de tiempo real en sí, dependiendo del caso,
+
+22
+00:01:32,000 --> 00:01:35,000
+puede llegar a ser tiempo real porque se necesita tiempo real,
+
+23
+00:01:35,000 --> 00:01:39,000
+pero a veces pasa que es la información que se procesa y te responde el otro día,
+
+24
+00:01:39,000 --> 00:01:41,000
+depende del caso del negocio.
+
+25
+00:01:41,000 --> 00:01:47,000
+¿Se puede automatizar eso para que no haya alucinaciones, digamos, y que no haya tanto delay?
+
+26
+00:01:47,000 --> 00:01:49,000
+En realidad, hoy se está trabajando en eso.
+
+27
+00:01:49,000 --> 00:01:55,000
+Hay compañías como el famoso PenalYide que tiene su modelo y su gente trabajando en base a eso,
+
+28
+00:01:55,000 --> 00:02:02,000
+y lo que se busca justamente es otros modelos que son capaces de identificar lo que queremos que no suceda.
+
+29
+00:02:02,000 --> 00:02:05,000
+Ese modelo tiene ser capaz de entender cuando una alucinación sucede.
+
+30
+00:02:05,000 --> 00:02:08,000
+Es muy difícil porque hay una variante muy grande de opciones.
+
+31
+00:02:08,000 --> 00:02:12,000
+Depende del negocio, depende de lo que se esté preguntando, puedes usar en el ente de cosas.
+
+32
+00:02:12,000 --> 00:02:15,000
+Entonces, hoy la tecnología está trabajando en eso.
+
+33
+00:02:15,000 --> 00:02:21,000
+No hay todavía algo muy concreto que diga, Che, esto evita todo tipo de errores o de alucinaciones.
+
+34
+00:02:21,000 --> 00:02:25,000
+¿Por qué? Porque hay un montón de nuevos casos que no están pensados.
+
+35
+00:02:25,000 --> 00:02:31,000
+Ahora, muchas plataformas que te permiten crear bots te dan la opción de elegir si crees que ese bot
+
+36
+00:02:31,000 --> 00:02:37,000
+sea 100% basado en hechos bien fácticos, un poco creativo o nada creativo.
+
+37
+00:02:37,000 --> 00:02:40,000
+Y eso para usuario final también es esa opción cuando usas bien.
+
+38
+00:02:40,000 --> 00:02:45,000
+Ahora, si yo digo que sea totalmente sus respuestas en basadas en hechos,
+
+39
+00:02:45,000 --> 00:02:49,000
+en la documentación que yo le di, en la sudarrera que yo le proporcioné,
+
+40
+00:02:49,000 --> 00:02:52,000
+¿me aseguro que esa inteligencia artificial no va a alucinar?
+
+41
+00:02:52,000 --> 00:02:53,000
+No, tampoco.
+
+42
+00:02:53,000 --> 00:02:57,000
+No, en realidad lo que vos garantizás con eso es que cuando...
+
+43
+00:02:57,000 --> 00:02:59,000
+pensemos que esto es una guía generativa.
+
+44
+00:02:59,000 --> 00:03:04,000
+El concepto generativo es que la diferencia con otros modelos de inteligencia es que esto genera algo nuevo.
+
+45
+00:03:04,000 --> 00:03:07,000
+Es decir, a partir de la historia, a partir de lo que tiene disponible,
+
+46
+00:03:07,000 --> 00:03:13,000
+a partir de información que ya consultó y que ya aprendió, creen algo nuevo.
+
+47
+00:03:13,000 --> 00:03:18,000
+Pero ese generador nuevo puede generarse en base a algo bien volado, por decirlo de una forma,
+
+48
+00:03:18,000 --> 00:03:19,000
+que es lo más creativo.
+
+49
+00:03:19,000 --> 00:03:23,000
+Es lo que le estás diciendo es, ser creativo, poder crear cualquier tipo de cosa.
+
+50
+00:03:23,000 --> 00:03:28,000
+Cuando hablás de lo que es más restrictivo, en realidad puedes crear dentro del parántesi
+
+51
+00:03:28,000 --> 00:03:30,000
+de lo que yo te di para que estudies.
+
+52
+00:03:30,000 --> 00:03:33,000
+Por ejemplo, información de una compañía en particular.
+
+53
+00:03:33,000 --> 00:03:34,000
+Habla sobre esto.
+
+54
+00:03:34,000 --> 00:03:40,000
+Pero la realidad no es que te copie y te pega el texto, sino que entiende lo que vos les compartiste
+
+55
+00:03:40,000 --> 00:03:44,000
+y en base a eso responde que eso también da lugar a alucinaciones,
+
+56
+00:03:44,000 --> 00:03:48,000
+porque a fin de cuentas tiene que comprender el texto y darte una nueva respuesta.
+
+57
+00:03:48,000 --> 00:03:53,000
+Bien, cuando se desarrolló esta tecnología, sabían los investigadores o desarrolladores
+
+58
+00:03:53,000 --> 00:03:56,000
+que iba a pasar esto o realmente se les puede las manos?
+
+59
+00:03:56,000 --> 00:04:00,000
+Buena pregunta, yo creo que eso, no hay una respuesta muy directa con eso.
+
+60
+00:04:00,000 --> 00:04:06,000
+Yo creo que empezaron con un objetivo, creyeron que iba por un lado,
+
+61
+00:04:06,000 --> 00:04:10,000
+empezó a crecer y se dieron cuenta que era tan efectivo que lo empezaron a liberar.
+
+62
+00:04:10,000 --> 00:04:14,000
+Pero en esa corrida de empezar a liberar, creo que hay un montón de tapas todavía
+
+63
+00:04:14,000 --> 00:04:17,000
+que se tienen que cruzar y hay experiencias que hacer.
+
+64
+00:04:17,000 --> 00:04:19,000
+Nosotros mismos lo estamos transitando,
+
+65
+00:04:19,000 --> 00:04:22,000
+compañías nos están solicitando proyectos de ese estilo
+
+66
+00:04:22,000 --> 00:04:25,000
+y la realidad es que es una innovación de todo sentido.
+
+67
+00:04:25,000 --> 00:04:29,000
+Nosotros somos especialistas en esto, estamos en esta la formándonos hace mucho tiempo.
+
+68
+00:04:29,000 --> 00:04:33,000
+El concepto de idea generativa ya existía antes de OpenAI,
+
+69
+00:04:33,000 --> 00:04:37,000
+en realidad no es que no existía, solo que esto le puso como la cara y el chat.
+
+70
+00:04:37,000 --> 00:04:39,000
+Entonces eso empezó a ser de ese impacto.
+
+71
+00:04:39,000 --> 00:04:42,000
+Pero el modelo como tal existía, era eso un montón, nosotros lo usábamos,
+
+72
+00:04:42,000 --> 00:04:45,000
+era más difícil utilizar sí, era más complejo,
+
+73
+00:04:45,000 --> 00:04:48,000
+hoy se solucionaron un montón de aspectos, pero existía.
+
+74
+00:04:48,000 --> 00:04:51,000
+Teniendo en cuenta que no se puede evitar esta ilusión
+
+75
+00:04:51,000 --> 00:04:54,000
+y que todavía se está trabajando en posibles soluciones.
+
+76
+00:04:54,000 --> 00:04:57,000
+A veces utilizando humanos, me imagino un ejército de humanos ahí.
+
+77
+00:04:57,000 --> 00:04:59,000
+En algún caso puede llegar a explicar eso.
+
+78
+00:04:59,000 --> 00:05:03,000
+Nuevos modelos, digo soy una empresa y tengo este dato
+
+79
+00:05:03,000 --> 00:05:06,000
+y me preocupo un poco, no sé si quiero utilizar ideas generativas.
+
+80
+00:05:06,000 --> 00:05:10,000
+En realidad, yo no lo veo tan así, las compañías hoy en día están optando por esto,
+
+81
+00:05:10,000 --> 00:05:14,000
+la mayoría de las compañías con nosotros trabajamos están queriendo llevar adelante proyectos de esto,
+
+82
+00:05:14,000 --> 00:05:19,000
+porque el impacto positivo que tiene se puede compensar.
+
+83
+00:05:19,000 --> 00:05:21,000
+El riesgo este que hablábamos recién de la alucinación,
+
+84
+00:05:21,000 --> 00:05:24,000
+es algo que se puede generar y se puede manejar,
+
+85
+00:05:24,000 --> 00:05:27,000
+no se puede evitar al 100% cierto, eso es cierto,
+
+86
+00:05:27,000 --> 00:05:29,000
+pero por otro lado hay formas de evitar.
+
+87
+00:05:29,000 --> 00:05:33,000
+Por ejemplo, nosotros y las compañías solicitaron un caso de proyecto,
+
+88
+00:05:33,000 --> 00:05:36,000
+lo que recomendamos muchas veces es que comiencen con un proyecto interno,
+
+89
+00:05:36,000 --> 00:05:39,000
+donde la alucinación, el impacto de la alucinación
+
+90
+00:05:39,000 --> 00:05:43,000
+no va a ser tan fuerte como dejar disponible al vigente final,
+
+91
+00:05:43,000 --> 00:05:45,000
+que vos podés ponerte de una forma que no es lo que te gusta.
+
+92
+00:05:45,000 --> 00:05:47,000
+Le pasó a Facebook cuando lanzó su caso de chat,
+
+93
+00:05:47,000 --> 00:05:52,000
+que se empezó a transformar en una cosa muy rara y generó un impacto negativo.
+
+94
+00:05:52,000 --> 00:05:54,000
+Entonces a las compañías hoy en día les preocupa eso,
+
+95
+00:05:54,000 --> 00:05:58,000
+nosotros nos ocupamos de que sea lo menor posible el error
+
+96
+00:05:58,000 --> 00:06:01,000
+y que inicialmente sea dedicado al interno.
+
+97
+00:06:01,000 --> 00:06:05,000
+Entonces imaginate un chat todo que pueda responder sobre temas de vacaciones,
+
+98
+00:06:05,000 --> 00:06:08,000
+sobre temas de legales o temas administrativos de una persona
+
+99
+00:06:08,000 --> 00:06:11,000
+que hoy en día puede ser un equipo de entero de RPA de recursos humanos
+
+100
+00:06:11,000 --> 00:06:14,000
+respondiendo a la compañía, depende del tamaño que sea,
+
+101
+00:06:14,000 --> 00:06:16,000
+y eso se puede ayudar y puede trabajar.
+
+102
+00:06:16,000 --> 00:06:18,000
+Y que el impacto no está amplio,
+
+103
+00:06:18,000 --> 00:06:21,000
+si hay una alucinación, porque es más concreto
+
+104
+00:06:21,000 --> 00:06:23,000
+y podés acomodarlo lo más chiquito posible.
+
+105
+00:06:23,000 --> 00:06:25,000
+A la hora de hacer estas implementaciones,
+
+106
+00:06:25,000 --> 00:06:31,000
+imagino que sugieren que la compañía adquiera una solución integral,
+
+107
+00:06:31,000 --> 00:06:33,000
+con un mismo proveedor.
+
+108
+00:06:33,000 --> 00:06:36,000
+Hoy en día, sí, la idea es que las compañías con las que al menos
+
+109
+00:06:36,000 --> 00:06:39,000
+que nosotros trabajamos ya tienen predores grandes.
+
+110
+00:06:39,000 --> 00:06:42,000
+Realmente nosotros como entities somos agnósticos a la tecnología,
+
+111
+00:06:42,000 --> 00:06:44,000
+trabajamos con cualquier.
+
+112
+00:06:44,000 --> 00:06:46,000
+La realidad es que después las compañías con las que nosotros trabajamos
+
+113
+00:06:46,000 --> 00:06:48,000
+ya tienen generalmente una base instalada.
+
+114
+00:06:48,000 --> 00:06:51,000
+Pueden llegar a hacer los principios vendor, que son Microsoft,
+
+115
+00:06:51,000 --> 00:06:54,000
+Google, el UADO, el ESE, y dentro de ese ecosistema nos movemos.
+
+116
+00:06:54,000 --> 00:06:56,000
+No hay compañías hoy,
+
+117
+00:06:56,000 --> 00:06:58,000
+del tal que nosotros trabajamos al menos,
+
+118
+00:06:58,000 --> 00:07:01,000
+que estén yendo directamente con un OpenAI directamente.
+
+119
+00:07:01,000 --> 00:07:04,000
+¿Por qué? Porque, nada, esos modelos son públicos,
+
+120
+00:07:04,000 --> 00:07:06,000
+entonces toda la información que vos prendes ahí
+
+121
+00:07:06,000 --> 00:07:08,000
+probablemente se ha utilizado para entrenarse.
+
+122
+00:07:08,000 --> 00:07:10,000
+Entonces como compañía,
+
+123
+00:07:10,000 --> 00:07:12,000
+vos no querés dar tu información a eso.
+
+124
+00:07:12,000 --> 00:07:15,000
+Por eso es que muchas compañías de Argentina y del mundo
+
+125
+00:07:15,000 --> 00:07:18,000
+pero viven a través de redes de seguridad
+
+126
+00:07:18,000 --> 00:07:20,000
+y de bloqueos de sus redes
+
+127
+00:07:20,000 --> 00:07:22,000
+que vos puedas acceder a la opinión ahí directamente
+
+128
+00:07:22,000 --> 00:07:24,000
+como empleado de la compañía.
+
+129
+00:07:24,000 --> 00:07:26,000
+Porque lo que quieren evitar es eso.
+
+130
+00:07:26,000 --> 00:07:28,000
+Entonces ustedes en general,
+
+131
+00:07:28,000 --> 00:07:30,000
+cuando tienen que integrar estas tecnologías
+
+132
+00:07:30,000 --> 00:07:32,000
+van más a otro tipo de procesos,
+
+133
+00:07:32,000 --> 00:07:34,000
+que si has código, puedes ser para analizar fotos,
+
+134
+00:07:34,000 --> 00:07:35,000
+que otra cosa.
+
+135
+00:07:35,000 --> 00:07:37,000
+La realidad es para cualquier proceso
+
+136
+00:07:37,000 --> 00:07:39,000
+donde se interviene la persona,
+
+137
+00:07:39,000 --> 00:07:41,000
+donde hay un caso donde hay una persona haciendo algo,
+
+138
+00:07:41,000 --> 00:07:44,000
+esto es una herramienta que puede ayudar.
+
+139
+00:07:44,000 --> 00:07:47,000
+Por ejemplo, en el ámbito de salud,
+
+140
+00:07:47,000 --> 00:07:50,000
+puede ser capaz de poder tener la información
+
+141
+00:07:50,000 --> 00:07:52,000
+de todos los papers de un tema particular
+
+142
+00:07:52,000 --> 00:07:54,000
+entrenado y modelado,
+
+143
+00:07:54,000 --> 00:07:57,000
+donde el médico puede consultar ante una duda general.
+
+144
+00:07:57,000 --> 00:08:00,000
+No para sacar una sentencia final
+
+145
+00:08:00,000 --> 00:08:02,000
+de la situación del paciente,
+
+146
+00:08:02,000 --> 00:08:05,000
+pero sí puede decirle, preguntarlo sobre dudas concretas,
+
+147
+00:08:05,000 --> 00:08:08,000
+sobre síntomas, a ver dónde se puede acercar.
+
+148
+00:08:08,000 --> 00:08:11,000
+Con lo cual, te diría que en cualquier industria
+
+149
+00:08:11,000 --> 00:08:13,000
+y en cualquier lado, hoy en día estamos trabajando en el sentimiento.
+
+150
+00:08:13,000 --> 00:08:17,000
+Siempre tomando precauciones por este problema de las alucinaciones.
+
+151
+00:08:17,000 --> 00:08:20,000
+Sí, nuestro primer warning es eso, cuidar al nuestro cliente.
+
+152
+00:08:20,000 --> 00:08:22,000
+Con lo cual, lo primero que tenemos que cuidar
+
+153
+00:08:22,000 --> 00:08:24,000
+es obviamente seguridad de información,
+
+154
+00:08:24,000 --> 00:08:26,000
+que eso es, hay un trabajo muy profundo que se está haciendo,
+
+155
+00:08:26,000 --> 00:08:29,000
+hay documentación que acompaña, hay un montón de tareas,
+
+156
+00:08:29,000 --> 00:08:32,000
+pero lo otro es la exposición de este poder o modelos
+
+157
+00:08:32,000 --> 00:08:35,000
+en los clientes, porque si vas a un cliente final,
+
+158
+00:08:35,000 --> 00:08:38,000
+mejor dicho, si el cliente, nuestro cliente,
+
+159
+00:08:38,000 --> 00:08:40,000
+solicita un proyecto y dice,
+
+160
+00:08:40,000 --> 00:08:43,000
+¿Puedes construir esto para el público de a pie,
+
+161
+00:08:43,000 --> 00:08:44,000
+para mi cliente final?
+
+162
+00:08:44,000 --> 00:08:46,000
+Eso es un riesgo muy grande, porque vos,
+
+163
+00:08:46,000 --> 00:08:50,000
+al tener estas famosas ilusiones y agonías en mayor o menos medida,
+
+164
+00:08:50,000 --> 00:08:54,000
+vos podés dejar a exponer al cliente final cuestiones que no querés.
+
+165
+00:08:54,000 --> 00:08:57,000
+Entonces, eso genera un rechazo, mucha compañía.
+
+166
+00:08:57,000 --> 00:08:59,000
+Pero cuando trabajamos con algo interno,
+
+167
+00:08:59,000 --> 00:09:01,000
+generalmente ese miedo se diluye,
+
+168
+00:09:01,000 --> 00:09:03,000
+porque en realidad, a fin de cuenta,
+
+169
+00:09:03,000 --> 00:09:06,000
+es algo interno, no vas a generar un impacto tan profundo,
+
+170
+00:09:06,000 --> 00:09:09,000
+puedes llegar a tener información incorrecta, sí,
+
+171
+00:09:09,000 --> 00:09:11,000
+pero no es lo que te va a limitar a hacer cosas.
+
+172
+00:09:11,000 --> 00:09:13,000
+O sea, lo vas a seguir haciendo.
+
+173
+00:09:13,000 --> 00:09:14,000
+Las compañías lo están haciendo,
+
+174
+00:09:14,000 --> 00:09:17,000
+más allá de este tipo de temor que nosotros son muy reales,
+
+175
+00:09:17,000 --> 00:09:18,000
+y se lo contamos,
+
+176
+00:09:18,000 --> 00:09:21,000
+y demostramos que hay existen herramientas y metodologías para resolverlo.
+
+177
+00:09:21,000 --> 00:09:23,000
+Lo actúan y van, lo hacen igual,
+
+178
+00:09:23,000 --> 00:09:26,000
+implementen igual, hoy tenemos 7 o 8 casos en paralela,
+
+179
+00:09:26,000 --> 00:09:28,000
+agudándose en menos de un mes en compañías,
+
+180
+00:09:28,000 --> 00:09:31,000
+no compañías pequeñas, sobre todo en las manías,
+
+181
+00:09:31,000 --> 00:09:32,000
+las compañías más grandes,
+
+182
+00:09:32,000 --> 00:09:34,000
+son las que primero están saltando este tema.
+

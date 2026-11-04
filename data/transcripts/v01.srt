@@ -1,0 +1,944 @@
+1
+00:00:00,000 --> 00:00:04,000
+Este vídeo está patrocinado por la Universidad Politécnica de Valencia.
+
+2
+00:00:09,000 --> 00:00:20,000
+Imagínate que eres un ingeniero al que se le pide que para un texto dado de un tuit, por ejemplo, pues tienes que reconocer si ese texto tiene un sentimiento positivo o un sentimiento negativo.
+
+3
+00:00:20,000 --> 00:00:27,000
+Esto es un problema de análisis de sentimiento y es un problema que se puede reducir al final a un problema de clasificación.
+
+4
+00:00:27,000 --> 00:00:32,000
+Clasífícame para esta secuencia de palabras si el sentimiento identificado es positivo o negativo.
+
+5
+00:00:32,000 --> 00:00:34,000
+¿Cómo lo resolverías?
+
+6
+00:00:34,000 --> 00:00:40,000
+Pues si tu respuesta es que siendo un texto de Twitter siempre va a ser negativo, jaja, alabo tu humor, pero fuera de mi clase, ¿vale?
+
+7
+00:00:40,000 --> 00:00:43,000
+Y es que te lo pregunto en serio, ¿cómo lo resolverías?
+
+8
+00:00:43,000 --> 00:00:50,000
+Pues mira, si estuvieramos a comienzos de siglo allá por los dos miles, seguramente esto lo resolveríamos a través de la análisis de la polaridad de las palabras.
+
+9
+00:00:51,000 --> 00:01:00,000
+Buscaríamos un vocabulario de buenas palabras, otro de malas palabras y asignando puntuaciones a cada palabra de un texto, pues acabaríamos con una puntuación total del sentimiento de la frase.
+
+10
+00:01:00,000 --> 00:01:01,000
+¿Lo ves?
+
+11
+00:01:01,000 --> 00:01:05,000
+Es una solución bastante sencilla, pero no es óptima ya que frases como,
+
+12
+00:01:05,000 --> 00:01:12,000
+esta compra es muy recomendable, si quieres tirar el dinero, podría apuntar una frase positiva cuando en realidad no lo es.
+
+13
+00:01:12,000 --> 00:01:21,000
+Y rápidamente lo vamos a ver en código, mira, en este caso, pues yo puedo coger una frase, procesarla con esta librería y con esto podemos extraer rápidamente cuál es su sentimiento.
+
+14
+00:01:21,000 --> 00:01:22,000
+Podemos ver que una frase como,
+
+15
+00:01:22,000 --> 00:01:27,000
+me encanta comer en este restaurante, la ejecutamos, pues tiene un sentimiento positivo.
+
+16
+00:01:27,000 --> 00:01:34,000
+Y si esto lo cambio por odio comer en este restaurante y lo ejecutamos, pues esto se analiza con sentimiento negativo.
+
+17
+00:01:34,000 --> 00:01:39,000
+Pero claro, este análisis se queda insuficiente cuando usamos la ironía, por ejemplo, y para frases como,
+
+18
+00:01:39,000 --> 00:01:46,000
+me encantaría ir a este restaurante si quiero tirar el dinero, pues esta librería podemos ver que lo va a analizar también con sentimiento positivo.
+
+19
+00:01:46,000 --> 00:01:52,000
+Ahí forma de hacer este análisis más avanzado, teniendo en cuenta por ejemplo el contexto de las palabras, pero para qué.
+
+20
+00:01:52,000 --> 00:01:57,000
+Si ya estábamos en 2012 y el boom de las redes neuronales acababa de comenzar.
+
+21
+00:01:57,000 --> 00:02:03,000
+Y es que con la llegada del deep learning y las redes neuronales allá por 2012, la cosa se volvió más sofisticada.
+
+22
+00:02:03,000 --> 00:02:09,000
+Ahora podríamos usar redes neuronales especializadas para el análisis de texto, como las redes neuronales recurrentes,
+
+23
+00:02:09,000 --> 00:02:15,000
+para que éstas fueran aprendiendo cuál era la relación entre una secuencia de palabras, dada como input y su sentimiento,
+
+24
+00:02:15,000 --> 00:02:19,000
+dado como output. Esto era aprendizaje supervisado.
+
+25
+00:02:19,000 --> 00:02:24,000
+Y claro, lo que nos obligaba era tener un dataset específico para este tipo de problema.
+
+26
+00:02:24,000 --> 00:02:28,000
+Es decir, un montón de ejemplos de tweets donde un humano se hubiera sentado a marcar manualmente
+
+27
+00:02:28,000 --> 00:02:32,000
+si el sentimiento de ese texto era positivo o negativo.
+
+28
+00:02:32,000 --> 00:02:36,000
+Ya sabéis, el típico esquema de entrenamiento supervisado, pero cambio de planes.
+
+29
+00:02:36,000 --> 00:02:43,000
+Y si quisiéramos ahora que el sentimiento no se clasifique de positivo o negativo, sino con una review de 1 a 5 estrellas.
+
+30
+00:02:43,000 --> 00:02:49,000
+Ah, vale. Bueno, pues esto te obliga de nuevo a sentar a tus humanos y pagarles en el mejor de los casos
+
+31
+00:02:49,000 --> 00:02:55,000
+para que vuelvan a hacer este proceso de etiquetado, pero en este caso valorando cada texto de 1 a 5 estrellas.
+
+32
+00:02:55,000 --> 00:02:59,000
+Un dataset que ahora utilizaremos para hacer de nuevo nuestro entrenamiento.
+
+33
+00:02:59,000 --> 00:03:06,000
+Y aquí tenemos algo importante que quiero que entendáis, y es que por aquel entonces entrenar a una renda neuronal para una tarea diferente
+
+34
+00:03:06,000 --> 00:03:08,000
+nos exigía tener un dataset concreto.
+
+35
+00:03:08,000 --> 00:03:13,000
+Da igual si esa tarea se parecía o no se parecía a lo que habíamos entrenado previamente.
+
+36
+00:03:13,000 --> 00:03:17,000
+Una nueva tarea era un nuevo dataset y un nuevo entrenamiento.
+
+37
+00:03:17,000 --> 00:03:20,000
+Algo que en 2017 empezaría a cambiar.
+
+38
+00:03:21,000 --> 00:03:27,000
+Y es que en el campo de la visión por ordenador, que ya llevaba unos cuantos años de ventaja al campo del procesamiento del lenguaje natural
+
+39
+00:03:27,000 --> 00:03:32,000
+ya se conocían estrategias para poder reducir la cantidad de datos necesarios para entrenar a un sistema.
+
+40
+00:03:32,000 --> 00:03:38,000
+Una buena estrategia era la de tomar como punto de partida a un modelo que ya hubiera sido entrenado con anterioridad.
+
+41
+00:03:38,000 --> 00:03:45,000
+Un modelo preentrenado que ya supiera reconocer los patrones que conforman a coches, mascotas, vehículos, paisajes,
+
+42
+00:03:45,000 --> 00:03:50,000
+un montón de imágenes que ahora podríamos aprovechar en nuestro propio beneficio para reentrenarlo.
+
+43
+00:03:50,000 --> 00:03:58,000
+Eso sí, utilizando una menor cantidad de datos que le dieran ese ajuste final al modelo para que éste pudiera ser bien la tarea que nosotros quisiéramos.
+
+44
+00:03:58,000 --> 00:04:07,000
+Y tiene sentido, ¿no? Al final es mucho más fácil aprender a reconocer patrones en una radiografía cuando sabe ver que tener que aprender a ver desde cero.
+
+45
+00:04:07,000 --> 00:04:13,000
+Pues esta misma idea que sabíamos que funcionaba bien en el ámbito de la visión por ordenador fue la que se quiso llevar al procesamiento del lenguaje.
+
+46
+00:04:13,000 --> 00:04:20,000
+A partir de 2017 y coincidiendo con la llegada de los Transformers, que eran potentísimos modelos capaces de procesar secuencia de texto
+
+47
+00:04:20,000 --> 00:04:23,000
+y comprender el lenguaje mejor que cualquier otra red neuronal anterior,
+
+48
+00:04:23,000 --> 00:04:30,000
+pues empezamos a entrenar modelos de inteligencia artificial para aprender pues a hacer exactamente eso, a entender el lenguaje.
+
+49
+00:04:30,000 --> 00:04:36,000
+Así, tal cual, toma tarea difícil y es que ¿cómo podemos hacer que una inteligencia artificial pueda aprender el lenguaje?
+
+50
+00:04:36,000 --> 00:04:44,000
+Bueno, pues de forma similar a cómo lo hacemos nosotros en el colegio cuando queremos aprender un lenguaje, y es sacando el workbook y practicando.
+
+51
+00:04:44,000 --> 00:04:48,000
+Por ejemplo, para algunos modelos se cogían frases y se enmascaraban algunas palabras.
+
+52
+00:04:48,000 --> 00:04:54,000
+Y el objetivo de la inteligencia artificial era aprender a rellenar dichos huecos, encontrar la palabra más probable.
+
+53
+00:04:54,000 --> 00:04:59,000
+U otros modelos pues estaban especializados en tomar una frase y aprender a cómo finalizarla.
+
+54
+00:04:59,000 --> 00:05:05,000
+Ejercicios sencillos, pero claro, que repetí 2 millones y millones de veces durante días y días de entrenamiento,
+
+55
+00:05:05,000 --> 00:05:10,000
+pues conseguían que estos Transformers acabaran por aprender cuál era la estructura de nuestro lenguaje.
+
+56
+00:05:10,000 --> 00:05:15,000
+Estábamos entrenando a los primeros modelos del lenguaje basados en Transformers.
+
+57
+00:05:15,000 --> 00:05:21,000
+El cambio de paradigma aquí es importantísimo, porque si recordáis antes para nuestra tarea, pues necesitábamos de muchos humanos esclavizados
+
+58
+00:05:21,000 --> 00:05:25,000
+que fueran etiquetando todo nuestro dataset para poder hacer así el entrenamiento.
+
+59
+00:05:25,000 --> 00:05:29,000
+Pero fijaos que ahora nuestro esfuerzo se reduce a prácticamente cero.
+
+60
+00:05:29,000 --> 00:05:34,000
+Fíjate que para estas actividades que hemos fijado, lo único que necesitamos es coger frases de internet
+
+61
+00:05:34,000 --> 00:05:40,000
+y de forma automática ir borrando palabras o separar entre lo que sería el input y la siguiente palabra predecir.
+
+62
+00:05:40,000 --> 00:05:42,000
+Todo esto gratis.
+
+63
+00:05:42,000 --> 00:05:48,000
+El cambio de paradigma aquí es que ya no necesitábamos dedicar tantísimos recursos para etiquetar manualmente a nuestro datos.
+
+64
+00:05:48,000 --> 00:05:54,000
+Ahora podemos establecer algún tipo de proceso donde automáticamente estas etiquetas fueran generadas,
+
+65
+00:05:54,000 --> 00:05:57,000
+además sobre cualquier tipo de texto que quisiéramos.
+
+66
+00:05:57,000 --> 00:06:02,000
+Estábamos pasando del aprendizaje supervisado al aprendizaje autosupervisado.
+
+67
+00:06:02,000 --> 00:06:05,000
+Y como conseguir datos etiquetados ya no era un problema,
+
+68
+00:06:05,000 --> 00:06:11,000
+la tendencia a partir de entonces fue la de ir aumentando los tatasete entrenamientos en órdenes de magnitud.
+
+69
+00:06:11,000 --> 00:06:14,000
+Claro, ya no estábamos limitados por el etiquetado manual.
+
+70
+00:06:14,000 --> 00:06:18,000
+Y así dio comienzo la era de los enormes modelos del lenguaje.
+
+71
+00:06:18,000 --> 00:06:22,000
+Modelos entrenados con grandes corpus de textos tomados de todo internet
+
+72
+00:06:22,000 --> 00:06:25,000
+para que de forma general aprendieran a entender cómo nos comunicamos.
+
+73
+00:06:25,000 --> 00:06:29,000
+El significado de la frase es la estructura de nuestro lenguaje, todo.
+
+74
+00:06:29,000 --> 00:06:34,000
+Y donde además se hizo habitual que estas grandes organizaciones que entrenaban a estos enormes modelos
+
+75
+00:06:34,000 --> 00:06:40,000
+pues gastando computación, infraestructura, talento, investigación, pues acabaran compartiéndolos gratis.
+
+76
+00:06:40,000 --> 00:06:46,000
+Modelos gratuitos que tanto tú como yo podemos descargar y empezar a utilizar.
+
+77
+00:06:46,000 --> 00:06:49,000
+Y aquí toca hacer reconocimiento de la comunidad de Hackingface,
+
+78
+00:06:49,000 --> 00:06:53,000
+que se ha convertido en un portal donde se están recupilando todos estos grandes modelos
+
+79
+00:06:53,000 --> 00:06:55,000
+que las grandes compañías están liberando
+
+80
+00:06:55,000 --> 00:07:00,000
+y que los han integrado todos en un repositorio donde fácilmente puede buscarlo, probarlo,
+
+81
+00:07:00,000 --> 00:07:03,000
+se incluso descargarlos y utilizarlos a través de su librería Transformers.
+
+82
+00:07:03,000 --> 00:07:07,000
+Se puede ver aquí en su documentación cómo tienen un montón de modelos disponibles.
+
+83
+00:07:07,000 --> 00:07:13,000
+De los más famosos de los últimos años tienen BERT, tienen CLIP, DIVERTA, DISTILBERT,
+
+84
+00:07:13,000 --> 00:07:19,000
+IMEG-GPT, TIFF5, bueno, un montón de modelos que podéis utilizar automáticamente.
+
+85
+00:07:19,000 --> 00:07:22,000
+¿Cómo? Pues instalando su librería Transformers,
+
+86
+00:07:22,000 --> 00:07:26,000
+vamos a poder configurar rápidamente un pipeline donde se va a configurar todo
+
+87
+00:07:26,000 --> 00:07:30,000
+para toquenizar nuestras secuencias para descargar los modelos todo automáticamente.
+
+88
+00:07:30,000 --> 00:07:33,000
+En este caso configurado para hacer análisis de sentimiento.
+
+89
+00:07:33,000 --> 00:07:38,000
+Vamos a ejecutarlo y veremos cómo rápidamente la librería va a empezar a descargar por defecto
+
+90
+00:07:38,000 --> 00:07:40,000
+un modelo de tipo DIISTILBERT.
+
+91
+00:07:40,000 --> 00:07:45,000
+Y una vez se descarga podemos ver que cada una de estas frases directamente pasa a ser analizada.
+
+92
+00:07:45,000 --> 00:07:49,000
+Está súper bien, sentimiento positivo, espero que no sea tan pesado
+
+93
+00:07:49,000 --> 00:07:52,000
+como tener que programar todo de tercero negativo y negativo también la última.
+
+94
+00:07:52,000 --> 00:07:55,000
+Fijaos que aquí estamos utilizando un modelo pre-entrenado,
+
+95
+00:07:55,000 --> 00:07:58,000
+yo no lo estoy entrenando sino que me estoy aprovechando del entrenamiento
+
+96
+00:07:58,000 --> 00:08:02,000
+que otra organización ha hecho previamente para esta tarea de análisis de sentimiento.
+
+97
+00:08:02,000 --> 00:08:06,000
+Y de hecho si quisiera sacarle más rendimiento a este modelo pues podría aprovechar algún dataset
+
+98
+00:08:06,000 --> 00:08:12,000
+etiquetado y darle un reentrenamiento a hacer fine tuning para poder así adaptar mejor el modelo
+
+99
+00:08:12,000 --> 00:08:15,000
+a la naturaleza de mi datos, algo que notaría más rendimiento
+
+100
+00:08:15,000 --> 00:08:20,000
+y sin necesidad de tener que utilizar tanto datos como si fuéramos a hacer un entrenamiento desde cero.
+
+101
+00:08:20,000 --> 00:08:21,000
+Mola.
+
+102
+00:08:21,000 --> 00:08:23,000
+Y parecería que la historia se acaba aquí, ¿verdad?
+
+103
+00:08:23,000 --> 00:08:28,000
+Ya hemos entrenado nuestro sistema analizador de sentimientos con muy muy buen rendimiento,
+
+104
+00:08:28,000 --> 00:08:31,000
+además hemos reducido la cantidad de datos a utilizar
+
+105
+00:08:31,000 --> 00:08:33,000
+¿Qué más pedir?
+
+106
+00:08:33,000 --> 00:08:36,000
+Bueno, llegamos a 2020 y aquí se desata la locura.
+
+107
+00:08:36,000 --> 00:08:41,000
+Por aquel entonces los Transformers estaban demostrando un rendimiento sobresaliente al analizar texto
+
+108
+00:08:41,000 --> 00:08:46,000
+y además permitían paralelizar mejor su entrenamiento sobre GPUs y TPUs
+
+109
+00:08:46,000 --> 00:08:49,000
+haciendo factible entrenarlos cada vez con más datos.
+
+110
+00:08:49,000 --> 00:08:53,000
+Y como acabamos de ver contar cada vez con más datos pues ya no era un problema,
+
+111
+00:08:53,000 --> 00:08:55,000
+el límite era el cielo.
+
+112
+00:08:55,000 --> 00:08:57,000
+Bueno, Internet.
+
+113
+00:08:57,000 --> 00:09:02,000
+Todo el volumen de texto recogido de nuestras interacciones en webs, redes sociales, enciclopedias,
+
+114
+00:09:02,000 --> 00:09:07,000
+todo era susceptible de ser utilizado como datos para un entrenamiento masivo.
+
+115
+00:09:07,000 --> 00:09:09,000
+Y una empresa quiso intentarlo.
+
+116
+00:09:09,000 --> 00:09:15,000
+Una empresa que ya había estado probando previamente a entrenar a sus modelos generativos preentrenados
+
+117
+00:09:15,000 --> 00:09:19,000
+basados en Transformers o dicho más breve a sus GPTs.
+
+118
+00:09:19,000 --> 00:09:25,000
+Así OpenAI en 2020 tras una primera y segunda versión se le va la cabeza y entra en GPT3.
+
+119
+00:09:25,000 --> 00:09:28,000
+El modelo del lenguaje más grande entrenado hasta aquel momento
+
+120
+00:09:28,000 --> 00:09:34,000
+con 175 mil millones de parámetros y 117 veces más grande que GPT2.
+
+121
+00:09:34,000 --> 00:09:39,000
+Y lo que sucedió después pues no te sorprenderá porque lo hemos comentado muchas veces aquí en el canal.
+
+122
+00:09:39,000 --> 00:09:44,000
+GPT3 se convirtió en un modelo muy bueno a la hora de generar lenguaje humano.
+
+123
+00:09:44,000 --> 00:09:51,000
+Por primera vez contábamos con una inteligencia artificial que podía imitar la forma en la que nosotros nos comunicábamos.
+
+124
+00:09:51,000 --> 00:09:54,000
+Pero además de esto cosas interesantes sucedieron.
+
+125
+00:09:54,000 --> 00:09:57,000
+Y es que como hemos dicho antes a GPT3 y a este tipo de modelos
+
+126
+00:09:57,000 --> 00:10:02,000
+se les entrenan con una tarea sencilla de encontrar una palabra o autocompletar texto.
+
+127
+00:10:02,000 --> 00:10:03,000
+Nada más.
+
+128
+00:10:03,000 --> 00:10:07,000
+Pero lo que se comprobó es que a estos modelos cuando los escalabas a tamaños tan grandes
+
+129
+00:10:07,000 --> 00:10:13,000
+pues en su tarea de aprender a autocompletar texto también aprendían otras cosas.
+
+130
+00:10:13,000 --> 00:10:18,000
+Tú podías por ejemplo escribir una frase como esta y luego añadirle esta frase en inglés
+
+131
+00:10:18,000 --> 00:10:20,000
+y darla autocompletar.
+
+132
+00:10:20,000 --> 00:10:25,000
+Y de repente GPT3 te iba a demostrar que se había traducido de español al inglés.
+
+133
+00:10:25,000 --> 00:10:28,000
+Pero ojo, nunca había sido entrenado para esto.
+
+134
+00:10:28,000 --> 00:10:33,000
+Y lo mismo sucedía si lo hacíamos en Chino o en Python.
+
+135
+00:10:33,000 --> 00:10:36,000
+Ya muchos sabéis a través de este canal que estos enormes modelos de lenguaje
+
+136
+00:10:36,000 --> 00:10:41,000
+son los que hacen funcionar a modelos como Copilot Codex o Alpha Code.
+
+137
+00:10:41,000 --> 00:10:46,000
+O también podía actuar en forma de chatbot si tú le ponías el formato adecuado a modo de diálogo.
+
+138
+00:10:48,000 --> 00:10:53,000
+Esto era una locura porque, repito, en ningún momento se le habían entrenado explícitamente
+
+139
+00:10:53,000 --> 00:10:55,000
+para resolver ninguna de estas tareas.
+
+140
+00:10:55,000 --> 00:10:58,000
+Su única tarea era autocompletar.
+
+141
+00:10:58,000 --> 00:11:02,000
+Y así en muy poquitos años pues habíamos pasado a entrenar desde cero a modelos
+
+142
+00:11:02,000 --> 00:11:07,000
+para cada una de las tareas que quisiéramos acabar con modelos que directamente por Motus propio
+
+143
+00:11:07,000 --> 00:11:11,000
+habían aprendido todas estas tareas automáticamente.
+
+144
+00:11:11,000 --> 00:11:15,000
+Lo único que habíamos tenido que hacer era escalar el tamaño del modelo.
+
+145
+00:11:15,000 --> 00:11:20,000
+Ahora sí, esta era la revolución de los enormes modelos del lenguaje.
+
+146
+00:11:20,000 --> 00:11:22,000
+Y el analizador de sentimientos qué?
+
+147
+00:11:22,000 --> 00:11:26,000
+Pues aquí viene el ejemplo más loco que mejor explica toda esta evolución
+
+148
+00:11:26,000 --> 00:11:29,000
+que ha vivido el campo del deep learning en los últimos años
+
+149
+00:11:29,000 --> 00:11:34,000
+porque vamos a intentar aprovecharnos de estas dinámicas que parece que ha aprendido GPT-3
+
+150
+00:11:34,000 --> 00:11:36,000
+para ver si podemos resolver nuestro problema.
+
+151
+00:11:36,000 --> 00:11:37,000
+¿Cómo lo haría?
+
+152
+00:11:37,000 --> 00:11:42,000
+Pues en este caso lo que haría sería crear algún tipo de dinámica con este enorme modelo del lenguaje
+
+153
+00:11:42,000 --> 00:11:46,000
+para que entienda que lo que quiero hacer es analizar el sentimiento de estas frases.
+
+154
+00:11:46,000 --> 00:11:51,000
+Por ejemplo le podría poner un caso inicial donde sabríamos que esta primera frase
+
+155
+00:11:51,000 --> 00:11:54,000
+está súper bien esta librería pues tiene un sentimiento positivo
+
+156
+00:11:54,000 --> 00:11:59,000
+y ahora lo que vamos a hacer es dejar que GPT-3 haga la tarea que también sabe hacer
+
+157
+00:11:59,000 --> 00:12:01,000
+que es autocompletar texto.
+
+158
+00:12:01,000 --> 00:12:06,000
+En este caso para la frase espero que esto no sea tan pesado como tener que programar todo desde cero.
+
+159
+00:12:06,000 --> 00:12:07,000
+Vamos a ver qué hace.
+
+160
+00:12:07,000 --> 00:12:11,000
+Sentimiento y no genera automáticamente entiende qué tiene que ser un emoji
+
+161
+00:12:11,000 --> 00:12:14,000
+que es un sentimiento neutro o medio tristón.
+
+162
+00:12:14,000 --> 00:12:19,000
+Y si por ejemplo ahora le pongo la frase de texto, tener que hacer esto
+
+163
+00:12:19,000 --> 00:12:22,000
+puede entender que el sentimiento de esta frase es negativo.
+
+164
+00:12:22,000 --> 00:12:27,000
+Y esto mola muchísimo porque en ningún momento a GPT-3 le estamos entrenando
+
+165
+00:12:27,000 --> 00:12:28,000
+para que haga análisis de sentimiento.
+
+166
+00:12:28,000 --> 00:12:31,000
+Simplemente es un enorme modelo de lenguaje que hemos escalado
+
+167
+00:12:31,000 --> 00:12:37,000
+en su tarea de autocompletar texto que acaba aprendiendo a hacer un análisis de sentimiento.
+
+168
+00:12:37,000 --> 00:12:39,000
+Y si le ponemos sentimientos diferentes.
+
+169
+00:12:39,000 --> 00:12:44,000
+Por ejemplo, tengo miedo de tener que hacer esto.
+
+170
+00:12:44,000 --> 00:12:46,000
+Sentimiento.
+
+171
+00:12:46,000 --> 00:12:48,000
+Ahí está, nos sale el miedo.
+
+172
+00:12:48,000 --> 00:12:50,000
+O por ejemplo si le cambiamos la dinámica del problema,
+
+173
+00:12:50,000 --> 00:12:54,000
+a tener que hacer ahora clasificación de una cinco estrella.
+
+174
+00:12:54,000 --> 00:12:57,000
+Vamos a probar a ver si ahora lo entiende de texto tener que hacer esto
+
+175
+00:12:57,000 --> 00:13:00,000
+nos marca una estrella, efectivamente.
+
+176
+00:13:00,000 --> 00:13:02,000
+Vamos a probar con una frase positiva.
+
+177
+00:13:02,000 --> 00:13:06,000
+Esto podría ser una frase de tres, cuatro estrellas máximo.
+
+178
+00:13:06,000 --> 00:13:08,000
+Vamos a darle a ejecutar.
+
+179
+00:13:08,000 --> 00:13:10,000
+Y estaría cuatro estrellas.
+
+180
+00:13:10,000 --> 00:13:12,000
+Hacer esto.
+
+181
+00:13:12,000 --> 00:13:14,000
+Podemos ver sentimiento.
+
+182
+00:13:14,000 --> 00:13:15,000
+Dos estrellas.
+
+183
+00:13:15,000 --> 00:13:18,000
+Y en realidad esto es tan versátil como vosotros queráis.
+
+184
+00:13:18,000 --> 00:13:20,000
+Podéis aprovecharos de estos enormes modelos del lenguaje
+
+185
+00:13:20,000 --> 00:13:24,000
+para hacer clasificación de frases entre Harry Potter y el Señor de los Anillos.
+
+186
+00:13:24,000 --> 00:13:26,000
+Pues tenemos esta frase de aquí.
+
+187
+00:13:26,000 --> 00:13:29,000
+Y con esto GPT-3 debería saber que 10 puntos para grifindores de Harry Potter.
+
+188
+00:13:29,000 --> 00:13:31,000
+Vamos a ver si lo entiende efectivamente.
+
+189
+00:13:31,000 --> 00:13:34,000
+Y con esto ya podríamos probar con cualquier frase que queramos.
+
+190
+00:13:34,000 --> 00:13:37,000
+Cuenta con mi hacha del Señor de los Anillos.
+
+191
+00:13:37,000 --> 00:13:39,000
+La comarca está en peligro.
+
+192
+00:13:39,000 --> 00:13:41,000
+También debería ser el Señor de los Anillos.
+
+193
+00:13:41,000 --> 00:13:45,000
+Dove es libre.
+
+194
+00:13:45,000 --> 00:13:47,000
+Pues debería ser Harry Potter.
+
+195
+00:13:47,000 --> 00:13:50,000
+Y así veis como rápidamente hemos creado un clasificador.
+
+196
+00:13:50,000 --> 00:13:53,000
+Esto lo podéis probar y es un ejemplo de uso de GPT-3
+
+197
+00:13:53,000 --> 00:13:55,000
+que es uno de los enormes modelos del lenguaje
+
+198
+00:13:55,000 --> 00:13:57,000
+que poco a poco van saliendo.
+
+199
+00:13:57,000 --> 00:13:59,000
+Si queréis saber más de cómo poder utilizarlo
+
+200
+00:13:59,000 --> 00:14:02,000
+pues ya sabéis que aquí en el canal tenemos un vídeo dedicado a esto.
+
+201
+00:14:02,000 --> 00:14:04,000
+Y ojo, este vídeo no pretende decirte
+
+202
+00:14:04,000 --> 00:14:06,000
+que si quieres crear un analizador de sentimientos
+
+203
+00:14:06,000 --> 00:14:08,000
+lo tengas que hacer de esta forma.
+
+204
+00:14:08,000 --> 00:14:10,000
+Y es que lo correcto para garantizarnos una buena robustez
+
+205
+00:14:10,000 --> 00:14:12,000
+y calidad de las predicciones
+
+206
+00:14:12,000 --> 00:14:14,000
+pues sería coger a uno de estos grandes modelos
+
+207
+00:14:14,000 --> 00:14:16,000
+y reentrenarlos con datos etiquetados
+
+208
+00:14:16,000 --> 00:14:18,000
+como hemos comentado anteriormente.
+
+209
+00:14:18,000 --> 00:14:19,000
+No.
+
+210
+00:14:19,000 --> 00:14:21,000
+El objetivo de este vídeo es otro.
+
+211
+00:14:21,000 --> 00:14:23,000
+Si hoy te he contado esta breve historia
+
+212
+00:14:23,000 --> 00:14:25,000
+que creo que ilustra muy bien los cambios tan bestiales
+
+213
+00:14:25,000 --> 00:14:27,000
+que se han vivido en el mundo del Diplerni
+
+214
+00:14:27,000 --> 00:14:28,000
+en los últimos años
+
+215
+00:14:28,000 --> 00:14:30,000
+es porque creo que explica muy bien
+
+216
+00:14:30,000 --> 00:14:32,000
+también el futuro que está por venir.
+
+217
+00:14:32,000 --> 00:14:34,000
+Y comprendiendo esto pues ya estás listo
+
+218
+00:14:34,000 --> 00:14:36,000
+para entender todo lo que viene después.
+
+219
+00:14:36,000 --> 00:14:37,000
+¿Qué pasaría por ejemplo?
+
+220
+00:14:37,000 --> 00:14:40,000
+Si cogemos a estos enormes modelos del lenguaje
+
+221
+00:14:40,000 --> 00:14:43,000
+y seguimos haciéndolos más grandes.
+
+222
+00:14:43,000 --> 00:14:45,000
+En el próximo vídeo entre otras muchas cosas
+
+223
+00:14:45,000 --> 00:14:46,000
+os estaré hablando de Palm
+
+224
+00:14:46,000 --> 00:14:48,000
+que es un modelo creado por Google
+
+225
+00:14:48,000 --> 00:14:52,000
+que cuatriplica en tamaño al modelo GPT-3.
+
+226
+00:14:52,000 --> 00:14:54,000
+Un modelo que de nuevo escala
+
+227
+00:14:54,000 --> 00:14:56,000
+se vuelve mucho más grande
+
+228
+00:14:56,000 --> 00:14:57,000
+y que de él emergen nuevas propiedades
+
+229
+00:14:57,000 --> 00:14:59,000
+que nos han vuelto a sorprender a todos.
+
+230
+00:14:59,000 --> 00:15:01,000
+De todo esto y de muchas otras cosas
+
+231
+00:15:01,000 --> 00:15:04,000
+súper interesantes de estos enormes modelos del lenguaje
+
+232
+00:15:04,000 --> 00:15:06,000
+seguiremos hablando en el próximo vídeo.
+
+233
+00:15:06,000 --> 00:15:08,000
+Chicos, chicas, muchas gracias como siempre
+
+234
+00:15:08,000 --> 00:15:10,000
+y nos vemos con más
+
+235
+00:15:10,000 --> 00:15:12,000
+Inteligencia Artificial, Tecnología y Ciencia
+
+236
+00:15:12,000 --> 00:15:14,000
+aquí en DotSewing.
+

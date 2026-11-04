@@ -1,0 +1,1672 @@
+1
+00:00:00,000 --> 00:00:04,339
+Bueno, vamos a empezar hoy con Fine Tuning, que es lo que vamos a ver.
+
+2
+00:00:04,639 --> 00:00:08,279
+Entonces, antes de explicar en Fine Tuning, quiero que entrenamos bien
+
+3
+00:00:08,279 --> 00:00:12,720
+qué es y también que también lo veremos al final, pero cuando tiene sentido
+
+4
+00:00:12,720 --> 00:00:16,679
+utilizar lo que limitaciones tiene y en qué casos, bueno, pues es más útil.
+
+5
+00:00:16,719 --> 00:00:20,879
+En primer lugar, el Fine Tuning es un método que se utiliza para que esos
+
+6
+00:00:20,879 --> 00:00:26,760
+modelos, el LM, puedan, digamos, mejorar su comportamiento,
+
+7
+00:00:26,800 --> 00:00:29,400
+mejorar su rendimiento para una tarea más concreta.
+
+8
+00:00:29,439 --> 00:00:34,239
+Es decir, pues, que puedan tener en este caso este concepto de Fine Tuning
+
+9
+00:00:34,280 --> 00:00:35,600
+viene del Diplering.
+
+10
+00:00:35,799 --> 00:00:38,920
+Es decir, estos modelos del LM están basados en Diplering.
+
+11
+00:00:38,960 --> 00:00:40,759
+Tiene esta arquitectura que se llama entre las formas.
+
+12
+00:00:40,879 --> 00:00:45,000
+Este Fine Tuning no es solamente propio, este método no es solamente propio
+
+13
+00:00:45,000 --> 00:00:48,039
+de estos modelos del LM, sino todos los modelos de Diplering.
+
+14
+00:00:48,079 --> 00:00:52,679
+Cuando nosotros queremos coger un modelo y queremos entrenarlo,
+
+15
+00:00:52,719 --> 00:00:56,000
+hay diferentes formas de entrenarlo que luego lo veremos.
+
+16
+00:00:56,479 --> 00:01:00,200
+El Fine Tuning es una de ellas que básicamente es un ajuste fino y es
+
+17
+00:01:00,200 --> 00:01:04,040
+que en lugar de entrenar todo el modelo, pues cogemos y entrenamos una fracción,
+
+18
+00:01:04,040 --> 00:01:08,879
+una parte para cambiar cierto comportamiento, añadirle algo de información.
+
+19
+00:01:09,000 --> 00:01:12,680
+Entonces, centrándonos en modelos LM, modelos de lenguaje largo,
+
+20
+00:01:12,760 --> 00:01:16,120
+vamos a tener un modelo preentrenado que es un modelo base, que estos modelos
+
+21
+00:01:16,120 --> 00:01:19,079
+preentrenados son esos modelos originales que nosotros nos podemos
+
+22
+00:01:19,079 --> 00:01:23,240
+descargar en Open Source o que nosotros podemos utilizar también via API,
+
+23
+00:01:23,319 --> 00:01:27,159
+modelos propietarios de OpenEye, de Google o de Anthropic.
+
+24
+00:01:27,199 --> 00:01:30,519
+Y entonces partimos de ese modelo preentrenado, ese modelo preentrenado.
+
+25
+00:01:30,560 --> 00:01:34,719
+El modelo base ha sido entrenado con muchísimos, muchísimos, muchísimos datos.
+
+26
+00:01:35,119 --> 00:01:40,159
+Ya son modelos muy grandes, centramos con muchos datos, con muchas capas,
+
+27
+00:01:40,159 --> 00:01:45,079
+una arquitectura bastante potente y muchos billones de parámetros.
+
+28
+00:01:45,079 --> 00:01:50,119
+No tiene sentido que nosotros pongamos a hacer este tipo de modelos,
+
+29
+00:01:50,399 --> 00:01:51,560
+a entrenarlos desde cero.
+
+30
+00:01:51,760 --> 00:01:54,719
+Al final esto lo dejamos para las grandes empresas,
+
+31
+00:01:54,799 --> 00:01:59,040
+pues esas empresas tipo Anthropic, tipo OpenEye y demás,
+
+32
+00:01:59,040 --> 00:02:03,040
+o incluso para grandes empresas que no quieren depender de terceros,
+
+33
+00:02:03,040 --> 00:02:05,439
+pero idealmente tiene que ser para grandes empresas,
+
+34
+00:02:05,439 --> 00:02:08,240
+esa parte de ese entrenamiento completo.
+
+35
+00:02:08,719 --> 00:02:11,159
+¿Vale? ¿Por qué? Porque se evitan muchísimos datos,
+
+36
+00:02:11,520 --> 00:02:14,520
+se necesita también, bueno, pues en una arquitectura y se necesita
+
+37
+00:02:15,039 --> 00:02:18,800
+al final muchísima computación, bien en cloud o bien
+
+38
+00:02:19,280 --> 00:02:22,560
+en infraestructura propietaria que se implemente, ¿vale?
+
+39
+00:02:22,560 --> 00:02:25,640
+A nivel GPU, tiempo computacional, entonces es muy, muy, muy costoso.
+
+40
+00:02:25,680 --> 00:02:27,320
+Tiene sentido en muy pocos casos.
+
+41
+00:02:27,320 --> 00:02:28,960
+¿Qué es lo que sí que tiene sentido?
+
+42
+00:02:28,960 --> 00:02:31,320
+Pues que nosotros, en lugar de entrenarlo desde cero,
+
+43
+00:02:31,320 --> 00:02:32,719
+estas arquitecturas, ¿no?
+
+44
+00:02:32,719 --> 00:02:35,680
+Al final cada modelo tiene su propia arquitectura,
+
+45
+00:02:35,680 --> 00:02:36,960
+que es un poco de lo que los diferencia,
+
+46
+00:02:36,960 --> 00:02:39,400
+también han sido entrenados con datos un poco diferentes,
+
+47
+00:02:39,400 --> 00:02:40,520
+diferentes estrategias.
+
+48
+00:02:40,520 --> 00:02:44,560
+Nosotros podemos coger ese modelo base y hacerle lo que se llama un ajuste fino.
+
+49
+00:02:44,560 --> 00:02:47,480
+Le podemos meter datos que no sean tan grandes,
+
+50
+00:02:47,519 --> 00:02:49,919
+es decir, tienen que ser bastantes datos para que tenga sentido,
+
+51
+00:02:49,919 --> 00:02:52,959
+pero no tiene que ser tan inmenso como han sido entrenados,
+
+52
+00:02:52,959 --> 00:02:56,039
+pues, a GPT, por ejemplo, sino que le podemos meter datos,
+
+53
+00:02:56,039 --> 00:02:58,560
+bueno, pues, de alguna aplicación concreta que nosotros queramos,
+
+54
+00:02:58,560 --> 00:03:00,359
+desde datos que tengamos de nuestra empresa,
+
+55
+00:03:00,359 --> 00:03:04,039
+del sitio en el que trabajamos, de un sector,
+
+56
+00:03:04,039 --> 00:03:06,159
+imagínate, pues, datos médicos, datos de fitness,
+
+57
+00:03:06,159 --> 00:03:08,079
+datos de código, de lo que sea.
+
+58
+00:03:08,079 --> 00:03:11,039
+Y lo que vamos a hacer es centrarnos en reentrenar
+
+59
+00:03:11,039 --> 00:03:13,039
+alguna de sus partes, ¿vale?,
+
+60
+00:03:13,039 --> 00:03:15,039
+alguna de sus capas, no todas,
+
+61
+00:03:15,039 --> 00:03:17,039
+y ahí es donde se produce ese ajuste fino.
+
+62
+00:03:17,120 --> 00:03:20,120
+Esto es en lo que consiste ese fine tuning.
+
+63
+00:03:20,120 --> 00:03:23,359
+Pero antes de entrar en cómo hacer un fine tuning,
+
+64
+00:03:23,359 --> 00:03:24,959
+vamos a ver las diferentes estrategias y, bueno,
+
+65
+00:03:24,959 --> 00:03:26,919
+ver un poco cuando tiene sentido,
+
+66
+00:03:26,919 --> 00:03:30,399
+porque fine tuning no es la única forma en la que nosotros
+
+67
+00:03:30,399 --> 00:03:34,519
+podemos modificar la información o el comportamiento de un modelo.
+
+68
+00:03:34,519 --> 00:03:37,959
+De hecho, es la opción que no es la primera que tenemos que usar,
+
+69
+00:03:37,959 --> 00:03:41,000
+¿vale?, porque aunque sea fine tuning y sean pocos datos
+
+70
+00:03:41,000 --> 00:03:42,239
+y sea solo una fracción,
+
+71
+00:03:42,239 --> 00:03:45,159
+y hay estrategias que permiten acelerar mucho este entrenamiento,
+
+72
+00:03:45,159 --> 00:03:46,719
+como veremos después,
+
+73
+00:03:46,719 --> 00:03:50,719
+aún sigue teniendo limitaciones a nivel...
+
+74
+00:03:50,719 --> 00:03:52,560
+Entonces, antes de pasar al fine tuning,
+
+75
+00:03:52,560 --> 00:03:56,240
+vamos a ver qué tres formas hay para poder modificar
+
+76
+00:03:56,240 --> 00:03:58,800
+la información o el comportamiento de estos modelos del DM.
+
+77
+00:03:58,800 --> 00:04:02,400
+En primer lugar, y esta sería, pues, la opción más barata,
+
+78
+00:04:02,400 --> 00:04:04,079
+más exequible y más directa,
+
+79
+00:04:04,079 --> 00:04:05,919
+serías aparte de pro ingenieria.
+
+80
+00:04:05,919 --> 00:04:10,439
+En este caso, nosotros lo que hacemos es darle un mensaje,
+
+81
+00:04:10,439 --> 00:04:12,639
+darle ese PROM con una estructura clara
+
+82
+00:04:12,639 --> 00:04:15,719
+y unas instrucciones claras sobre cómo se va a comportar
+
+83
+00:04:15,719 --> 00:04:20,199
+esa inteligencia artificial y sobre qué contexto queremos darle.
+
+84
+00:04:20,199 --> 00:04:22,959
+Es mucho más directo, no tiene que ser reentrenado,
+
+85
+00:04:22,959 --> 00:04:25,759
+simplemente lo obtiene como contexto,
+
+86
+00:04:25,759 --> 00:04:27,800
+como información que nosotros le damos,
+
+87
+00:04:27,800 --> 00:04:29,079
+y es mucho más flexible.
+
+88
+00:04:29,079 --> 00:04:33,600
+Cambiando este PROM y aplicando técnicas de ingeniería de PROM
+
+89
+00:04:33,600 --> 00:04:35,920
+para hacer las respuestas mucho mejores,
+
+90
+00:04:35,920 --> 00:04:37,920
+vamos a poder obtener buenas respuestas.
+
+91
+00:04:37,920 --> 00:04:40,199
+¿Qué pasa? Que tiene también ciertas limitaciones.
+
+92
+00:04:40,199 --> 00:04:42,319
+Además, no hace falta entrenamiento y es muy flexible,
+
+93
+00:04:42,319 --> 00:04:43,800
+pero la limitación es que,
+
+94
+00:04:43,879 --> 00:04:46,240
+es que está limitado por cómo es el modelo de por sí
+
+95
+00:04:46,240 --> 00:04:48,759
+y por cómo está entrenado el modelo de por sí.
+
+96
+00:04:48,759 --> 00:04:54,759
+Siguiente punto, si queremos añadirle información extra a nuestro modelo,
+
+97
+00:04:54,759 --> 00:04:57,879
+de esto ya hemos hablado bastante, tendríamos el RAG.
+
+98
+00:04:57,879 --> 00:04:59,319
+El RAG lo que hace es,
+
+99
+00:04:59,319 --> 00:05:04,120
+bueno, pues tenemos ese modelo con ese conocimiento de su preentrenamiento,
+
+100
+00:05:04,120 --> 00:05:06,439
+que es el que nosotros ya utilizamos,
+
+101
+00:05:06,439 --> 00:05:09,519
+y le podemos añadir información extra para que la consulte
+
+102
+00:05:09,519 --> 00:05:12,439
+cuando quiera responder esta información extra,
+
+103
+00:05:12,480 --> 00:05:14,680
+pues pueden ser, igual, documentos de nuestro trabajo,
+
+104
+00:05:14,680 --> 00:05:17,959
+de nuestra empresa, de las máquinas, de las ventas, de los viajes,
+
+105
+00:05:17,959 --> 00:05:21,399
+de nuestras reuniones, de nuestros productos, de lo que sea,
+
+106
+00:05:21,399 --> 00:05:25,680
+del sector, de un sector que queramos, del BOE, de cualquier cosa,
+
+107
+00:05:25,680 --> 00:05:26,959
+para que consulte.
+
+108
+00:05:26,959 --> 00:05:29,439
+Esto lo que permite es que, si ese modelo cuando ha sido entrenado
+
+109
+00:05:29,439 --> 00:05:30,720
+no tiene cierta información,
+
+110
+00:05:30,720 --> 00:05:33,839
+bien porque fue entrenado anteriormente la información que le queremos dar,
+
+111
+00:05:33,839 --> 00:05:35,800
+o bien porque no disponía de esa información,
+
+112
+00:05:35,800 --> 00:05:39,079
+porque al final, el SADGPT no tiene por qué disponer o llama,
+
+113
+00:05:39,079 --> 00:05:40,240
+o cualquier otro modelo,
+
+114
+00:05:40,280 --> 00:05:43,759
+no tiene por qué disponer de cierta información que nosotros le queremos dar,
+
+115
+00:05:43,759 --> 00:05:46,800
+pues aquí es interesante utilizar este RAG,
+
+116
+00:05:46,800 --> 00:05:49,879
+porque dado ese comportamiento ya,
+
+117
+00:05:49,879 --> 00:05:51,199
+y ese conocimiento que tiene,
+
+118
+00:05:51,199 --> 00:05:54,040
+puede consultar y apoyarse en conocimiento extra.
+
+119
+00:05:54,040 --> 00:05:57,319
+Esto es, pues como un trabajador,
+
+120
+00:05:57,319 --> 00:05:59,759
+que en lugar de ser un trabajador senior que lo sabe todo,
+
+121
+00:05:59,759 --> 00:06:01,800
+bueno, pues tienes a lo mejor un trabajador más junior,
+
+122
+00:06:01,800 --> 00:06:04,960
+que no lo sabe todo, pero sí sabe consultar en internet,
+
+123
+00:06:04,960 --> 00:06:08,079
+o consultar en libros, o consultar en documentación.
+
+124
+00:06:08,079 --> 00:06:11,680
+Bueno, pues al final va a tener el mismo resultado,
+
+125
+00:06:11,680 --> 00:06:14,039
+simplemente que no lo tiene en su conocimiento integrado,
+
+126
+00:06:14,039 --> 00:06:15,839
+sino que lo busca, lo consulta,
+
+127
+00:06:15,839 --> 00:06:19,959
+para realizar esa acción o para decirte esa respuesta.
+
+128
+00:06:19,959 --> 00:06:21,800
+Esto es bastante bueno para eso,
+
+129
+00:06:21,800 --> 00:06:25,759
+para dar información extra sin tener que entrenarlo,
+
+130
+00:06:25,759 --> 00:06:29,399
+sin tener que, bueno, pues que sea muy costoso,
+
+131
+00:06:29,399 --> 00:06:32,279
+además reduce bastante las alucinaciones,
+
+132
+00:06:32,279 --> 00:06:33,680
+pero sí que necesitas,
+
+133
+00:06:33,680 --> 00:06:34,959
+bueno, pues cierto conocimiento base,
+
+134
+00:06:34,959 --> 00:06:36,680
+también de implementación, de hacerlo bien,
+
+135
+00:06:36,720 --> 00:06:38,920
+que bueno, aquí lo hemos visto,
+
+136
+00:06:38,920 --> 00:06:40,360
+y sería un poco el intermedio,
+
+137
+00:06:40,360 --> 00:06:42,519
+porque al final el ProEngineering es el más simple,
+
+138
+00:06:42,519 --> 00:06:43,879
+puede dar buenos resultados,
+
+139
+00:06:43,879 --> 00:06:45,600
+luego este sería el más balanceado,
+
+140
+00:06:45,600 --> 00:06:48,720
+entre rendimiento y lo que cuesta,
+
+141
+00:06:48,720 --> 00:06:50,519
+y luego en última instancia, el más,
+
+142
+00:06:50,519 --> 00:06:52,040
+bueno, el más caro, el más costoso,
+
+143
+00:06:52,040 --> 00:06:53,519
+aquí sí que tendríamos el fine tuning,
+
+144
+00:06:53,519 --> 00:06:55,040
+que es lo que vamos a ver hoy.
+
+145
+00:06:55,040 --> 00:06:57,519
+En este caso, nosotros tenemos que,
+
+146
+00:06:57,519 --> 00:06:58,840
+bueno, al final es un entrenamiento,
+
+147
+00:06:58,840 --> 00:07:00,280
+entonces tenemos que obtener datos,
+
+148
+00:07:00,280 --> 00:07:02,280
+que esos datos pueden ser documentos,
+
+149
+00:07:02,280 --> 00:07:04,720
+tendremos que, bueno,
+
+150
+00:07:04,800 --> 00:07:08,160
+procesarlos, toquenizarlos para que lo entienda,
+
+151
+00:07:08,160 --> 00:07:10,560
+y tener muy claro, pues que es,
+
+152
+00:07:10,560 --> 00:07:11,560
+digamos, ordenarlos,
+
+153
+00:07:11,560 --> 00:07:13,640
+porque si a lo mejor queremos que clasifique documentos,
+
+154
+00:07:13,640 --> 00:07:16,000
+o que tenga preguntas y respuestas
+
+155
+00:07:16,000 --> 00:07:18,360
+para que responda como nosotros queramos,
+
+156
+00:07:18,360 --> 00:07:20,040
+y demás, pues tiene que haber cierto,
+
+157
+00:07:20,040 --> 00:07:22,320
+cierta limpieza, cierto procesamiento de datos,
+
+158
+00:07:22,320 --> 00:07:25,040
+que también, pues eso puede llevar tiempo,
+
+159
+00:07:25,040 --> 00:07:27,520
+depende cómo sea el proyecto y cómo sean los datos,
+
+160
+00:07:27,520 --> 00:07:29,360
+y luego tendremos que entrenar,
+
+161
+00:07:29,360 --> 00:07:32,240
+hacer ese ajuste fino de ese modelo,
+
+162
+00:07:32,319 --> 00:07:34,920
+que también lleva tiempo a nivel computación,
+
+163
+00:07:34,920 --> 00:07:36,920
+lleva coste, para ya, en última instancia,
+
+164
+00:07:36,920 --> 00:07:38,400
+bueno, pues poder desplegar, ¿vale?
+
+165
+00:07:38,400 --> 00:07:41,000
+Esto es interesante cuando queremos darle una tarea,
+
+166
+00:07:41,000 --> 00:07:42,280
+o un dominio específico,
+
+167
+00:07:42,280 --> 00:07:45,199
+queremos que tenga un rendimiento mucho mejor,
+
+168
+00:07:45,199 --> 00:07:47,720
+en cierta tarea, en cierto sector,
+
+169
+00:07:47,720 --> 00:07:50,439
+y aquí, pues sí que va, digamos,
+
+170
+00:07:50,439 --> 00:07:53,240
+a integrar ese conocimiento, en tono,
+
+171
+00:07:53,240 --> 00:07:54,720
+en comportamiento, incluso, bueno,
+
+172
+00:07:54,720 --> 00:07:56,079
+pues cierto conocimiento.
+
+173
+00:07:56,079 --> 00:07:59,040
+Entonces, bueno, pues un poco lo que os decía,
+
+174
+00:07:59,040 --> 00:08:02,480
+el Proningeniering, que al final es guiarlo por palabras,
+
+175
+00:08:02,480 --> 00:08:05,120
+pues esto es bueno para prototipos,
+
+176
+00:08:05,120 --> 00:08:07,680
+para, es la primera cosa que hay que probar,
+
+177
+00:08:07,680 --> 00:08:09,160
+porque es la más barata, es la más rápida,
+
+178
+00:08:09,160 --> 00:08:12,120
+entonces, siempre se recomienda empezar
+
+179
+00:08:12,120 --> 00:08:13,920
+por esa parte de Proningeniering,
+
+180
+00:08:13,920 --> 00:08:16,640
+pueden ser tareas genéricas en base a cómo sea ese modelo,
+
+181
+00:08:16,640 --> 00:08:18,640
+y además, tiene bastante flexibilidad,
+
+182
+00:08:18,640 --> 00:08:20,800
+tiene poca complejidad y tiene poco coste.
+
+183
+00:08:20,800 --> 00:08:25,080
+Después, bueno, después de lo siguiente a utilizar,
+
+184
+00:08:25,080 --> 00:08:27,640
+sería el RAG, el RAG es mucho menos costoso,
+
+185
+00:08:27,719 --> 00:08:29,120
+también que el Fine Tuning,
+
+186
+00:08:29,120 --> 00:08:32,039
+también implementarlo técnicamente es más sencillo,
+
+187
+00:08:32,039 --> 00:08:33,960
+entonces sería la siguiente etapa.
+
+188
+00:08:33,960 --> 00:08:36,759
+Aquí, para preguntas y respuestas sobre una temática,
+
+189
+00:08:36,759 --> 00:08:38,519
+para un conocimiento que sea dinámico,
+
+190
+00:08:38,519 --> 00:08:40,199
+es decir, al final cuando nosotros entrenamos
+
+191
+00:08:40,199 --> 00:08:42,480
+con Fine Tuning, el conocimiento se queda dentro del modelo,
+
+192
+00:08:42,480 --> 00:08:44,240
+mientras que el RAG, nosotros podemos cambiar
+
+193
+00:08:44,240 --> 00:08:46,360
+la información en ese vector store,
+
+194
+00:08:46,360 --> 00:08:47,799
+con esa base de datos vectorial,
+
+195
+00:08:47,799 --> 00:08:49,360
+que es donde consulta,
+
+196
+00:08:49,360 --> 00:08:51,439
+y podemos ir cambiándole y es algo dinámico.
+
+197
+00:08:51,439 --> 00:08:54,399
+Entonces, sí que es más costoso que el Proningeniering,
+
+198
+00:08:54,399 --> 00:08:56,080
+porque al final, pues tiene más elementos,
+
+199
+00:08:57,040 --> 00:09:00,680
+bueno, pues todo el contexto que va cogiendo
+
+200
+00:09:00,680 --> 00:09:02,160
+de esa parte de retriba,
+
+201
+00:09:02,160 --> 00:09:05,000
+de esa parte de consulta del vector,
+
+202
+00:09:05,000 --> 00:09:07,000
+pues va a computar como tokens,
+
+203
+00:09:07,000 --> 00:09:10,120
+pero es moderado entre complejidad y coste,
+
+204
+00:09:10,120 --> 00:09:11,759
+es más complejo y más costoso que este,
+
+205
+00:09:11,759 --> 00:09:14,160
+pero es mucho menos que el Fine Tuning.
+
+206
+00:09:14,160 --> 00:09:15,759
+Que al final aquí, en el Fine Tuning,
+
+207
+00:09:15,759 --> 00:09:17,560
+nosotros le vamos a enseñar al modelo,
+
+208
+00:09:17,560 --> 00:09:19,639
+digamos, nuevas destrezas, nuevas habilidades,
+
+209
+00:09:19,639 --> 00:09:22,560
+nuevas skills, tareas concretas,
+
+210
+00:09:22,560 --> 00:09:23,560
+de un dominio específico,
+
+211
+00:09:23,560 --> 00:09:25,280
+queremos un rendimiento mucho mayor,
+
+212
+00:09:25,279 --> 00:09:28,399
+pero también vamos a tener costes mayores,
+
+213
+00:09:28,399 --> 00:09:30,199
+bueno, pues a nivel técnico también es más costoso,
+
+214
+00:09:30,199 --> 00:09:33,600
+pero sobre todo, vamos a necesitar costes a nivel GPU,
+
+215
+00:09:33,600 --> 00:09:36,559
+a nivel créditos, a nivel cloud mayores.
+
+216
+00:09:36,559 --> 00:09:37,720
+En este gráfico, bueno,
+
+217
+00:09:37,720 --> 00:09:40,720
+pues se puede ver un poco cómo es el nivel de adaptación
+
+218
+00:09:40,720 --> 00:09:43,319
+del modelo y cómo es el conocimiento externo.
+
+219
+00:09:43,319 --> 00:09:45,360
+Entonces, cuando el nivel de adaptación del modelo
+
+220
+00:09:45,360 --> 00:09:47,159
+y el conocimiento externo es bajo,
+
+221
+00:09:47,159 --> 00:09:49,519
+ambas son bajas, pues aquí es Proningeniering,
+
+222
+00:09:49,519 --> 00:09:50,639
+no adaptamos el modelo,
+
+223
+00:09:50,639 --> 00:09:53,399
+y tampoco le estamos dando un conocimiento externo extra,
+
+224
+00:09:53,399 --> 00:09:55,079
+sino que al final estamos metiendo contexto.
+
+225
+00:09:55,120 --> 00:09:58,680
+Si sin modificar el modelo le metemos más información,
+
+226
+00:09:58,680 --> 00:10:00,600
+pues lo ideal sería tirar por un rajo.
+
+227
+00:10:00,600 --> 00:10:03,240
+Si no queremos mucha más información,
+
+228
+00:10:03,240 --> 00:10:05,840
+sino que queremos es más adaptar, digamos,
+
+229
+00:10:05,840 --> 00:10:09,440
+ese comportamiento del modelo para que, bueno,
+
+230
+00:10:09,440 --> 00:10:11,800
+pues sea mejor haciendo ciertas cosas,
+
+231
+00:10:11,800 --> 00:10:14,879
+o el tono y demás, pues ahí iríamos al fine tune.
+
+232
+00:10:14,879 --> 00:10:17,480
+Y si queremos todo, por supuesto se puede combinar,
+
+233
+00:10:17,480 --> 00:10:18,879
+se pueden combinar incluso las tres,
+
+234
+00:10:18,879 --> 00:10:21,440
+se puede combinar una parte de Proningeniering
+
+235
+00:10:21,440 --> 00:10:23,640
+a un modelo fine tuneado,
+
+236
+00:10:23,639 --> 00:10:25,360
+y además que ese modelo fine tuneado,
+
+237
+00:10:25,360 --> 00:10:27,039
+donde tú lo has metido también Proningeniering
+
+238
+00:10:27,039 --> 00:10:28,879
+para que se comporte de una forma,
+
+239
+00:10:28,879 --> 00:10:32,159
+además le puedes meter rach para que consulte datos externos.
+
+240
+00:10:32,159 --> 00:10:34,319
+O sea, si se puede combinar todo, vale, perfectamente.
+
+241
+00:10:34,319 --> 00:10:36,840
+Y como os decía, bueno, pues este sería,
+
+242
+00:10:36,840 --> 00:10:39,319
+desde lo más simple, hasta lo más complejo,
+
+243
+00:10:39,319 --> 00:10:42,199
+y desde lo que tiene un rendimiento más bajo
+
+244
+00:10:42,199 --> 00:10:43,360
+hasta un rendimiento más alto,
+
+245
+00:10:43,360 --> 00:10:45,319
+pero el orden que habría que ir probando
+
+246
+00:10:45,319 --> 00:10:49,159
+es primero utilizar ese modelo LLM existente,
+
+247
+00:10:49,159 --> 00:10:52,679
+vale, tal cual incluso con lo que se llamaría un zero shot prompting,
+
+248
+00:10:52,719 --> 00:10:55,239
+que básicamente es que ni siquiera le pones ejemplos ni nada,
+
+249
+00:10:55,239 --> 00:10:56,799
+simplemente le dices, por ejemplo,
+
+250
+00:10:56,799 --> 00:10:59,759
+clasifica estos mensajes en positivo y negativo,
+
+251
+00:10:59,759 --> 00:11:04,120
+cualquier modelo LLM puede más o menos realizar esa tarea.
+
+252
+00:11:04,120 --> 00:11:07,279
+Si esa tarea no consiguiera hacerla bien,
+
+253
+00:11:07,279 --> 00:11:09,719
+podemos ya pasar en esa parte de Proningeniering,
+
+254
+00:11:09,719 --> 00:11:12,079
+y en ese propio prompting le podemos poner ejemplos,
+
+255
+00:11:12,079 --> 00:11:15,279
+que ahí al sol podemos tirar de ese few shot prompting, etc.
+
+256
+00:11:15,279 --> 00:11:18,359
+Y ponerle ejemplos para que, bueno, pues que lo tengan en cuenta.
+
+257
+00:11:18,360 --> 00:11:22,639
+También, si ya no solo queremos esa parte de comportamiento,
+
+258
+00:11:22,639 --> 00:11:25,240
+sino meterle conocimiento extra de cómo queremos a lo mejor,
+
+259
+00:11:25,240 --> 00:11:29,440
+o respuestas y preguntas comunes o información de algo concreto,
+
+260
+00:11:29,440 --> 00:11:30,919
+tendríamos que pasar a ese rag,
+
+261
+00:11:30,919 --> 00:11:35,120
+y ya por último sería interesante si queremos ir mucho más en profundidad,
+
+262
+00:11:35,120 --> 00:11:36,879
+con mucho más rendimiento,
+
+263
+00:11:36,879 --> 00:11:38,960
+y nos lo podemos permitir por ese coste y demás,
+
+264
+00:11:38,960 --> 00:11:40,919
+pues a lo mejor ir a Fine Tuning, vale.
+
+265
+00:11:40,919 --> 00:11:42,920
+No es lo que más se suele implementar,
+
+266
+00:11:42,920 --> 00:11:45,279
+muchas veces se implementa Fine Tuning,
+
+267
+00:11:45,279 --> 00:11:46,480
+incluso ya no solo Fine Tuning,
+
+268
+00:11:46,519 --> 00:11:48,800
+sino que incluso un entrenamiento completo,
+
+269
+00:11:48,800 --> 00:11:52,320
+como se han pasado en algunas sías en España o Latinoamérica,
+
+270
+00:11:52,320 --> 00:11:55,560
+y demás que no tienen unos resultados superbuenos,
+
+271
+00:11:55,560 --> 00:11:57,279
+a diferencia de coger un modelo base,
+
+272
+00:11:57,279 --> 00:11:59,639
+aplicarlo en Proningeniering o aplicarlo en un rag,
+
+273
+00:11:59,639 --> 00:12:01,399
+pero sin embargo el coste es altísimo, vale.
+
+274
+00:12:01,399 --> 00:12:05,600
+Entonces, el Fine Tuning existe, se utiliza, tiene sentido,
+
+275
+00:12:05,600 --> 00:12:08,039
+pero hay que ver en qué tipo de empresas y en qué tipos de casos.
+
+276
+00:12:08,039 --> 00:12:09,920
+Luego ya estarías a parte de Full Fine Tuning,
+
+277
+00:12:09,920 --> 00:12:13,200
+que es coger el modelo entero y ajustarlo,
+
+278
+00:12:13,200 --> 00:12:14,879
+porque en el Fine Tuning lo que hacemos es,
+
+279
+00:12:14,919 --> 00:12:20,000
+digamos, reentrenar con datos que nosotros le metamos a alguna fracción,
+
+280
+00:12:20,000 --> 00:12:21,200
+vale, por eso se llama ajuste fino,
+
+281
+00:12:21,200 --> 00:12:23,679
+pero puede ser un ajuste fino completo,
+
+282
+00:12:23,679 --> 00:12:26,960
+donde nosotros entrenaríamos todo al completo,
+
+283
+00:12:26,960 --> 00:12:31,919
+todo el modelo, como que le podríamos añadir cierta información a lo que ya tiene.
+
+284
+00:12:31,919 --> 00:12:33,639
+Y luego ya hay un entrenamiento desde cero,
+
+285
+00:12:33,639 --> 00:12:35,559
+es decir, cogemos lo que es la arquitectura
+
+286
+00:12:35,559 --> 00:12:37,320
+y lo entrenamos desde cero nosotros,
+
+287
+00:12:37,320 --> 00:12:40,480
+que ya os digo, estas dos, como tengo apuntado aquí,
+
+288
+00:12:40,480 --> 00:12:44,480
+se quedan para grandes empresas con una infraestructura brutal,
+
+289
+00:12:44,560 --> 00:12:48,320
+que tienen muchos créditos en Cloud, GPUs propias y demás,
+
+290
+00:12:48,320 --> 00:12:51,159
+y no es lo que se suele aplicar, no tiene tanto sentido.
+
+291
+00:12:51,159 --> 00:12:53,240
+Esto es lo que obviamente hacen Google,
+
+292
+00:12:53,240 --> 00:12:56,440
+hacen OpenAI, Anthropi, van cambiando incluso la arquitectura,
+
+293
+00:12:56,440 --> 00:13:00,399
+podrías llegar a tener sentido bien hecho,
+
+294
+00:13:00,399 --> 00:13:03,360
+a lo mejor en gobiernos o en centros de investigación supergrandes,
+
+295
+00:13:03,360 --> 00:13:06,759
+en empresas supergrandes de software,
+
+296
+00:13:06,759 --> 00:13:09,159
+tecnológicas y demás para cosas muy concretas,
+
+297
+00:13:09,159 --> 00:13:11,480
+pero no es lo normal que nosotros hagamos esto,
+
+298
+00:13:11,480 --> 00:13:14,320
+sino que nos centremos en esta parte y que vayamos empezando.
+
+299
+00:13:14,360 --> 00:13:16,640
+Prueba y mejora, prueba, error y mejorando,
+
+300
+00:13:16,640 --> 00:13:18,920
+hasta, bueno, si no quedamos remedio, hacer ese fine tuning,
+
+301
+00:13:18,920 --> 00:13:19,960
+incluso combinar.
+
+302
+00:13:19,960 --> 00:13:22,720
+Para seguir profundizando en el fine tuning,
+
+303
+00:13:22,720 --> 00:13:26,680
+tenemos que recordar un poco la arquitectura de los transformes.
+
+304
+00:13:26,680 --> 00:13:29,080
+Al final, los transformes vienen del deep learning,
+
+305
+00:13:29,080 --> 00:13:30,920
+son una evolución y son una parte.
+
+306
+00:13:30,920 --> 00:13:35,840
+Y lo que tienen estos modelos de lenguaje largos, modernos,
+
+307
+00:13:35,840 --> 00:13:37,400
+tienen diferentes arquitecturas,
+
+308
+00:13:37,400 --> 00:13:40,320
+en lo que, bueno, pues hay diferentes variaciones.
+
+309
+00:13:40,320 --> 00:13:43,480
+Tiene una parte de encoder y tiene una parte de decoder,
+
+310
+00:13:43,519 --> 00:13:46,399
+que esto ya lo vimos en su día, no voy a meter mucho en esto.
+
+311
+00:13:46,399 --> 00:13:49,240
+Puede tener solamente encoder,
+
+312
+00:13:49,240 --> 00:13:52,519
+puede tener solamente decoder o puede tener encoder decoder.
+
+313
+00:13:52,519 --> 00:13:55,399
+Por ejemplo, los primeros modelos, que estos son muy buenos
+
+314
+00:13:55,399 --> 00:13:58,879
+y todavía se pueden utilizar, estos modelos sacó Google,
+
+315
+00:13:58,879 --> 00:14:01,480
+más al principio no era tanto esa parte de chatbot
+
+316
+00:14:01,480 --> 00:14:02,600
+como funciona ahora,
+
+317
+00:14:02,600 --> 00:14:04,639
+sino que eran más centrados en preguntas y respuestas,
+
+318
+00:14:04,639 --> 00:14:07,879
+en clasificación de textos, en etiquetado de textos,
+
+319
+00:14:07,879 --> 00:14:12,639
+en relacionar de forma semántica o hacer búsquedas semánticas,
+
+320
+00:14:12,639 --> 00:14:16,960
+pues, por ejemplo, el BERT son modelos solamente encoder,
+
+321
+00:14:16,960 --> 00:14:19,600
+que se le puede aplicar perfectamente un fine tuning,
+
+322
+00:14:19,600 --> 00:14:21,480
+para, pues, mejorar quizá,
+
+323
+00:14:21,480 --> 00:14:23,519
+pues, usar estos modelos y mejorar, pues,
+
+324
+00:14:23,519 --> 00:14:27,080
+esa cierta clasificación de textos,
+
+325
+00:14:27,080 --> 00:14:31,159
+algunas preguntas, algunas búsquedas semánticas y demás.
+
+326
+00:14:31,159 --> 00:14:34,439
+Y luego, para que veamos otros modelos que conocemos,
+
+327
+00:14:34,439 --> 00:14:36,039
+sería los modelos GPT,
+
+328
+00:14:36,039 --> 00:14:40,080
+vale, que al final son uno de los modelos que más acostumbrados
+
+329
+00:14:40,080 --> 00:14:42,600
+estamos a utilizarlo y que más se han popularizado,
+
+330
+00:14:42,600 --> 00:14:45,840
+aquí, pues, entran los GPT, entrarían los modelos llama,
+
+331
+00:14:45,840 --> 00:14:49,360
+cada uno tiene su arquitectura, pero son solo decoders.
+
+332
+00:14:49,360 --> 00:14:51,399
+Esto es lo que hacen, al final, esa parte de decoder,
+
+333
+00:14:51,399 --> 00:14:52,920
+esa parte de general.
+
+334
+00:14:52,920 --> 00:14:54,399
+Y tienen, bueno, pues, esta arquitectura,
+
+335
+00:14:54,399 --> 00:14:58,519
+le metes tokens, estos tokens se vectorizan
+
+336
+00:14:58,519 --> 00:15:00,600
+y aquí dentro de su arquitectura,
+
+337
+00:15:00,600 --> 00:15:03,240
+pues, tienen esos mecanismos de atención
+
+338
+00:15:03,240 --> 00:15:06,759
+que permiten centrarse en ese significado y en esas palabras
+
+339
+00:15:06,759 --> 00:15:07,800
+y luego tienen una parte.
+
+340
+00:15:07,800 --> 00:15:11,279
+Bueno, Feedforward de la red neuronal,
+
+341
+00:15:11,319 --> 00:15:14,240
+más enfocada a ese comportamiento y ya por último,
+
+342
+00:15:14,240 --> 00:15:17,720
+pues, a parte de esos bloques de decodificado
+
+343
+00:15:17,720 --> 00:15:21,039
+para sacar los tokens de salida y generar ese texto,
+
+344
+00:15:21,039 --> 00:15:21,959
+básicamente.
+
+345
+00:15:21,959 --> 00:15:24,919
+Esto, al final, lo que hace es que en base a un texto de entrada,
+
+346
+00:15:24,919 --> 00:15:27,759
+pues, se vectoriza para que lo entienda
+
+347
+00:15:27,759 --> 00:15:30,399
+y aquí dentro lo que va haciendo es entender,
+
+348
+00:15:30,399 --> 00:15:32,919
+digamos, ese texto y en base a eso,
+
+349
+00:15:32,919 --> 00:15:35,799
+predecir los tokens de salida que obviamente,
+
+350
+00:15:35,799 --> 00:15:37,439
+pues, tienen que tener sentido.
+
+351
+00:15:37,439 --> 00:15:38,799
+Así es que, al final, cómo funciona
+
+352
+00:15:38,799 --> 00:15:41,000
+cuando nosotros le metemos a chargé PTA algo,
+
+353
+00:15:41,039 --> 00:15:43,000
+le metemos unos tokens que al final, pues, esos tokens son.
+
+354
+00:15:43,000 --> 00:15:45,080
+Nosotros le metemos un prompt, una query,
+
+355
+00:15:45,080 --> 00:15:49,399
+calcular lo que escribimos, eso, se divide en tokens, ¿vale?
+
+356
+00:15:49,399 --> 00:15:50,879
+Que esos tokens al final pueden ser caracteres,
+
+357
+00:15:50,879 --> 00:15:52,720
+pueden ser letras, pueden ser palabras,
+
+358
+00:15:52,720 --> 00:15:55,559
+ya depende del tokenizador que utilice cada modelo.
+
+359
+00:15:55,559 --> 00:16:00,200
+Lo entiende, lo comprende y predice los tokens de salida
+
+360
+00:16:00,200 --> 00:16:03,000
+y ya después lo saca para que nosotros lo entenda.
+
+361
+00:16:03,000 --> 00:16:05,519
+Es importante esto porque el fine tune,
+
+362
+00:16:05,519 --> 00:16:08,159
+el fine tuning en el final va a coger una parte,
+
+363
+00:16:08,159 --> 00:16:09,519
+pero al final, dentro de esto,
+
+364
+00:16:09,600 --> 00:16:12,000
+como vimos también en su día,
+
+365
+00:16:12,000 --> 00:16:15,000
+pues, lo que tienen son, todos son bloques,
+
+366
+00:16:15,000 --> 00:16:19,199
+son matrices, son multiplicaciones matriciales
+
+367
+00:16:19,199 --> 00:16:24,480
+y es lo que da lugar a esas predicciones, por así decirlo.
+
+368
+00:16:24,480 --> 00:16:26,279
+Dentro del fine tuning, como os decía,
+
+369
+00:16:26,279 --> 00:16:28,319
+hay diferentes técnicas.
+
+370
+00:16:28,319 --> 00:16:30,199
+Está esa parte de,
+
+371
+00:16:30,199 --> 00:16:32,519
+y ya no solo dentro del fine tuning, sino del entrenamiento.
+
+372
+00:16:32,519 --> 00:16:36,199
+Está esa primera parte que sería lo que hacen los modelos grandes,
+
+373
+00:16:36,280 --> 00:16:39,720
+los modelos, la GPT y MINE y demás,
+
+374
+00:16:39,720 --> 00:16:42,320
+bueno, GPT, MINE, CLOUD y demás,
+
+375
+00:16:42,320 --> 00:16:43,680
+que es esa parte de pre-training,
+
+376
+00:16:43,680 --> 00:16:46,800
+que aquí se les mete un montón de texto no etiquetado,
+
+377
+00:16:46,800 --> 00:16:47,960
+de todo lo posible,
+
+378
+00:16:47,960 --> 00:16:50,200
+toda la información que pueda haber en libros y en internet
+
+379
+00:16:50,200 --> 00:16:52,720
+y acaban teniendo un modelo LLM,
+
+380
+00:16:52,720 --> 00:16:55,400
+que es ese modelo LLM que nosotros le llamamos pre-entrenado,
+
+381
+00:16:55,400 --> 00:16:56,759
+que ya tiene el comportamiento,
+
+382
+00:16:56,759 --> 00:16:58,640
+es decir, cualquier modelo open source
+
+383
+00:16:58,640 --> 00:17:01,280
+o cualquier modelo propietario que nosotros podamos utilizar,
+
+384
+00:17:01,280 --> 00:17:03,560
+le podemos denominar modelo pre-entrenado.
+
+385
+00:17:03,639 --> 00:17:06,480
+A ese modelo nosotros le podemos modificar el comportamiento
+
+386
+00:17:06,480 --> 00:17:08,319
+con este fine tuning como hemos visto.
+
+387
+00:17:08,319 --> 00:17:11,919
+Entonces podríamos hacer un fine tuning convencional,
+
+388
+00:17:11,919 --> 00:17:14,720
+metiéndole documentos o datos.
+
+389
+00:17:14,720 --> 00:17:15,639
+En este caso, va a ser texto,
+
+390
+00:17:15,639 --> 00:17:20,639
+por bueno, va a ser documentos concretos de algún sector de interés
+
+391
+00:17:20,639 --> 00:17:22,559
+que nosotros queramos
+
+392
+00:17:22,559 --> 00:17:28,480
+y le vamos a modificar o actualizar los parámetros.
+
+393
+00:17:28,480 --> 00:17:32,279
+Los parámetros originales del modelo se los vamos a modificar.
+
+394
+00:17:32,359 --> 00:17:36,200
+¿Qué pasa si nosotros modificamos todos esos parámetros?
+
+395
+00:17:36,200 --> 00:17:38,480
+Bueno, pues que puede darse el caso, suceda,
+
+396
+00:17:38,480 --> 00:17:40,639
+lo que se domina Olvido Catastrófico
+
+397
+00:17:40,639 --> 00:17:45,039
+y es que todo el conocimiento de la parte del pre-entrenamiento
+
+398
+00:17:45,039 --> 00:17:47,440
+que tenía por esas grandes empresas,
+
+399
+00:17:47,440 --> 00:17:50,079
+si nosotros le metemos todos los datos
+
+400
+00:17:50,079 --> 00:17:54,240
+y re-entrenamos en todo ese modelo, en toda esa arquitectura,
+
+401
+00:17:54,240 --> 00:17:56,599
+puede olvidar comportamiento anterior
+
+402
+00:17:56,599 --> 00:17:59,319
+o pueden mezclarse el comportamiento y dejar de funcionar bien.
+
+403
+00:17:59,319 --> 00:18:03,240
+Además de que es computacionalmente muy, muy, muy costós.
+
+404
+00:18:03,240 --> 00:18:05,279
+Entonces, la opción que se utiliza
+
+405
+00:18:05,279 --> 00:18:07,879
+es la que se llama para meter eficient fine tuning.
+
+406
+00:18:07,879 --> 00:18:11,759
+Es decir, en lugar de ajustar, reentrenar o fine tunear
+
+407
+00:18:11,759 --> 00:18:13,879
+en todas las capas, en todos los pesos,
+
+408
+00:18:13,879 --> 00:18:16,559
+al final estos modelos, como viene igual de deep learning,
+
+409
+00:18:16,559 --> 00:18:20,119
+lo que tienen son, bueno, son pesos que son los que van diciendo
+
+410
+00:18:20,119 --> 00:18:24,359
+hacia dónde tiene que predecir esos toques, por así decirlo.
+
+411
+00:18:24,359 --> 00:18:29,759
+Pues entonces, cogemos y entrenamos una pequeña fracción,
+
+412
+00:18:29,759 --> 00:18:33,399
+unos pequeños parámetros de todo ese modelo.
+
+413
+00:18:33,399 --> 00:18:35,079
+No son todos los parámetros internos,
+
+414
+00:18:35,079 --> 00:18:37,199
+nos modificamos, sino que son solo algunos.
+
+415
+00:18:37,199 --> 00:18:40,000
+¿Cómo lo hacemos? Congelamos unos, es decir, no se tocan
+
+416
+00:18:40,000 --> 00:18:41,719
+y digamos que nos centramos en otros.
+
+417
+00:18:41,719 --> 00:18:43,919
+Esto lo hace, además, mucho más barato, ¿vale?
+
+418
+00:18:43,919 --> 00:18:45,879
+Además de evitar ese solvido catastrófico.
+

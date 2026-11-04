@@ -1,0 +1,13 @@
+.venv/
+.env
+__pycache__/
+*.pyc
+.vscode/
+chroma_db/
+data/chunks.jsonl
+data/audio/
+data/uploads/
+*.mp3
+*.mp4
+*.wav
+*.log

@@ -1,0 +1,868 @@
+1
+00:00:00,000 --> 00:00:11,040
+Hola, qué tal. El día de hoy les voy a hablar de fine tuning y de lo que significa utilizar tus
+
+2
+00:00:11,040 --> 00:00:17,440
+datos propios en la inteligencia artificial. Primero que nada, me quiero presentar. Soy
+
+3
+00:00:17,440 --> 00:00:23,559
+Antonio Ferregrino Bolaños y tengo un título un poco extraño. Soy Machine Learning Data Engineer.
+
+4
+00:00:23,879 --> 00:00:29,879
+Mi trabajo actualmente consiste en dotar de datos a los algoritmos y modelos de Machine Learning
+
+5
+00:00:29,879 --> 00:00:36,280
+dentro de mi empresa. Me pueden encontrar en threads como Ferregrig y en ArrobaFeregrig
+
+6
+00:00:36,280 --> 00:00:43,000
+y en BajoNO y en BlueSky como Ferregrig.no. Si me quieren seguir en YouTube y me van a encontrar
+
+7
+00:00:43,000 --> 00:00:47,560
+más contenido similar a este, me pueden encontrar en esa dirección youtube.com.
+
+8
+00:00:47,560 --> 00:00:58,440
+Bien, y sin más, ¿qué les parece si entramos al tema? Lo primero que quiero hablar es de
+
+9
+00:00:58,440 --> 00:01:04,040
+qué es fine tuning. Pero antes de hablar de qué es fine tuning, me gustaría mencionar qué es un
+
+10
+00:01:04,040 --> 00:01:11,680
+modelo base y es que este es un concepto crucial en la parte del fine tuning. Ustedes seguramente
+
+11
+00:01:11,680 --> 00:01:17,400
+conocen los estus grandes modelos de lenguaje o LLMS o modelos de lenguaje a gran escala,
+
+12
+00:01:17,400 --> 00:01:22,720
+como últimamente he escuchado que se refieren a ellos en español. Estos modelos de lenguaje,
+
+13
+00:01:22,720 --> 00:01:28,160
+en su forma más sencilla, nos sirven a nosotros para modelar la probabilidad de una palabra
+
+14
+00:01:28,160 --> 00:01:35,600
+dadas las que le preceden. Y aquí les pongo un ejemplo bastante simple. Por ejemplo, un modelo
+
+15
+00:01:35,600 --> 00:01:40,920
+de lenguaje base. Si ustedes le ponen cuál es la capital de Francia, el modelo de lenguaje les va
+
+16
+00:01:40,920 --> 00:01:45,920
+a responder cuál es la capital de España y les podría seguir respondiendo preguntas como de
+
+17
+00:01:45,920 --> 00:01:52,320
+este tipo. Porque este modelo base no ha sido entrenado para responder una pregunta, sino más
+
+18
+00:01:52,320 --> 00:01:57,840
+bien para tratar de predecir qué es lo siguiente que va después de la pregunta cuál es la capital
+
+19
+00:01:57,840 --> 00:02:04,400
+de Francia. Y puede ser que este modelo base intuya o prediga que ustedes están tratando
+
+20
+00:02:04,400 --> 00:02:08,879
+de escribir, por ejemplo, un examen. Entonces les va a seguir poniendo más preguntas de este
+
+21
+00:02:09,840 --> 00:02:16,240
+tipo. Obviamente este no es un comportamiento ideal, al menos no es un comportamiento ideal en
+
+22
+00:02:16,240 --> 00:02:21,000
+muchos casos, porque lo que nosotros esperáramos es si nosotros le hacemos una pregunta al modelo
+
+23
+00:02:21,000 --> 00:02:25,680
+de lenguaje, el modelo de lenguaje simplemente debe respondernos con la respuesta, que en este
+
+24
+00:02:25,680 --> 00:02:32,919
+caso sería París. Aquí es en donde les digo que los modelos de lenguaje conocen sobre el mundo
+
+25
+00:02:32,919 --> 00:02:40,759
+del texto que se utiliza para entrenarlos, pero no necesariamente están entrenados para responder
+
+26
+00:02:40,759 --> 00:02:50,079
+de una forma adecuada. Entonces recuerden que un modelo de lenguaje base conoce sobre el lenguaje,
+
+27
+00:02:50,079 --> 00:02:56,759
+pero no está entrenado en una tarea específica. Y es así como nosotros tenemos modelos como
+
+28
+00:02:56,759 --> 00:03:06,679
+GPT4 o Lama 3.1 o Cloud Zone 3.7. Estos sí han sido afinados a través de fine tuning para actuar
+
+29
+00:03:06,679 --> 00:03:12,560
+como asistentes generales para no dar esas respuestas supergenéricas. Estos modelos han
+
+30
+00:03:12,560 --> 00:03:18,879
+sido educados a través de fine tuning para ayudarnos a responder preguntas, a crear resúmenes,
+
+31
+00:03:18,879 --> 00:03:26,359
+a generar nuevo contenido. Y estos modelos fueron entregados por cada una de estas respectivas
+
+32
+00:03:26,360 --> 00:03:33,400
+empresas, OpenAI, Meta o Anthropic. Sin embargo, tú también puedes afinar uno para tu tarea
+
+33
+00:03:33,400 --> 00:03:40,400
+específica. Y para que les se den una idea de qué tipo de tareas ustedes pueden afrontar con
+
+34
+00:03:40,400 --> 00:03:46,040
+fine tuning, les voy a mostrar un ejemplo. Este ejemplo es de una empresa que se llama HoniComp.
+
+35
+00:03:46,920 --> 00:03:53,960
+HoniComp es una plataforma de observabilidad. Ellos proveen herramientas para que ustedes
+
+36
+00:03:53,960 --> 00:04:00,040
+monitoreen sus aplicaciones a través de logging, a través de tracing y a través de dicho
+
+37
+00:04:00,040 --> 00:04:07,240
+redundantemente observabilidad. Entonces, por default, ellos ofrecen un lenguaje de consulta.
+
+38
+00:04:07,240 --> 00:04:14,080
+Ustedes pueden imaginar un tipo de lenguaje de consulta estructurada o SQL, pero ellos tienen
+
+39
+00:04:14,080 --> 00:04:20,040
+su propia versión internamente. Entonces, ustedes como usuarios tienen que aprender ese
+
+40
+00:04:20,040 --> 00:04:24,640
+lenguaje de consulta para poder acceder a este tipo de gráficos como el que les estoy presentando
+
+41
+00:04:24,640 --> 00:04:32,760
+en la pantalla. Sin embargo, algo que a ellos se les ocurrió es ¿por qué no entrenamos un modelo
+
+42
+00:04:32,760 --> 00:04:38,520
+de lenguaje? Para que dada una consulta en texto natural, como por ejemplo esta que está en la
+
+43
+00:04:38,520 --> 00:04:46,280
+pantalla que dice slow request by endpoint and operation. Un modelo de lenguaje tome esa palabra,
+
+44
+00:04:46,279 --> 00:04:53,399
+esa consulta en inglés y la convierta a nuestro lenguaje de consulta. Y el usuario no tenga
+
+45
+00:04:53,399 --> 00:04:58,919
+que aprender este complejo lenguaje para simplemente visualizar algunos datos que nosotros
+
+46
+00:04:58,919 --> 00:05:05,439
+tenemos sobre su aplicación. Y es así como ellos se les ocurrió y como generaron un ejemplo muy
+
+47
+00:05:05,439 --> 00:05:11,079
+similar al que les estoy mostrando en la pantalla, donde ustedes imagínense que no necesitan
+
+48
+00:05:11,079 --> 00:05:16,680
+ni escribir ni SQL ni nada, simplemente escriben el texto de lo que quieren y como por arte de
+
+49
+00:05:16,680 --> 00:05:22,839
+inteligencia artificial o más bien por arte de inteligencia artificial ven los resultados en una
+
+50
+00:05:22,839 --> 00:05:34,159
+gráfica. Ahora, ustedes si tienen conocimiento sobre prompt engineering, sobre modelos de lenguaje
+
+51
+00:05:34,159 --> 00:05:40,639
+de gran escala, se han utilizado las APIs de OpenAI o siquiera se han utilizado alguna vez una de
+
+52
+00:05:40,639 --> 00:05:49,360
+estos modelos como chat gpt o cloud sonido o alguna de estas cosas podrían estar pensando. Ok, eso se
+
+53
+00:05:49,360 --> 00:05:56,000
+ve relativamente simple, tomamos una consulta y queremos generar otro texto, simplemente le decimos
+
+54
+00:05:56,000 --> 00:06:03,079
+a un modelo, ok quiero que generes una consulta dada a este query. Sin embargo, la cosa se pone muy
+
+55
+00:06:03,079 --> 00:06:10,839
+complicada, porque por ejemplo y aquí les quiero mostrar este ejemplo de uno de estos queries,
+
+56
+00:06:11,839 --> 00:06:17,479
+como es que se vería hasta la parte de arriba tenemos más bien en la de positiva les estoy
+
+57
+00:06:17,479 --> 00:06:24,759
+mostrando un prompt que ustedes podrían utilizar para generar un query de este tipo. Hasta arriba
+
+58
+00:06:24,759 --> 00:06:31,719
+tenemos el mensaje del sistema en donde le decimos ok tú eres una aplicación que sugiere consultas o
+
+59
+00:06:31,720 --> 00:06:38,280
+queries dada una consulta en texto natural del usuario. Por cierto, si no se alcanza apreciar mucho
+
+60
+00:06:38,280 --> 00:06:43,160
+el texto, esa es la idea tampoco es que ustedes se vayan a poner a analizarlo, simplemente quiero
+
+61
+00:06:43,160 --> 00:06:48,880
+mostrarle la escala del y el tipo de prompt, el volumen de texto que ustedes tendrían que escribir
+
+62
+00:06:48,880 --> 00:06:54,560
+para generar una consulta de este tipo. Entonces hasta arriba al inicio le tendríamos que decirle
+
+63
+00:06:54,560 --> 00:07:00,680
+instrucción al modelo de lenguaje, decirle ok tú eres un asistente que convierte texto natural en
+
+64
+00:07:00,680 --> 00:07:09,000
+consultas con este lenguaje de honi.com. Después tenemos que darle contexto al sistema, al modelo,
+
+65
+00:07:09,000 --> 00:07:15,879
+tenemos que decirle ok tenemos estas columnas dentro de nuestra base de datos y después la
+
+66
+00:07:15,879 --> 00:07:20,960
+tercera parte es la especificación de query en donde nosotros le decimos ok un query puede tener
+
+67
+00:07:20,960 --> 00:07:26,879
+select, count, puede tener where y todas las instrucciones que nuestro sistema ofrece,
+
+68
+00:07:27,519 --> 00:07:32,159
+que nuestro lenguaje de consulta ofrece. Tenemos que decirle ok puedes utilizar orders,
+
+69
+00:07:32,159 --> 00:07:40,159
+puedes utilizar joins, puedes utilizar havings y como ustedes van viendo la cosa se pone muy muy
+
+70
+00:07:40,159 --> 00:07:47,319
+complicada. Después de la especificación de query, nosotros también deberíamos para mejorarla el
+
+71
+00:07:47,319 --> 00:07:53,120
+resultado tenemos que decirle tips. Por ejemplo podemos decirle cuando el query mencione cuenta,
+
+72
+00:07:53,199 --> 00:07:58,680
+tienes que utilizar count, cuando el query mencione a grupa o agrupamiento o agrupación,
+
+73
+00:07:58,680 --> 00:08:08,079
+utiliza group by y así ese tipo de instrucciones de tips. Y por último también nosotros podríamos
+
+74
+00:08:08,079 --> 00:08:14,959
+añadirle algunos ejemplos dentro de nuestro prompt para que un sistema como openai o un
+
+75
+00:08:14,959 --> 00:08:22,199
+modelo del tipo lama entienda y pueda utilizarlos para crear nuevos queries.
+
+76
+00:08:23,680 --> 00:08:29,360
+Todo esto que traté de explicarles es para que se den una idea de de no de qué tamaño de prompt
+
+77
+00:08:29,360 --> 00:08:34,919
+y qué tipo de prompt ustedes tendrían que generar para si quiera intentar hacer algo como esto en
+
+78
+00:08:34,919 --> 00:08:42,679
+donde dado un query, dado una consulta en lenguaje natural en inglés obtenemos una consulta que se
+
+79
+00:08:42,679 --> 00:08:51,240
+ejecuta con el lenguaje específico de honycom y nos presenta un gráfico. Entonces es mucho trabajo,
+
+80
+00:08:51,240 --> 00:08:56,879
+es mucho prueba y error y a veces simplemente no se logran los resultados deseados utilizando un
+
+81
+00:08:56,879 --> 00:09:03,279
+modelo digamos de esos que podemos utilizar directamente utilizando las APIs de OpenAI o de
+
+82
+00:09:03,279 --> 00:09:12,000
+Anthropic. Entonces aquí es cuando llega la pregunta de cuándo es que yo debo considerar a
+
+83
+00:09:12,000 --> 00:09:18,039
+Save a hacer fine tuning. Imagínense en el tipo en la consulta en el ejemplo que les estaba mostrando
+
+84
+00:09:18,039 --> 00:09:24,480
+anteriormente que nuestros clientes no quieren que nosotros revelemos los datos que ellos tienen
+
+85
+00:09:24,480 --> 00:09:29,799
+dentro de la base de datos o que no quieren ni siquiera que revelemos qué columnas existen dentro
+
+86
+00:09:29,799 --> 00:09:37,559
+de su base de datos. Entonces mandar las columnas en un prompt a OpenAI está completamente fuera de
+
+87
+00:09:37,559 --> 00:09:43,319
+la especificación y los deseos de nuestro cliente. Entonces nosotros debemos considerar fine tuning
+
+88
+00:09:43,560 --> 00:09:50,560
+cuando tenemos privacidad, tenemos requerimientos de privacidad de datos. Aquí puse en cuando no
+
+89
+00:09:50,560 --> 00:09:59,000
+queremos confiar en GPT-3 pero este GPT-3 se extiende a todo el vasto mundo de modelos del LM
+
+90
+00:09:59,000 --> 00:10:04,280
+que nosotros podemos consultar a través de una API. Entonces si requieren privacidad de datos para
+
+91
+00:10:04,280 --> 00:10:11,160
+hacer alguna tarea con modelos del lenguaje es una señal de que tal vez deben considerar fine tuning.
+
+92
+00:10:12,039 --> 00:10:18,360
+Nosotros también debemos considerar fine tuning cuando nuestro problema sea muy muy específico. En el
+
+93
+00:10:18,360 --> 00:10:24,079
+caso del ejemplo que les acabo de presentar se trata de convertir texto natural a un lenguaje de
+
+94
+00:10:24,079 --> 00:10:31,759
+consulta muy muy específico. No se trata de generar resúmenes o de tratar de extraer ideas de un
+
+95
+00:10:31,759 --> 00:10:37,120
+texto porque ese es un problema genérico que los LLMS ya resuelven muy fácilmente.
+
+96
+00:10:37,960 --> 00:10:44,799
+Otra de las consideraciones para tener en cuenta fine tuning es cuando utilizando prompt
+
+97
+00:10:44,799 --> 00:10:50,759
+engineering se vuelve poco manejable o no muy práctico como es el caso de tener estos prompts de
+
+98
+00:10:50,759 --> 00:10:57,720
+no sé cuántos tamaños de tokens y que a la vez tenemos que estar gestionando, actualizando y
+
+99
+00:10:57,720 --> 00:11:06,000
+haciendo pruebas constantemente. Entonces es otra de las consideraciones. Y el cuarto punto de cuando
+
+100
+00:11:06,000 --> 00:11:11,320
+nosotros deberíamos hacer fine tuning es cuando nosotros tenemos ejemplos del comportamiento deseado.
+
+101
+00:11:11,320 --> 00:11:19,320
+Y aquí quiero hacer énfasis en qué tipo de datos nosotros necesitamos para realizar fine tuning.
+
+102
+00:11:21,759 --> 00:11:28,240
+Por ejemplo, en el caso de Honeycomb, un ejemplo de comportamiento deseado es este,
+
+103
+00:11:28,240 --> 00:11:34,200
+lo que ustedes ven arriba como entrada en donde tenemos esa parte que dice NLQ viene de natural
+
+104
+00:11:34,200 --> 00:11:39,720
+language query o query o consulta en lenguaje natural y la consulta en lenguaje natural es
+
+105
+00:11:40,720 --> 00:11:47,920
+the operation insert count es decir con con teo de inserciones en la base de datos y también nos
+
+106
+00:11:47,920 --> 00:11:56,560
+ofrece un listado de las columnas. Esa es la entrada al modelo y el texto en verde es la salida y es
+
+107
+00:11:56,560 --> 00:12:02,879
+lo que nosotros estamos esperando que el modelo nos dé después de ver la consulta en lenguaje
+
+108
+00:12:02,879 --> 00:12:10,919
+natural y las columnas. Entonces este es el tipo de datos que ustedes requieren para hacer fine
+
+109
+00:12:10,919 --> 00:12:18,360
+tuning. Entradas y salidas. Se parece mucho a ejemplos de el aprendizaje supervisado,
+
+110
+00:12:18,360 --> 00:12:24,039
+sin embargo se siguen otras metodologías que no voy a cubrir aquí, pero la idea es la misma,
+
+111
+00:12:24,039 --> 00:12:31,720
+tenemos entradas y salidas deseadas y así tenemos idealmente cientos miles y a veces
+
+112
+00:12:31,720 --> 00:12:38,800
+hasta decenas de miles de ejemplos de este tipo para afinar un modelo de lenguaje. Entonces en este
+
+113
+00:12:38,800 --> 00:12:44,879
+caso, honeycomb tenía muchísimos ejemplos de este tipo para crear su propio modelo de lenguaje,
+
+114
+00:12:44,879 --> 00:12:51,960
+más bien afinar su propio modelo de lenguaje. Ahora también otra de las preguntas completamente
+
+115
+00:12:51,960 --> 00:13:00,440
+válidas es ¿Cómo debo hacer fine tuning? En realidad el fine tuning es un proceso complicado
+
+116
+00:13:00,440 --> 00:13:08,400
+porque involucra reentrenar una red neuronal, en este caso la red neuronal que es el modelo base,
+
+117
+00:13:08,400 --> 00:13:13,480
+entonces imagínense los mil millones de parámetros que un modelo como GPT tiene,
+
+118
+00:13:13,480 --> 00:13:21,480
+ustedes tienen que reentrenarlos con sus propios datos. Si bien esto les digo es un proceso complicado,
+
+119
+00:13:21,480 --> 00:13:26,480
+hay herramientas que les facilita muchísimo llevarlo a cabo, algunas de ellas simplemente
+
+120
+00:13:26,480 --> 00:13:32,039
+requieren que ustedes tengan estas entradas y salidas, otras de ellas requieren que ustedes tengan
+
+121
+00:13:32,039 --> 00:13:36,560
+un montón de GPUs y que ustedes se ponen un poquito más de programación avanzada,
+
+122
+00:13:36,560 --> 00:13:43,279
+sin embargo, eso las discutiremos un poquito más adelante. Y en realidad cuando nosotros hacemos
+
+123
+00:13:43,279 --> 00:13:47,920
+fine tuning no existe mucha diferencia entre la técnica que nosotros utilizamos para entrener
+
+124
+00:13:47,920 --> 00:13:55,039
+un modelo base o las técnicas que OpenAI, Meta o Anthropic y otras de estas empresas utilizaron.
+
+125
+00:13:55,759 --> 00:14:01,839
+Lo único que varía son los datos que se utilizan, ya les dije ustedes necesitan este tipo de datos
+
+126
+00:14:01,839 --> 00:14:10,000
+entradas y salidas deseadas. Una de las preguntas de nuevos totalmente válidas es ¿Cuántos datos
+
+127
+00:14:10,000 --> 00:14:15,639
+necesito? Y la verdad es que aquí depende mucho de la tarea que estás afrontando, sin embargo,
+
+128
+00:14:15,639 --> 00:14:20,559
+tienes que considerar que necesitas desde cientos hasta miles de ejemplos de estos ejemplos de
+
+129
+00:14:20,559 --> 00:14:27,359
+comportamiento deseado. Sin embargo, y esta es una de las grandes ventajas que nos ofrece los
+
+130
+00:14:27,359 --> 00:14:33,519
+modelos de lenguaje, es que nosotros podemos utilizar datos sintéticos generados por otro
+
+131
+00:14:33,519 --> 00:14:39,039
+modelo de lenguaje. Usualmente esto sonaría extraño, sin embargo en modelos de lenguaje
+
+132
+00:14:39,039 --> 00:14:44,879
+súper poderosos que nos permiten a nosotros generar datos que después nosotros podemos utilizar
+
+133
+00:14:44,879 --> 00:14:50,399
+para afinar otros modelos de lenguaje tales más pequeños, más especializados. Sin embargo,
+
+134
+00:14:50,399 --> 00:14:55,840
+esto se debe tratar con cuidado y hacer revisiones constantes de los datos para no caer en un ciclo
+
+135
+00:14:55,840 --> 00:15:01,559
+vicioso, un círculo vicioso en donde un LLM nos genera datos que son erróneos y con eso utilizamos
+
+136
+00:15:01,559 --> 00:15:10,879
+para entrenar el nuestro. Y aquí es cuando vamos a la parte de los recursos. Les comentaba que el
+
+137
+00:15:10,879 --> 00:15:17,759
+finding es un proceso intensivo. Nosotros necesitamos GPUs y a veces Tensor Processor Units o inclusive
+
+138
+00:15:17,759 --> 00:15:23,279
+algunos chips llamados especializados. Necesitamos grandes cantidades de memoria también para llevarlo
+
+139
+00:15:23,279 --> 00:15:29,200
+a cabo. Y muchas veces no solamente basta con tener GPUs y GPUs, sino nosotros necesitamos montar
+
+140
+00:15:29,200 --> 00:15:37,039
+todo esto en un sistema distribuido. Y encima necesitamos experiencia y a veces todas estas cosas,
+
+141
+00:15:37,039 --> 00:15:41,759
+GPUs, grandes cantidades de memoria, sistemas distribuidos, la podemos suplir nosotros por
+
+142
+00:15:41,759 --> 00:15:48,799
+buenas herramientas y dinero, porque nosotros podemos pedirle a utilizar una plataforma de
+
+143
+00:15:48,799 --> 00:15:55,360
+estilo Microsoft o de estas plataformas en Nubend, nosotros podemos afinar modelos de lenguaje,
+
+144
+00:15:55,360 --> 00:16:00,559
+simplemente con una buena herramienta y obviamente esto va a llevar un costo, porque no estaríamos
+
+145
+00:16:00,559 --> 00:16:08,399
+nosotros gestionando la memoria o los sistemas distribuidos o los GPUs y GPUs. Y aquí es en
+
+146
+00:16:08,480 --> 00:16:13,600
+donde les quiero explicar un poquito en dónde viene la complicación y algunas de las soluciones
+
+147
+00:16:13,600 --> 00:16:20,319
+que existen para que este proceso sea más barato y menos intensivo. Les comentaba yo que para hacer
+
+148
+00:16:20,319 --> 00:16:27,439
+fine tuning necesitamos retrabajar y reentrenar toda la red neuronal, todos los miles de millones
+
+149
+00:16:27,439 --> 00:16:34,559
+o billones de parámetros que tiene un LLM. Sin embargo, gracias a los avances en la inteligencia
+
+150
+00:16:34,639 --> 00:16:39,479
+artificial y a los académicos y académicas que están por allá por todo el mundo y haciendo
+
+151
+00:16:39,479 --> 00:16:46,359
+investigación, tenemos dos técnicas que nos permiten nosotros utilizar una cantidad significativa
+
+152
+00:16:46,359 --> 00:16:54,359
+de recursos, pero mucho menor que el entrenar toda la red neuronal. Y esto se traduce en estos métodos
+
+153
+00:16:54,359 --> 00:17:02,079
+de entrenamiento que se llaman parámetros de afinación eficiente en parámetros o parámetros
+
+154
+00:17:02,080 --> 00:17:11,240
+de afinación o PFT. Por ejemplo, el PFT nos dice que a veces no es ideal afinar toda la red
+
+155
+00:17:11,240 --> 00:17:16,759
+neuronal completa, sino que simplemente nosotros podemos congelar algunas partes en el diagramita
+
+156
+00:17:16,759 --> 00:17:22,240
+y las puse como de color azul los parámetros que nosotros estamos congelando y solamente vamos a
+
+157
+00:17:22,240 --> 00:17:29,160
+afinar un subconjunto de esos parámetros, digamos los que están en rojo. Otra de las técnicas que
+
+158
+00:17:29,240 --> 00:17:36,600
+también nos proponen académicos y académicas es una técnica que se llama LORA o low ranking
+
+159
+00:17:36,600 --> 00:17:44,880
+adaptation, en donde nosotros en lugar de entrenar una red neuronal completa, simplemente inventamos
+
+160
+00:17:44,880 --> 00:17:50,840
+un adaptador o creamos un adaptador que es otra red neuronal, cierto, pero esta puede ser mucho
+
+161
+00:17:50,840 --> 00:17:56,720
+más pequeña, más limitada y simplemente montársela a un modelo base. Podremos nosotros verlo como
+
+162
+00:17:56,720 --> 00:18:03,079
+ponerle un adaptador o como un bloque de Lego en donde le ponemos otra pieza y es esa nueva
+
+163
+00:18:03,079 --> 00:18:08,640
+pieza que nosotros inventamos, la que nosotros vamos a afinar. Entonces, estos metodologías
+
+164
+00:18:08,640 --> 00:18:15,720
+nos permitan a nosotros hacer esa carga de afinamiento muchísimo más ligera y pero como les
+
+165
+00:18:15,720 --> 00:18:23,759
+digo aún tiene un costo significativo en recursos, en experiencia, en memoria, en un montón de otras
+
+166
+00:18:23,759 --> 00:18:28,960
+partes. O sea, no nos va a salvar a nosotros de que nosotros no nos va a permitir a nosotros realizar
+
+167
+00:18:28,960 --> 00:18:34,240
+afinamiento en nuestra computadora local, a menos de que bueno, nuestra computadora local sea un
+
+168
+00:18:34,240 --> 00:18:42,519
+data center, que lo dudo. Entonces hasta ahora ya les dije qué datos necesitamos y algunas de las
+
+169
+00:18:42,519 --> 00:18:51,200
+técnicas de hacer fine tuning y cuándo es que nosotros podríamos considerarlo. También quiero
+
+170
+00:18:51,200 --> 00:18:58,240
+hablarles sobre algunas de las ideas falsas de el fine tuning y es que no todo es color de rosa.
+
+171
+00:18:58,240 --> 00:19:04,559
+Mucha gente piensa que el fine tuning es la solución a todos sus problemas, sin embargo deben
+
+172
+00:19:04,559 --> 00:19:12,880
+considerar que no siempre mejora el rendimiento. A veces basta con utilizar un buen prompt y algunos
+
+173
+00:19:12,880 --> 00:19:23,200
+de estos modelos ya sea que lo descarguen estilo lama y lo pongan en su infraestructura local o que
+
+174
+00:19:23,200 --> 00:19:28,120
+simplemente le paguen dinero a OpenAI para que les permita tener más acceso a un mejor GPT.
+
+175
+00:19:30,080 --> 00:19:35,240
+También hay gente que considera que el fine tuning les va a servir para enseñarle todo
+
+176
+00:19:35,240 --> 00:19:43,000
+un mundo de información a un LLM. Sin embargo utilizar el fine tuning para agregar información a
+
+177
+00:19:43,000 --> 00:19:50,079
+un modelo de lenguaje no es tan confiable. Es muchísimo mejor hacer fine tuning y seguir
+
+178
+00:19:50,079 --> 00:19:56,039
+utilizando técnicas como RAG o Retribual Augmented Generation y es que el fine tuning no es un
+
+179
+00:19:56,039 --> 00:20:05,399
+reemplazo de esta técnica. Es decir es mejor utilizar fine tuning y RAG si ustedes quieren
+
+180
+00:20:05,399 --> 00:20:10,359
+personalizar al máximo la experiencia de sus usuarios cuando están utilizando un LLM.
+
+181
+00:20:11,399 --> 00:20:18,319
+Y la otra como ya les decía es que no es necesario para cada caso de uso. Muchas veces me atrevería
+
+182
+00:20:18,319 --> 00:20:24,000
+a decir que la gran mayoría de las veces basta con utilizar OpenAI o con utilizar Antropi o con
+
+183
+00:20:24,000 --> 00:20:30,680
+utilizar un modelo lama para que ustedes logren su objetivo la tarea que están tratando de obtener.
+
+184
+00:20:32,400 --> 00:20:37,920
+Entonces les quiero dar un pequeño recordatorio. Cuando deben hacer fine tuning,
+
+185
+00:20:37,920 --> 00:20:44,960
+cuando ustedes se preocupan mucho por la privacidad de datos y no quieren confiarles esos datos a alguna
+
+186
+00:20:44,960 --> 00:20:51,960
+IPI de terceros. Cuando el problema es muy específico de nuevo, imagín, volvamos al ejemplo que yo les
+
+187
+00:20:51,960 --> 00:20:58,759
+di hace ratito de que nosotros tenemos una consulta en lenguaje natural y queríamos obtener un query
+
+188
+00:20:58,759 --> 00:21:04,640
+a la salida. Ese es un problema muy específico. No estábamos tratando de hacer resúmenes,
+
+189
+00:21:04,640 --> 00:21:11,920
+no estábamos tratando de extraer entidades de un texto y más allá no estamos entrenando
+
+190
+00:21:11,920 --> 00:21:16,840
+un modelo que haga todo, sino nada más queremos un modelo que tenga una tarea en específico.
+
+191
+00:21:17,839 --> 00:21:23,279
+También si nos damos cuenta de que nuestro prompt ya se nos está saliendo de las manos o de que
+
+192
+00:21:23,279 --> 00:21:30,119
+sí, de que ya es imposible versionarlo, de que es imposible entenderlo o a lo mejor es un prompt
+
+193
+00:21:30,119 --> 00:21:35,959
+larguísimo que ya ni siquiera OpenAI no los acepta, tal vez sea momento de comenzar a considerar
+
+194
+00:21:35,959 --> 00:21:42,599
+fine tuning. Y lo que es mucho muy importante, también ustedes deben considerar fine tuning sí y
+
+195
+00:21:42,599 --> 00:21:48,759
+solo así tienen ejemplos del comportamiento que ustedes están deseando o como ya les mencionaba
+
+196
+00:21:48,759 --> 00:21:57,119
+antes, si tienen la capacidad de generarlo sintéticamente. Habiendo dicho esto, no quiero que se
+
+197
+00:21:57,119 --> 00:22:02,480
+queden con la idea de que fine tuning es súper difícil o súper complejo porque les había dicho
+
+198
+00:22:02,480 --> 00:22:08,519
+que existen herramientas y plataformas que nos permiten a nosotros llevar a cabo este tipo de
+
+199
+00:22:08,519 --> 00:22:16,720
+tareas. Y aquí les voy a dejar algunas, algunas, algunos, algunos sitios web, herramientas, algunas
+
+200
+00:22:16,720 --> 00:22:20,519
+de ellas de costo, algunas de ellas de código libre que pueden utilizar para realizar fine
+
+201
+00:22:20,519 --> 00:22:27,000
+tuning. Las dos primeras label studio y labeler son herramientas que ustedes pueden utilizar para
+
+202
+00:22:27,000 --> 00:22:35,720
+realizar la creación de datos, el etiquetamiento de datos para que ustedes tengan estas entradas y
+
+203
+00:22:35,720 --> 00:22:40,279
+estas salidas. Mientras que las de abajo son herramientas que a ustedes les van a permitir
+
+204
+00:22:40,279 --> 00:22:48,160
+hacer el fine tuning dentro de sus plataformas. Obviamente, estas conllevan un costo. Y la última,
+
+205
+00:22:48,160 --> 00:22:55,720
+este a Axolotl, es una herramienta súper popular, súper súper requerida en la actualidad para
+
+206
+00:22:55,720 --> 00:23:01,440
+personas y empresas que quieren hacer fine tuning de forma digamos un poco más...
+
+207
+00:23:02,440 --> 00:23:09,759
+No me atrevería a decir a mano, sino más lejos de las plataformas. Y es que Axolotl es una
+
+208
+00:23:09,759 --> 00:23:14,920
+plataforma open source que ustedes les va a permitir llevar a cabo ese fine tuning en la
+
+209
+00:23:14,920 --> 00:23:21,000
+infraestructura que ustedes quieran. Y bueno, también les había mencionado que estas grandes
+
+210
+00:23:21,000 --> 00:23:27,759
+plataformas en Nube, como por ejemplo Microsoft o AWS y otras otro tipo de estas plataformas grandes,
+
+211
+00:23:27,759 --> 00:23:32,720
+también ya les ofrecen herramientas que son tan sencillas como que ustedes carguen sus datos de
+
+212
+00:23:32,720 --> 00:23:38,759
+entrada y salida y les va a generar un modelo afinado a sus datos. Y ellos cuando cobran muchísimo más
+
+213
+00:23:38,759 --> 00:23:47,279
+importancia herramientas como label studio y labeler. Y bueno, por mi parte es todo. Espero que les haya
+
+214
+00:23:47,279 --> 00:23:53,519
+gustado esta charla sobre fine tuning. Espero que les haya aclarado muchas dudas y que ahora tengan
+
+215
+00:23:53,519 --> 00:23:59,279
+algunas diferentes. Si ustedes tienen alguna duda o comentario, me lo pueden hacer llegar a través
+
+216
+00:23:59,279 --> 00:24:05,599
+de los comentarios en este vídeo o donde ustedes me encuentren en threads, en blue sky o inclusive
+
+217
+00:24:05,599 --> 00:24:13,440
+por youtube en mi canal. De nuevo les agradezco y espero que tengan una buena semana.
+

@@ -1,0 +1,1796 @@
+1
+00:00:00,000 --> 00:00:06,480
+Amigos, amigas, bienvenidos al curso de Prom Engineering en EDE Team. Este es el primer
+
+2
+00:00:06,480 --> 00:00:11,160
+módulo completamente gratis y lo estás viendo por YouTube, te cuento que el curso completito
+
+3
+00:00:11,160 --> 00:00:16,120
+está en EDE.TEAM, en nuestro sitio web que vas a encontrar abajo en la descripción.
+
+4
+00:00:16,120 --> 00:00:22,960
+Y si estás viendo este primer módulo gratis dentro de la plataforma de EDE Team, te recuerdo
+
+5
+00:00:22,960 --> 00:00:27,879
+que el primer módulo es gratis pero puedes adquirir el curso completo para verlo completito
+
+6
+00:00:27,879 --> 00:00:33,640
+y aprender todos los temas o también puedes comprar una suscripción premium para acceder
+
+7
+00:00:33,640 --> 00:00:40,000
+a este curso y a todos los cursos que hay en EDE Team. Listo? Vayamos al tema, ¿Qué
+
+8
+00:00:40,000 --> 00:00:46,439
+es Prom Engineering? Miren, el Prom Engineering en pocas palabras es el conjunto de técnicas
+
+9
+00:00:46,439 --> 00:00:50,920
+para escribir instrucciones correctas para la Inteligencia Artificial Generativa como
+
+10
+00:00:50,920 --> 00:00:56,599
+chat GPT, si es que ustedes lo han usado ¿no? Y escribir buenas instrucciones requiere de
+
+11
+00:00:56,600 --> 00:01:02,079
+un conjunto de técnicas que no son difíciles, no son difíciles, pero es importante entender
+
+12
+00:01:02,079 --> 00:01:06,760
+esas técnicas para que la IA haga exactamente lo que tú quieras porque saben cuál es el
+
+13
+00:01:06,760 --> 00:01:12,519
+reto con la IA, no es usarla, el reto con la Inteligencia Artificial es dominarla, que haga
+
+14
+00:01:12,519 --> 00:01:16,879
+lo que tú quieres que haga. Entonces, tengan en cuenta que buenos proms generan buenos
+
+15
+00:01:16,879 --> 00:01:22,719
+resultados y malos proms, malos resultados, aunque a veces un mal prom parece dar un buen
+
+16
+00:01:22,719 --> 00:01:28,159
+resultado, pero es una trampa, no caigan en esa trampa, les voy a poner un ejemplo,
+
+17
+00:01:28,159 --> 00:01:34,359
+miren, ya miren, ahí está chat GPT, voy a decirle, escribe un plan de marketing para
+
+18
+00:01:34,359 --> 00:01:43,879
+una empresa de venta de zapatos. Vamos. Mira, me escribió un plan de marketing, análisis
+
+19
+00:01:43,879 --> 00:01:47,799
+inicial, posicionamiento y propuesta de valor, estrategia de productos, estrategia de precios,
+
+20
+00:01:47,799 --> 00:01:51,519
+estrategia de distribución, estrategia de promoción, estrategia de marca, cronograma
+
+21
+00:01:51,519 --> 00:01:57,359
+de acciones, métricas de éxito. Wow, parece que no necesito un curso de prom engineering,
+
+22
+00:01:57,359 --> 00:02:05,239
+le di una orden y la ejecutó, pero este es un mal prom. Entonces, si es un mal prom,
+
+23
+00:02:05,239 --> 00:02:10,919
+por qué me dio algo tan detallado, tan bueno? Y eso vamos a entender en este curso, que
+
+24
+00:02:10,919 --> 00:02:15,599
+realmente aunque parece bueno, esto es genérico, esto es completamente genérico, esto no
+
+25
+00:02:15,599 --> 00:02:21,319
+sea de cual negocio al que tú le estás queriendo crear el plan de marketing.
+
+26
+00:02:21,319 --> 00:02:25,079
+Para llevar este curso, tienes que usar un chatbot, es decir, una aplicación de inteligencia
+
+27
+00:02:25,079 --> 00:02:30,159
+artificial con la que conversas con inteligencia artificial. Hay muchos en el mercado, pero
+
+28
+00:02:30,159 --> 00:02:38,280
+si tú estás comenzando, yo te recomiendo estos tres. Chat GPT, que es de OpenAI, como
+
+29
+00:02:38,280 --> 00:02:42,959
+lo usa, simplemente vas a chatipt.com en tu navegador o buscas chat GPT dentro de la
+
+30
+00:02:42,960 --> 00:02:47,280
+tienda de aplicaciones de tu teléfono y lo instalas. Pero ojo con esto, esto es demasiado
+
+31
+00:02:47,280 --> 00:02:53,680
+importante, mira, Cádiz Empresa OpenAI, lo ves? Para los que ya conocen, esto puede parecer
+
+32
+00:02:53,680 --> 00:03:02,159
+muy obvio, pero se los juro que para mucha gente no es obvio. Van a la tienda de aplicaciones,
+
+33
+00:03:02,159 --> 00:03:08,800
+ponen chatipt y aparecen un montón de aplicaciones falsas, de aplicaciones que no son chatipt
+
+34
+00:03:08,800 --> 00:03:15,840
+y que ponen un logo parecido para engañar a la gente y obtener que la gente lo instale
+
+35
+00:03:15,840 --> 00:03:21,160
+y luego te cobran incluso y mucha gente, lamentablemente, por su falta de conocimiento cae y terminan
+
+36
+00:03:21,160 --> 00:03:28,920
+pagándole a aplicaciones basuras. Chatipt, Gemini de Google, Okopilot de Microsoft. Si
+
+37
+00:03:28,920 --> 00:03:34,640
+tú estás comenzando, estas son las tres opciones que yo siempre recomiendo. Chatipt, Gemini,
+
+38
+00:03:34,639 --> 00:03:39,099
+Okopilot, no tienes que usar las tres, la gente que te quiere vender que son expertos
+
+39
+00:03:39,099 --> 00:03:44,959
+te va a decir chatipt usan solamente los novatos o te va a decir, Okopilot solo usan los novatos,
+
+40
+00:03:44,959 --> 00:03:50,319
+no, no, eso es mentira. De hecho, Okopilot es lo mismo que chatipt pero con la interfaz
+
+41
+00:03:50,319 --> 00:03:55,879
+de Microsoft, porque tiene un acuerdo para que Okopilot use la tecnología de chatipt.
+
+42
+00:03:55,879 --> 00:03:59,879
+Y Gemini es de Google, así que si tú tienes un teléfono Android, tienes Gemini, esas son
+
+43
+00:03:59,879 --> 00:04:05,000
+las tres opciones excelentes para comenzar, hay muchas más, por supuesto que sí.
+
+44
+00:04:05,000 --> 00:04:11,000
+Sigamos. Cuando empezamos a usar la inteligencia artificial y vamos a la IA, por ejemplo, miren,
+
+45
+00:04:11,000 --> 00:04:17,319
+ah, vamos a volver por acá y vamos a decirle aquí, por ejemplo, escríbe un correo de
+
+46
+00:04:17,319 --> 00:04:25,680
+ventas para un cliente, un PROMACY super básico, ¿no? Listo para llevar su negocio al siguiente
+
+47
+00:04:25,680 --> 00:04:28,959
+nivel, espero que se encuentren muy bien, me comunico con usted porque he identificado
+
+48
+00:04:29,039 --> 00:04:39,319
+que empresa, cliente, bla, bla, bla. Y luego le digo, no suena a mí, haz lo más amigable
+
+49
+00:04:39,319 --> 00:04:49,359
+y natural. Y ahí me manda una siguiente versión, ¿no? Comercemos sobre cómo ayudarte en áreas
+
+50
+00:04:49,360 --> 00:05:04,360
+de interés y digo, no, aún no suena a mí, haz lo más corto. Ya, no, muy corto, no, no,
+
+51
+00:05:04,360 --> 00:05:21,480
+no, no, no, no, no, no, muy corto, algo más largo. Ya. No, más largo. Y ahora digo, no, demasiado
+
+52
+00:05:21,480 --> 00:05:29,240
+largo, algo más corto. Y terminamos en algo, en algo que llamamos el loop de la IA. El loop
+
+53
+00:05:29,240 --> 00:05:33,720
+de la IA es cuando tú terminas atrapado en algo más largo, algo más corto, que suene a mí,
+
+54
+00:05:34,200 --> 00:05:41,800
+más natural, más rápido, más. Y es ese loop en el que quedan atrapadas la mayoría de personas
+
+55
+00:05:41,800 --> 00:05:50,440
+que comienzan a usar la inteligencia artificial, ¿no? Le dicen, oye, escribe un correo, la IA lo manda,
+
+56
+00:05:50,440 --> 00:05:54,880
+haz lo más natural, que suene que yo lo escribí. Luego, no, es muy largo, algo más corto, es
+
+57
+00:05:54,880 --> 00:06:00,200
+demasiado corto, algo más largo. Y luego de ese loop, estar un rato en ese loop, terminas diciendo,
+
+58
+00:06:00,279 --> 00:06:08,879
+¿sabes qué mejor lo hago yo? La IA me hace perder tiempo. Hay un estudio del MIT, de hecho, este es
+
+59
+00:06:08,879 --> 00:06:13,240
+uno de los últimos que salió porque realmente hay un montón de estudios que dicen que la IA no
+
+60
+00:06:13,240 --> 00:06:18,000
+le está aportando valor a las empresas. Las empresas están pagando las licencias de Chadi
+
+61
+00:06:18,000 --> 00:06:23,719
+Pity a sus empleados, pero no hay un retorno de la inversión. Y es porque no los están
+
+62
+00:06:23,719 --> 00:06:28,480
+capacitando, pues, ¿no? O sea, tú crees que pagar la licencia es mágico, ¿no? La otra vez,
+
+63
+00:06:28,560 --> 00:06:33,240
+un empresario me dice, lo hemos pagado la licencia a todos y ahí estamos haciendo pruebas. No, ahí
+
+64
+00:06:33,240 --> 00:06:38,000
+le estamos cacharriando al Chadi Pity. Es que no, pues tiene que haber una estrategia. Está le
+
+65
+00:06:38,000 --> 00:06:42,280
+cacharriando al Chadi Pity significa que tu gente está haciendo esto. Algo más corto,
+
+66
+00:06:42,280 --> 00:06:46,879
+algo más largo. Y luego, luego terminan todo el día atrapados en ese loop y no pueden salir de ese loop.
+
+67
+00:06:46,879 --> 00:06:53,120
+Yo les pregunto, ¿qué significa lo más natural? Ni idea. ¿Qué significa? ¿Qué suene que yo lo escribí?
+
+68
+00:06:53,120 --> 00:06:58,000
+¿Qué significa eso? ¿Algo más largo? ¿Qué significa lo más largo? Una palabra, dos palabras,
+
+69
+00:06:58,000 --> 00:07:02,319
+diez palabras, cinco palabras. ¿Qué significa? ¿Qué significa lo más corto? Una palabra menos,
+
+70
+00:07:02,319 --> 00:07:07,600
+dos palabras menos, 500 mil palabras menos. ¿Qué significa? ¿Terminas atrapado en el loop de la
+
+71
+00:07:07,600 --> 00:07:12,879
+idea? ¿Por qué tus instrucciones son malas? Ahora, otro detalle que tienen que entender.
+
+72
+00:07:12,879 --> 00:07:16,680
+El Prom and Genering, amigos y amigas, es una profesión, porque por mucho tiempo se habló que
+
+73
+00:07:16,680 --> 00:07:23,079
+era una profesión y en realidad no. No es una profesión. En ciertos niveles puede serlo. Hablo
+
+74
+00:07:23,079 --> 00:07:27,800
+de las empresas que crean modelos de inteligencia artificial y tal, ¿no? Pero para el público,
+
+75
+00:07:27,800 --> 00:07:33,079
+general, no es una profesión como tal el Prom and Genering. Se creía que iba a ser una
+
+76
+00:07:33,079 --> 00:07:37,759
+profesión que las empresas iban a poner puestos de Prom and Genering vacantes de Prom and Genering,
+
+77
+00:07:37,759 --> 00:07:44,600
+pero no ha ocurrido. Realmente, el Prom and Genering es una skill, es una habilidad que todo
+
+78
+00:07:44,600 --> 00:07:51,639
+profesional debe dominar. Y eso significa que no es negociable. No importa si eres programador,
+
+79
+00:07:51,800 --> 00:07:58,120
+si eres diseñador, si eres abogado, si eres contador, si eres médico, si eres psicólogo,
+
+80
+00:07:58,120 --> 00:08:07,120
+no importa tu profesión. Esta es una habilidad no negociable en los tiempos que corren. Todos deben
+
+81
+00:08:07,120 --> 00:08:13,079
+manejar el Prom and Genering. Deben saber escribir Proms. La buena noticia es que no es difícil.
+
+82
+00:08:13,079 --> 00:08:18,759
+Simplemente hay que seguir algunas reglas y ya está. Hoy en día, todos tienen que saber escribir
+
+83
+00:08:18,759 --> 00:08:26,399
+buenos Proms. Si no vas a terminar así, con el jefazo pagando las licencias de chat y pitiato
+
+84
+00:08:26,399 --> 00:08:31,120
+a la empresa y todos jugando ahí atrapados en el loop de la ida corriendo como hamsters dentro de
+
+85
+00:08:31,120 --> 00:08:36,200
+una rueda, porque no le sacan valor, porque no hay una estrategia detrás. Simplemente se ponen
+
+86
+00:08:36,200 --> 00:08:42,639
+a jugar con una herramienta que alguien más pagó. Otro detalle que se habla mucho es que la ida nos
+
+87
+00:08:42,639 --> 00:08:48,200
+vuelve más tontos. Mucha gente dice eso, sobre todo la gente que sataniza la ida. No, la ida nos
+
+88
+00:08:48,240 --> 00:08:52,480
+vuelve más tonto. Los profesores que prohíben la ida. La ida no vuelve más tonto porque ahora no
+
+89
+00:08:52,480 --> 00:08:58,040
+tienes que pensar. La ida piensa por ti. Si la ida te hace la tarea, cuando tú piensas. Es que esa
+
+90
+00:08:58,040 --> 00:09:04,480
+es una visión increíblemente simplista. Es que un mal uso, un uso ocioso, es pedirle a la ida que haga
+
+91
+00:09:04,480 --> 00:09:11,680
+tu tarea. Escribe mi tarea. Pero un buen uso requiere analizar nuestro objetivo. ¿Qué quiero
+
+92
+00:09:11,679 --> 00:09:18,159
+conseguir? Y escribir instrucciones claras. Y eso no es fácil. Hay que pensar. O no es cierto que
+
+93
+00:09:18,159 --> 00:09:24,319
+caer en el loop de la ida es porque no piensas a fondo. Hazlo más corto, hazlo más largo,
+
+94
+00:09:24,319 --> 00:09:29,839
+algo que se parezca a mí, algo más natural, algo más amigable, algo más profesional. Caes en
+
+95
+00:09:29,839 --> 00:09:34,679
+el loop porque no piensas. No estás pensando, no estás analizando a fondo. Es mentira que la ida te
+
+96
+00:09:34,679 --> 00:09:40,759
+hace más tonto. Usar bien la ida te obliga a pensar bien cómo vas a dar las instrucciones,
+
+97
+00:09:40,799 --> 00:09:45,480
+te obliga a analizar la tarea. Tengan en cuenta que la calidad del output, es decir, de lo que te
+
+98
+00:09:45,480 --> 00:09:50,779
+entregue la inteligencia artificial, va a depender de la calidad del input. Si el input es bueno,
+
+99
+00:09:50,779 --> 00:09:55,879
+el resultado va a ser bueno. Si el input es malo, el resultado va a ser malo. Pero de quién depende
+
+100
+00:09:55,879 --> 00:10:02,200
+el input de ti, de la persona, por lo tanto la ida no te hace tonto. Necesitas pensar lo que vas a
+
+101
+00:10:03,200 --> 00:10:10,879
+decir, si no, te va a dar cualquier tontería. Les cuento una anécdota, si no me creen. En un curso
+
+102
+00:10:10,879 --> 00:10:15,400
+que yo estaba dictando con niños de inteligencia artificial me llamaron y me dijeron, queremos
+
+103
+00:10:15,400 --> 00:10:21,960
+que capacites niños, y dije, ok, fantástico. Y en una clase les dije, niños, quiero que abran
+
+104
+00:10:21,960 --> 00:10:28,080
+Chadipiti y creen una imagen con Chadipiti. Quiero que sea la imagen de una criatura,
+
+105
+00:10:28,080 --> 00:10:34,840
+de un personaje fantástico viviendo una aventura. Quiero que ustedes piensen en un personaje fantástico
+
+106
+00:10:34,840 --> 00:10:41,040
+que esté en una aventura y se lo pidan a la ida que lo dibuje. Muy bien. No pasaron ni 20 segundos
+
+107
+00:10:41,040 --> 00:10:46,840
+y medio salón levantó la mano diciendo, profe, ya terminé. Ya terminé. Pero ¿cómo vas a terminar?
+
+108
+00:10:46,840 --> 00:10:56,160
+Si no ha pasado ni un minuto, ni medio minuto. Y yo iba a ver su computadora y efectivamente
+
+109
+00:10:56,240 --> 00:11:00,839
+ya habían terminado. Pero cuando voy a ver el prom, ¿saben qué decía el prom? El prom decía,
+
+110
+00:11:00,839 --> 00:11:06,439
+crea la imagen de un personaje fantástico viviendo una aventura. Literal iba al otro niño,
+
+111
+00:11:06,439 --> 00:11:11,039
+crea la imagen de un personaje fantástico viviendo una aventura. Iba al otro niño,
+
+112
+00:11:11,039 --> 00:11:17,159
+crea la imagen de un personaje fantástico viviendo una aventura. No es culpa de ellos pues. Era su
+
+113
+00:11:17,159 --> 00:11:22,600
+primer curso de inteligencia artificial. Como todos simplemente habían probado e hecho experimentos,
+
+114
+00:11:22,600 --> 00:11:29,440
+pero nadie les enseñó técnicas. Entonces les expliqué que, mira, ese prom no tiene nada.
+
+115
+00:11:29,440 --> 00:11:36,960
+Tu trabajo es crear un buen input, pensar en qué personaje fantástico voy a crear y en qué
+
+116
+00:11:36,960 --> 00:11:42,800
+aventura. O sea, qué tipo de aventura va a tener mi personaje fantástico. Y ahí fue muy divertido
+
+117
+00:11:42,800 --> 00:11:47,720
+porque fue como esos talleres de pintura donde cada uno pinta su creación. De verdad,
+
+118
+00:11:47,720 --> 00:11:52,279
+porque los niños empezaron a imaginar, ¿ok qué personaje fantástico se inventaban superhéroes,
+
+119
+00:11:52,279 --> 00:11:58,440
+se inventaban que estaban luchando contra el crimen, otros inventaba que estaba ganando un
+
+120
+00:11:58,440 --> 00:12:06,160
+torneo? Se dan cuenta. Entonces fue fantástico cuando los niños vieron cómo hacerlo en lugar
+
+121
+00:12:06,160 --> 00:12:11,639
+de repetir como loritos. Escreé un personaje fantástico viviendo una aventura. Se dan cuenta.
+
+122
+00:12:11,639 --> 00:12:17,160
+Y eso es lo que quiero que ustedes entiendan. La idea te puede volver más creativo, te puede
+
+123
+00:12:17,159 --> 00:12:23,600
+volver más inteligente si la usas bien, si la usas mal y no te enseñan a usarla, si te puede
+
+124
+00:12:23,600 --> 00:12:30,480
+volver más mecánico, puede hacer que pienses menos, pero eso depende del uso. Vamos a la segunda parte
+
+125
+00:12:30,480 --> 00:12:36,759
+de esta clase. Los cuatro pasos para usar la inteligencia artificial. Hay una serie de cuatro
+
+126
+00:12:36,759 --> 00:12:41,879
+pasos que si lo seguimos bien, la idea nos va a dar buenos resultados. Vamos a poder sacarle valor
+
+127
+00:12:41,879 --> 00:12:46,839
+en lugar de correr como hamster con la guía, ¿no? El paso número uno es entender qué es la inteligencia
+
+128
+00:12:46,920 --> 00:12:52,920
+artificial y cómo funciona. La inteligencia artificial es como un adolescente rebelde. Tu hijo
+
+129
+00:12:52,920 --> 00:12:59,759
+adolescente es inestable. En el buen sentido de la palabra, no quiero decir que estén locos,
+
+130
+00:12:59,759 --> 00:13:04,240
+inestable en el sentido de que a veces está contento, a veces no está contento, a veces te
+
+131
+00:13:04,240 --> 00:13:09,399
+quiere y te abraza y a veces te mira raro y no te quiere hacer el caso y se pone rebelde. La idea
+
+132
+00:13:09,399 --> 00:13:15,879
+es así, ¿no? A veces te hace caso, a veces no te hace caso, es muy inteligente, pero es impredecible
+
+133
+00:13:15,960 --> 00:13:23,799
+como un adolescente impredecible. Y eso es muy importante porque si tú crees que es predecible
+
+134
+00:13:23,799 --> 00:13:30,039
+vas a creerte el cuento de que existen proms perfectos. Este prom es perfecto y siempre funciona.
+
+135
+00:13:30,039 --> 00:13:38,000
+No, porque la idea es impredecible. Así ha sido creada, así ha sido diseñada la inteligencia
+
+136
+00:13:38,000 --> 00:13:44,080
+artificial para ser impredecible. Lo siguiente, hay que definir qué tareas le vamos a asignar a la
+
+137
+00:13:44,080 --> 00:13:49,360
+y imagínate que tú eres padre de un adolescente y el adolescente te haya cruzado de brazos o todo
+
+138
+00:13:49,360 --> 00:13:54,240
+el día con el tiktok. Tú dices, ¿qué te encargo? ¿No? Para que estés haciendo algo, ¿no? Que lave los
+
+139
+00:13:54,240 --> 00:14:01,600
+platos, que barran la casa, que saques a los perros a pasear, que vayas al mercado a hacer compras,
+
+140
+00:14:01,600 --> 00:14:07,120
+¿qué te encargo? Tienes que estar haciendo algo. Entonces de la misma manera, tú tienes que pensar
+
+141
+00:14:07,120 --> 00:14:13,240
+qué le puedo encargar de mis tareas cotidianas a la IA en qué me puede ayudar. Sí, estoy seguro
+
+142
+00:14:13,279 --> 00:14:19,279
+que hay muchas cosas en las que te puede ayudar. El tercer paso es comunicar las instrucciones con
+
+143
+00:14:19,279 --> 00:14:26,279
+claridad y aquí es donde está el prompting en el paso tres, pero venimos de dos pasos previos, ¿no?
+
+144
+00:14:26,279 --> 00:14:32,799
+Y el último paso es revisar los resultados. Mucha gente no revisa los resultados, los acepta y ya.
+
+145
+00:14:32,799 --> 00:14:39,360
+Justamente hace un momento un comentario dijo que un abogado entregó un caso escrito por Chatipiti
+
+146
+00:14:39,360 --> 00:14:44,639
+y pasó vergüenza y no sólo vergüenza, fue multado y su carrera se vio pues afectada en su
+
+147
+00:14:44,639 --> 00:14:49,960
+reputación por no revisar los resultados. Tienen que revisar los resultados que entrega la
+
+148
+00:14:49,960 --> 00:14:57,159
+inteligencia artificial porque alucina y miente. Está seguro que la mayoría, el 80, 90% llega al
+
+149
+00:14:57,159 --> 00:15:02,840
+paso tres y todavía muy pros, ¿no? Dicen, oye, que yo tengo mis técnicas para el prompt, que yo le
+
+150
+00:15:02,840 --> 00:15:07,680
+pido a Chatipiti que me cree un prompt mejor, le doy la idea y me afina el prompt, está bien,
+
+151
+00:15:08,120 --> 00:15:14,599
+pero la mayoría no llega al paso cuatro. Te lo puedo asegurarte, lo puedo apostar, no llegan al
+
+152
+00:15:14,599 --> 00:15:21,359
+cuatro, llegan al tres, les da el cuatro y lo que entrega la idea ya lo aceptan. No se queden en el
+
+153
+00:15:21,359 --> 00:15:27,399
+tres. El prompting es el paso tres, promptear correctamente, escribir buenos prompts, pero
+
+154
+00:15:27,399 --> 00:15:35,319
+tenemos cuatro pasos, por favor. Y dicho eso, hablemos de cómo funcionan los LLM, porque se
+
+155
+00:15:35,360 --> 00:15:40,480
+acuerdan el primer paso era pues entender qué es la idea y cómo funciona, pues entendamosla
+
+156
+00:15:40,480 --> 00:15:44,480
+brevemente, brevemente, no vamos a entrar en detalles, tenemos un curso que se llama inteligencia
+
+157
+00:15:44,480 --> 00:15:48,720
+artificial para todos donde podemos entrar en más detalles, ¿ok? Aquí simplemente vamos a pasar
+
+158
+00:15:48,720 --> 00:15:54,920
+por encima para que se entienda muy rápido. Primero la inteligencia artificial no es nueva,
+
+159
+00:15:54,920 --> 00:15:58,920
+estoy viendo varios comentarios que lo dicen y es verdad, no tiene nada de nueva, tiene como unos
+
+160
+00:15:58,920 --> 00:16:03,560
+ochenta años la inteligencia artificial, ¿no? Comenzó con teorías, con experimentos, con
+
+161
+00:16:03,559 --> 00:16:08,359
+proyectos de los gobiernos, luego se enfrió porque había problemas que no se podían resolver,
+
+162
+00:16:08,359 --> 00:16:13,399
+luego se resolvieron esos problemas y aparecieron nuevos problemas y así, y así, y así, ¿no? Fue
+
+163
+00:16:13,399 --> 00:16:19,479
+evolucionando y existió por muchos años y todos nosotros hemos usado inteligencia artificial,
+
+164
+00:16:19,479 --> 00:16:24,639
+sin saberlo. Cuando tú entras a Netflix y te recomienda películas según lo que tú has visto,
+
+165
+00:16:24,639 --> 00:16:30,319
+o YouTube te recomienda cosas parecias a las que tú has visto, o cualquier red social, o entras a
+
+166
+00:16:30,320 --> 00:16:35,440
+un videojuego y hay personajes que se mueven solos, ¿no? Y que interactúan contigo en el videojuego,
+
+167
+00:16:35,440 --> 00:16:40,560
+todo eso es inteligencia artificial, entonces ya ha estado con nosotros. La diferencia es que la
+
+168
+00:16:40,560 --> 00:16:45,320
+IA que estamos viviendo ahora se llama inteligencia artificial generativa. La inteligencia artificial
+
+169
+00:16:45,320 --> 00:16:52,560
+generativa es la que explota con la salida de Chatipiti, que, ojo, ya existía, ¿ah? No es que
+
+170
+00:16:52,560 --> 00:17:00,000
+nació con Chatipiti, pero Chatipiti fue el catalizador, el que hizo que comience este boom
+
+171
+00:17:00,000 --> 00:17:06,119
+de la inteligencia artificial, ¿no? Entonces, se populariza la IA generativa a partir de
+
+172
+00:17:06,119 --> 00:17:10,480
+noviembre de dos mil veintidós cuando se le echó a Chatipiti y es, ¿por qué le llamamos generativa?
+
+173
+00:17:10,480 --> 00:17:15,839
+Porque puede generar contenido como le haría un humano, puede escribir texto, letras de canciones,
+
+174
+00:17:15,839 --> 00:17:22,599
+puede escribir, puede hacer música, puede escribir código de programación, puede leer libros
+
+175
+00:17:22,599 --> 00:17:28,119
+enteritos y sacarte un resumen en pocos segundos, cosa que ningún ser humano podría, puede escribir
+
+176
+00:17:28,119 --> 00:17:35,919
+código de programación, puede analizar hojas de Excel, puede crear imágenes, es impresionante. O sea,
+
+177
+00:17:35,919 --> 00:17:43,879
+hace cosas que nosotros queríamos que eran propias del ser humano y que jamás una máquina podría
+
+178
+00:17:43,879 --> 00:17:49,000
+y nos demostró que sí se podía, que las máquinas podían hacerlo. Entonces, ese es el tipo de IA, ¿no?
+
+179
+00:17:49,000 --> 00:17:56,000
+Pero el nombre técnico para lo que nosotros llamamos inteligencia artificial es LLM, ¿no?
+
+180
+00:17:56,079 --> 00:18:01,680
+Cuando tú dices, ¿cuántas inteligencias artificiales hay? Lo correcto sería ¿cuántos LLM hay?
+
+181
+00:18:01,680 --> 00:18:07,359
+No digo que debas decir LLM a partir de hoy. Sí, el diciendo inteligencia artificial, no pasa nada.
+
+182
+00:18:07,359 --> 00:18:13,279
+Solamente quiero que entiendas que el nombre técnico es LLM, ¿no? Es como cuando tú ves una rosa y
+
+183
+00:18:13,279 --> 00:18:18,480
+viene el botánico y dice su nombre científico es... No tienes por qué decirle un nombre científico,
+
+184
+00:18:18,480 --> 00:18:24,519
+pero es bueno saberlo, ¿no? LLM son las iniciales del large language model, modelo grande del lenguaje,
+
+185
+00:18:24,599 --> 00:18:29,759
+modelo extenso del lenguaje. Para simplificar en lugar de LLM también podemos decir modelo,
+
+186
+00:18:29,759 --> 00:18:36,160
+que es una forma más fácil de decirlo, ¿ok? Al medio dices language, ¿no? Lenguaje. ¿Por qué?
+
+187
+00:18:36,160 --> 00:18:42,279
+¿Por qué language? Porque han sido entrenados para entender el lenguaje natural, usando procesamiento
+
+188
+00:18:42,279 --> 00:18:47,119
+del lenguaje natural, una técnica de inteligencia artificial o de machine learning que se llama NLP.
+
+189
+00:18:47,119 --> 00:18:51,759
+De esa manera ellos pueden entender nuestro lenguaje porque han sido entrenados con mucho texto,
+
+190
+00:18:51,759 --> 00:18:56,599
+con mucho libro, con todas las páginas web del mundo para entender cómo hablamos los humanos
+
+191
+00:18:56,599 --> 00:19:02,519
+y procesar nuestra forma de comunicarnos, ¿no? Entonces este es el resultado de muchas décadas,
+
+192
+00:19:02,519 --> 00:19:10,079
+¿no? Es que nació hace unos años, es una explosión. Pero ahora ¿cómo funcionan estos LLM? Los LLM
+
+193
+00:19:10,079 --> 00:19:16,319
+funcionan primero porque han sido entrenados con enormes cantidades de información, enormes,
+
+194
+00:19:16,319 --> 00:19:23,279
+monstruosas cantidades de información, libros. De hecho, hay, hay juicios, demandas contra las
+
+195
+00:19:23,279 --> 00:19:26,879
+empresas que hacen inteligencia artificial por derechos de autor, ¿no? Porque dicen que ellos
+
+196
+00:19:26,879 --> 00:19:31,919
+han pirateado libros para entrenar a sus modelos de inteligencia artificial. Pero bueno, más allá
+
+197
+00:19:31,919 --> 00:19:37,000
+de las demandas han sido entrenados con monstruosas cantidades de información para que entiendan
+
+198
+00:19:37,000 --> 00:19:43,279
+cómo nosotros nos comunicamos, ¿no? Luego con ese entrenamiento los modelos identifican patrones,
+
+199
+00:19:44,039 --> 00:19:52,839
+usando matemática, usando estadística, probabilidades y de esa manera entienden cómo se combinan
+
+200
+00:19:52,839 --> 00:19:56,680
+las palabras, cómo los humanos combinamos las palabras, cómo le encontramos sentibas las cosas
+
+201
+00:19:56,680 --> 00:20:02,119
+y de esa manera usan estadística avanzada para predecir la siguiente palabra en un texto. No
+
+202
+00:20:02,119 --> 00:20:07,559
+piensan, es matemática, súper avanzada. Por eso la inteligencia artificial se puede
+
+203
+00:20:07,559 --> 00:20:13,679
+contradecir. Te puede decir algo y luego decirte lo opuesto y cuando tú le corrijas volver a
+
+204
+00:20:13,679 --> 00:20:20,759
+contradecirse porque no están diseñadas para decir la verdad o para tener conciencia. Claro,
+
+205
+00:20:20,759 --> 00:20:25,639
+ese es el siguiente reto de la IA, ¿no? Si no, que es estadística. Esto es muy importante que
+
+206
+00:20:25,639 --> 00:20:30,639
+lo entiendas porque si tú entiendes esto vas a entender porque al mismo prom te va a dar resultados
+
+207
+00:20:30,639 --> 00:20:35,839
+diferentes. Si tú no entiendes esto vas a creer que el prom es perfecto y siempre va a funcionar
+
+208
+00:20:35,919 --> 00:20:42,559
+y luego te vas a frustrar y vas a terminar en el loop de la IA. Por eso requieren revisión humana.
+
+209
+00:20:42,559 --> 00:20:47,199
+Stop. Antes de continuar tengo una pregunta para ti. ¿Quieres capacitar a tu equipo en
+
+210
+00:20:47,199 --> 00:20:51,279
+inteligencia artificial? En Editing los ayudamos a adaptarse a este mundo tan cambiante con
+
+211
+00:20:51,279 --> 00:20:55,599
+nuestros planes para empresas totalmente adaptados a tus necesidades. Podemos capacitar a tu equipo
+
+212
+00:20:55,599 --> 00:21:00,399
+administrativo, gerentes, programadores y TI. Decenas de empresas ya han confiado en nosotros para
+
+213
+00:21:00,399 --> 00:21:04,599
+dar el salto a la IA. También tenemos licencias empresariales para que tu equipo acceda a nuestros
+
+214
+00:21:04,599 --> 00:21:08,919
+cientos de cursos y tú puedes supervisar el avance de su aprendizaje. No te quedes atrás en la era
+
+215
+00:21:08,919 --> 00:21:13,039
+de la IA y contactanos en edepunto-team-diagonal-empresas. Ahora sí, continuamos con el vídeo.
+
+216
+00:21:14,599 --> 00:21:20,159
+Capítulo 4 de esta clase. Técnicas de comunicación efectiva. ¿Este es un curso de comunicación?
+
+217
+00:21:20,159 --> 00:21:27,799
+Pues sí, porque es para comunicarte con la IA. Pero hay algo más importante. La IA ha sido
+
+218
+00:21:27,799 --> 00:21:33,679
+entrenada para entender el lenguaje humano. Por lo tanto, si tú usas bien el lenguaje humano
+
+219
+00:21:34,160 --> 00:21:38,720
+o sea, si te comunicas bien, la IA te va a entender. Es muy sencillo, es muy obvio, pero a veces nos
+
+220
+00:21:38,720 --> 00:21:45,759
+olvidamos de eso. Entonces, el criterio básico, el criterio fundamental para escribir Buenos
+
+221
+00:21:45,759 --> 00:21:52,200
+Promes, es hacerte esa sencilla pregunta. Si un humano te entiende, la IA también te entenderá.
+
+222
+00:21:52,200 --> 00:21:58,880
+Así que simplemente pregúntate. ¿Un humano entendería lo que acabo de decir? ¿Lo entendería
+
+223
+00:21:58,880 --> 00:22:04,320
+a mi papá, mi mamá, mi novia, mi hijo o lo voy a enredar con lo que estoy diciendo? O tal vez
+
+224
+00:22:04,320 --> 00:22:10,040
+me mirará raro como no entiendo lo que quisiste decir. Porque la IA está entrenada para entender
+
+225
+00:22:10,040 --> 00:22:15,680
+la comunicación humana, no para adivinarte la mente. Por ejemplo, lo que acabamos de ver,
+
+226
+00:22:15,680 --> 00:22:18,960
+el loop de la IA, ¿se acuerdan? Esa rueda de hamster en la que terminamos atrapados,
+
+227
+00:22:18,960 --> 00:22:25,520
+es generalmente porque nos comunicamos mal y la IA intenta adivinar lo que quisimos decir.
+
+228
+00:22:26,279 --> 00:22:31,240
+Por eso le decimos, haz lo que suene más bonito y la IA pues ¿qué será más bonito? Entonces,
+
+229
+00:22:31,240 --> 00:22:36,319
+la IA hace algo que para la IA es bonito, pero para ti no. Entonces, como te has comunicado mal,
+
+230
+00:22:36,319 --> 00:22:41,920
+terminas atrapado en un loop. No me creen. Vamos a poner ejemplos. Miren, ¿cómo nos comunicamos en
+
+231
+00:22:41,920 --> 00:22:47,519
+el día a día? Ya olvidemos un poquito la inteligencia artificial y pensemos cómo nos comunicamos en
+
+232
+00:22:47,519 --> 00:22:55,960
+el día a día. Decimos cosas como, vendan más. Por ejemplo, un jefe en una empresa,
+
+233
+00:22:55,960 --> 00:23:02,920
+vendan más, necesitamos más vendas, vendan más. Y uno, ¿qué significa vendan más? Cuéntenme,
+
+234
+00:23:02,920 --> 00:23:10,119
+significa haz más llamadas, sonríele más a los clientes, demosle una oferta a los clientes,
+
+235
+00:23:10,119 --> 00:23:17,160
+un descuento para que compren. ¿Qué significa vendan más? Te pongo otro ejemplo, traeme algo de comer,
+
+236
+00:23:17,920 --> 00:23:23,920
+¿qué significa traeme algo de comer? Traeme una galleta, una papa frita, traeme un chocolate,
+
+237
+00:23:23,920 --> 00:23:30,360
+traeme un arroz con pollo. ¿Qué significa traeme algo de comer? O como cuando el cliente dice,
+
+238
+00:23:30,360 --> 00:23:36,940
+mételes más diseño, mételes más diseño. ¿Qué significa mételes más diseño? ¿No? Y en la vida
+
+239
+00:23:36,940 --> 00:23:42,240
+real nos comunicamos así y luego esos malos hábitos los llevamos a la inteligencia artificial
+
+240
+00:23:42,400 --> 00:23:50,599
+y hacemos lo mismo con la ya, a lo más bonito. ¿Qué significa lo más bonito? O este ejemplo,
+
+241
+00:23:50,599 --> 00:23:57,039
+que es chiste, pero a veces no es chiste, ¿no? Si me reencarnara en una mariposa, ¿me seguirías
+
+242
+00:23:57,039 --> 00:24:04,480
+queriendo? Y si tu pareja te pregunta eso, tú te quedas pensando, no te muevas, es una trampa. ¿Qué
+
+243
+00:24:04,480 --> 00:24:10,559
+debo decir? Te toca intentar adivinar qué es lo que te está queriendo decir, ¿no? Esos jueguitos
+
+244
+00:24:11,440 --> 00:24:16,039
+de haber si me entiende, haber si no me entiende, no sirven con la ya, con la ya tienes que ser
+
+245
+00:24:16,039 --> 00:24:21,720
+claro y específico, ¿no? Te pongo un caso de la vida real, mira, en las oficinas, quien haya trabajado
+
+246
+00:24:21,720 --> 00:24:28,440
+en oficina, lo sabe, lo ha vivido, se escuchan cosas como esta, miren. En aras de maximizar nuestras
+
+247
+00:24:28,440 --> 00:24:33,799
+sinergias podríamos evaluar la posibilidad de contemplar diferentes alternativas que nos
+
+248
+00:24:33,799 --> 00:24:41,919
+permitan ir avanzando paulatinamente. ¿Qué te hablo significa? En aras de maximizar nuestras
+
+249
+00:24:41,919 --> 00:24:46,119
+sinergias podríamos evaluar la posibilidad de contemplar diferentes alternativas que nos permitan
+
+250
+00:24:46,119 --> 00:24:53,879
+ir a... Lo peor es que la gente que habla así creen ser los más inteligentes de la oficina, ¿no? Y
+
+251
+00:24:53,879 --> 00:24:58,799
+luego los demás los imitan y terminan, terminan todos hablando en este lenguaje de alguien que nadie
+
+252
+00:24:58,799 --> 00:25:07,440
+entiende. Cuando están sencillo de decir, oigan, ¿cuál es el siguiente paso? Es bien sencillo, ¿cuál es el
+
+253
+00:25:07,440 --> 00:25:13,359
+siguiente paso? Entonces, estos ejemplos de la vida real también se aplican a la inteligencia
+
+254
+00:25:13,359 --> 00:25:20,639
+artificial porque nuestros malos hábitos al comunicarnos los llevamos a la lla. Señor Chatipiti,
+
+255
+00:25:20,639 --> 00:25:26,319
+buenos días, ¿cómo estás? ¿Cómo ha amanecido? Miren, antes que nada le agradezco por atenderme el
+
+256
+00:25:26,319 --> 00:25:31,919
+día de hoy y quisiera hacerle una solicitud sin incomodarlo, ¿no? Sería usted tan amable, porque
+
+257
+00:25:31,919 --> 00:25:36,519
+así hablan en las oficinas. ¿Cuál es la mejor técnica para escribir buenos prons? Más allá de
+
+258
+00:25:36,519 --> 00:25:40,359
+todas las técnicas que van a aprender en este curso porque van a aprender bastantes, pero la
+
+259
+00:25:40,359 --> 00:25:46,599
+técnica transversal que atraviesa todo, todos, todos, todos los los temas de este curso es la siguiente,
+
+260
+00:25:46,599 --> 00:25:52,879
+miren, tres pasitos nada más. Paso uno, lee tu prom antes de enviarlo, antes de presionar enter o antes
+
+261
+00:25:52,920 --> 00:26:00,880
+de darle clic en la flechita de enviar, lee tu prom y pregúntate lo siguiente. Una persona entendería
+
+262
+00:26:00,880 --> 00:26:08,400
+esto claramente, hay partes ambiguas, hay partes que se van a interpretar que cualquier persona la va a
+
+263
+00:26:08,400 --> 00:26:18,440
+interpretar a su modo. Por ejemplo, les hago esta pregunta, traeme algo de comer. ¿Es interpretable o no
+
+264
+00:26:18,440 --> 00:26:27,600
+es interpretable? ¿Es interpretable, ¿cierto? Cada quien decidirá que cosa significa algo de comer,
+
+265
+00:26:27,600 --> 00:26:34,440
+entonces cada persona te va a traer diferentes cosas de comer, entonces es una, es una instrucción
+
+266
+00:26:34,440 --> 00:26:43,160
+interpretable, ambigua, por lo tanto, corrígelas para que no sea ambigua y envíala. Y es así,
+
+267
+00:26:43,160 --> 00:26:51,960
+es sencillo, ya está, pueden dejar el curso acá y ya prender un montón y así como sucede con las
+
+268
+00:26:51,960 --> 00:26:59,560
+personas, sucede con la guía. ¿Qué pasa cuando a una persona le dice, traeme algo de comer? Voy a
+
+269
+00:26:59,560 --> 00:27:07,960
+seguir con este ejemplo, algunos van a decir, ¿qué exactamente te traigo? ¿cierto? Hay personas que
+
+270
+00:27:07,960 --> 00:27:15,360
+van a decir, ¿qué quiere que te traiga de comer? Pero hay personas que van a decir, ¿entendido mi
+
+271
+00:27:15,360 --> 00:27:21,759
+capitán? Y van, ¿no? Y ellos me traigo, me apego algo de comer, pues ya veré, ¿no? Ya veré, yo
+
+272
+00:27:21,759 --> 00:27:26,880
+decido, yo decido qué traigo de comer. Entonces hay personas que preguntan, están muy bien preguntar para
+
+273
+00:27:26,880 --> 00:27:31,759
+afinar, para estar seguro que entendiste el mensaje, pero hay muchas personas que no, volviendo a las
+
+274
+00:27:31,759 --> 00:27:36,600
+oficinas, cuando se da una orden, muchas personas dicen entendido, dentro de su cabeza no entendieron
+
+275
+00:27:36,759 --> 00:27:43,000
+nada, pero ellos dicen entendido, no entendieron nada y no preguntaron nada. La guía va a ser lo
+
+276
+00:27:43,000 --> 00:27:49,399
+mismo, a veces te va a preguntar, oye, exactamente qué es lo que quieres comer, exactamente de qué
+
+277
+00:27:49,399 --> 00:27:54,839
+va el correo que quieres que escriba, a veces no te va a preguntar nada y se lo va a asumir, se lo
+
+278
+00:27:54,839 --> 00:28:01,000
+va a inventar, va a tomar la decisión, se dan cuenta y por eso termina dándote respuestas que no
+
+279
+00:28:01,000 --> 00:28:09,200
+esperabas. Ojo con eso, es muy importante. Entonces, para escribir buenos prompts, necesitamos
+
+280
+00:28:09,200 --> 00:28:15,640
+claridad, el mensaje directo sin agregarle más cosas innecesarias y precisión, ser específico.
+
+281
+00:28:15,640 --> 00:28:21,880
+¿Se acuerdan cuando Shrek manda al burro y le dice, flora azul, espinas rojas? Anda y busca una flora
+
+282
+00:28:21,880 --> 00:28:30,400
+azul con espinas rojas, eso es un buen prompt, flora azul, espinas rojas. No, y burro está buscando,
+
+283
+00:28:30,400 --> 00:28:34,480
+flora azul, espinas rojas, flora azul, espinas rojas, flora azul, espinas rojas. Claro, eres preciso,
+
+284
+00:28:34,480 --> 00:28:39,800
+evitas detalles innecesarios, vas al grano, flora azul, espinas rojas, todo lo que no le
+
+285
+00:28:39,800 --> 00:28:45,680
+especificues a la guía, ésta lo asumirá y decidirá por ti, igual que lo haría una persona. Y por
+
+286
+00:28:45,680 --> 00:28:50,920
+último, en esta parte de la clase, recuerda que la comunicación es una habilidad que va más allá
+
+287
+00:28:50,920 --> 00:28:55,759
+de la inteligencia artificial. Si tú aprendes a comunicarte bien, a evitar ambigüedades, ojo a,
+
+288
+00:28:55,799 --> 00:29:01,559
+a pensar, ok, la otra persona no me entendió, tal vez me habré comunicado mal en lugar de
+
+289
+00:29:01,559 --> 00:29:06,200
+echarle la culpa y decirle, no me entendiste, ¿sabes qué va a pasar con tu vida? Vas a pelear menos,
+
+290
+00:29:06,200 --> 00:29:12,680
+vas a discutir menos con tu pareja, con tus hijos, con tu, con tu vecinos, con tus padres, con tus
+
+291
+00:29:12,680 --> 00:29:19,879
+amigos, vas a vivir mejor, porque la mala comunicación, yo me comunico mal, tú no me entiendes y yo te
+
+292
+00:29:19,879 --> 00:29:24,480
+hecho la culpa a ti, tú no me entiendes, nunca me entiendes, qué genera divorcio, familias,
+
+293
+00:29:24,480 --> 00:29:29,960
+funcionales, empresas rotas donde los socios se pelean, bandas de rock que se separan para nunca
+
+294
+00:29:29,960 --> 00:29:36,120
+más volver a hablarse, los daños que hacen la mala comunicación van más allá de la inteligencia
+
+295
+00:29:36,120 --> 00:29:42,759
+artificial, las habilidades que van a adquirir al escribir Buenos Proms se llevan también a su vida,
+
+296
+00:29:44,200 --> 00:29:51,039
+no quedan en chatipiti o en Gemini o en Cloud o en la que quieran usar, se llevan a su vida.
+
+297
+00:29:51,279 --> 00:29:57,519
+La pieza maestra del prompting, el prompting es prontear, así como existe la palabra
+
+298
+00:29:57,519 --> 00:30:02,559
+googlear que si bien es cierto es una jerga pero todos la usamos ahora se habla de prontear,
+
+299
+00:30:02,559 --> 00:30:07,319
+que es escribir Buenos Proms, ¿no? ¿y cuál es la pieza maestra del prompting? El contexto,
+
+300
+00:30:07,319 --> 00:30:15,079
+les pongo este ejemplo, una chica va donde su amiga, ahí todo triste, atribulada con problemas,
+
+301
+00:30:15,079 --> 00:30:21,159
+con la cara larga y le dice amiga necesito un consejo y tú que crees que vas a ser la amiga,
+
+302
+00:30:21,159 --> 00:30:29,779
+¿crees que le va a dar el consejo? A menos que sea medio psicópata, o sea esos coach bendeumo que
+
+303
+00:30:29,779 --> 00:30:34,879
+quieren saber todas las respuestas, no le va a dar el consejo, lo que va a hacer la amiga es poner
+
+304
+00:30:34,879 --> 00:30:42,359
+su teléfono en silencio y decirle cuéntame, cuéntame todo porque necesita el contexto,
+
+305
+00:30:42,439 --> 00:30:48,240
+¿qué consejo le va a dar si no sabe cuál es su problema? A mí me dicen Álvaro,
+
+306
+00:30:48,240 --> 00:30:54,839
+dame un consejo, estoy comenzando la universidad y digo no tengo ni idea sobre qué consejo quieres,
+
+307
+00:30:54,839 --> 00:31:00,159
+no sé tu contexto, no sé qué es lo que quiere conseguir, cuál es tu objetivo, sin contexto no
+
+308
+00:31:00,159 --> 00:31:07,679
+se puede hacer mucho, solo queda adivinar. ¿Qué cosa es el contexto entonces? El contexto es todo
+
+309
+00:31:07,680 --> 00:31:15,279
+ese conocimiento previo para entender algo, no tener el contexto es como entrar al cine a media
+
+310
+00:31:15,279 --> 00:31:20,519
+película, no sabes por qué ese tipo quiere matar a esa chica, ¿qué le ha hecho la chica para que
+
+311
+00:31:20,519 --> 00:31:25,960
+la quiera matar? ¿por qué? Porque entraste al cine media película. ¿Se acuerdan que hace al inicio
+
+312
+00:31:25,960 --> 00:31:30,600
+de esta sesión le pedimos a la ida que escriba un plan de marketing? Y parecía que lo había hecho
+
+313
+00:31:30,600 --> 00:31:35,120
+muy bien, aquí está, miran, escriba un plan de marketing para una empresa de venta de zapatos
+
+314
+00:31:36,119 --> 00:31:42,519
+y aquí me da el plan de marketing. Pero el plan de marketing es genérico, no se va a adecuar a
+
+315
+00:31:42,519 --> 00:31:49,559
+mi empresa, le di un poquito de contexto, le dije empresa de venta de zapatos, esto es contexto,
+
+316
+00:31:49,559 --> 00:31:55,039
+ah ok, es de venta de zapatos, si le hubiera dicho para una empresa X me va a dar un plan genérico,
+
+317
+00:31:55,039 --> 00:32:02,199
+pero qué pasa si quiero que el plan incluya no sé correos electrónicos para enviar o un texto
+
+318
+00:32:02,200 --> 00:32:07,440
+publicitario para medios tradicionales, tendría que tener el eslogan de la empresa, el nombre de la
+
+319
+00:32:07,440 --> 00:32:13,279
+empresa, los valores para intentar acomodar el plan de marketing a la visión de la empresa,
+
+320
+00:32:13,279 --> 00:32:21,000
+etcétera, etcétera, etcétera, todo ese contexto adicional es muy importante, pero no se lo estamos
+
+321
+00:32:21,000 --> 00:32:26,120
+dando. Entonces qué pasa cuando no das contexto, la ida te responde o se niega a responderte,
+
+322
+00:32:26,319 --> 00:32:32,799
+te responde, pero te responde con generalidades y ojo que el contexto es tan importante que es el
+
+323
+00:32:32,799 --> 00:32:37,879
+futuro de la inteligencia artificial, tanto así que ya se habla de la ida personal que va a ser el
+
+324
+00:32:37,879 --> 00:32:43,079
+futuro de la ida, que es una ida que conozca todo de ti, de hecho hace poco ha salido chatdpt
+
+325
+00:32:43,079 --> 00:32:51,479
+pools, no sé si han visto, chatdpt pools es una nueva función de chatdpt que todas las noches va
+
+326
+00:32:51,480 --> 00:32:56,039
+a aprender de ti, de tus preferencias, de lo que has hecho, de todo lo que sepa de ti, lo puedes
+
+327
+00:32:56,039 --> 00:33:00,519
+conectar a tu correo, al calendario y vas a ver todo en la noche y en la mañana te va a dar
+
+328
+00:33:00,519 --> 00:33:06,519
+sugerencias para tu día, para que seas más productivo en tu día y sí está muy chévere,
+
+329
+00:33:06,519 --> 00:33:11,400
+pero por otro lado está medio turbio porque chatdpt sabe todo de mi vida cómo es posible,
+
+330
+00:33:11,400 --> 00:33:16,759
+bueno porque tú hablas con chatdpt le das información, entonces chatdpt ya tiene el
+
+331
+00:33:16,759 --> 00:33:23,440
+contexto, las empresas luchan para ya tener el contexto listo, para no tener que tú dale
+
+332
+00:33:23,440 --> 00:33:28,319
+todo el contexto, mira escribi un plan de marketing para mi empresa, te cuento el contexto, mi
+
+333
+00:33:28,319 --> 00:33:33,920
+empresa hace este tipo de producto y vamos 10 años en el mercado, nuestro principal tipo de
+
+334
+00:33:33,920 --> 00:33:39,879
+clientes es este tipo de personas, nuestro producto más vendido, o sea dale todo ese contexto demora
+
+335
+00:33:39,879 --> 00:33:46,599
+mucho, no? Entonces las empresas de ida lo que buscan es tener el contexto ya listo. Y dicho eso
+
+336
+00:33:46,599 --> 00:33:54,599
+llegamos por fin a entender cuáles son los tres elementos básicos de un PROM, claridad,
+
+337
+00:33:54,599 --> 00:34:01,000
+precisión y contexto, la estructura básica de un PROM, seguramente muchos querían que yo comience
+
+338
+00:34:01,000 --> 00:34:05,799
+por acá, algunos dirán este habla mucho, mucha gente me echa hate por eso, hablas mucho, hablas
+
+339
+00:34:05,799 --> 00:34:11,559
+mucho, quiero el PROM perfecto y quiero irme ya, ya, dame el PROM perfecto y me voy, así no funciona,
+
+340
+00:34:11,559 --> 00:34:16,960
+claro tu vende un favorito lo hace así, pero pues en edity me enseñamos de verdad, no? Entonces
+
+341
+00:34:16,960 --> 00:34:23,799
+¿cuál es la estructura básica de todo PROM? Esto por favor anotenlo, saquen el screenshot,
+
+342
+00:34:23,799 --> 00:34:31,400
+tomenle foto, suban los sus stories, compartanlo en su whatsapp, en sus estados de whatsapp, pero
+
+343
+00:34:31,400 --> 00:34:38,519
+esto es muy valioso, esta es la estructura básica de un PROM, costa de tres partes, tarea, contexto
+
+344
+00:34:38,519 --> 00:34:44,880
+y formato, podemos agregarle más partes a la estructura de un PROM, por supuesto hay más
+
+345
+00:34:44,880 --> 00:34:52,280
+partes que se pueden agregar, pero estas tres son fundamentales, tarea, contexto y formato,
+
+346
+00:34:52,280 --> 00:34:57,759
+la tarea es lo que tú quieres que haga, escríbeme un código de programación para tal cosa,
+
+347
+00:34:57,759 --> 00:35:05,840
+escribe un correo con tal información, analiza este documento y saca un resumen,
+
+348
+00:35:05,840 --> 00:35:12,320
+la tarea, luego viene el contexto, toda la información necesaria para entender el objetivo
+
+349
+00:35:12,320 --> 00:35:21,360
+de la tarea y por último el formato, el formato es, escribe lo no sé, en tal lenguaje de programación,
+
+350
+00:35:21,360 --> 00:35:29,400
+con tal estilo de programación, si es texto escribe lo en tantas líneas o en tantas palabras o
+
+351
+00:35:29,400 --> 00:35:35,119
+entrega lo en una tabla o entrega lo en una lista, se encuentra el formato, como se va a entregar,
+
+352
+00:35:35,119 --> 00:35:40,920
+venimos acá a chatdpt, que ojo lo pueden hacer con jammin, hay con clod con el que quieran,
+
+353
+00:35:40,920 --> 00:35:53,680
+tarea, contexto y formato, muy bien, tarea, escribe un correo de invitación al EDK,
+
+354
+00:35:54,679 --> 00:36:03,639
+formato con estilo amigable, como si le hablara, bueno, se sobreentiende creo amigable,
+
+355
+00:36:03,639 --> 00:36:12,879
+con estilo amigable en 100 palabras, y el contexto pues, ¿qué se lee de CAM?
+
+356
+00:36:13,760 --> 00:36:18,880
+¿Qué se lee de CAM? A ver, el EDK es un evento
+
+357
+00:36:20,680 --> 00:36:21,400
+anual
+
+358
+00:36:23,800 --> 00:36:39,480
+en el que el equipo de EDK se conecta en persona con su comunidad, online, es un full day con
+
+359
+00:36:39,480 --> 00:36:48,840
+conferencias de tecnología e inteligencia artificial, empresas invitadas,
+
+360
+00:36:51,240 --> 00:36:59,840
+dinámicas y mucho networking, yo podría seguir, si tengo un brochure con toda la info de EDK,
+
+361
+00:36:59,840 --> 00:37:05,719
+mejor se la subo y le digo, hay del contexto en ese documento, si o no, ojo, que acá estoy poniendo
+
+362
+00:37:05,719 --> 00:37:10,879
+tarea, contexto y formato como para reforzar lo que estoy enseñando, no significa que tú tengas que
+
+363
+00:37:10,879 --> 00:37:21,959
+decirlo así, miren, te va a funcionar, si quito partes, quito el contexto y el formato,
+
+364
+00:37:21,959 --> 00:37:26,519
+si te va a funcionar, pero no te va a dar el resultado que esperas, no, te va a funcionar,
+
+365
+00:37:26,519 --> 00:37:31,679
+si quito el contexto, si, pero se va a inventar que se lee de CAM, no, capa lo busque en internet y
+
+366
+00:37:31,679 --> 00:37:38,079
+encuentre, te va a funcionar, si le quito el formato, si, pero te va a escribir pues que se yo, algo muy
+
+367
+00:37:38,079 --> 00:37:45,039
+largo, muy corto y terminas en el loop, no, muy largo, no, muy corto, no, que haz lo más bonito y
+
+368
+00:37:46,039 --> 00:37:53,679
+terminas ahí atrapado, no, vamos a ver, te invitamos a EDK 2025, o la led cam reyérez y
+
+369
+00:37:53,679 --> 00:37:57,039
+queremos que seas parte de esta gran experiencia, ser un full day donde nos reuniríamos con nuestra
+
+370
+00:37:57,039 --> 00:38:00,559
+comunidad para aprender, inspirarnos y conectarnos, tendrás conferencias sobre tecnología,
+
+371
+00:38:00,559 --> 00:38:04,880
+inteligencia artificial, dinámicas, empresas invitadas y mucho networking con personas como tú
+
+372
+00:38:04,880 --> 00:38:08,799
+apasionadas por la innovación, este evento no es la oportunidad perfecta para conocernos en
+
+373
+00:38:08,799 --> 00:38:13,199
+persona y compartir ideas que transforman el futuro, reserva el lugar y nos acompañamos en esta jornada
+
+374
+00:38:13,199 --> 00:38:20,799
+única, no vemos en el EDK, qué bonito, miren, solamente con decirle la tarea, el contexto
+
+375
+00:38:21,360 --> 00:38:27,199
+y el formato, vieron, y mi contexto no estuvo tan bueno porque era un ejemplo, porque en el
+
+376
+00:38:27,279 --> 00:38:37,199
+contexto me olvidé de decirle, oye, ¿cuándo es el EDK, no? ¿Dónde compras tus entradas? ¿a qué hora es el EDK? ¿en qué fecha? ¿en qué ciudad?
+
+377
+00:38:37,199 --> 00:38:42,239
+no, me olvide esos detalles porque claro es un ejemplo, pero ven qué importante sale todo el contexto
+
+378
+00:38:43,199 --> 00:38:48,159
+ahora que ya saben cómo escribir un buen PROM, lo básico, tarea, contexto y formato,
+
+379
+00:38:49,119 --> 00:38:55,279
+lo siguiente, ya esto es como lo último de esta sesión, es entender que es un user PROM y que es un
+
+380
+00:38:56,240 --> 00:39:02,320
+system PROM, hay dos tipos de PROM, user PROM y system PROM, la diferencia es la siguiente, los user PROM
+
+381
+00:39:02,320 --> 00:39:07,600
+son los que tú escribes a la guía, lo que hemos hecho ahora con Chatipiti, eso es un user PROM, yo como
+
+382
+00:39:07,600 --> 00:39:14,160
+usuario escribo y genera alguna respuesta inmediata, el output del modelo, no, o sea, yo le escribo a Chatipiti,
+
+383
+00:39:14,160 --> 00:39:20,640
+Chatipiti me responde, oye Chatipiti, escribe un correo para el EDK, bla, bla, bla, muy bien y me responde, excelente
+
+384
+00:39:21,440 --> 00:39:30,719
+ahora bien, que es un system PROM entonces, son configuraciones que le hacemos al modelo,
+
+385
+00:39:30,719 --> 00:39:37,599
+para decirle, te tienes que comportar de esta forma, entonces yo le digo, siempre me vas a responder
+
+386
+00:39:37,599 --> 00:39:43,039
+al grano, otra vez otra persona diga, tú me vas a responder como si fuera tu mejor amigo
+
+387
+00:39:44,000 --> 00:39:51,039
+y donde van, vamos a verlos, vamos a ver Chatipiti por acá, voy a venir a Chatipiti,
+
+388
+00:39:52,719 --> 00:39:57,279
+aquí estamos en Chatipiti y fíjense, yo voy a venir aquí, donde está mi foto, ven acá,
+
+389
+00:39:57,279 --> 00:40:03,360
+acá, le doy clic ahí, voy a configuración o en personalización, en cualquiera de los dos está,
+
+390
+00:40:03,360 --> 00:40:11,039
+vamos a personalización directamente y fíjense que acá dice habilitar personalización, miren,
+
+391
+00:40:11,199 --> 00:40:18,079
+y está activado, lo ven, está activado, yo lo podría desactivar pero acá está activado
+
+392
+00:40:18,079 --> 00:40:24,719
+y más abajo dice instrucciones personalizadas, esto es mi system PROM de Chatipiti, el mío,
+
+393
+00:40:24,719 --> 00:40:30,079
+el que yo escribí, es decir mi configuración y le digo a Chatipiti, no agregues nunca emojis
+
+394
+00:40:30,079 --> 00:40:34,880
+ni negritas en los párrafos, porque Chatipiti tiene la mala costumbre de comportarse como un niño de
+
+395
+00:40:35,840 --> 00:40:41,519
+8 años, le mete emojis a todo, mis instrucciones dicen no agregues nunca emojis ni negritas en los
+
+396
+00:40:41,519 --> 00:40:45,440
+párrafos, las negritas solo están permitidas en títulos o subtítulos, tus respuestas deben ser
+
+397
+00:40:45,440 --> 00:40:49,840
+concisas sin agregar nada que no te haya pedido explícitamente, porque la ya también agrega
+
+398
+00:40:49,840 --> 00:40:54,720
+cosas que uno no le ha pedido, a veces quiere ayudarte y agrega cosas que tú no lo pidió,
+
+399
+00:40:54,720 --> 00:40:59,360
+nunca agregues ideología de género o que en tus respuestas, porque a veces le pregunto cosas hasta
+
+400
+00:40:59,519 --> 00:41:04,880
+históricas de hechos de la historia y le metí ideología género, que horrible, entonces le digo
+
+401
+00:41:04,880 --> 00:41:11,280
+oye no, límítate lo verificable en lugar de dar opiniones esgadas, límítate los hechos, entonces
+
+402
+00:41:11,280 --> 00:41:17,599
+es mi configuración, entonces esto sirve porque cada vez que yo le hago una pregunta a Chatipiti,
+
+403
+00:41:17,599 --> 00:41:24,559
+Chatipiti va a usar esto como una configuración, no necesita ser usuario de pago para agregar
+
+404
+00:41:25,519 --> 00:41:30,960
+en Chatipiti en la versión gratis puedes agregar System Proms, en otros modelos si
+
+405
+00:41:30,960 --> 00:41:35,119
+requieres pagar para por ejemplo en Cloud y en Gemini, creo que requieres pagar
+
+406
+00:41:35,679 --> 00:41:41,519
+para poder agregar System Proms, entonces en las herramientas que ustedes usen, busquen, no les
+
+407
+00:41:41,519 --> 00:41:45,039
+puedo decir de todas, pero ustedes busquen dónde agregar los System Proms, porque de esa manera
+
+408
+00:41:45,039 --> 00:41:51,279
+tú configuras cómo se va a comportar el modelo cada vez que te responda y los System Proms pues hay
+
+409
+00:41:51,360 --> 00:41:57,120
+dos niveles, hay nivel desarrollador y nivel usuario, el nivel desarrollador de los System
+
+410
+00:41:57,120 --> 00:42:00,480
+Proms son los System Proms que ponen los que desarrollan y que el usuario no puede tocar,
+
+411
+00:42:01,280 --> 00:42:08,320
+por ejemplo los que crean Chatipiti por ejemplo, ellos le ponen System Proms al modelo para decirle
+
+412
+00:42:08,320 --> 00:42:14,880
+oye si un usuario te toca temas no sé delitos no toques esos temas o por ejemplo si un usuario
+
+413
+00:42:14,880 --> 00:42:20,000
+te pregunta cómo hackear una computadora no le respondas System Proms de ese tipo, instrucciones,
+
+414
+00:42:20,079 --> 00:42:26,800
+reglas de seguridad, tienen grandes, cantidades, equipos grandes para dedicarse a System Proms que
+
+415
+00:42:26,800 --> 00:42:35,199
+configuren bien el modelo para evitar que muestre algo que no es, pero no solamente los que crean
+
+416
+00:42:35,199 --> 00:42:44,960
+el modelo, por ejemplo miren vamos a venir a ed.tim quiero aprender a programar y fíjate que dice
+
+417
+00:42:45,920 --> 00:42:48,720
+que quiero aprender a programar con la IA, ok voy a preguntar con la IA
+
+418
+00:42:50,720 --> 00:42:55,920
+mira me dice programación desde cero es la ruta ideal si quieres aprender a programar desde cero
+
+419
+00:42:55,920 --> 00:43:00,880
+incluye seis cursos que te voy a darle zoom que te llevan paso a paso sin necesidad de experiencia
+
+420
+00:43:00,880 --> 00:43:04,400
+previa con la suscripción premium desbloqueas acceso y limitado a esta ruta todos los cursos de
+
+421
+00:43:04,400 --> 00:43:08,400
+Tim ya beneficios como certificados y comunia exclusiva aprovecha eso por nea para transformar
+
+422
+00:43:08,400 --> 00:43:12,320
+tu futuro profesional porque en español nadie explica mejor que Tim aquí puede ver una foto
+
+423
+00:43:12,640 --> 00:43:19,920
+la ruta que te recomende wow esto es inteligencia artificial dentro de Tim este chat se llama chat
+
+424
+00:43:19,920 --> 00:43:26,080
+ed.t y te responde sobre los cursos sobre las cosas que quieres aprender te lo responde directamente
+
+425
+00:43:26,080 --> 00:43:33,200
+la IA ahora como sabe que en español nadie explica mejor que Tim bueno porque ha investigado no pero
+
+426
+00:43:33,200 --> 00:43:39,519
+también obviamente hay hay un ayudín del equipo de desarrolladores a través de system prompts
+
+427
+00:43:39,599 --> 00:43:45,599
+los desarrolladores le dicen cómo debe comportarse este chat ustedes no pueden poner esos system prompts
+
+428
+00:43:45,599 --> 00:43:50,079
+solo los desarrolladores no y un detalle muy importante porque acá mucha gente se confunde
+
+429
+00:43:50,079 --> 00:43:56,559
+es que los system prompts no son entrenamiento cuando tú configuras mucha gente dice estoy entrenando
+
+430
+00:43:56,559 --> 00:44:02,320
+a chat gpt no lo estás entrenando lo estás ajustando lo estás configurando le estás diciendo
+
+431
+00:44:02,320 --> 00:44:10,000
+compórtate esta manera es un ajuste no es entrenamiento y por último con eso terminamos la clase de hoy
+
+432
+00:44:11,039 --> 00:44:18,160
+el ajuste del input y el ajuste del output en la parte del ajuste del input es donde yo ordeno
+
+433
+00:44:18,160 --> 00:44:25,519
+mis ideas para explicar bien la tarea para explicar bien lo que yo quiero que la IA haga ese es el
+
+434
+00:44:25,599 --> 00:44:33,039
+ajuste del input yo ajusto mis instrucciones para explicar que quiero yo y el ajuste del output es
+
+435
+00:44:33,039 --> 00:44:41,440
+donde yo indico cómo quiero que la IA me responda por eso es que la estructura básica de un prompt
+
+436
+00:44:41,440 --> 00:44:48,159
+es tarea, contexto y formato porque ahí tenemos contemplado el input y el output hemos ajustado
+
+437
+00:44:48,159 --> 00:44:53,599
+el input con la tarea y el contexto y hemos ajustado el output diciéndole el formato entonces a lo
+
+438
+00:44:53,679 --> 00:45:01,440
+largo de este curso amigos y amigas a lo largo de este curso vamos a trabajar en un módulo vamos
+
+439
+00:45:01,440 --> 00:45:05,839
+a hablar de todas las técnicas para ajustar el input acá hemos visto solo tarea y contexto pero
+
+440
+00:45:05,839 --> 00:45:11,839
+vamos a vamos a poner varios ejemplos para ir un poco más a fondo y también vamos a hablar del
+
+441
+00:45:11,839 --> 00:45:20,000
+ajuste del output en otro módulo todas las técnicas para que nuestro output podamos setearlo podamos
+
+442
+00:45:20,079 --> 00:45:29,119
+configurarlo y con varios ejemplos listo entonces eso es todo les agradezco muchísimo estar con
+
+443
+00:45:29,119 --> 00:45:34,239
+migo el día de hoy espero que les haya gustado esta clase y voy a revisar algunos comentarios
+
+444
+00:45:34,239 --> 00:45:40,960
+para ir terminando recuerden amigo y amigas que esta primera sesión es completamente gratis aquí
+
+445
+00:45:40,960 --> 00:45:46,880
+en redes sociales aquí en youtube en twitch en tiktok etcétera pero si quieren ver el curso completo
+
+446
+00:45:46,880 --> 00:45:53,119
+con todas las clases que vienen tienen que ir a la página de ed.tim e de.tim comprar el curso
+
+447
+00:45:53,119 --> 00:45:59,920
+o comprar una suscripción premium que te da acceso a este curso ya todos los demás cursos de ed.tim
+
+448
+00:45:59,920 --> 00:46:06,800
+no desaprovechen esta oportunidad ustedes mismos hagan la crítica aprendieron en esta clase
+
+449
+00:46:06,800 --> 00:46:12,960
+si aprendieron en esta clase pregúntense cuánto aprenderán en el curso completo
+

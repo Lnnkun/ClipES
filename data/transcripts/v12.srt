@@ -1,0 +1,936 @@
+1
+00:00:00,000 --> 00:00:29,280
+El cláusula de la empresa más valiosa del planeta en Vive. Comparando OpenCloud, una gente de IA,
+
+2
+00:00:29,280 --> 00:00:36,280
+no con una aplicación, no con una herramienta, sino con un sistema operativo, Windows. Esto es enorme
+
+3
+00:00:36,280 --> 00:00:40,880
+y la mayoría de gente en Latinoamérica todavía no sabe cómo funciona una gente, por eso que para el
+
+4
+00:00:40,880 --> 00:00:46,040
+final de este vídeo vas a aprender que es una gente IA, cómo funciona por dentro, cuáles son los
+
+5
+00:00:46,040 --> 00:00:51,719
+cuatro elementos que lo componen, dónde se arman y los tres pasos para conseguir y armar el tuyo.
+
+6
+00:00:51,719 --> 00:00:56,680
+Todo esto va a ser explicado de una manera visual y directamente al grano. Pero antes vamos al problema
+
+7
+00:00:56,679 --> 00:01:00,600
+de fondo. Y la verdad es que la mayoría de la gente sigue usando la inteligencia artificial como
+
+8
+00:01:00,600 --> 00:01:05,280
+chat. Escribes una pregunta, te da una respuesta y luego tú haces el trabajo. Pregunta, respuesta.
+
+9
+00:01:05,280 --> 00:01:10,159
+Pregunta, respuesta, como un partido de ping pong. Pero existe otro modelo, un modelo donde la IA
+
+10
+00:01:10,159 --> 00:01:15,760
+hace el trabajo por ti. Tú le das un objetivo, ella planifica, ejecuta y luego te entrega un resultado.
+
+11
+00:01:15,760 --> 00:01:20,359
+Y esto sin que estés ahí supervisando cada uno de los pasos. Eso es una gente IA y te voy a explicar
+
+12
+00:01:20,359 --> 00:01:25,200
+exactamente cómo funcionan. De esta manera te puedes armar un modelo mental y puedes empezar a armar
+
+13
+00:01:25,200 --> 00:01:34,680
+los tuyos. Vamos a lo básico. Cuando usas chat GVT o cloud o Gemini, la dinámica es simple.
+
+14
+00:01:34,680 --> 00:01:39,040
+Tú le haces una pregunta, te lo respondes, lo analizas, decides qué hacer y vuelves a preguntar.
+
+15
+00:01:39,040 --> 00:01:45,040
+Eso es un chatbot. Una gente es diferente. Una gente recibe un objetivo y entran lo que se conoce
+
+16
+00:01:45,040 --> 00:01:50,600
+como un agent loop o el ciclo de la gente. Y ese ciclo es el corazón de todo. Funciona así.
+
+17
+00:01:50,759 --> 00:01:55,079
+Primero, observa. Revisa que información esté disponible, qué archivos hay,
+
+18
+00:01:55,079 --> 00:02:00,000
+qué herramientas puedes usar y después se pone a pensar. Analiza la situación y decide cuál es
+
+19
+00:02:00,000 --> 00:02:05,000
+el siguiente paso. Y luego actúa y ejecuta ese paso. Pero lo importante es que no se detiene
+
+20
+00:02:05,000 --> 00:02:08,639
+después de un paso, sino que vuelve al principio, observa lo que acaba de hacer,
+
+21
+00:02:08,639 --> 00:02:13,319
+piensa qué es lo que sigue y luego actúa de nuevo. Y así sucesivamente hasta que el objetivo se
+
+22
+00:02:13,319 --> 00:02:17,079
+cumple. Veamos cómo sería esto en un ejemplo concreto. Supongamos que le pedimos a una gente
+
+23
+00:02:17,080 --> 00:02:21,480
+que nos arme una página web para nuestro negocio. Lo primero que va a hacer es investigar. Ok,
+
+24
+00:02:21,480 --> 00:02:25,720
+¿qué es lo que hace este negocio? Va a buscar toda la información que encuentre y va a decir,
+
+25
+00:02:25,720 --> 00:02:29,760
+ok, ya tengo el contexto. ¿Cuál es el paso que sigue? Escribir un plan. Ok,
+
+26
+00:02:29,760 --> 00:02:34,600
+ahora empieza a escribir al plan y vuelve al loop. Ya tengo el plan, que es lo que sigue. Ok,
+
+27
+00:02:34,600 --> 00:02:39,200
+ahora toca escribir el código. Va a escribir el código y vuelve al plan y dice, ok, que es lo que
+
+28
+00:02:39,200 --> 00:02:45,080
+sigue. ¿Uplica la página web si o no? Si te dice no, pregunta qué falta, verifica, hace los cambios
+
+29
+00:02:45,080 --> 00:02:49,719
+y cuando confirma que el objetivo se cumplió, que era crear una página web para el negocio,
+
+30
+00:02:49,719 --> 00:02:53,720
+ahí reciente va a entregar el resultado. Y no tuviste quitar varias veces en el prompt
+
+31
+00:02:53,720 --> 00:02:59,200
+entremedio, ya que vimos el resultado, vimos si es que se cumplió, se formó una especie de loop
+
+32
+00:02:59,200 --> 00:03:04,560
+constantemente hasta que te entregó la página web. Y ese loop, que es el de observar, pensar y
+
+33
+00:03:04,560 --> 00:03:08,920
+actuar, es el que está separando un chatbot de una gente. Sin ese loop no existe una gente,
+
+34
+00:03:08,920 --> 00:03:13,640
+solamente existe un chatbot. Ahora, este loop necesita correr en algún lugar. Y ahí es donde
+
+35
+00:03:13,639 --> 00:03:20,479
+entran las distintas plataformas. Cloud Code, Codex, no sé, Open Clomanus, Cover todas. Y estos son
+
+36
+00:03:20,479 --> 00:03:25,639
+los que se conocen como un Agent Hardness o un Arnez de agentes. Remy Gaskill, que es un referente
+
+37
+00:03:25,639 --> 00:03:30,599
+en el tema, usa una analogía que me gusta mucho. Dice, lo que vamos a aprender hoy es a manejar,
+
+38
+00:03:30,599 --> 00:03:36,279
+cómo funcionan los pedales, el volante, los frenos. Y una vez que sabes manejar puedes subirte
+
+39
+00:03:36,279 --> 00:03:42,039
+a cualquier auto. Un Toyota viejo, un Range Rover, lo que sea. Las plataformas son los autos. Algunas
+
+40
+00:03:42,039 --> 00:03:47,639
+tienen mejores features o asientos con calefacción, piloto automático, pero el fundamento es el mismo.
+
+41
+00:03:47,639 --> 00:03:54,039
+Llegar de un punto A que te provociste a un punto B. Entonces primer concepto clave. Una gente es un
+
+42
+00:03:54,039 --> 00:04:00,479
+sistema que entra en un loop de observar, pensar y actuar. Y este loop se repite constantemente
+
+43
+00:04:00,479 --> 00:04:05,000
+hasta lograr el objetivo. Y las plataformas que estás usando simplemente son distintas
+
+44
+00:04:05,000 --> 00:04:09,759
+carrocerías para ese mismo motor. Es como en la Fórmula 1 que Gaskadillac Ferrari usan
+
+45
+00:04:09,759 --> 00:04:14,759
+el mismo motor. Ferrari, pero son 3 carrocerías distintas. La misma lógica se aplica en este caso.
+
+46
+00:04:19,639 --> 00:04:24,759
+Ahora que comprendes el loop, vamos a los 4 elementos que componen a un agente completo.
+
+47
+00:04:24,759 --> 00:04:27,759
+Y este es el corazón del video. Así que presta mucha atención.
+
+48
+00:04:27,759 --> 00:04:32,120
+El primer elemento es el loop, que ya lo vimos. Pero aquí es donde quiero reforzar algo.
+
+49
+00:04:32,120 --> 00:04:38,560
+El loop es el elemento que le da la autonomía a la gente. Sin loop, la IA responde una vez y luego se
+
+50
+00:04:38,560 --> 00:04:43,879
+pide. Con el loop, la IA persigue un objetivo hasta completarlo. Y la diferencia entre un buen agente
+
+51
+00:04:43,879 --> 00:04:47,759
+y un mediocre no está en el loop en sí, porque todos los agentes al final lo tienen,
+
+52
+00:04:47,759 --> 00:04:52,399
+sino que están en otros 3 elementos. Qué tan buen contexto le das, qué también maneja la
+
+53
+00:04:52,399 --> 00:04:56,480
+memoria y cuáles son las herramientas que tiene conectadas. Lo que nos lleva al segundo elemento,
+
+54
+00:04:56,480 --> 00:05:01,360
+el contexto. Y aquí es donde viene algo fundamental. Si es que el día de hoy tú le pides a Cloud
+
+55
+00:05:01,360 --> 00:05:06,160
+a Kleminaio achar GPT que te escriba un email en frío para tu negocio, probablemente te va a preguntar
+
+56
+00:05:06,320 --> 00:05:10,920
+qué es lo que vendes, a quién le vendes o te va a reactar un correo super poco personalizado.
+
+57
+00:05:10,920 --> 00:05:14,680
+Y al final tiene sentido, porque no sabe nada de ti. Cuando trabajas con agentes,
+
+58
+00:05:14,680 --> 00:05:20,400
+existe un archivo que se llama agents.md o .markdown. Los archivos markdown simplemente es una
+
+59
+00:05:20,400 --> 00:05:25,600
+manera de poder jerarquizar cierta información y las inteligencias artificiales lo leen muy bien.
+
+60
+00:05:25,600 --> 00:05:31,160
+No es nada más que eso, pero existe al final este archivo que se llama agents.md o cloud.md
+
+61
+00:05:31,160 --> 00:05:36,360
+si es que estás usando cloud. O geminai.md si es que estás usando geminai. El nombre cambia según
+
+62
+00:05:36,360 --> 00:05:40,640
+la plataforma que esté usando, pero el concepto es el mismo. Este archivo viene siendo como las
+
+63
+00:05:40,640 --> 00:05:46,600
+instrucciones que le estás dando al agente cuando está ejecutando ciertas cosas. Es como las instrucciones
+
+64
+00:05:46,600 --> 00:05:50,480
+que le das a un empleado cuando entra a trabajar contigo. Le dice, este es mi negocio, este es lo
+
+65
+00:05:50,480 --> 00:05:55,640
+que hacemos, este es tu rol. Es algo así parecido como los system prompts cuando nosotros creábamos
+
+66
+00:05:55,639 --> 00:06:01,599
+los gpt personalizados o las gemas, pero no es exactamente igual y ya te digo por qué. El cloud
+
+67
+00:06:01,599 --> 00:06:07,959
+.md o leijans.md o gemini.md lo que hace es que se carga al inicio de cada prompt. Entonces cada vez
+
+68
+00:06:07,959 --> 00:06:14,199
+que tú les escribes este archivo se va a precargar arriba de todo. Entonces este va a ser un contexto
+
+69
+00:06:14,199 --> 00:06:19,719
+que siempre va a estar presente y es súper buena práctica tenerlo bajo las 200 líneas. Siempre veo
+
+70
+00:06:19,719 --> 00:06:24,240
+gente que tiene al final estos archivos con más de 500 líneas y lo único que estamos haciendo
+
+71
+00:06:24,280 --> 00:06:29,920
+ahí es contaminar con más contexto que no necesitamos. Necesitamos tener al final esta especie de alma
+
+72
+00:06:29,920 --> 00:06:34,439
+o el ethos al final que siempre va a estar presente y que siempre se va a regir en todos los prompts.
+
+73
+00:06:34,439 --> 00:06:38,920
+Pero esto va mucho más allá porque si tienes mucho contexto es decir información de tu empresa,
+
+74
+00:06:38,920 --> 00:06:44,840
+perfiles de clientes, brand guidelines, documentos internos puedes empezar a crear carpetas con
+
+75
+00:06:44,840 --> 00:06:50,160
+distintos archivos y en tu archivo de agents.md simplemente le dices antes de hacer cualquier
+
+76
+00:06:50,160 --> 00:06:55,840
+tarea necesito que leas la carpeta de contexto o que verifiques esta información o este archivo
+
+77
+00:06:55,840 --> 00:07:00,840
+etc. Y esto es lo que está realmente cambiando un poco la conversación porque antes se hablaba del
+
+78
+00:07:00,840 --> 00:07:06,040
+prompt engineering. El arte de escribir buenos prompts ¿verdad? Bueno esto evolucionó ahora al
+
+79
+00:07:06,040 --> 00:07:11,760
+context engineering que es cómo estamos manejando el contexto a que le damos acceso a que no como
+
+80
+00:07:11,760 --> 00:07:16,560
+referencia el contexto entre distintos archivos. Esto es realmente brutal porque si hacemos un buen
+
+81
+00:07:16,560 --> 00:07:21,160
+trabajo tus prompts pueden ser estúpidamente simples pero como ya entender todo el contexto
+
+82
+00:07:21,160 --> 00:07:26,160
+donde buscar qué hacer va a ser incluso más eficiente que un prompt perfecto. Entonces el
+
+83
+00:07:26,160 --> 00:07:32,840
+enfoque está pasando de la ingeniería de prompts al contexto o la ingeniería del contexto. Entonces
+
+84
+00:07:32,840 --> 00:07:38,079
+pensemoslo así si nuestra gente tiene cargado un contexto increíble la próxima vez que escribamos
+
+85
+00:07:38,079 --> 00:07:42,639
+escribe un mail en frío para mi empresa va a entender a quién se lo vamos a dirigir,
+
+86
+00:07:42,719 --> 00:07:48,079
+de quién empresa que todo no usamos y bueno mucho más porque al final ya entiende todo tu
+
+87
+00:07:48,079 --> 00:07:54,319
+contexto. Ahora el contexto resuelve un problema que sabe o que sepa quién eres pero existe otro
+
+88
+00:07:54,319 --> 00:07:59,800
+problema porque si durante la sesión le dices nunca firme los correos con saludos sino que usa
+
+89
+00:07:59,800 --> 00:08:05,800
+mejor un abrazo la gente lo va a hacer en esa sesión pero mañana en una nueva sesión se va a olvidar
+
+90
+00:08:05,800 --> 00:08:10,879
+y eso pasa porque cada nueva sesión empieza desde cero. La gente no recuerda qué es lo que pasó
+
+91
+00:08:10,959 --> 00:08:16,319
+antes a menos de que tú seas capaz de entregarle un mecanismo para recordar y ese mecanismo es el
+
+92
+00:08:16,319 --> 00:08:21,480
+archivo memory.markdown. Este es un archivo donde la gente va escribiendo lo que va aprendiendo
+
+93
+00:08:21,480 --> 00:08:27,839
+entonces tú le vas a especificar en tu agents.markdown recordemos que esto al final es cómo cruzamos
+
+94
+00:08:27,839 --> 00:08:32,559
+distintos archivos y cómo se referencian entre sí no es nada más que eso le vamos a decir cuando
+
+95
+00:08:32,559 --> 00:08:38,799
+yo te corrija en algo o y era que te acuerdes de algo lo vas a guardar en tu memory. Y ahora cada vez
+
+96
+00:08:38,879 --> 00:08:43,519
+que inicia una nueva sesión quiero que lo primero que hagas es leas el memory.markdown y aquí es
+
+97
+00:08:43,519 --> 00:08:49,159
+donde se pone interesante porque al final pasa a ser un nuevo self improving loop es decir un loop
+
+98
+00:08:49,159 --> 00:08:54,240
+que va constantemente auto aprendiendo y auto reforzándose. Es brutal es un ciclo de auto
+
+99
+00:08:54,240 --> 00:08:59,519
+mejora. La gente trabaja comete un error tú lo corrijes el guarda esa corrección y la próxima
+
+100
+00:08:59,519 --> 00:09:04,159
+vez lo hace mejor y eso se va constantemente acumulando. Los modelos de inteligencia artificial
+
+101
+00:09:04,159 --> 00:09:08,719
+van avanzando las ventanas de contexto van creciendo lo que nos indica que esto solamente va
+
+102
+00:09:08,720 --> 00:09:13,440
+a seguir mejorando. Una gente que lleva seis meses aprendiendo va a ser exponencialmente mejor que
+
+103
+00:09:13,440 --> 00:09:17,440
+una gente que está en el día uno lógicamente. Esto es porque tiene seis meses de correcciones
+
+104
+00:09:17,440 --> 00:09:22,720
+de contexto acumulado que se va compactando pero en fin y tiene seis meses de preferencias guardadas.
+
+105
+00:09:22,720 --> 00:09:27,560
+Y eso al final no se replica eso pasa a ser tu ventaja competitiva. Y aquí viene el cuarto y
+
+106
+00:09:27,560 --> 00:09:31,200
+último elemento y probablemente el que es el más práctico porque de nada nos sirve tener
+
+107
+00:09:31,200 --> 00:09:36,080
+una gente brillante si no puede ejecutar acciones en el mundo real. Es por eso que necesita herramientas
+
+108
+00:09:36,080 --> 00:09:42,240
+y aquí es donde entran dos conceptos claves que son los msp y los skills. El msp o el model
+
+109
+00:09:42,240 --> 00:09:47,520
+context protocol es un protocolo estándar que creó antropiq para las inteligencia artificiales
+
+110
+00:09:47,520 --> 00:09:52,560
+y la comunicación con distintas aplicaciones. En español es lo que se usa para conectar agentes
+
+111
+00:09:52,560 --> 00:09:57,840
+con herramientas externas. La mejor analogía que escuché es esta. Antes del msp tu agente
+
+112
+00:09:57,840 --> 00:10:03,040
+tenía que entender el idioma de cada una de las herramientas. Cloud habla inglés, Notion habla
+
+113
+00:10:03,039 --> 00:10:09,079
+español, Gmail habla francés, Slack habla alemán y todo teníamos que desarrollar una herramienta
+
+114
+00:10:09,079 --> 00:10:13,679
+custom o un lenguaje custom para cada uno de ellos. Es decir teníamos que conectarlos
+
+115
+00:10:13,679 --> 00:10:18,719
+via APIs y protocolos distintos hasta que llegó msp que vendría siendo el traductor
+
+116
+00:10:18,719 --> 00:10:23,319
+universal. Se sienta en el medio, habla todos los idiomas y traduce las llamadas de la gente a
+
+117
+00:10:23,319 --> 00:10:27,439
+la herramienta y de la herramienta de vuelta. En la práctica esto significa que puedes conectar
+
+118
+00:10:27,439 --> 00:10:33,000
+tu email, tu calendar, tu Slack, tu Notion a la gente. Es decir que la gente puede crear eventos
+
+119
+00:10:33,000 --> 00:10:38,120
+en el calendario, redactar y mandar correos, actualizar proyectos, etc. Y después vienen los
+
+120
+00:10:38,120 --> 00:10:42,720
+skills que esto es lo que me parece lo más potente de todo. Un skill es básicamente un SOP
+
+121
+00:10:42,720 --> 00:10:49,639
+digital, un Standard Operating Procedure o un sistema de procedimiento estándar para tu agente.
+
+122
+00:10:49,639 --> 00:10:54,000
+Creo que nunca lo había dicho en español. Al final son las instrucciones que tiene que seguir
+
+123
+00:10:54,000 --> 00:10:58,879
+de la gente para realizar una acción. Le explicas un proceso una vez y nunca más vas a tener que
+
+124
+00:10:58,879 --> 00:11:03,120
+hacerlo. Por ejemplo, supongamos que le vas a crear una propuesta a un cliente por primera vez.
+
+125
+00:11:03,120 --> 00:11:07,399
+Le vas diciendo a la gente, oye, cámbiame este color, cambia esta tipografía, pon el precio
+
+126
+00:11:07,399 --> 00:11:11,799
+abajo, usa este formato y tardas 30 minutos de estar ida y vuelta hablando con la gente.
+
+127
+00:11:11,799 --> 00:11:16,559
+Después, cuando quieres volver a hacerlo, un tiempo después ya se perdió el contexto de todo lo que
+
+128
+00:11:16,559 --> 00:11:22,039
+hiciste. Ahora, si conviertes ese proceso de redactar la propuesta en un skill, la próxima vez
+
+129
+00:11:22,039 --> 00:11:27,000
+simplemente le vas a decir, crea una propuesta para este cliente y la gente va a ser el llamado
+
+130
+00:11:27,000 --> 00:11:31,759
+al skill que ya creaste previamente de redacción de propuestas y vas a ver exactamente qué paso
+
+131
+00:11:31,759 --> 00:11:36,399
+seguir como te gusta. Interesante es que los skills también se van acumulando. Si cada semana conviertes
+
+132
+00:11:36,399 --> 00:11:42,240
+tres o cuatro procesos manuales en skills, en tres meses tu agente va a estar manejando prácticamente
+
+133
+00:11:42,240 --> 00:11:47,519
+todo tu negocio. Greg Eisenberg, de hecho, lo descriga así. The highest margin startups of 2026
+
+134
+00:11:47,519 --> 00:11:52,639
+will be agent rappers around vertical work. Es decir, las startups más rentables van a ser los que
+
+135
+00:11:52,639 --> 00:11:58,080
+empaquetan workflows específicos como agentes, lo que valida completamente lo que venimos hablando.
+
+136
+00:11:58,080 --> 00:12:02,639
+Pero esto tiene que estar ocurriendo en alguna parte, lo que nos lleva a la siguiente pregunta.
+
+137
+00:12:07,360 --> 00:12:10,759
+¿Dónde viven los agentes? Porque ahora que entiendes los cuatro
+
+138
+00:12:10,759 --> 00:12:15,480
+elementos que componen un agente, es necesario que entendamos dónde es que están habitando,
+
+139
+00:12:15,480 --> 00:12:18,759
+cuál es su entorno. Primero tenemos Cloud Code, Cloud Code es la herramienta
+
+140
+00:12:18,919 --> 00:12:23,639
+entropy para el desarrollo. Vive o habita en el terminal de tu computador o en un IDE,
+
+141
+00:12:23,639 --> 00:12:27,559
+Integrated Development Environment, que vendrían siendo estas aplicaciones como
+
+142
+00:12:27,559 --> 00:12:32,200
+VS Code o Google Anti-Rabbit. Este lugar donde creas el código, pruebas los workflows,
+
+143
+00:12:32,200 --> 00:12:37,639
+tienes acceso a los elementos y las carpetas de tu escritorio y construyes las bases de tus agentes.
+
+144
+00:12:37,639 --> 00:12:41,439
+Esta es la capa más técnica pero también la más flexible. Luego tenemos agentes como
+
+145
+00:12:41,439 --> 00:12:45,840
+Open Cloud, un agente autónomo que vive en un entorno o en un computador. Tiene memoria
+
+146
+00:12:46,000 --> 00:12:51,639
+persistente, Skill, MSP y todo lo que vimos. Puede correr tareas programadas, responder mensajes por
+
+147
+00:12:51,639 --> 00:12:56,280
+telegram, acceder a distintos archivos y operar de una forma más independiente que Cloud Code.
+
+148
+00:12:56,280 --> 00:13:01,960
+Pesemoslo así, en Cloud Code es mucho más fácil separar proyectos distintos y aislar los contextos
+
+149
+00:13:01,960 --> 00:13:07,519
+y las carpetas mientras que en Open Cloud tenemos todo en un sistema centralizado. Cada uno tiene
+
+150
+00:13:07,519 --> 00:13:12,920
+sus ventajas y sus desventajas, esto es a grandes rasgos, si le interesa ver exactamente las
+
+151
+00:13:12,919 --> 00:13:17,479
+diferencias. Tengo un video que se llama Open Cloud vs Cloud Code, ¿Cuál es el mejor para ti?
+
+152
+00:13:17,479 --> 00:13:20,839
+Que te lo voy a dejar abajo también en la descripción y probablemente aquí. Pero lo
+
+153
+00:13:20,839 --> 00:13:26,799
+interesante es que está cambiando todo la manera en la que nos estamos relacionando con los agentes
+
+154
+00:13:26,799 --> 00:13:30,519
+y en la que estamos trabajando hoy día. De hecho, lo que me llamó mucho la atención es que Jensen
+
+155
+00:13:30,519 --> 00:13:37,639
+Huang, el CEO de Nvidia, lo dijo en el GTC del 2026. Open Cloud es el sistema operativo para la
+
+156
+00:13:37,639 --> 00:13:42,759
+IA personal y crearon el nuevo estándar. Lo que nos lleva también a mencionar Nimo Cloud.
+
+157
+00:13:42,759 --> 00:13:48,639
+Nimo Cloud es la capa de enterprise o la capa de seguridad que le agregó Nvidia a Open Cloud.
+
+158
+00:13:48,639 --> 00:13:52,879
+Esto al final es para darle una capa de seguridad extra a Open Cloud porque está directamente
+
+159
+00:13:52,879 --> 00:13:58,360
+diseñada en Linux para empresas que quieren mantener al final esta confidencialidad o esta
+
+160
+00:13:58,360 --> 00:14:03,559
+seguridad al implementar este tipo de agentes. Lo importante es que no necesariamente tienes
+
+161
+00:14:03,559 --> 00:14:07,879
+que elegir una u otra. Las vas usando como distintas capas complementarias. Usas Cloud
+
+162
+00:14:07,879 --> 00:14:12,199
+Code para construir y desarrollar ideas. Usas Open Cloud para operar en el día a día.
+
+163
+00:14:12,199 --> 00:14:15,239
+Y usas Nimo Cloud para escalar con seguridad. Enterprise.
+
+164
+00:14:19,959 --> 00:14:23,959
+Y hasta aquí te ha explicado la teoría. El loop, el contexto, las herramientas,
+
+165
+00:14:23,959 --> 00:14:28,279
+las capas, la memoria. Y todo esto lo puedes encontrar en videos en inglés si es que lo buscas bien.
+
+166
+00:14:28,279 --> 00:14:33,079
+Pero es algo que casi nadie menciona y que es lo que más me importa. Y es que los agentes
+
+167
+00:14:33,080 --> 00:14:38,600
+no son herramientas. Son sistemas con feedback loop. Porque una herramienta la usas y la dejas
+
+168
+00:14:38,600 --> 00:14:42,040
+mientras un sistema está evolucionando y creciendo contigo constantemente.
+
+169
+00:14:42,040 --> 00:14:45,080
+Y la diferencia entre alguien que probó agentes y no le funcionó,
+
+170
+00:14:45,080 --> 00:14:49,280
+versus alguien que tiene agentes corriendo actualmente en su sistema, es exactamente eso.
+
+171
+00:14:49,280 --> 00:14:54,040
+Tuvo la paciencia de construir ese sistema. Te doy un ejemplo real. Mi agente se llama Cloud.
+
+172
+00:14:54,040 --> 00:14:56,720
+Lo tengo instalado en el Mac Mini que está justamente atrás mío.
+
+173
+00:14:56,720 --> 00:15:00,759
+Cloudio tiene un archivo Soulmarkdown que define su personalidad y su misión.
+
+174
+00:15:00,840 --> 00:15:04,879
+Vendría siendo como su etus. Tiene agent-cmd. Con todo el contexto de mi negocio,
+
+175
+00:15:04,879 --> 00:15:09,200
+tiene el memory markdown con muchos meses de contexto acumulado. Cloudio revisa mi mail,
+
+176
+00:15:09,200 --> 00:15:13,519
+analiza mis datos de mi web, que es la pulsera biométrica, crie copy para mis campañas,
+
+177
+00:15:13,519 --> 00:15:18,639
+me crea los anuncios de meta-arts, los sube, los modifica. Pero Cloudio no nació así de bueno.
+
+178
+00:15:18,639 --> 00:15:22,600
+El Cloudio hace un par de meses, era bastante básico, no solo porque corrían el modelo de
+
+179
+00:15:22,600 --> 00:15:27,840
+opus 4.5 y ya estamos más avanzados que eso, sino que cometía errores. No entendía mi tono,
+
+180
+00:15:28,000 --> 00:15:32,600
+confundía prioridades, pero cada corrección se iba guardando, cada preferencia se iba acumulando.
+
+181
+00:15:32,600 --> 00:15:37,680
+Y hoy, meses después, entiende cómo trabajo mi workflow que trabajo mejor que la mayoría de
+
+182
+00:15:37,680 --> 00:15:40,360
+las personas con las que he trabajado. Y eso es lo que quiero que entiendas un poco,
+
+183
+00:15:40,360 --> 00:15:44,800
+que el valor de un agente no está en el día 1, sino que está en el mes 6.
+
+184
+00:15:44,800 --> 00:15:48,399
+Este es un activo que se va valorizando más con el tiempo,
+
+185
+00:15:48,399 --> 00:15:52,480
+pero valorizando claramente a un nivel personal, porque pasa a ser más imprescindible.
+
+186
+00:15:52,480 --> 00:15:56,759
+Es un ciclo de auto mejora donde la gente se va volviendo mejor con el tiempo.
+
+187
+00:15:56,840 --> 00:16:01,639
+Si llegas hasta aquí ya sabes más que 95% de las personas sobre agentes de inteligencia artificial.
+
+188
+00:16:01,639 --> 00:16:06,120
+No es poco, ahora te voy a dar 3 pasos para pasar de entender a efectivamente hacer,
+
+189
+00:16:06,120 --> 00:16:10,000
+porque sé que muchas de las personas que ven este video solo lo ven y después no aplican.
+
+190
+00:16:10,000 --> 00:16:13,360
+Lo primero, escribe tu Agents MD. No necesitas que sea perfecto,
+
+191
+00:16:13,360 --> 00:16:17,600
+abres cualquier programa, puede ser Cloud Code, puede haber instalado Open Cloud,
+
+192
+00:16:17,600 --> 00:16:21,039
+y dile hazme preguntas estilo entrevista para empezar a construir mi contexto.
+
+193
+00:16:21,039 --> 00:16:24,279
+Va a empezar a hacerte preguntas sobre tus formas, tus clientes, tu negocio.
+
+194
+00:16:24,360 --> 00:16:27,480
+Y con esas respuestas después vas a construir tu Agents.med.
+
+195
+00:16:27,480 --> 00:16:31,159
+Segundo vas a darle memoria. Este es el memory.martown.
+
+196
+00:16:31,159 --> 00:16:34,279
+Crea un memory.med vacío y en el Agents dile.
+
+197
+00:16:34,279 --> 00:16:36,679
+Cuando yo te corrija o vayas aprendiendo algo nuevo,
+
+198
+00:16:36,679 --> 00:16:39,759
+anda actualizando y escribiendo sobre el memory.med.
+
+199
+00:16:39,759 --> 00:16:43,159
+Con eso cada vez tu sesión va a ser mejor que la anterior.
+
+200
+00:16:43,159 --> 00:16:46,319
+Y tercero conectalo a alguna herramienta, puede ser cualquiera.
+
+201
+00:16:46,319 --> 00:16:48,559
+Gmail, calendar, no show, la que más uses.
+
+202
+00:16:48,559 --> 00:16:50,799
+Conecta la vida msp y dale una tarea rara.
+
+203
+00:16:50,879 --> 00:16:54,479
+Resume mis correos de hoy día o dame un briefing del día que se me viene.
+
+204
+00:16:54,479 --> 00:16:57,120
+Y no intentes de automatizar todo de una vez.
+
+205
+00:16:57,120 --> 00:16:59,839
+Empieza de a poco, anda creando skill a skill.
+
+206
+00:16:59,839 --> 00:17:02,919
+En tres meses vas a tener cosas que ya ni te puedes imaginar.
+
+207
+00:17:02,919 --> 00:17:05,680
+Ahora, si este video te sirvió, no sabes cuánto me sirve a mí,
+
+208
+00:17:05,680 --> 00:17:07,720
+qué le pongas a un me gusta a este video.
+
+209
+00:17:07,720 --> 00:17:09,919
+Y no solamente porque al final estás apoyando al canal,
+
+210
+00:17:09,919 --> 00:17:14,359
+sino porque tú también le dices a YouTube que este tipo de contenido te interesa.
+
+211
+00:17:14,359 --> 00:17:16,440
+Y si le pones el like o te suscribes al canal,
+
+212
+00:17:16,440 --> 00:17:19,200
+te van a empezar a aparecer más videos de este estilo.
+
+213
+00:17:19,240 --> 00:17:22,080
+Y en vez de que te empiecen a salir videos de tralala,
+
+214
+00:17:22,080 --> 00:17:25,080
+de tralala, te va a empezar a salir videos de contenido de valor,
+
+215
+00:17:25,080 --> 00:17:28,799
+como las nuevas actualizaciones o los nuevos moderos de IA que van lanzando.
+
+216
+00:17:28,799 --> 00:17:32,360
+También mencionarte que si te interesa aprender a instalar tu propia gente,
+
+217
+00:17:32,360 --> 00:17:37,080
+todo esto lo estamos viendo en el día a día dentro de la comunidad de Skull de Imperio Digital.
+
+218
+00:17:37,080 --> 00:17:40,080
+Somos un grupo aficionados al final que le encanta todo esto.
+
+219
+00:17:40,080 --> 00:17:43,279
+Estamos conectando los archivos, buscando nuevas herramientas,
+
+220
+00:17:43,279 --> 00:17:45,960
+nuevas conexiones, optimizando el uso de tokens.
+
+221
+00:17:45,960 --> 00:17:48,680
+Y nos vamos compartiendo las cosas a medida que van a avanzar.
+
+222
+00:17:48,759 --> 00:17:50,080
+El link está abajo en la descripción.
+
+223
+00:17:50,080 --> 00:17:54,240
+Y también deciste que si tienes una empresa y quieres que alguien te instale OpenCló,
+
+224
+00:17:54,240 --> 00:17:56,360
+más la capa de seguridad de NemuCló,
+
+225
+00:17:56,360 --> 00:17:59,720
+también puedes hablar con alguien de mi equipo para que te ayude a acetearlo.
+
+226
+00:17:59,720 --> 00:18:02,840
+Tengo un servicio de instalación para que veas si es que te haces sentido
+
+227
+00:18:02,840 --> 00:18:04,640
+que te lo instalemos y te lo dejemos corriendo.
+
+228
+00:18:04,640 --> 00:18:06,960
+El link también te lo dejo abajo en la descripción.
+
+229
+00:18:06,960 --> 00:18:09,799
+Y por último, si es que llegaste hasta acá, sé que te interesa el tema.
+
+230
+00:18:09,799 --> 00:18:13,240
+Y por lo mismo, te recomiendo que veas este video que aparece acá,
+
+231
+00:18:13,240 --> 00:18:17,039
+donde vemos cómo está el panorama total de las automatizaciones al día de hoy
+
+232
+00:18:17,079 --> 00:18:20,279
+y cómo funciona la creación de los workflows agénticos.
+
+233
+00:18:20,279 --> 00:18:22,200
+Estoy segurísimo que te va a gustar.
+
+234
+00:18:22,200 --> 00:18:23,399
+Te veo en ese video.
+

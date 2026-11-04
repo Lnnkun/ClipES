@@ -1,0 +1,3840 @@
+1
+00:00:00,000 --> 00:00:03,560
+Una inteligencia artificial gana un concurso de pintura.
+
+2
+00:00:03,560 --> 00:00:09,279
+Una revista científica beta-autores que usan inteligencia artificial para escribir sus artículos.
+
+3
+00:00:09,279 --> 00:00:14,280
+Una inteligencia artificial puede hacer exámenes muy difíciles de medicina y abogacía.
+
+4
+00:00:14,280 --> 00:00:17,280
+¿Qué está pasando? ¿Cómo puede ser que en los últimos dos años
+
+5
+00:00:17,280 --> 00:00:22,199
+de repente los ordenadores pueden hacer cosas que hasta ahora pensábamos que solo nosotros podíamos hacer?
+
+6
+00:00:22,199 --> 00:00:25,640
+Y además cosas que realmente nos hacen plantearnos.
+
+7
+00:00:25,719 --> 00:00:27,080
+¿Qué significa el arte?
+
+8
+00:00:27,080 --> 00:00:31,399
+O si realmente necesitaremos un abogado en el futuro para redactar un texto legal
+
+9
+00:00:31,399 --> 00:00:33,399
+o incluso si harán falta programadores?
+
+10
+00:00:33,399 --> 00:00:36,679
+O sí, las inteligencias artificiales también están generando código
+
+11
+00:00:36,679 --> 00:00:40,159
+y sinceramente habiendo sido programador durante 10 años de mi vida,
+
+12
+00:00:40,159 --> 00:00:45,120
+nunca me imaginé que vería un ordenador generando de la nada programas así de elaborados.
+
+13
+00:00:45,120 --> 00:00:48,159
+Y la verdad todo esto hace que uno se sienta bastante perdido,
+
+14
+00:00:48,159 --> 00:00:51,000
+sobre todo los que nos dedicamos a la informática desde toda la vida.
+
+15
+00:00:51,000 --> 00:00:53,079
+Estas noticias nos hacen dudar.
+
+16
+00:00:53,159 --> 00:00:56,359
+Nos están demostrando que cosas que pensábamos que una máquina no podía hacer,
+
+17
+00:00:56,359 --> 00:00:59,519
+ahora resulta que puede y a veces incluso mejor que nosotros.
+
+18
+00:00:59,519 --> 00:01:03,759
+Así que me propuse investigar qué hay detrás de estas inteligencias artificiales
+
+19
+00:01:03,759 --> 00:01:06,280
+y hoy te voy a contar todo lo que descubrí.
+
+20
+00:01:06,280 --> 00:01:10,280
+Desde el punto de vista de un ingeniero de software explicado para todo el mundo.
+
+21
+00:01:10,280 --> 00:01:15,079
+O sea, mi objetivo es que seas quien seas, sin saber nada te puedas hacer ni que sea una idea
+
+22
+00:01:15,079 --> 00:01:17,000
+de cómo funcionan estas inteligencias.
+
+23
+00:01:17,000 --> 00:01:22,560
+Y especialmente hoy me voy a centrar en uno de los productos que está más de moda y que más ruido ha hecho.
+
+24
+00:01:22,640 --> 00:01:23,760
+ChatGPT.
+
+25
+00:01:23,760 --> 00:01:27,320
+ChatGPT es súper popular, todo el mundo la está usando.
+
+26
+00:01:27,320 --> 00:01:34,400
+Para que os hagáis una idea consiguió la escalofriante cifra de 10 millones de usuarios activos cada día en su primer mes.
+
+27
+00:01:34,400 --> 00:01:39,560
+O sea, sale y a los 30 días ya tenía 10 millones de usuarios cada día haciendo preguntas,
+
+28
+00:01:39,560 --> 00:01:44,120
+rompiendo el recor de la tecnología más rápidamente adoptada en la historia de la humanidad.
+
+29
+00:01:44,120 --> 00:01:48,320
+Un crecimiento 10 veces más rápido que el de Instagram. Una locura total.
+
+30
+00:01:48,320 --> 00:01:52,439
+ChatGPT es una web de uso gratuito, aunque también tiene una versión de pago.
+
+31
+00:01:52,480 --> 00:01:56,120
+Y funciona como un chat al que le puedes preguntar todo tipo de cosas.
+
+32
+00:01:56,120 --> 00:02:02,599
+Es como una especie de oráculo tecnológico, que te sabe decir cosas como cuál es la mejor manera de atarte los zapatos,
+
+33
+00:02:02,599 --> 00:02:07,799
+cómo deberías dejar a tu novia de la forma más suave, resolver problemas lógicos complejos,
+
+34
+00:02:07,799 --> 00:02:11,800
+escribir software, hacer cambios en ese software que acabas de escribir,
+
+35
+00:02:11,800 --> 00:02:15,400
+jugar a juegos contigo, inventar una historia, escribir poemas,
+
+36
+00:02:15,400 --> 00:02:18,879
+crearte una rutina del gimnasio con instrucciones muy específicas,
+
+37
+00:02:18,960 --> 00:02:21,359
+componer una canción con sus respectivos acordes,
+
+38
+00:02:21,359 --> 00:02:25,079
+generar un texto legal, como por ejemplo un acuerdo de confidencialidad,
+
+39
+00:02:25,079 --> 00:02:28,560
+y todo esto recordando todo lo que habéis hablado a lo largo de la conversación.
+
+40
+00:02:28,560 --> 00:02:31,919
+O sea, tú hablas con él y vas recordando todo lo que estás hablando.
+
+41
+00:02:31,919 --> 00:02:37,079
+Y son textos originales, o sea, todo lo que te dicen no lo vas a poder encontrar en ninguna parte de internet.
+
+42
+00:02:37,079 --> 00:02:38,759
+Aunque luego hablaremos de eso.
+
+43
+00:02:38,759 --> 00:02:43,319
+¿Cómo es posible que despertemos una mañana y esto simplemente exista?
+
+44
+00:02:43,319 --> 00:02:47,280
+Bueno, no ha sido realmente de la noche a la mañana, han pasado décadas y décadas
+
+45
+00:02:47,360 --> 00:02:50,520
+con muchas innovaciones tanto en el mundo de la programación, como la informática,
+
+46
+00:02:50,520 --> 00:02:53,719
+la inteligencia artificial, las redes y la sociedad en sí.
+
+47
+00:02:53,719 --> 00:02:56,639
+Esta es lo que se conoce como una tecnología convergente, ¿vale?
+
+48
+00:02:56,639 --> 00:03:01,639
+Nace de muchas otras tecnologías que se juntan para llegar al resultado que vemos hoy en día,
+
+49
+00:03:01,639 --> 00:03:03,840
+y esto, gente, es una revolución.
+
+50
+00:03:03,840 --> 00:03:07,520
+Una revolución que todavía no está en su punto, pero se viene.
+
+51
+00:03:07,520 --> 00:03:11,920
+Y para demostrarte lo bueno que es, le he pedido a GPT que me genere el sponsor de hoy,
+
+52
+00:03:11,920 --> 00:03:14,719
+y he utilizado una inteligencia artificial para que lea el texto.
+
+53
+00:03:14,800 --> 00:03:18,080
+Así que, vamos a ver qué también lo hace con un mensaje de nuestro sponsor.
+
+54
+00:03:18,680 --> 00:03:23,879
+Hola a todos, soy Chat GPT, y hoy les hablaré sobre la GTC de Envidia.
+
+55
+00:03:23,879 --> 00:03:28,000
+La GTC de Envidia es la conferencia más grande sobre inteligencia artificial,
+
+56
+00:03:28,000 --> 00:03:30,719
+aceleración de gráficos y ciencias de datos.
+
+57
+00:03:30,719 --> 00:03:34,520
+Este año, la GTC se llevará a cabo en línea el 20 de este mes,
+
+58
+00:03:34,520 --> 00:03:38,120
+y Envidia está organizando un sorteo especial para los asistentes.
+
+59
+00:03:38,120 --> 00:03:42,800
+Podrás ganar una RTX 4080 si te registras para asistir a la GTC.
+
+60
+00:03:42,840 --> 00:03:45,360
+El enlace para registrarse está en la descripción.
+
+61
+00:03:45,360 --> 00:03:49,080
+La GTC de Envidia incluirá más de 1000 sesiones en línea con presentaciones,
+
+62
+00:03:49,080 --> 00:03:50,960
+talleres y discusiones de expertos.
+
+63
+00:03:50,960 --> 00:03:53,520
+Podrás escuchar a los principales expertos de la industria
+
+64
+00:03:53,520 --> 00:03:56,840
+y aprender sobre los últimos avances en la informática acelerada,
+
+65
+00:03:56,840 --> 00:03:59,880
+la inteligencia artificial, el aprendizaje automático,
+
+66
+00:03:59,880 --> 00:04:01,720
+la ciencia de datos y mucho más.
+
+67
+00:04:01,720 --> 00:04:05,280
+También tendrás la oportunidad de conectarte con otros líderes de la industria.
+
+68
+00:04:05,280 --> 00:04:08,600
+Explorar nuevas tecnologías y descubrir cómo las soluciones de Envidia
+
+69
+00:04:08,600 --> 00:04:11,560
+están transformando la forma en que vivimos y trabajamos.
+
+70
+00:04:11,560 --> 00:04:14,560
+Registrate ahora mismo para asistir a la GTC de Envidia
+
+71
+00:04:14,560 --> 00:04:17,879
+y tener la oportunidad de ganar una RTX 4080.
+
+72
+00:04:17,879 --> 00:04:21,399
+No te pierdas esta oportunidad única de aprender sobre los últimos avances
+
+73
+00:04:21,399 --> 00:04:24,399
+en la informática acelerada y la inteligencia artificial.
+
+74
+00:04:24,399 --> 00:04:27,000
+El enlace para registrarse está en la descripción.
+
+75
+00:04:27,000 --> 00:04:29,000
+Te esperamos en la GTC de Envidia.
+
+76
+00:04:35,160 --> 00:04:37,040
+Ok, chat GPT.
+
+77
+00:04:37,040 --> 00:04:39,439
+Chat GPT está basado en GPT3.
+
+78
+00:04:39,519 --> 00:04:44,160
+GPT o Generative Pre-Train Transformer es un modelo.
+
+79
+00:04:44,160 --> 00:04:46,000
+Esto es algo de lo que ya hablamos en otros vídeos.
+
+80
+00:04:46,000 --> 00:04:49,759
+Pero a modo de resumen, un modelo para que te puedas hacer una idea es un programa,
+
+81
+00:04:49,759 --> 00:04:54,279
+un algoritmo, una función que intenta replicar el comportamiento de un sistema.
+
+82
+00:04:54,279 --> 00:04:56,079
+Por ejemplo, el más clásico, ¿vale?
+
+83
+00:04:56,079 --> 00:05:00,000
+El modelo climático sería un programa, un software o algún tipo de sistema
+
+84
+00:05:00,000 --> 00:05:02,639
+que te permite predecir el clima de la semana que viene
+
+85
+00:05:02,639 --> 00:05:04,439
+basándose en datos históricos, ¿no?
+
+86
+00:05:04,439 --> 00:05:08,680
+Por ejemplo, coges el clima de las últimas semanas, el viento, las nubes, la humedad.
+
+87
+00:05:08,759 --> 00:05:13,519
+Cojes todo eso, lo metes en esta máquina y la máquina te predice el clima de la próxima semana.
+
+88
+00:05:13,519 --> 00:05:17,680
+Otro ejemplo de esto, bueno, hace poco en Nate Live hablamos del AMP Modeling, ¿vale?
+
+89
+00:05:17,680 --> 00:05:20,720
+Que son modelos que imitan amplificadores de guitarra,
+
+90
+00:05:20,720 --> 00:05:25,319
+imitan toda la parte de electrónica, la parte de amplificación, distorsión, reverb,
+
+91
+00:05:25,319 --> 00:05:27,199
+incluso la acústica de una sala.
+
+92
+00:05:27,199 --> 00:05:31,519
+Y todo esto no ocurre en la realidad, sino que hay un software que tiene una serie de instrucciones
+
+93
+00:05:31,519 --> 00:05:35,560
+que lo que hace es simular el resultado que tendríamos si hiciéramos todo eso.
+
+94
+00:05:35,560 --> 00:05:38,280
+Y todo esto lo hace un software, un software que es un modelo.
+
+95
+00:05:38,319 --> 00:05:41,319
+GPT, como te decía, es un modelo, pero un modelo de lenguaje, ¿vale?
+
+96
+00:05:41,319 --> 00:05:45,399
+El modelo de lenguaje es capaz de conocer e identificar partes de nuestro idioma.
+
+97
+00:05:45,399 --> 00:05:47,879
+Y en este caso es un modelo generativo.
+
+98
+00:05:47,879 --> 00:05:50,719
+O sea, que dado un texto genera palabras.
+
+99
+00:05:50,719 --> 00:05:55,519
+Es como ese modelo que predice el clima, solo que GPT predice palabras.
+
+100
+00:05:55,519 --> 00:06:01,039
+O sea, literalmente te dice cuál es la palabra más probable que va a haber a continuación en un texto.
+
+101
+00:06:01,039 --> 00:06:04,239
+Si lo piensas, no es muy distinto del autocompletar del móvil.
+
+102
+00:06:04,239 --> 00:06:08,039
+No sé si habrás probado alguna vez que en el móvil hay un sistema que te sugiere palabras,
+
+103
+00:06:08,080 --> 00:06:10,360
+intentando predecir lo próximo que vas a decir,
+
+104
+00:06:10,360 --> 00:06:14,360
+solo que GPT es infinitamente mejor haciendo ese trabajo.
+
+105
+00:06:14,360 --> 00:06:18,120
+Lo hace tan tan bien que parece que entienda perfectamente de lo que estás hablando
+
+106
+00:06:18,120 --> 00:06:21,560
+y pueda responder prácticamente a cualquier cosa de forma coherente.
+
+107
+00:06:21,560 --> 00:06:26,520
+Por ejemplo, tú le dices, voy a trabajar en mí y GPT te dice proyecto.
+
+108
+00:06:26,520 --> 00:06:28,520
+Y si le pides más, continúa.
+
+109
+00:06:28,520 --> 00:06:31,520
+Voy a trabajar en mi proyecto de investigación en el laboratorio.
+
+110
+00:06:31,520 --> 00:06:35,640
+Estoy encantado de continuar con mi trabajo y espero obtener resultados significativos.
+
+111
+00:06:35,719 --> 00:06:40,039
+Voy a trabajar duro y concentrarme en las tareas que tengo por hacer para avanzar en mi proyecto.
+
+112
+00:06:40,039 --> 00:06:42,839
+¡Wow! Es un buen autocompletado, ¿verdad?
+
+113
+00:06:42,839 --> 00:06:46,120
+Ahora, en el caso de chat GPT, que es la página web que todo el mundo conoce,
+
+114
+00:06:46,120 --> 00:06:49,039
+esta página web usa la tercera versión de GPT.
+
+115
+00:06:49,039 --> 00:06:51,519
+GPT 3, como os dije antes, ¿no?
+
+116
+00:06:51,519 --> 00:06:57,319
+Aunque le llaman también GPT 3.5 porque tiene unas cuantas mejoras, pero bueno, eso lo veremos más adelante, ¿vale?
+
+117
+00:06:57,319 --> 00:07:02,680
+Y una de las cosas especiales que tiene chat GPT es que está especialmente configurada para completar respuestas,
+
+118
+00:07:02,800 --> 00:07:07,280
+como si estuviéramos en un chat, o sea, es un predictor de palabras, pero que está condicionado
+
+119
+00:07:07,280 --> 00:07:11,400
+para tener en cuenta que nuestro texto es una pregunta o la intervención de una persona en un chat
+
+120
+00:07:11,400 --> 00:07:14,480
+y la respuesta que nos genera, lo que nos responde, chat GPT,
+
+121
+00:07:14,480 --> 00:07:19,800
+es la cadena de palabras que más probabilidad tienen según su sistema de aparecer a continuación.
+
+122
+00:07:19,800 --> 00:07:22,280
+O sea, predice texto que no existe.
+
+123
+00:07:22,280 --> 00:07:26,560
+Pero bueno, a nivel técnico, la diferencia principal entre GPT pelado y chat GPT
+
+124
+00:07:26,560 --> 00:07:30,759
+es que GPT completa textos y chat GPT pues responde, como si estuvieras hablando con alguien.
+
+125
+00:07:30,839 --> 00:07:33,920
+Se está configurado de esa manera. Luego veremos que hay muchas más diferencias, ¿vale?
+
+126
+00:07:33,920 --> 00:07:35,519
+Pero a eso llegaremos.
+
+127
+00:07:35,519 --> 00:07:38,759
+Ahora, todo esto que estoy diciendo, yo entiendo que es muy raro, ¿vale?
+
+128
+00:07:38,759 --> 00:07:44,120
+O sea, me estás diciendo que a un modelo que predice palabras, le pregunto cuál fue el emperador romano más
+
+129
+00:07:44,120 --> 00:07:50,279
+malvado de la historia y por qué, y me está soltando que si hay varios candidatos, que calígula es el más probable,
+
+130
+00:07:50,279 --> 00:07:54,439
+me cuenta todo lo que ha hecho y encima me dice que es posible que esto no sea fiable
+
+131
+00:07:54,439 --> 00:07:58,079
+porque podría ser propaganda que se escribió cuando calígula ya estaba muerto.
+
+132
+00:07:58,079 --> 00:08:00,439
+Aquí hay algo que no cuadra, ¿verdad?
+
+133
+00:08:00,519 --> 00:08:03,719
+Parece que este autocompletado haya cobrado conciencia.
+
+134
+00:08:03,719 --> 00:08:08,000
+Sobre todo lo más impresionante, la primera vez que usas una inteligencia artificial de estas
+
+135
+00:08:08,000 --> 00:08:11,959
+y ves todo este parafote, tú lo que piensas es que esto lo ha copiado de alguna página web
+
+136
+00:08:11,959 --> 00:08:16,959
+y buscas ese texto, incluso trozos del texto y no lo vas a encontrar porque todo esto ha sido generado,
+
+137
+00:08:16,959 --> 00:08:18,519
+es un texto único.
+
+138
+00:08:18,519 --> 00:08:20,839
+Chat GPT parece que sepa de lo que habla.
+
+139
+00:08:20,839 --> 00:08:24,560
+Parece que nos entienda y que nos conteste algo totalmente relacionado con lo que estamos diciendo.
+
+140
+00:08:24,560 --> 00:08:28,800
+Parece capaz de desarrollar sus propias ideas, analizar datos y sacar conclusiones,
+
+141
+00:08:28,840 --> 00:08:30,520
+pero esto es totalmente falso.
+
+142
+00:08:30,520 --> 00:08:34,519
+No está haciendo nada de esto, en realidad está prediciendo palabras y poco más.
+
+143
+00:08:34,519 --> 00:08:38,120
+La magia aquí es en qué se basa para predecir esas palabras.
+
+144
+00:08:38,120 --> 00:08:42,799
+Y vamos a empezar analizando el problema juntos para intentar entender la magnitud del asunto.
+
+145
+00:08:42,799 --> 00:08:45,799
+La programación es la forma más tradicional de hablar con los ordenadores,
+
+146
+00:08:45,799 --> 00:08:49,879
+pero bueno, entiendo que no todo el mundo sabe programar, así que no voy a poner un ejemplo de programación,
+
+147
+00:08:49,879 --> 00:08:53,639
+sino que me voy a ir a algo que todo el mundo haya hecho alguna vez, ¿vale?
+
+148
+00:08:53,639 --> 00:08:58,440
+El ejemplo más claro de cómo hablar con una máquina es probablemente el de usar una calculadora.
+
+149
+00:08:58,480 --> 00:09:01,240
+Si yo quiero sumar tres números entre ellos con una calculadora,
+
+150
+00:09:01,240 --> 00:09:03,760
+tengo que seguir un orden muy preciso de acciones.
+
+151
+00:09:03,760 --> 00:09:07,920
+Si cometo un error, por ejemplo, pongo mal un número, tengo que borrar o volver a empezar.
+
+152
+00:09:07,920 --> 00:09:11,560
+Y esto es muy importante, porque la máquina es estricta, es muy estricta,
+
+153
+00:09:11,560 --> 00:09:15,160
+a la hora de recibir los datos de entrada, entender las operaciones que tiene que hacer,
+
+154
+00:09:15,160 --> 00:09:18,360
+y esto es muy distinto a cuando hablamos con un humano,
+
+155
+00:09:18,360 --> 00:09:20,480
+al que, por ejemplo, le podríamos decir,
+
+156
+00:09:20,480 --> 00:09:24,080
+oye, tío, si tienes un momento, quiero que sumes tres más dos,
+
+157
+00:09:24,080 --> 00:09:27,040
+ahí nos perdona, cuatro, y luego que lo multipliques por ocho,
+
+158
+00:09:27,079 --> 00:09:29,319
+y nada, cuando puedas, me dices el resultado, ¿vale?
+
+159
+00:09:29,319 --> 00:09:34,000
+Una calculadora no puede entender esto, porque lo estoy diciendo en lenguaje natural.
+
+160
+00:09:34,000 --> 00:09:38,279
+Lenguaje natural, que nosotros, por algún motivo, somos capaces de entender muy bien.
+
+161
+00:09:38,279 --> 00:09:41,839
+O sea, de alguna forma, yo, con toda esa frase, entiendo que lo que quieres hacer es
+
+162
+00:09:41,839 --> 00:09:44,279
+tres más cuatro y luego multiplicado por ocho.
+
+163
+00:09:44,279 --> 00:09:48,759
+La calculadora necesita un input muy concreto, expresado de una forma muy concisa,
+
+164
+00:09:48,759 --> 00:09:51,799
+con unas reglas matemáticas para extraer esa información,
+
+165
+00:09:51,799 --> 00:09:57,000
+mientras que a un humano le puedo dar vueltas y decir muchas cosas que generalmente me va a entender.
+
+166
+00:09:57,080 --> 00:09:59,519
+Bueno, pues chat GPT, resuelve ese problema.
+
+167
+00:09:59,519 --> 00:10:02,080
+Mirad, si le digo toda esta frase de chat GPT,
+
+168
+00:10:02,080 --> 00:10:07,720
+parece que está entendiendo perfectamente lo que le digo y además me calcula la respuesta de forma correcta.
+
+169
+00:10:08,559 --> 00:10:11,519
+Como te he dicho hace un momento, esto se llama lenguaje natural.
+
+170
+00:10:11,519 --> 00:10:16,039
+El lenguaje natural es confuso y necesita que lo analicemos para poder extraer información.
+
+171
+00:10:16,039 --> 00:10:18,279
+Los humanos somos increíblemente buenos en hacer esto,
+
+172
+00:10:18,279 --> 00:10:20,600
+entendemos los conceptos clave que se nos quieren transmitir,
+
+173
+00:10:20,600 --> 00:10:24,039
+e incluso planteamos una estrategia para responder esa pregunta.
+
+174
+00:10:24,039 --> 00:10:26,279
+¿Será chat GPT consciente de esto?
+
+175
+00:10:27,960 --> 00:10:31,879
+Eh, wow, chat GPT parece que sabe perfectamente de lo que estoy hablando.
+
+176
+00:10:31,879 --> 00:10:34,159
+Esto cada vez es más surrealista, ¿verdad?
+
+177
+00:10:34,159 --> 00:10:39,159
+Cuesta de creer que lo único que está haciendo esta máquina es calcular las palabras más probables
+
+178
+00:10:39,159 --> 00:10:41,120
+que van a aparecer a continuación de mi texto.
+
+179
+00:10:41,120 --> 00:10:43,399
+Pero bueno, esto en realidad no son más que trucos.
+
+180
+00:10:43,399 --> 00:10:45,399
+El truco de la red neuronal.
+
+181
+00:10:45,399 --> 00:10:49,840
+Veréis, GPT, que es este modelo de lenguaje que usa chat GPT como te dije hace un momento,
+
+182
+00:10:49,840 --> 00:10:51,840
+está basado en redes neuronales.
+
+183
+00:10:51,840 --> 00:10:55,120
+Hemos explicado por encima cómo funcionan las redes neuronales
+
+184
+00:10:55,240 --> 00:10:57,240
+en mis vídeos sobre el DeepFake,
+
+185
+00:10:57,240 --> 00:10:59,840
+que por cierto, si te interesa el tema de inteligencia artificial
+
+186
+00:10:59,840 --> 00:11:03,399
+y si quieres entender más a fondo este tema, te recomiendo que los veas, ¿vale?
+
+187
+00:11:03,399 --> 00:11:06,279
+Te los dejaré linkados abajo en la descripción y por aquí, seguramente.
+
+188
+00:11:06,279 --> 00:11:08,279
+Vale, pero de todos modos vamos a repasarlo un poquito.
+
+189
+00:11:08,279 --> 00:11:12,639
+Una red neuronal es un programa que está diseñado para aprender a hacer tareas.
+
+190
+00:11:12,639 --> 00:11:15,080
+Normalmente, cuando los humanos quieren hablar con un ordenador
+
+191
+00:11:15,080 --> 00:11:17,960
+y pedirle que haga cosas, usamos la programación, ¿vale?
+
+192
+00:11:17,960 --> 00:11:22,879
+Y cuando hacemos un programa le decimos a la máquina exactamente paso a paso todo lo que tiene que hacer.
+
+193
+00:11:23,039 --> 00:11:24,759
+Como hacíamos, de hecho, con la calculadora.
+
+194
+00:11:24,759 --> 00:11:28,879
+Cuando estamos escribiendo números en una calculadora, en realidad estamos programándola, ¿vale?
+
+195
+00:11:28,879 --> 00:11:31,360
+Lo que pasa es que es muy sencilla esa programación.
+
+196
+00:11:31,360 --> 00:11:34,279
+Pero hay algunas cosas que no sabemos muy bien cómo explicarlas.
+
+197
+00:11:34,279 --> 00:11:37,240
+Como por ejemplo, reconocer un número escrito a mano, ¿vale?
+
+198
+00:11:37,240 --> 00:11:39,399
+Hay como mil formas de escribir números a mano.
+
+199
+00:11:39,399 --> 00:11:42,360
+O reconocer un dibujo por muy deformado que esté, ¿no?
+
+200
+00:11:42,360 --> 00:11:45,639
+Imagínate un dibujo de un gato. ¿Cuántas formas hay de dibujar un gato?
+
+201
+00:11:45,639 --> 00:11:48,960
+Estas son tareas que nosotros, como humanos, sabemos hacer de forma fácil,
+
+202
+00:11:49,040 --> 00:11:53,280
+pero que cuesta mucho explicarle a un programa cómo puede hacer esto paso a paso.
+
+203
+00:11:53,280 --> 00:11:55,360
+Para todo esto que no sabemos cómo programar,
+
+204
+00:11:55,360 --> 00:11:59,920
+hemos inventado el aprendizaje automático o machine learning.
+
+205
+00:11:59,920 --> 00:12:04,480
+Y las redes neuronales son una de las tecnologías que se usan para el aprendizaje automático.
+
+206
+00:12:04,480 --> 00:12:05,680
+La idea aquí es muy simple.
+
+207
+00:12:05,680 --> 00:12:07,360
+La idea es simple, la implementación es difícil, ¿vale?
+
+208
+00:12:07,360 --> 00:12:08,440
+Pero la idea es simple.
+
+209
+00:12:08,440 --> 00:12:11,400
+Quiero que la máquina haga algo que no sé muy bien cómo se hace.
+
+210
+00:12:11,400 --> 00:12:14,040
+Así que le voy a mostrar ejemplos a mi ordenador.
+
+211
+00:12:14,040 --> 00:12:17,480
+Voy a preparar mi red neuronal para que sepa dónde tiene que mirar,
+
+212
+00:12:17,560 --> 00:12:19,920
+qué puntos son los interesantes de estos datos,
+
+213
+00:12:19,920 --> 00:12:23,759
+qué tipo de operaciones tiene que hacer con ellos para intentar sacar conclusiones,
+
+214
+00:12:23,759 --> 00:12:25,440
+o sea, le voy a dar una estrategia,
+
+215
+00:12:25,440 --> 00:12:29,800
+pero va a ser ella quien va a estudiar muchos casos, muchísimos datos, muchísimos casos,
+
+216
+00:12:29,800 --> 00:12:33,560
+para intentar entender qué es lo que se tiene que hacer en cada uno de ellos.
+
+217
+00:12:33,560 --> 00:12:36,600
+Con estos datos, básicamente mi red neuronal va sacando conclusiones,
+
+218
+00:12:36,600 --> 00:12:38,080
+va encontrando patrones.
+
+219
+00:12:38,080 --> 00:12:40,920
+Incluso hay veces que estas inteligencias artificiales
+
+220
+00:12:40,920 --> 00:12:44,800
+encuentran detalles que nosotros no somos capaces de darnos cuenta que están ahí.
+
+221
+00:12:44,879 --> 00:12:48,679
+Este proceso en el que la inteligencia artificial estudia miles y miles de casos
+
+222
+00:12:48,679 --> 00:12:50,359
+se llama entrenamiento.
+
+223
+00:12:50,359 --> 00:12:52,879
+Por ejemplo, podemos entrenar una inteligencia artificial
+
+224
+00:12:52,879 --> 00:12:56,399
+para reconocer imágenes de gatos o números escritos a mano,
+
+225
+00:12:56,399 --> 00:12:57,759
+o jugar a un juego de mesa.
+
+226
+00:12:57,759 --> 00:13:00,359
+Un ejemplo de esto que ya vimos en el canal es el del Deep Fake,
+
+227
+00:13:00,359 --> 00:13:02,919
+que son estos vídeos que te mencioné hace nada,
+
+228
+00:13:02,919 --> 00:13:06,799
+donde entrenábamos una inteligencia artificial para saber cómo es mi cara
+
+229
+00:13:06,799 --> 00:13:11,599
+y cómo es la cara de Elon Musk y meter mi cara encima de un vídeo de Elon Musk,
+
+230
+00:13:11,680 --> 00:13:14,200
+generando caras mías que se pareciesen a las de Elon,
+
+231
+00:13:14,200 --> 00:13:15,879
+pero que yo nunca hubiese puesto, ¿vale?
+
+232
+00:13:15,879 --> 00:13:17,800
+O sea, literalmente generaba caras de la nada.
+
+233
+00:13:17,800 --> 00:13:19,920
+Ahora, en el caso del lenguaje natural,
+
+234
+00:13:19,920 --> 00:13:22,519
+que es, como te decía antes, el que hablamos nosotros,
+
+235
+00:13:22,519 --> 00:13:25,000
+hay varios problemas bastante graves, además,
+
+236
+00:13:25,000 --> 00:13:27,600
+a la hora de que un ordenador nos pueda entender.
+
+237
+00:13:27,600 --> 00:13:31,560
+El primero es que los ordenadores no van a entender nunca los conceptos
+
+238
+00:13:31,560 --> 00:13:32,879
+que representan las palabras.
+
+239
+00:13:32,879 --> 00:13:34,639
+Por ejemplo, si yo te digo coche,
+
+240
+00:13:34,639 --> 00:13:37,800
+tú te imaginas ese vehículo de cuatro ruedas hecho de metal,
+
+241
+00:13:37,800 --> 00:13:40,720
+te has sentado en un coche, sabes cómo vibra cuando se conduce,
+
+242
+00:13:40,759 --> 00:13:43,960
+o si te digo árbol, te imaginas un ser vivo, de celulosa,
+
+243
+00:13:43,960 --> 00:13:46,800
+el olor de las hojas, color marrón y verde.
+
+244
+00:13:46,800 --> 00:13:49,519
+Un ordenador no tiene ni idea de que es nada de esto.
+
+245
+00:13:49,519 --> 00:13:52,040
+Es más, los ordenadores solo entienden números,
+
+246
+00:13:52,040 --> 00:13:53,840
+0 y 1 para hacer más concretos.
+
+247
+00:13:53,840 --> 00:13:57,399
+Esto ya lo vimos, por cierto, en el vídeo de sistema binario y puertas lógicas,
+
+248
+00:13:57,399 --> 00:14:00,639
+que también te recomiendo que veas para que entiendas esta parte un poco mejor.
+
+249
+00:14:00,639 --> 00:14:04,080
+Y bueno, en aquel vídeo vimos que incluso el texto, el audio,
+
+250
+00:14:04,080 --> 00:14:07,759
+o el vídeo que estás viendo para tu ordenador no son nada más que números,
+
+251
+00:14:07,759 --> 00:14:09,879
+con los que hace operaciones matemáticas.
+
+252
+00:14:09,879 --> 00:14:11,679
+Ahora, en el caso concreto del texto,
+
+253
+00:14:11,679 --> 00:14:15,240
+una de las codificaciones que más te va a sonar es el código ACI.
+
+254
+00:14:15,240 --> 00:14:18,159
+Aunque hoy en día se usa más el UTF-8, por ejemplo,
+
+255
+00:14:18,159 --> 00:14:19,320
+pero bueno, que al final del día,
+
+256
+00:14:19,320 --> 00:14:22,399
+las letras que tú ves en tu ordenador, en Word, en Wikipedia,
+
+257
+00:14:22,399 --> 00:14:26,000
+en cualquiera de estos sitios, en realidad son números que identifican esos caracteres.
+
+258
+00:14:26,000 --> 00:14:27,600
+Y el ordenador los trabaja como números,
+
+259
+00:14:27,600 --> 00:14:32,120
+incluso los espacios, los números mismos, los interrogantes, hasta los emojis.
+
+260
+00:14:32,120 --> 00:14:34,879
+Por lo cual, si quisiéramos entrenar una inteligencia artificial
+
+261
+00:14:34,879 --> 00:14:37,360
+para que nos entienda y hable con nosotros,
+
+262
+00:14:37,360 --> 00:14:40,000
+primero que nada, hay que tener en cuenta que en nuestra red neuronal
+
+263
+00:14:40,000 --> 00:14:42,560
+no va a haber frases, ni palabras, ni poemas,
+
+264
+00:14:42,560 --> 00:14:44,759
+sino números, y únicamente números.
+
+265
+00:14:44,759 --> 00:14:46,440
+Y ese problema no tiene solución, ¿vale?
+
+266
+00:14:46,440 --> 00:14:49,279
+Así que vamos a trabajar con números sí o sí.
+
+267
+00:14:49,279 --> 00:14:52,080
+Ok, dicho esto, tenemos, por un lado, redes neuronales
+
+268
+00:14:52,080 --> 00:14:54,919
+que son capaces de aprender en base a patrones,
+
+269
+00:14:54,919 --> 00:14:56,279
+y por otro lado tenemos texto,
+
+270
+00:14:56,279 --> 00:14:59,240
+que este texto en realidad son nuestras frases, palabras,
+
+271
+00:14:59,240 --> 00:15:02,000
+un montón de lenguaje humano, pero que para el ordenador,
+
+272
+00:15:02,000 --> 00:15:05,159
+al final del día, y es importante este matiz, son números, ¿vale?
+
+273
+00:15:05,199 --> 00:15:08,319
+Él no va a haber árboles, ni casas, ni coches, ni caras,
+
+274
+00:15:08,319 --> 00:15:10,159
+ni personas, va a haber números únicamente.
+
+275
+00:15:10,159 --> 00:15:12,319
+Así que teniendo en cuenta estos dos detalles,
+
+276
+00:15:12,319 --> 00:15:15,039
+vamos a hacer juntos el ejercicio de crear un programa
+
+277
+00:15:15,039 --> 00:15:17,199
+que entienda el lenguaje natural, ¿vale?
+
+278
+00:15:17,199 --> 00:15:19,319
+Va a ser un ejercicio mental, ¿ok?
+
+279
+00:15:19,319 --> 00:15:22,759
+Vale, configuramos nuestra red neuronal y le pasamos estos números.
+
+280
+00:15:22,759 --> 00:15:25,799
+Lo primero que va a haber son un montón de números.
+
+281
+00:15:25,799 --> 00:15:28,639
+Hemos dicho que una de las habilidades especiales de nuestra red neuronal
+
+282
+00:15:28,639 --> 00:15:31,120
+es encontrar patrones dentro de datos.
+
+283
+00:15:31,120 --> 00:15:33,039
+Así que podemos configurarla especialmente
+
+284
+00:15:33,079 --> 00:15:35,559
+para que reconozca tantos patrones como pueda.
+
+285
+00:15:35,559 --> 00:15:38,839
+Y si analiza cientos y cientos de estas secuencias de números,
+
+286
+00:15:38,839 --> 00:15:42,959
+acabaría dándose cuenta de que hay patrones que se repiten, ¿vale?
+
+287
+00:15:42,959 --> 00:15:45,279
+Cada vez que encuentra esta secuencia de números,
+
+288
+00:15:45,279 --> 00:15:48,559
+entre estos dos otros números, es porque hay un término.
+
+289
+00:15:48,559 --> 00:15:50,799
+A veces lo encuentra con este otro número al final,
+
+290
+00:15:50,799 --> 00:15:54,360
+pero lo que está claro es que este es un patrón que se repite.
+
+291
+00:15:54,360 --> 00:15:56,639
+Y como ese, puede haber muchísimos otros.
+
+292
+00:15:56,639 --> 00:15:58,879
+Esto es lo que nosotros conocemos como palabras,
+
+293
+00:15:58,879 --> 00:16:01,240
+pero para esta red neuronal, para este ordenador,
+
+294
+00:16:01,240 --> 00:16:03,240
+son patrones numéricos únicamente.
+
+295
+00:16:03,240 --> 00:16:06,399
+De todos modos, yo creo que aquí el primer paso sería catalogarlos,
+
+296
+00:16:06,399 --> 00:16:07,840
+tenerlos en alguna lista.
+
+297
+00:16:07,840 --> 00:16:10,039
+Cosa que cuando nuestro programa se los encuentre,
+
+298
+00:16:10,039 --> 00:16:11,879
+pues los pueda identificar.
+
+299
+00:16:11,879 --> 00:16:14,480
+Mira, aquí veo este patrón, aquí veo este otro, etcétera,
+
+300
+00:16:14,480 --> 00:16:16,039
+o sea, os hacéis una idea, ¿no?
+
+301
+00:16:16,039 --> 00:16:18,320
+A estos patrones les vamos a llamar token.
+
+302
+00:16:18,320 --> 00:16:21,080
+Un token no es necesariamente una palabra,
+
+303
+00:16:21,080 --> 00:16:23,519
+depende mucho de cómo funciona en la red neuronal,
+
+304
+00:16:23,519 --> 00:16:25,080
+pero no es necesariamente una palabra.
+
+305
+00:16:25,080 --> 00:16:28,680
+A veces hay palabras compuestas o palabras que varían bastante,
+
+306
+00:16:28,680 --> 00:16:29,919
+pero que tienen una raíz común,
+
+307
+00:16:29,959 --> 00:16:33,039
+y el ordenador lo que hace es separarlas en varios tokens.
+
+308
+00:16:33,039 --> 00:16:35,319
+Pero bueno, normalmente un token es una palabra.
+
+309
+00:16:35,319 --> 00:16:38,159
+Y como nuestra máquina ahora conoce los tokens,
+
+310
+00:16:38,159 --> 00:16:41,319
+una forma de reducir, simplificar y comprimir esos datos
+
+311
+00:16:41,319 --> 00:16:42,759
+y hacer el trabajo más fácil,
+
+312
+00:16:42,759 --> 00:16:46,120
+podría ser la de cambiar esos patrones de muchos números
+
+313
+00:16:46,120 --> 00:16:47,839
+por una serie de tokens numéricos.
+
+314
+00:16:47,839 --> 00:16:49,759
+Vale, vamos a asignar un número a cada token
+
+315
+00:16:49,759 --> 00:16:53,959
+y vamos a cambiar todas esas secuencias de números por tokens.
+
+316
+00:16:53,959 --> 00:16:56,599
+Y ahora la red neuronal tendría un número para cada palabra
+
+317
+00:16:56,599 --> 00:16:58,120
+en lugar de todo ese lío.
+
+318
+00:16:58,159 --> 00:16:59,840
+Este proceso es uno de los primeros pasos
+
+319
+00:16:59,840 --> 00:17:02,000
+que hacen las redes neuronales como GPT
+
+320
+00:17:02,000 --> 00:17:03,799
+y se llama tokenización.
+
+321
+00:17:03,799 --> 00:17:06,160
+Ahora la máquina conoce las palabras, ¿vale?
+
+322
+00:17:06,160 --> 00:17:09,000
+Pero no sabe qué significan, y nunca lo sabrá.
+
+323
+00:17:09,000 --> 00:17:11,880
+Nunca sabrá que esto es una reina, ni que esto es un coche,
+
+324
+00:17:11,880 --> 00:17:13,880
+y aunque no pueda relacionar estos términos
+
+325
+00:17:13,880 --> 00:17:16,160
+con objetos del mundo real, como hacemos nosotros,
+
+326
+00:17:16,160 --> 00:17:19,319
+lo que sí puede hacer, si presta mucha atención,
+
+327
+00:17:19,319 --> 00:17:22,400
+es saber qué términos están relacionados con cuáles.
+
+328
+00:17:22,400 --> 00:17:25,160
+A alguien se le ocurrió que podríamos, de alguna forma,
+
+329
+00:17:25,160 --> 00:17:27,000
+poner marcadores en los tokens.
+
+330
+00:17:27,039 --> 00:17:29,640
+Se acuja todos estos tokens y poner pequeñas marquitas
+
+331
+00:17:29,640 --> 00:17:32,119
+cuando detectamos que dos son similares.
+
+332
+00:17:32,119 --> 00:17:33,799
+Un poco como jugar al culoedo, ¿no?
+
+333
+00:17:33,799 --> 00:17:36,160
+Donde vas marcando tus pistas de tu investigación.
+
+334
+00:17:36,160 --> 00:17:37,680
+Pues aquí podríamos decir que la reina
+
+335
+00:17:37,680 --> 00:17:39,400
+suele estar cerca del token LA,
+
+336
+00:17:39,400 --> 00:17:41,599
+igual que la chica o la princesa,
+
+337
+00:17:41,599 --> 00:17:44,319
+por lo que estas palabras tienen un marcador común.
+
+338
+00:17:44,319 --> 00:17:46,480
+También se relacionan con el token de VESTIDO,
+
+339
+00:17:46,480 --> 00:17:49,599
+por lo cual hay algo común ahí, lo vamos a marcar también.
+
+340
+00:17:49,599 --> 00:17:51,319
+Y se relacionan con el token de COMER,
+
+341
+00:17:51,319 --> 00:17:53,119
+igual que los perros y los gatos,
+
+342
+00:17:53,119 --> 00:17:56,279
+que por cierto, estos dos también se usan en patrones similares,
+
+343
+00:17:56,359 --> 00:17:57,720
+junto con otros tokens,
+
+344
+00:17:57,720 --> 00:18:00,200
+al igual que caniche o veterinario o pelota,
+
+345
+00:18:00,200 --> 00:18:02,160
+solo que la pelota no come, ¿vale?
+
+346
+00:18:02,160 --> 00:18:04,519
+Y con un texto lo suficientemente grande,
+
+347
+00:18:04,519 --> 00:18:06,119
+por ejemplo, cientos de libros,
+
+348
+00:18:06,119 --> 00:18:07,839
+podríamos entrenar un modelo para crear
+
+349
+00:18:07,839 --> 00:18:10,160
+una gran clasificación de términos
+
+350
+00:18:10,160 --> 00:18:12,519
+y distintos patrones similares que va encontrando,
+
+351
+00:18:12,519 --> 00:18:14,240
+haciendo que los tokens...
+
+352
+00:18:14,240 --> 00:18:15,639
+Sigue sin saber qué son, ¿vale?
+
+353
+00:18:15,639 --> 00:18:18,480
+Pero, de alguna forma, están ordenaditos y clasificados
+
+354
+00:18:18,480 --> 00:18:20,079
+entre ellos con estos marcadores.
+
+355
+00:18:20,079 --> 00:18:22,119
+Para nosotros hacernos una idea,
+
+356
+00:18:22,119 --> 00:18:24,359
+por ejemplo, el marcador que tiene princesa, reina
+
+357
+00:18:24,439 --> 00:18:27,240
+y mujer en común, representaría lo femenino, ¿vale?
+
+358
+00:18:27,240 --> 00:18:29,479
+Aunque realmente para la máquina esto no tiene ningún sentido,
+
+359
+00:18:29,479 --> 00:18:31,079
+simplemente es un marcador numérico que dice,
+
+360
+00:18:31,079 --> 00:18:33,079
+pues mira, yo creo que esto está relacionado
+
+361
+00:18:33,079 --> 00:18:34,639
+por el contexto que he leído.
+
+362
+00:18:34,639 --> 00:18:37,559
+De esta forma, cada token tendría un gran número de marcadores,
+
+363
+00:18:37,559 --> 00:18:39,279
+unos 300, por ejemplo,
+
+364
+00:18:39,279 --> 00:18:41,399
+que le dicen cuáles son las cosas que tienen común
+
+365
+00:18:41,399 --> 00:18:42,719
+con otras palabras.
+
+366
+00:18:42,719 --> 00:18:45,279
+A ver, no es nada fácil hacerse una imagen mental
+
+367
+00:18:45,279 --> 00:18:46,439
+de cómo funciona este sistema.
+
+368
+00:18:46,439 --> 00:18:49,039
+A mí lo que me gusta pensar es que cada palabra tiene como su ADN
+
+369
+00:18:49,039 --> 00:18:51,359
+y tiene rasgos comunes con otras palabras
+
+370
+00:18:51,359 --> 00:18:53,639
+y de esa forma podemos saber que están relacionados.
+
+371
+00:18:53,640 --> 00:18:55,520
+Pero hay otra forma que a mucha gente le funciona
+
+372
+00:18:55,520 --> 00:18:57,160
+para entender mejor este sistema
+
+373
+00:18:57,160 --> 00:19:00,759
+y es imaginarlo como una nube tridimensional de ideas.
+
+374
+00:19:00,759 --> 00:19:03,400
+Repito, en realidad es bastante más complejo,
+
+375
+00:19:03,400 --> 00:19:06,120
+porque esto en una nube tenemos sólo tres dimensiones.
+
+376
+00:19:06,120 --> 00:19:08,280
+O sea, tenemos arriba-abajo, derecha-isquierda,
+
+377
+00:19:08,280 --> 00:19:09,440
+atrás y adelante, ¿no?
+
+378
+00:19:09,440 --> 00:19:11,480
+Tenemos tres dimensiones, pero antes hemos dicho que un token
+
+379
+00:19:11,480 --> 00:19:13,000
+puede tener 300 marcadores.
+
+380
+00:19:13,000 --> 00:19:15,600
+300 marcadores serían como 300 dimensiones distintas.
+
+381
+00:19:15,600 --> 00:19:18,360
+Vale, pero bueno, vamos a imaginarlo de forma tridimensional.
+
+382
+00:19:18,360 --> 00:19:20,200
+Como podéis ver en esta nube tridimensional,
+
+383
+00:19:20,200 --> 00:19:22,680
+hay palabras que están más cerca de otras.
+
+384
+00:19:22,720 --> 00:19:24,279
+Y podemos hacer operaciones matemáticas,
+
+385
+00:19:24,279 --> 00:19:27,039
+incluso, para saber cuál es la distancia entre ellas.
+
+386
+00:19:27,039 --> 00:19:29,759
+Cuales son las más cercanas, cuáles son las más lejanas.
+
+387
+00:19:29,759 --> 00:19:33,360
+Y, por ejemplo, dada una palabra o una posición en el espacio X,
+
+388
+00:19:33,360 --> 00:19:37,120
+podríamos sacar la lista de palabras o posiciones más parecidas,
+
+389
+00:19:37,120 --> 00:19:38,880
+más cercanas a la que estamos ahora.
+
+390
+00:19:38,880 --> 00:19:40,440
+Incluso hacer operaciones matemáticas,
+
+391
+00:19:40,440 --> 00:19:43,759
+como, por ejemplo, reina menos mujer igual a rey.
+
+392
+00:19:43,759 --> 00:19:45,880
+Esto, si lo vemos con el ejemplo del ADN,
+
+393
+00:19:45,880 --> 00:19:48,680
+estaríamos quitando a la reina esas trazas
+
+394
+00:19:48,680 --> 00:19:51,160
+que hacen que se identifique con lo femenino, ¿no?
+
+395
+00:19:51,240 --> 00:19:54,040
+Que quitaríamos mujer, por lo que tendríamos un ADN
+
+396
+00:19:54,040 --> 00:19:55,840
+más parecido al rey.
+
+397
+00:19:55,840 --> 00:19:57,680
+Si lo imaginamos con el mapa espacial,
+
+398
+00:19:57,680 --> 00:20:00,960
+estaríamos alejándonos del término mujer para irnos al opuesto,
+
+399
+00:20:00,960 --> 00:20:03,000
+y en ese sitio en el opuesto pues estaría rey, ¿no?
+
+400
+00:20:03,000 --> 00:20:04,160
+Sería un poco esta la idea.
+
+401
+00:20:04,160 --> 00:20:07,320
+Este sistema de codificación se conoce como embedding.
+
+402
+00:20:07,320 --> 00:20:09,920
+Es un sistema que permite agrupar palabras similares,
+
+403
+00:20:09,920 --> 00:20:12,960
+e incluso, sus tendencias en cuanto a significado.
+
+404
+00:20:12,960 --> 00:20:14,960
+Y este mapa, tal y como está sin hacer nada más,
+
+405
+00:20:14,960 --> 00:20:16,519
+ya no sirve para muchas cosas.
+
+406
+00:20:16,519 --> 00:20:18,519
+Por ejemplo, en un buscador como Google,
+
+407
+00:20:18,519 --> 00:20:21,080
+cuando buscas una palabra, podría también tener en cuenta
+
+408
+00:20:21,119 --> 00:20:24,319
+pues sinónimos, palabras similares, o por ejemplo,
+
+409
+00:20:24,319 --> 00:20:26,319
+para saber si una frase es triste o feliz,
+
+410
+00:20:26,319 --> 00:20:27,799
+podrías buscar dentro de este embedding
+
+411
+00:20:27,799 --> 00:20:29,799
+y ver qué otras palabras hay similares.
+
+412
+00:20:29,799 --> 00:20:32,599
+Ahora, si nos vamos a ver el sistema de embeddings que usa GPT,
+
+413
+00:20:32,599 --> 00:20:34,599
+la cosa es mucho más compleja.
+
+414
+00:20:34,599 --> 00:20:38,279
+Como decíamos, una palabra como gato dentro de GPT
+
+415
+00:20:38,279 --> 00:20:40,279
+estaría representada por un token,
+
+416
+00:20:40,279 --> 00:20:42,279
+y dentro de los embeddings estaría representada
+
+417
+00:20:42,279 --> 00:20:44,279
+con un vector de 300 dimensiones.
+
+418
+00:20:44,279 --> 00:20:47,079
+O sea, una lista de 300 coordenadas distintas,
+
+419
+00:20:47,079 --> 00:20:50,079
+o 300 marcadores distintos con distintos niveles.
+
+420
+00:20:50,079 --> 00:20:53,079
+Luego, GPT también recuerda conjuntos de tokens,
+
+421
+00:20:53,079 --> 00:20:54,079
+o sea, frases.
+
+422
+00:20:54,079 --> 00:20:56,079
+Por ejemplo, el gato está durmiendo en el sofá,
+
+423
+00:20:56,079 --> 00:20:59,079
+es una secuencia que está hecha de varios tokens
+
+424
+00:20:59,079 --> 00:21:02,079
+y que también estaría clasificada dentro de los embeddings.
+
+425
+00:21:02,079 --> 00:21:05,079
+O sea, estamos hablando de que, si bien la idea original de embedding
+
+426
+00:21:05,079 --> 00:21:09,079
+era coger palabras y buscar qué relación tienen entre ellas
+
+427
+00:21:09,079 --> 00:21:11,079
+y crear un sistema complejo de etiquetado
+
+428
+00:21:11,079 --> 00:21:12,079
+para saber cuáles van para un lado,
+
+429
+00:21:12,079 --> 00:21:14,079
+cuáles van para otro y cuáles están relacionadas
+
+430
+00:21:14,079 --> 00:21:15,079
+y qué tanto están relacionadas,
+
+431
+00:21:15,079 --> 00:21:17,079
+pues GPT lo lleva a otro nivel
+
+432
+00:21:17,079 --> 00:21:20,079
+porque directamente coge secuencias de varios tokens,
+
+433
+00:21:20,079 --> 00:21:23,079
+o sea, frases enteras, y hace lo mismo, o sea, coge frases,
+
+434
+00:21:23,079 --> 00:21:26,079
+y esas frases también las organizan dentro del espacio
+
+435
+00:21:26,079 --> 00:21:29,079
+con sus respectivas relaciones y con más de 1.000 marcadores
+
+436
+00:21:29,079 --> 00:21:30,079
+para que haga frase.
+
+437
+00:21:30,079 --> 00:21:33,079
+O sea, como puedes imaginar, es un sistema bastante grande.
+
+438
+00:21:33,079 --> 00:21:35,079
+Y aquí hay un matiz muy importante, ¿vale?
+
+439
+00:21:35,079 --> 00:21:38,079
+Esto es muy clave y es el motivo por el que chat GPT
+
+440
+00:21:38,079 --> 00:21:42,079
+parece que inventa cosas en lugar de copiar textos de otras personas.
+
+441
+00:21:42,079 --> 00:21:43,079
+Aquí es donde está toda la chicha.
+
+442
+00:21:43,079 --> 00:21:45,079
+Vamos a volver a nuestra máquina, nuestro algoritmo.
+
+443
+00:21:45,079 --> 00:21:48,079
+Hasta aquí habíamos dicho que vamos a crear este sistema de embeddings,
+
+444
+00:21:48,079 --> 00:21:49,079
+que es una técnica muy común,
+
+445
+00:21:49,079 --> 00:21:52,079
+que se usa para relacionar un poco el significado entre palabras.
+
+446
+00:21:52,079 --> 00:21:54,079
+Y bueno, ahora haciendo nuestra clasificación,
+
+447
+00:21:54,079 --> 00:22:01,079
+nos damos cuenta de que hay palabras como el, la, como, mismo, otros, ojalá.
+
+448
+00:22:01,079 --> 00:22:04,079
+Y términos similares que aportan muy poco valor a la frase.
+
+449
+00:22:04,079 --> 00:22:06,079
+O sea, es como que están en tierra de nadie.
+
+450
+00:22:06,079 --> 00:22:10,079
+Se relacionan con todo y con nada al mismo tiempo.
+
+451
+00:22:10,079 --> 00:22:12,079
+Al igual que las mayúsculas, las minúsculas
+
+452
+00:22:12,079 --> 00:22:14,079
+y otros signos de puntuación que a veces
+
+453
+00:22:14,079 --> 00:22:16,079
+aportan muy poco a una frase, ¿no?
+
+454
+00:22:16,079 --> 00:22:20,079
+La frase se entendería igual si esos términos genéricos nos tuvieran ahí.
+
+455
+00:22:20,079 --> 00:22:23,079
+Así que ahora en adelante, para simplificar todavía más el trabajo,
+
+456
+00:22:23,079 --> 00:22:27,079
+que todo vaya más rápido y que sea más simple también relacionar frases,
+
+457
+00:22:27,079 --> 00:22:30,079
+pues vamos a limpiar los textos antes de meternos en nuestro sistema.
+
+458
+00:22:30,079 --> 00:22:33,079
+Esto para que te hagas una idea es como cuando te limpian el pescado,
+
+459
+00:22:33,079 --> 00:22:36,079
+te quitan las espinas, las escamas, te lo dejan listo para cocinar
+
+460
+00:22:36,079 --> 00:22:38,079
+y que cuando te lo comas, te lo comas enterito.
+
+461
+00:22:38,079 --> 00:22:40,079
+Esto sería algo muy parecido.
+
+462
+00:22:40,079 --> 00:22:41,079
+Te voy a poner un ejemplo.
+
+463
+00:22:41,079 --> 00:22:43,079
+En la frase, el gato está durmiendo en el sofá.
+
+464
+00:22:43,079 --> 00:22:45,079
+Hay varias palabras que aportan poco.
+
+465
+00:22:45,079 --> 00:22:47,079
+Por ejemplo, en y él.
+
+466
+00:22:47,079 --> 00:22:50,079
+Si las quitamos nos queda gato está durmiendo sofá.
+
+467
+00:22:50,079 --> 00:22:52,079
+Esto también se entiende.
+
+468
+00:22:52,079 --> 00:22:55,079
+Podríamos simplificarla aún más con un proceso que se llama lematización.
+
+469
+00:22:55,079 --> 00:22:58,079
+O sea, convertir las palabras a sus formas más sencillas,
+
+470
+00:22:58,079 --> 00:23:00,079
+como por ejemplo los verbos al infinitivo.
+
+471
+00:23:00,079 --> 00:23:02,079
+Gato es dormir sofá.
+
+472
+00:23:02,079 --> 00:23:05,079
+Y si lo simplificamos aún más, gato dormir sofá.
+
+473
+00:23:05,079 --> 00:23:08,079
+Es una frase que está comprimida, está condensada
+
+474
+00:23:08,079 --> 00:23:11,079
+y esto es muy útil cuando entrenamos el modelo.
+
+475
+00:23:11,079 --> 00:23:15,079
+¿Por qué pasa que GPT guardaría esta secuencia dentro del sistema de embedding
+
+476
+00:23:15,079 --> 00:23:19,079
+relacionando esta frase con otras frases parecidas usando los marcadores?
+
+477
+00:23:19,079 --> 00:23:22,079
+Pero en lugar de coger una frase que es superlarga con un montón de palabras
+
+478
+00:23:22,079 --> 00:23:24,079
+pues la reduce a la mínima expresión.
+
+479
+00:23:24,079 --> 00:23:26,079
+Y aquí viene la gran revelación.
+
+480
+00:23:26,079 --> 00:23:31,079
+Todas las frases que dice GPT la sacan de su sistema de embeddings.
+
+481
+00:23:31,079 --> 00:23:36,079
+Vale, todo lo que GPT dice sale de una búsqueda dentro de los embeddings.
+
+482
+00:23:36,079 --> 00:23:38,079
+Buscas términos, palabras o incluso frases
+
+483
+00:23:38,079 --> 00:23:42,079
+y consigue otras frases que son parecidas y están relacionadas de alguna forma.
+
+484
+00:23:42,079 --> 00:23:45,079
+Con esta, este es el gran truco del conocimiento
+
+485
+00:23:45,079 --> 00:23:48,079
+y la gran capacidad de GPT para poder decir cosas relacionadas
+
+486
+00:23:48,079 --> 00:23:50,079
+con lo que nosotros estamos diciendo.
+
+487
+00:23:50,079 --> 00:23:53,079
+O sea, literalmente coge nuestras frases, las analiza,
+
+488
+00:23:53,079 --> 00:23:55,079
+las convierte a su sistema de embedding
+
+489
+00:23:55,079 --> 00:23:59,079
+y busca en ese espacio de embedding qué más nos puede decir.
+
+490
+00:23:59,079 --> 00:24:01,079
+Antes le pregunté por los emperadores romanos, por ejemplo.
+
+491
+00:24:01,079 --> 00:24:04,079
+Y todo lo que me dijo es una mezcla de varias secuencias de tokens
+
+492
+00:24:04,079 --> 00:24:08,079
+que están almacenados y relacionados entre ellos dentro de su sistema de embeddings.
+
+493
+00:24:08,079 --> 00:24:11,079
+Pero esto es solo el principio, ¿vale?
+
+494
+00:24:11,079 --> 00:24:14,079
+Antes hablé de normalización y lematización,
+
+495
+00:24:14,079 --> 00:24:17,079
+que es este proceso en el que limpias el pescado, simplificas las frases,
+
+496
+00:24:17,079 --> 00:24:19,079
+por decirlo de alguna manera,
+
+497
+00:24:19,079 --> 00:24:22,079
+quitas todo eso que no aporta y comprimes la información,
+
+498
+00:24:22,079 --> 00:24:24,079
+usando tokens para representar una frase.
+
+499
+00:24:24,079 --> 00:24:27,079
+Y esto es clave para entender por qué chat GPT genera textos únicos.
+
+500
+00:24:27,079 --> 00:24:28,079
+Me explico.
+
+501
+00:24:28,079 --> 00:24:31,079
+Cuando chat GPT genera texto, hace consultas a su embedding.
+
+502
+00:24:31,079 --> 00:24:33,079
+Y lo que saca son estas secuencias de tokens,
+
+503
+00:24:33,079 --> 00:24:35,079
+que son frases comprimidas,
+
+504
+00:24:35,079 --> 00:24:38,079
+y que las tiene que convertir en algo aceptable por parte de los humanos.
+
+505
+00:24:38,079 --> 00:24:40,079
+Por eso lo que hace es convertir estos tokens
+
+506
+00:24:40,079 --> 00:24:43,079
+en las palabras que están más cercanas dentro del embedding.
+
+507
+00:24:43,079 --> 00:24:45,079
+A veces las palabras son ligeramente distintas
+
+508
+00:24:45,079 --> 00:24:47,079
+a las que estaban en la frase original
+
+509
+00:24:47,079 --> 00:24:50,079
+y sobre todo usan nuestras reglas de sintaxis y gramática
+
+510
+00:24:50,079 --> 00:24:53,079
+para volver a poner esas palabras que había quitado al principio.
+
+511
+00:24:53,079 --> 00:24:56,079
+Convertiendo esas secuencias de números en una frase
+
+512
+00:24:56,079 --> 00:24:58,079
+que le suene bien a un ser humano.
+
+513
+00:24:58,079 --> 00:24:59,079
+Pero ¿qué pasa?
+
+514
+00:24:59,079 --> 00:25:02,079
+La frase original a la final ha habido una pérdida de información
+
+515
+00:25:02,079 --> 00:25:03,079
+y luego una reconstrucción.
+
+516
+00:25:03,079 --> 00:25:05,079
+Por eso la frase es distinta a la original,
+
+517
+00:25:05,079 --> 00:25:07,079
+porque es imposible recordar exactamente
+
+518
+00:25:07,079 --> 00:25:09,079
+qué es lo que había en la frase original.
+
+519
+00:25:09,079 --> 00:25:11,079
+Así que se lo inventa y pone cosas que a veces son distintas.
+
+520
+00:25:11,079 --> 00:25:13,079
+Y esto es bueno, es muy bueno.
+
+521
+00:25:13,079 --> 00:25:16,079
+Porque lo que hace es que lo que genera chat GPT
+
+522
+00:25:16,079 --> 00:25:18,079
+no se parezca al texto original.
+
+523
+00:25:18,079 --> 00:25:20,079
+O sea, es una creación original,
+
+524
+00:25:20,079 --> 00:25:22,079
+porque literalmente cuando ha guardado esa información
+
+525
+00:25:22,079 --> 00:25:24,079
+ha perdido detalles y los ha tenido que reconstruir.
+
+526
+00:25:24,079 --> 00:25:27,079
+Y cuando los ha reconstruido, pues ha cambiado cosas.
+
+527
+00:25:27,079 --> 00:25:29,079
+Es muy parecido a lo que hacemos nosotros, si lo pensáis.
+
+528
+00:25:29,079 --> 00:25:32,079
+Si yo ahora te explico algo y mañana te pregunto qué es lo que te he explicado,
+
+529
+00:25:32,079 --> 00:25:34,079
+pues tú seguramente tengas una serie de ideas
+
+530
+00:25:34,079 --> 00:25:36,079
+que recuerdes de lo que te expliqué,
+
+531
+00:25:36,079 --> 00:25:38,079
+pero no me vas a recitar exactamente las palabras que te dije,
+
+532
+00:25:38,079 --> 00:25:40,079
+porque no te vas a acordar, sino que me vas a decir
+
+533
+00:25:40,079 --> 00:25:43,079
+pues con tus propias palabras lo que te dije ayer.
+
+534
+00:25:43,079 --> 00:25:45,079
+Pues es muy parecido a lo que hace GPT.
+
+535
+00:25:45,079 --> 00:25:47,079
+Reduce y comprime el significado básico, almacena
+
+536
+00:25:47,079 --> 00:25:50,079
+y cuando lo tiene que sacar lo reconstruye con sus propias palabras.
+
+537
+00:25:50,079 --> 00:25:51,079
+Por decirlo de alguna manera.
+
+538
+00:25:51,079 --> 00:25:55,079
+Aparte de esto, GPT usa otra técnica que se llama sampling.
+
+539
+00:25:55,079 --> 00:25:59,079
+El sampling, básicamente, permite que chat GPT tenga una cierta creatividad.
+
+540
+00:25:59,079 --> 00:26:02,079
+Lo que hace básicamente es que el sistema genere un número aleatorio
+
+541
+00:26:02,079 --> 00:26:05,079
+que sería el equivalente a tirar un dado,
+
+542
+00:26:05,079 --> 00:26:07,079
+para que te hagas una idea de lo que es un número aleatorio,
+
+543
+00:26:07,079 --> 00:26:10,079
+y en base a ese número aleatorio se mueve ligeramente
+
+544
+00:26:10,079 --> 00:26:13,079
+dentro del espacio del embedding para un lado para otro.
+
+545
+00:26:13,079 --> 00:26:15,079
+Y eso le hace, pues, moverse hacia otra frase
+
+546
+00:26:15,079 --> 00:26:18,079
+y esa frase no va a estar demasiado lejos de la original.
+
+547
+00:26:18,079 --> 00:26:21,079
+Lo suficientemente cerca como para que haga parte de la misma conversación
+
+548
+00:26:21,079 --> 00:26:23,079
+y sea coherente con lo que estamos hablando.
+
+549
+00:26:23,079 --> 00:26:27,079
+Así es como chat GPT va inventando historias que parecen coherentes,
+
+550
+00:26:27,079 --> 00:26:29,079
+pero que en realidad son combinaciones de otras historias
+
+551
+00:26:29,079 --> 00:26:32,079
+que ha leído antes en su fase de entrenamiento.
+
+552
+00:26:32,079 --> 00:26:36,079
+O sea, todo lo que dice y todo lo que suelta viene de la fase de entrenamiento.
+
+553
+00:26:36,079 --> 00:26:38,079
+Ok, hemos llegado a un checkpoint.
+
+554
+00:26:38,079 --> 00:26:40,079
+Vamos a repasar un momento lo que hemos hablado hasta aquí.
+
+555
+00:26:40,079 --> 00:26:44,079
+Tenemos una red neuronal, que es un ordenador que aprende buscando patrones en datos.
+
+556
+00:26:44,079 --> 00:26:46,079
+Le pasamos un montón de números random,
+
+557
+00:26:46,079 --> 00:26:48,079
+que representan las letras de nuestros textos
+
+558
+00:26:48,079 --> 00:26:51,079
+y millones de textos para que pueda estudiarlos
+
+559
+00:26:51,079 --> 00:26:53,079
+y buscar patrones dentro de ellos.
+
+560
+00:26:53,079 --> 00:26:57,079
+De ahí la red saca varios patrones, que son nuestras palabras o partes de palabras,
+
+561
+00:26:57,079 --> 00:26:58,079
+y crea los tokens.
+
+562
+00:26:58,079 --> 00:27:01,079
+Ahora, teniendo estos tokens, los usa para crearse un mapa mental
+
+563
+00:27:01,079 --> 00:27:04,079
+con cientos de parámetros y usa esos parámetros
+
+564
+00:27:04,079 --> 00:27:09,079
+para clasificar por cercanía de significado a cada uno de los términos.
+
+565
+00:27:09,079 --> 00:27:12,079
+Y luego, gracias a esto, pues también analiza combinaciones de varios tokens
+
+566
+00:27:12,079 --> 00:27:14,079
+que parece que tienen algún sentido entre ellos,
+
+567
+00:27:14,079 --> 00:27:17,079
+que son nuestras frases, y también empieza a memorizarlas
+
+568
+00:27:17,079 --> 00:27:20,079
+y a relacionarlas entre ellas con más de mil parámetros.
+
+569
+00:27:20,079 --> 00:27:23,079
+Y esto le permite saber qué frases tienen cosas en común
+
+570
+00:27:23,079 --> 00:27:26,079
+y qué cosas en común tienen, con qué términos se relacionan.
+
+571
+00:27:26,079 --> 00:27:29,079
+Ahora, gracias a todo esto, cuando nosotros le damos un término,
+
+572
+00:27:29,079 --> 00:27:32,079
+como por ejemplo gato, gpt puede buscar dentro de su embedding
+
+573
+00:27:32,079 --> 00:27:35,079
+la posición del término gato, y soltarnos unas cuantas frases sobre los gatos,
+
+574
+00:27:35,079 --> 00:27:39,079
+como por ejemplo, ¿qué es un gato?, ¿cuántos gatos hay en el mundo?
+
+575
+00:27:39,079 --> 00:27:43,079
+Pero además, como estas frases están guardadas dentro del embedding de gpt,
+
+576
+00:27:43,079 --> 00:27:46,079
+de forma súper primaria las tiene que reconstruir
+
+577
+00:27:46,079 --> 00:27:48,079
+para que suenen como si las hubiese escrito un humano.
+
+578
+00:27:48,079 --> 00:27:52,079
+Y haciendo ese proceso de reconstrucción genera frases originales,
+
+579
+00:27:52,079 --> 00:27:55,079
+por lo que parece que sepa un montón de cosas,
+
+580
+00:27:55,079 --> 00:27:58,079
+y gracias al sampling también bailando y soltando frases nuevas
+
+581
+00:27:58,079 --> 00:28:00,079
+que quedan bien con las anteriores.
+
+582
+00:28:00,079 --> 00:28:02,079
+¡Un buen truco, ¿verdad?
+
+583
+00:28:02,079 --> 00:28:05,079
+Pero nos estamos dejando una parte muy importante.
+
+584
+00:28:05,079 --> 00:28:08,079
+El gran problema que ha existido durante mucho tiempo
+
+585
+00:28:08,079 --> 00:28:12,079
+y para el que hasta hace muy poco no había solución.
+
+586
+00:28:12,079 --> 00:28:15,079
+¿Qué es lo que se trata de la frases originales?
+
+587
+00:28:15,079 --> 00:28:17,079
+Ok, primero que nada, recordad una cosa.
+
+588
+00:28:17,079 --> 00:28:19,079
+Las redes neuronales tienen dos fases.
+
+589
+00:28:19,079 --> 00:28:22,079
+Una fase en la que la entrenamos para hacer algo,
+
+590
+00:28:22,079 --> 00:28:24,079
+y otra fase en la que la hace, ¿no?
+
+591
+00:28:24,079 --> 00:28:26,079
+La primera fase se llama entrenamiento,
+
+592
+00:28:26,079 --> 00:28:28,079
+la segunda se llama inferencia.
+
+593
+00:28:28,079 --> 00:28:31,079
+Cuando nosotros hablamos con chat gpt, estamos en fase de inferencia,
+
+594
+00:28:31,079 --> 00:28:33,079
+¿vale?, está intentando adivinar cosas.
+
+595
+00:28:33,079 --> 00:28:36,079
+Y cuando la entrenamos, que es cuando le pasamos la Wikipedia,
+
+596
+00:28:36,079 --> 00:28:38,079
+los libros y todo lo que le demos para aprender,
+
+597
+00:28:38,079 --> 00:28:40,079
+es cuando está aprendiendo.
+
+598
+00:28:40,079 --> 00:28:42,079
+El problema que te voy a contar ahora afecta a las sofas,
+
+599
+00:28:42,079 --> 00:28:44,079
+tanto la de entrenamiento como la de inferencia.
+
+600
+00:28:44,079 --> 00:28:48,079
+Cuando nosotros metemos letras y luego toquense en la red neuronal,
+
+601
+00:28:48,079 --> 00:28:51,079
+como en lo que es el ordenador que veníamos haciendo hasta ahora,
+
+602
+00:28:51,079 --> 00:28:53,079
+la red neuronal tiene una entrada de un tamaño X, ¿vale?
+
+603
+00:28:53,079 --> 00:28:56,079
+Recoges entrada, la procesa, saca conclusiones,
+
+604
+00:28:56,079 --> 00:28:58,079
+y ya está, ahí hemos terminado.
+
+605
+00:28:58,079 --> 00:29:01,079
+Nosotros hasta aquí por algún motivo hemos dado por hecho
+
+606
+00:29:01,079 --> 00:29:04,079
+que el ordenador puede tragar cualquier tipo de frase,
+
+607
+00:29:04,079 --> 00:29:07,079
+cualquier tamaño, da igual como sea, cualquier texto,
+
+608
+00:29:07,079 --> 00:29:09,079
+pero esto no es así, ¿vale?, y esto es un problema mucho más grande
+
+609
+00:29:09,079 --> 00:29:10,079
+de lo que parece.
+
+610
+00:29:10,079 --> 00:29:14,079
+La red neuronal no recuerda lo que pasa entre paso y paso.
+
+611
+00:29:14,079 --> 00:29:17,079
+Cada vez que entra algo y sale, pues simplemente se le olvida.
+
+612
+00:29:17,079 --> 00:29:20,079
+Y esto es un gran problema, primero que nada, para la inferencia.
+
+613
+00:29:20,079 --> 00:29:23,079
+Cuando nosotros hablamos con la inteligencia y esperamos que nos genere texto,
+
+614
+00:29:23,079 --> 00:29:26,079
+hombre, pues es bastante importante que entienda
+
+615
+00:29:26,079 --> 00:29:29,079
+toda la frase que le pasamos, da igual cuántas cosas mencionemos,
+
+616
+00:29:29,079 --> 00:29:31,079
+que esto es algo que gpt hace muy bien, y no solo eso,
+
+617
+00:29:31,079 --> 00:29:35,079
+sino que recuerde todo lo que vamos hablando a lo largo de la conversación.
+
+618
+00:29:35,079 --> 00:29:39,079
+Que tenga algún tipo de memoria, algo que le permita recordar.
+
+619
+00:29:39,079 --> 00:29:42,079
+Y lo mismo pasa cuando está redesta, aprendiendo, ¿no?
+
+620
+00:29:42,079 --> 00:29:44,079
+Si la red neuronal está leyendo un artículo de Wikipedia,
+
+621
+00:29:44,079 --> 00:29:48,079
+es súper importante que para poder clasificar las frases y conceptos,
+
+622
+00:29:48,079 --> 00:29:50,079
+pues sepa cuál es el contexto, ¿no?,
+
+623
+00:29:50,079 --> 00:29:52,079
+qué es lo que está leyendo, de qué va la cosa.
+
+624
+00:29:52,079 --> 00:29:55,079
+Por ejemplo, antes hablando con ella, pues me dijo,
+
+625
+00:29:55,079 --> 00:29:58,079
+hay una posibilidad de que estos textos sean propaganda.
+
+626
+00:29:58,079 --> 00:30:01,079
+Esto lo hizo en la fase de inferencia, porque estaba hablando conmigo, ¿vale?
+
+627
+00:30:01,079 --> 00:30:04,079
+Eso significa que durante el entrenamiento, en algún momento leí esa frase,
+
+628
+00:30:04,079 --> 00:30:06,079
+y sabía de qué se hablaba, ¿no?
+
+629
+00:30:06,079 --> 00:30:10,079
+Sabía que se hablaba de los textos antiguos sobre el emperador romano Caligula,
+
+630
+00:30:10,079 --> 00:30:14,079
+y sabía de todo esto porque yo le pregunté quién era el peor emperador romano de la historia, ¿no?
+
+631
+00:30:14,079 --> 00:30:16,079
+Pero como puedes imaginar, sin todo este contexto,
+
+632
+00:30:16,079 --> 00:30:19,079
+sería prácticamente imposible hilar una conversación con sentido.
+
+633
+00:30:19,079 --> 00:30:23,079
+Esto ahora nos parece obvio, porque vemos que funciona y ya está.
+
+634
+00:30:23,079 --> 00:30:25,079
+Pero no es tan fácil, no es tan fácil de conseguir.
+
+635
+00:30:25,079 --> 00:30:29,079
+Porque como te decía antes, la red neuronal tiene un tamaño de entrada que es limitado.
+
+636
+00:30:29,079 --> 00:30:33,079
+Así que necesito algún tipo de sistema para poder tener en cuenta el contexto.
+
+637
+00:30:33,079 --> 00:30:39,079
+Saber de qué estamos hablando, recordar esos detalles que hacen que la conversación y la frase tenga algún tipo de sentido.
+
+638
+00:30:39,079 --> 00:30:43,079
+Hasta hace poco lo que se hacía era usar redes neuronales recurrentes.
+
+639
+00:30:43,079 --> 00:30:48,079
+Bueno, pues en la red neuronal recurrente, lo que se hace es que cada vez que se procesa un token,
+
+640
+00:30:48,079 --> 00:30:53,079
+se guarda una parte del resultado, y ese resultado lo usa como dato de entrada para procesar el siguiente token.
+
+641
+00:30:53,079 --> 00:30:57,079
+Y el siguiente, y el siguiente, y el siguiente, y cada vez que pasa por un paso,
+
+642
+00:30:57,079 --> 00:31:00,079
+va guardando un poquito de significado de cada token.
+
+643
+00:31:00,079 --> 00:31:04,079
+Conseguimos más o menos que se mantenga el tema del que estamos hablando a lo largo de una frase,
+
+644
+00:31:04,079 --> 00:31:07,079
+pero hay dos problemas muy grandes con este sistema.
+
+645
+00:31:07,079 --> 00:31:10,079
+El primero es que después de que hay palabras, empieza a olvidar de todo, vale.
+
+646
+00:31:10,079 --> 00:31:15,079
+O sea, llega un momento que ya el significado de las primas palabras se pierde y ya no es capaz de retenerlo.
+
+647
+00:31:15,079 --> 00:31:19,079
+Pero hay un segundo problema muy importante, y es que todo esto es un proceso secuencial.
+
+648
+00:31:19,079 --> 00:31:24,079
+O sea, cuando entrenamos el modelo de lenguaje, lo hacemos en secuencia, un término detrás de otro.
+
+649
+00:31:24,079 --> 00:31:25,079
+Vamos poco a poco.
+
+650
+00:31:25,079 --> 00:31:28,079
+Y esto lo que no se puede desparalelizar.
+
+651
+00:31:28,079 --> 00:31:32,079
+¿Qué quiere decir esto? Que si yo, por ejemplo, quiero meter más ordenadores a procesar este texto,
+
+652
+00:31:32,079 --> 00:31:37,079
+pues literalmente no podría, porque para procesar una palabra necesito tener en cuenta todas las anteriores.
+
+653
+00:31:37,079 --> 00:31:39,079
+Entonces, solo un ordenador puede hacer ese trabajo.
+
+654
+00:31:39,079 --> 00:31:44,079
+Imagínate que yo soy la red neuronal, invito a un amigo a que venga aquí a echarme una mano a procesar todo esto,
+
+655
+00:31:44,079 --> 00:31:46,079
+y yo, pues, estoy ahí procesando.
+
+656
+00:31:46,079 --> 00:31:48,079
+Palabra, palabra, palabra, palabra.
+
+657
+00:31:48,079 --> 00:31:51,079
+Pero para cada palabra que proceso, tengo en cuenta todas las anteriores.
+
+658
+00:31:51,079 --> 00:31:54,079
+Eso significa que mi amigo no puede hacer nada.
+
+659
+00:31:54,079 --> 00:31:57,079
+Y, por ejemplo, me voy a decir que no puedo hacer el turnando si él quiere,
+
+660
+00:31:57,079 --> 00:32:00,079
+pero es que él no puede ir procesando otras porque le faltan todas las anteriores.
+
+661
+00:32:00,079 --> 00:32:02,079
+Y por eso es un problema, vale.
+
+662
+00:32:02,079 --> 00:32:04,079
+O sea, entrenar este tipo de redes es bastante lento.
+
+663
+00:32:04,079 --> 00:32:06,079
+Pero, bueno, esto funcionó durante bastante tiempo.
+
+664
+00:32:06,079 --> 00:32:08,079
+Era la forma que teníamos para hacer este tipo de bots.
+
+665
+00:32:08,079 --> 00:32:12,079
+Aunque luego vinieron otro tipo de redes, que son las Long Short Term Memory,
+
+666
+00:32:12,079 --> 00:32:15,079
+que son un poco mejores porque hacen prácticamente lo mismo,
+
+667
+00:32:15,079 --> 00:32:19,079
+pero deciden en cada momento que es lo más importante y solo olvidan lo menos importante.
+
+668
+00:32:19,079 --> 00:32:21,079
+Pero, bueno, siguen teniendo el mismo problema.
+
+669
+00:32:21,079 --> 00:32:23,079
+Cuando trabajamos del texto antiguo, se pierde el contexto,
+
+670
+00:32:23,079 --> 00:32:26,079
+queda lo más importante, pero aún así en textos de más de mil palabras,
+
+671
+00:32:26,079 --> 00:32:28,079
+se empieza a perder el significado.
+
+672
+00:32:28,079 --> 00:32:30,079
+Y además eso, que el entrenamiento no es paralelizable.
+
+673
+00:32:30,079 --> 00:32:34,079
+Así que el gran problema de este tipo de inteligencias artificiales hasta ahora
+
+674
+00:32:34,079 --> 00:32:37,079
+era que no podían recordar bien de lo que estaban hablando.
+
+675
+00:32:37,079 --> 00:32:39,079
+Se igual tenía este embedding, tenía todo esto tan guay,
+
+676
+00:32:39,079 --> 00:32:42,079
+pero dentro de una conversación muy larga,
+
+677
+00:32:42,079 --> 00:32:44,079
+se iban perdiendo y empezaban a devagar.
+
+678
+00:32:44,079 --> 00:32:47,079
+Y esto también les impide desarrollar cosas muy largas,
+
+679
+00:32:47,079 --> 00:32:51,079
+hacer resúmenes o cualquier tipo de tarea que requiera analizar un texto muy grande
+
+680
+00:32:51,079 --> 00:32:53,079
+y entender cosas complejas, ¿no?
+
+681
+00:32:53,079 --> 00:32:55,079
+La solución a este problema vino en 2017,
+
+682
+00:32:55,079 --> 00:32:58,079
+cuando se publicó Attention Is All You Need,
+
+683
+00:32:58,079 --> 00:33:01,079
+que es un paper de unos investigadores de Google,
+
+684
+00:33:01,079 --> 00:33:03,079
+donde se plantea una solución muy buena a este problema.
+
+685
+00:33:03,079 --> 00:33:08,079
+Una nueva forma de organizar las redes neuronales llamada Transformers.
+
+686
+00:33:08,079 --> 00:33:11,079
+En los Transformers lo que se hace es añadir una nueva capa,
+
+687
+00:33:11,079 --> 00:33:14,079
+una capa dedicada a lo que los investigadores llamaron atención.
+
+688
+00:33:14,079 --> 00:33:17,079
+La atención hace referencia a cómo los humanos vemos, ¿vale?
+
+689
+00:33:17,079 --> 00:33:20,079
+Nosotros cuando vemos cosas vemos un montón de información,
+
+690
+00:33:20,079 --> 00:33:22,079
+pero solo prestamos atención a ciertos objetos,
+
+691
+00:33:22,079 --> 00:33:24,079
+mientras que todo el resto pues lo ignoramos.
+
+692
+00:33:24,079 --> 00:33:28,079
+La idea aquí es que nuestra red neuronal haga exactamente lo mismo,
+
+693
+00:33:28,079 --> 00:33:31,079
+que analice una gran cantidad de texto todo de golpe
+
+694
+00:33:31,079 --> 00:33:34,079
+y lo use para extraer el contexto de lo que se está hablando,
+
+695
+00:33:34,079 --> 00:33:38,079
+prestando atención solo a los detalles más importantes.
+
+696
+00:33:38,079 --> 00:33:40,079
+Para hacer esto cogemos una parte de nuestro texto,
+
+697
+00:33:40,079 --> 00:33:43,079
+la normalizamos, la codificamos con nuestros tokens,
+
+698
+00:33:43,079 --> 00:33:47,079
+y de esos tokens vamos a sacar de cada uno los vectores de embedding.
+
+699
+00:33:47,079 --> 00:33:50,079
+A partir de aquí vamos a coger cada uno de los vectores
+
+700
+00:33:50,079 --> 00:33:54,079
+y vamos a mirar qué tanto se parecen a todo el resto de palabras
+
+701
+00:33:54,079 --> 00:33:55,079
+que hay dentro de la frase.
+
+702
+00:33:55,079 --> 00:33:59,079
+Por ejemplo, en la frase, la vida es bella, así que vive la cada día.
+
+703
+00:33:59,079 --> 00:34:02,079
+Aquí haríamos operaciones para saber cuál es la relación
+
+704
+00:34:02,079 --> 00:34:03,079
+con cada uno de los términos
+
+705
+00:34:03,079 --> 00:34:06,079
+y de esa forma sabríamos qué conceptos son más importantes que otros.
+
+706
+00:34:06,079 --> 00:34:09,079
+Sabríamos cuál es el contexto de la frase,
+
+707
+00:34:09,079 --> 00:34:12,079
+sabríamos que cuando hablamos de vivir nos referimos a la vida
+
+708
+00:34:12,079 --> 00:34:15,079
+y descartaríamos esas palabras que son menos importantes.
+
+709
+00:34:15,079 --> 00:34:18,079
+Y aquí la idea es que la información sobre estos términos relevantes
+
+710
+00:34:18,079 --> 00:34:21,079
+no solo se va enriqueciendo, sino que también se va manteniendo
+
+711
+00:34:21,079 --> 00:34:23,079
+a lo largo de todo el proceso.
+
+712
+00:34:23,079 --> 00:34:27,079
+Y ese vector de atención se usa en el procesamiento de cada una de las palabras.
+
+713
+00:34:27,079 --> 00:34:29,079
+Y esto ayuda muchísimo al ordenador.
+
+714
+00:34:29,079 --> 00:34:31,079
+No solo a saber el contexto de cada una de las frases,
+
+715
+00:34:31,079 --> 00:34:33,079
+por ejemplo, cuando lee el token propaganda,
+
+716
+00:34:33,079 --> 00:34:36,079
+sabe que se hace referencia a las escrituras sobre Calígula,
+
+717
+00:34:36,079 --> 00:34:39,079
+el emperador romano, sino que además sabe el significado de palabras,
+
+718
+00:34:39,079 --> 00:34:41,079
+como por ejemplo gato, ¿no?
+
+719
+00:34:41,079 --> 00:34:43,079
+Gato para un mecánico es una herramienta,
+
+720
+00:34:43,079 --> 00:34:45,079
+pero generalmente pues es un animal,
+
+721
+00:34:45,079 --> 00:34:49,079
+que para una persona normal puede ser una mascota para un veterinario, un paciente.
+
+722
+00:34:49,079 --> 00:34:53,079
+La atención también es la que permite a ChatGPT extraer los conceptos clave
+
+723
+00:34:53,079 --> 00:34:55,079
+de un texto escrito por nosotros,
+
+724
+00:34:55,079 --> 00:34:57,079
+saber qué términos tiene más peso,
+
+725
+00:34:57,079 --> 00:34:59,079
+qué es lo más importante de nuestra pregunta,
+
+726
+00:34:59,079 --> 00:35:01,079
+incluso hacer un resumen de un texto,
+
+727
+00:35:01,079 --> 00:35:03,079
+o responder tema por tema a todo lo que le hemos dicho.
+
+728
+00:35:03,079 --> 00:35:06,079
+Pero además hay un poder muy grande en la capa de atención,
+
+729
+00:35:06,079 --> 00:35:08,079
+esto es lo mejor que tiene, ¿vale?
+
+730
+00:35:08,079 --> 00:35:10,079
+Y es que permite paralelizar.
+
+731
+00:35:10,079 --> 00:35:14,079
+La atención no necesita que las palabras se procesen de forma secuencial,
+
+732
+00:35:14,079 --> 00:35:17,079
+o sea, no hace falta ir palabra por palabra una detrás de la otra,
+
+733
+00:35:17,079 --> 00:35:19,079
+sino que podemos coger todas las palabras al mismo tiempo.
+
+734
+00:35:19,079 --> 00:35:22,079
+Y esto nos permite tener decenas de tarjetas gráficas trabajando
+
+735
+00:35:22,079 --> 00:35:24,079
+todas a la vez, entrenando nuestro modelo de lenguaje,
+
+736
+00:35:24,079 --> 00:35:27,079
+o incluso generando palabras en nuestro modelo de lenguaje.
+
+737
+00:35:27,079 --> 00:35:30,079
+Así que el entrenamiento es mucho más rápido y mucho más eficaz
+
+738
+00:35:30,079 --> 00:35:32,079
+que los tipos que vimos antes, ¿no?
+
+739
+00:35:32,079 --> 00:35:34,079
+Que necesitabas ir de forma secuencial,
+
+740
+00:35:34,079 --> 00:35:36,079
+una tras otra, una tras otra, una tras otra,
+
+741
+00:35:36,079 --> 00:35:38,079
+aquí coges todo junto, se lo metes,
+
+742
+00:35:38,079 --> 00:35:40,079
+y es capaz de procesarlo a la vez.
+
+743
+00:35:40,079 --> 00:35:43,079
+La idea aquí es que los Transformers han sido la gran revolución,
+
+744
+00:35:43,079 --> 00:35:46,079
+la pieza que faltaba en el mundo de los generadores de este texto,
+
+745
+00:35:46,079 --> 00:35:47,079
+la capa de atención.
+
+746
+00:35:47,079 --> 00:35:50,079
+Esa capa de atención ha hecho que avancemos en dos o tres años
+
+747
+00:35:50,079 --> 00:35:53,079
+muchísimo más de lo que se avanzó en toda la década pasada posiblemente.
+
+748
+00:35:53,079 --> 00:35:56,079
+Google, de hecho, fue la primera en publicar acerca de estos Transformers
+
+749
+00:35:56,079 --> 00:35:58,079
+y también en usarlos.
+
+750
+00:35:58,079 --> 00:36:01,079
+Uno de los productos más importantes que hicieron basándose en esta tecnología
+
+751
+00:36:01,079 --> 00:36:03,079
+fue BERT.
+
+752
+00:36:03,079 --> 00:36:06,079
+En este artículo de Google podéis ver como BERT es una gran ayuda
+
+753
+00:36:06,079 --> 00:36:09,079
+de mejorar la precisión de las búsquedas en Google, por ejemplo, ¿no?
+
+754
+00:36:09,079 --> 00:36:12,079
+La mejora es impresionante porque pasamos de que Google busque términos relacionados
+
+755
+00:36:12,079 --> 00:36:14,079
+con lo que estamos buscando,
+
+756
+00:36:14,079 --> 00:36:17,079
+a que entienda perfectamente lo que estás diciendo y te dé la solución a tu problema.
+
+757
+00:36:17,079 --> 00:36:20,079
+Por ejemplo, aquí podéis ver que se pregunta si en 2019
+
+758
+00:36:20,079 --> 00:36:23,079
+un viajero brasileño necesita visa para ir a los Estados Unidos.
+
+759
+00:36:23,079 --> 00:36:26,079
+Antes de usar este sistema te decía que, bueno,
+
+760
+00:36:26,079 --> 00:36:28,079
+un artículo ahí del Washington Post,
+
+761
+00:36:28,079 --> 00:36:30,079
+que está relacionado, que tiene esas palabras clave,
+
+762
+00:36:30,079 --> 00:36:33,079
+y ahora directamente te lleva a la página de la embajada
+
+763
+00:36:33,079 --> 00:36:36,079
+donde nos explica los requisitos de los viajeros que visitan Estados Unidos
+
+764
+00:36:36,079 --> 00:36:39,079
+con nacionalidad brasileña, o sea, mucho más efectivo, más al grano,
+
+765
+00:36:39,079 --> 00:36:42,079
+y te lleva exactamente a la página que necesitas visitar
+
+766
+00:36:42,079 --> 00:36:44,079
+para resolver este problema, ¿no?
+
+767
+00:36:44,079 --> 00:36:46,079
+Google inventó este sistema, pero OpenAI
+
+768
+00:36:46,079 --> 00:36:49,079
+fueron los que decidieron llevar esto al siguiente nivel.
+
+769
+00:36:49,079 --> 00:36:52,079
+En 2015 se juntaron varios titanes del sector tecnológico.
+
+770
+00:36:52,079 --> 00:36:54,079
+Estamos hablando de Sam Altman,
+
+771
+00:36:54,079 --> 00:36:57,079
+que era el director de una aceleradora de startup muy importante,
+
+772
+00:36:57,079 --> 00:37:00,079
+Craig Brockman, que fue uno de los primeros empleados de Stripe,
+
+773
+00:37:00,079 --> 00:37:03,079
+Rayd Hoffman, que es el cofundador de LinkedIn,
+
+774
+00:37:03,079 --> 00:37:06,079
+Jessica Livingstone, que también viene de la aceleradora de startups,
+
+775
+00:37:06,079 --> 00:37:09,079
+será la cofundadora, Peter Ciel, que es el cofundador de PayPal,
+
+776
+00:37:09,079 --> 00:37:12,079
+y Elon Musk, que, bueno, este no necesita presentación,
+
+777
+00:37:12,079 --> 00:37:15,079
+y bueno, pues toda esta gente se juntó y montó una organización
+
+778
+00:37:15,079 --> 00:37:18,079
+que al principio era sinánimo de lucro para llevar la inteligencia artificial
+
+779
+00:37:18,079 --> 00:37:21,079
+al siguiente nivel, y así es como nació OpenAI.
+
+780
+00:37:21,079 --> 00:37:24,079
+Uno de los proyectos estrella de OpenAI es GPT.
+
+781
+00:37:24,079 --> 00:37:27,079
+No es el único, ¿vale? Tienen cosas muy guapas,
+
+782
+00:37:27,079 --> 00:37:30,079
+pero bueno, GPT es el que va el vídeo de hoy.
+
+783
+00:37:30,079 --> 00:37:33,079
+Y la idea aquí es muy sencilla. Dijeron, ¿qué pasaría
+
+784
+00:37:33,079 --> 00:37:36,079
+si cogiéramos esta arquitectura de Transformers que propuso Google
+
+785
+00:37:36,079 --> 00:37:40,079
+y hacemos la red neuronal más grande, enorme, gigantesca, jamás creada?
+
+786
+00:37:40,079 --> 00:37:43,079
+Cada red neuronal tiene lo que se conocen como parámetros.
+
+787
+00:37:43,079 --> 00:37:46,079
+Puedes imaginar los parámetros como si fueran una serie de
+
+788
+00:37:46,079 --> 00:37:49,079
+mandos, tiradores, perillas, pesos,
+
+789
+00:37:49,079 --> 00:37:52,079
+y una serie de ajustes que se configuran para que la máquina
+
+790
+00:37:52,079 --> 00:37:54,079
+funcione de una forma concreta.
+
+791
+00:37:54,079 --> 00:37:57,079
+Las redes neuronales, de hecho, lo que van haciendo a medida que aprenden,
+
+792
+00:37:57,079 --> 00:38:00,079
+es poco a poco ajustar todos estos parámetros para que los resultados
+
+793
+00:38:00,079 --> 00:38:03,079
+de salida sean los esperados de la máquina, ¿vale?
+
+794
+00:38:03,079 --> 00:38:06,079
+Y como podrás imaginar, cuántos más parámetros tiene una máquina
+
+795
+00:38:06,079 --> 00:38:09,079
+en teoría más ajustable es, más compleja y más flexibilidad tiene.
+
+796
+00:38:09,079 --> 00:38:12,079
+Y para que quede claro, ¿no? En el caso de las redes neuronales
+
+797
+00:38:12,079 --> 00:38:15,079
+no es el usuario que enajusta todo esto, ¿no? Sino que es la máquina
+
+798
+00:38:15,079 --> 00:38:18,079
+que va cambiando todo esto para producir un resultado X, ¿no?
+
+799
+00:38:18,079 --> 00:38:21,079
+Es como una máquina que es capaz de aprender y el aprendizaje consiste
+
+800
+00:38:21,079 --> 00:38:24,079
+a ajustar estos parámetros. Ahora, dicho esto, este tipo de grandes
+
+801
+00:38:24,079 --> 00:38:27,079
+modelos de lenguaje normalmente se entrenan con algunos millones de parámetros.
+
+802
+00:38:27,079 --> 00:38:31,079
+Pero como te dije hace un momento, OpenAI quería llevar esto al siguiente nivel.
+
+803
+00:38:31,079 --> 00:38:37,079
+Así que ya cuando entrenaron a GPT2, usaron 1,5 miles de millones de parámetros.
+
+804
+00:38:37,079 --> 00:38:40,079
+Y ya para GPT3, que es en la que se va a chat GPT,
+
+805
+00:38:40,079 --> 00:38:44,079
+usaron 175 miles de millones de parámetros.
+
+806
+00:38:44,079 --> 00:38:47,079
+Una locura total. ¿Y qué usaron para entrenar a esta bestia
+
+807
+00:38:47,079 --> 00:38:50,079
+de Transformer con esos 175 miles de millones de parámetros?
+
+808
+00:38:50,079 --> 00:38:53,079
+Bueno, pues básicamente le pasaron el Common Crowd,
+
+809
+00:38:53,079 --> 00:38:56,079
+que es una base de datos que contiene muchísimo contenido de Internet
+
+810
+00:38:56,079 --> 00:39:00,079
+extraído de textos como blogs y todo tipo de páginas web entre el año
+
+811
+00:39:00,079 --> 00:39:04,079
+2016 y 2019. Luego también usaron WebText2,
+
+812
+00:39:04,079 --> 00:39:08,079
+que básicamente es un texto muy largo que contiene todos los posts
+
+813
+00:39:08,079 --> 00:39:11,079
+de Reddit con un mínimo de karma y todo su contenido de links,
+
+814
+00:39:11,079 --> 00:39:15,079
+o sea, todos los links de esos posts también en formato de texto.
+
+815
+00:39:15,079 --> 00:39:18,079
+Aparte de eso, usaron una gran biblioteca de libros
+
+816
+00:39:18,079 --> 00:39:21,079
+y por último toda la Wikipedia. En fin, todos estos textos,
+
+817
+00:39:21,079 --> 00:39:25,079
+que son miles y miles y miles de tokens, los usaron para que GPT3
+
+818
+00:39:25,079 --> 00:39:29,079
+aprenda todo lo que sabe. Y claro, entre este contenido hay cientos de consejos,
+
+819
+00:39:29,079 --> 00:39:33,079
+conocimiento general, tablaturas de guitarra, código de programación
+
+820
+00:39:33,079 --> 00:39:37,079
+de todo tipo y muchas más cosas. Esto es GPT3, señores.
+
+821
+00:39:37,079 --> 00:39:42,079
+Y Chat GPT no es el primer producto basado en GPT3. OpenAI creo a mitad de 2021
+
+822
+00:39:42,079 --> 00:39:46,079
+una variante de GPT3 entrenada con todos los repositorios de GitHub,
+
+823
+00:39:46,079 --> 00:39:49,079
+que básicamente GitHub es una plataforma que ahora la compró Microsoft,
+
+824
+00:39:49,079 --> 00:39:52,079
+donde la mayoría de programadores del mundo guardan su código.
+
+825
+00:39:52,079 --> 00:39:55,079
+Y esta inteligencia artificial pues básicamente se puso a aprender
+
+826
+00:39:55,079 --> 00:39:58,079
+todo el código de GitHub y aprendió a programar.
+
+827
+00:39:58,079 --> 00:40:00,079
+Esto lo cogieron y lo sacaron como un producto comercial llamado
+
+828
+00:40:00,079 --> 00:40:04,079
+GitHub Copilot, que es una inteligencia artificial capaz de ayudarte a programar,
+
+829
+00:40:04,079 --> 00:40:08,079
+generando código de todo lo que tú le pides directamente desde tu editor.
+
+830
+00:40:08,079 --> 00:40:10,079
+O sea, tú estás en el editor y le dices, quiero que hagas esto,
+
+831
+00:40:10,079 --> 00:40:13,079
+plá, me intergenero el código. A veces tienes que cambiar alguna cosa,
+
+832
+00:40:13,079 --> 00:40:18,079
+ajustar cositas, modificar, pero toda una revolución en el mundo de la programación.
+
+833
+00:40:18,079 --> 00:40:22,079
+Ahora, Chat GPT es lo último que han sacado y para crear Chat GPT
+
+834
+00:40:22,079 --> 00:40:24,079
+han tenido que hacer un poco más de trabajo, ¿vale?
+
+835
+00:40:24,079 --> 00:40:30,079
+Chat GPT es una versión refinada o fine-tuned, como se dice en inglés, de GPT3.
+
+836
+00:40:30,079 --> 00:40:33,079
+Lo primero que hicieron fue, empezando ya desde GPT3 entrenado
+
+837
+00:40:33,079 --> 00:40:36,079
+con todo esto que os dije antes, añadieron más entrenamiento,
+
+838
+00:40:36,079 --> 00:40:40,079
+pero esta vez en lugar de usar textos de internet que quedan libres a la interpretación de GPT,
+
+839
+00:40:40,079 --> 00:40:44,079
+porque una cosa que no mencioné es que GPT es un modelo entrenado de forma no supervisada,
+
+840
+00:40:44,079 --> 00:40:49,079
+o sea, los datos que se le pasaron no le decimos qué son, sino que tiene que buscarse la vida, ¿vale?
+
+841
+00:40:49,079 --> 00:40:53,079
+Pero en este caso sí que le pasaron un nuevo set de datos que sí que está etiquetado.
+
+842
+00:40:53,079 --> 00:40:56,079
+¿Cómo lo hicieron? Bueno, pues contrataron un grupo de humanos
+
+843
+00:40:56,079 --> 00:41:00,079
+para que generen respuestas de Chat de alta calidad y además diciendo que es cada cosa.
+
+844
+00:41:00,079 --> 00:41:04,079
+Esto se conoce como aprendizaje supervisado, porque la inteligencia artificial ya sabe
+
+845
+00:41:04,079 --> 00:41:06,079
+cuáles son las conclusiones que tiene que sacar.
+
+846
+00:41:06,079 --> 00:41:09,079
+O sea, tiene que buscar los patrones, el por qué esas conclusiones son así,
+
+847
+00:41:09,079 --> 00:41:13,079
+pero por lo menos ya le decimos, mira, esto es esto, esto es esto, esto es esto.
+
+848
+00:41:13,079 --> 00:41:17,079
+Entonces, cuando entrenas, se centra más en entender por qué las cosas son cómo son.
+
+849
+00:41:17,079 --> 00:41:20,079
+Este set de datos, especialmente hecho para GPT, es bastante caro,
+
+850
+00:41:20,079 --> 00:41:23,079
+porque tienes que pagar a la gente para que se dedique a escribir y etiquetar,
+
+851
+00:41:23,079 --> 00:41:27,079
+pero es muy valioso, porque le da datos de altísima calidad al modelo.
+
+852
+00:41:27,079 --> 00:41:29,079
+Pero además de eso, hicieron un segundo paso.
+
+853
+00:41:29,079 --> 00:41:33,079
+Un proceso que se llama Reinforcement Learning from Human Feedback.
+
+854
+00:41:33,079 --> 00:41:36,079
+En español, aprendizaje reforzado de feedback humano.
+
+855
+00:41:36,079 --> 00:41:41,079
+Aquí lo que hicieron fue hacer que GPT genere cuatro posibles respuestas para cada pregunta,
+
+856
+00:41:41,079 --> 00:41:44,079
+y luego pusieron a un montón de gente ahí a trabajar,
+
+857
+00:41:44,079 --> 00:41:48,079
+donde tenían que puntuar de mejor a peor cada una de las respuestas.
+
+858
+00:41:48,079 --> 00:41:52,079
+De esta forma, el modelo va aprendiendo cuáles respuestas y cuáles caminos son mejores,
+
+859
+00:41:52,079 --> 00:41:54,079
+o por lo menos más satisfactorios para el ser humano.
+
+860
+00:41:54,079 --> 00:41:57,079
+En base a todo este trabajo, crearon una página web,
+
+861
+00:41:57,079 --> 00:42:01,079
+donde la respuesta está generada por este GPT mejorado y ultratuneado,
+
+862
+00:42:01,079 --> 00:42:03,079
+y así es como nace Chat GPT.
+
+863
+00:42:03,079 --> 00:42:06,079
+Por todo esto, Chat GPT es tan bueno haciendo lo que hace.
+
+864
+00:42:06,079 --> 00:42:10,079
+En pocas palabras, una startup de inteligencia artificial cogió los Transformers
+
+865
+00:42:10,079 --> 00:42:15,079
+y pensó, oye, ¿qué pasaría si multiplicamos por mil los parámetros respecto a lo que está haciendo todo el mundo?
+
+866
+00:42:15,079 --> 00:42:19,079
+Y luego lo entrenamos con todo el texto de conocimiento humano que podamos tener entre manos.
+
+867
+00:42:19,079 --> 00:42:23,079
+Y luego lo tuneamos aún más para terminar de corregir esas cosas que hace mal,
+
+868
+00:42:23,079 --> 00:42:26,079
+y luego, además, le enseñamos qué respuestas son buenas y cuáles son malas,
+
+869
+00:42:26,079 --> 00:42:28,079
+luego lo metemos en una web y lo vendemos.
+
+870
+00:42:28,079 --> 00:42:31,079
+¿Qué pasaría? Bueno, pues lo que pasa es Chat GPT.
+
+871
+00:42:31,079 --> 00:42:37,079
+Y ¿cuánto más se puede mejorar GPT si le metemos, por ejemplo, mil millones de parámetros o 100 millones de parámetros?
+
+872
+00:42:37,079 --> 00:42:41,079
+Bueno, pues eso no está claro. O sea, la tecnología de base son los Transformers.
+
+873
+00:42:41,079 --> 00:42:46,079
+Esta tecnología es buena. Se puede mejorar bastante con ajustes manuales, guiados por el humano,
+
+874
+00:42:46,079 --> 00:42:49,079
+pero posiblemente, para que podamos competir con el ser humano,
+
+875
+00:42:49,079 --> 00:42:52,079
+no va a ser suficiente simplemente aumentar estos parámetros.
+
+876
+00:42:52,079 --> 00:42:55,079
+Vamos a tener que mejorar la forma en la que aprendemos y analizamos los textos,
+
+877
+00:42:55,079 --> 00:42:59,079
+ya sea con más capas o con otro algoritmo o con otra arquitectura.
+
+878
+00:42:59,079 --> 00:43:03,079
+Pero al ritmo que va esto es cuestión de pocos años antes de que descubramos algo mejor.
+
+879
+00:43:03,079 --> 00:43:07,079
+O quizás, ¿no? A lo mejor podríamos estar delante de un estancamiento, ¿no?
+
+880
+00:43:07,079 --> 00:43:09,079
+Todo esto lo dirá el tiempo.
+
+881
+00:43:09,079 --> 00:43:14,079
+Pero bueno, ya veis que con ajustes manuales se puede conseguir que GPT haga maravillas.
+
+882
+00:43:14,079 --> 00:43:19,079
+Lo que sí te puedo decir es que entrenar a una inteligencia artificial usando 75.000.000 de parámetros
+
+883
+00:43:19,079 --> 00:43:24,079
+no es algo que puedas hacer en tu casa en una tarde, simplemente, con una tarjeta gráfica.
+
+884
+00:43:24,079 --> 00:43:28,079
+De igual la gráfica que tengas. De igual que tengas un ordenador con 3 RTX 4090.
+
+885
+00:43:28,079 --> 00:43:31,079
+O sea, aún así no podrías hacerlo.
+
+886
+00:43:31,079 --> 00:43:37,079
+Para entrenar a GPT con tantos datos y tantísimos parámetros, necesitas muchísimos ordenadores y mucha potencia.
+
+887
+00:43:37,079 --> 00:43:41,079
+De hecho, GPT fue entrenado sobre las gráficas A100 de Nvidia,
+
+888
+00:43:41,079 --> 00:43:45,079
+que son la gama más alta y más potente, que están pensadas para cálculo de inteligencia artificial,
+
+889
+00:43:45,079 --> 00:43:49,079
+pero no en una ni dos, sino que en datacenters gigantes de Microsoft.
+
+890
+00:43:49,079 --> 00:43:54,079
+Así es, Microsoft ha puesto su cloud azure a disposición de OpenAI para hacer todo este entrenamiento.
+
+891
+00:43:54,079 --> 00:43:58,079
+Es más, Microsoft lleva años apostando por OpenAI.
+
+892
+00:43:58,079 --> 00:44:02,079
+Y hace muy poco ha invertido 10.000.000 de millones de dólares en chat GPT.
+
+893
+00:44:02,079 --> 00:44:08,079
+Recuerdas que hace un momento te hablé de GitHub Copilot y de cómo GPT entrenó con GitHub para aprender sobre programación.
+
+894
+00:44:08,079 --> 00:44:10,079
+Bueno, pues GitHub es de Microsoft.
+
+895
+00:44:10,079 --> 00:44:14,079
+Es más, ahora mismo, Microsoft es propietaria del 49% de OpenAI.
+
+896
+00:44:14,079 --> 00:44:19,079
+Y no solo eso, sino que hace unas semanas anunciaron algo que nos dejó a todos con la boca abierta.
+
+897
+00:44:19,079 --> 00:44:25,079
+Su buscador, Bing, si, ese que es competencia de Google, que la gente usa para buscar Google Chrome y descargarse lo.
+
+898
+00:44:25,079 --> 00:44:28,079
+Bueno, pues ahora Bing tiene una pestaña que se llama Chat.
+
+899
+00:44:28,079 --> 00:44:30,079
+Esta pestaña está en beta.
+
+900
+00:44:30,079 --> 00:44:36,079
+Y lo que tiene es una versión modificada de Chat GPT, que ahora mismo puede buscar en Bing para responder a temas de actualidad.
+
+901
+00:44:36,079 --> 00:44:38,079
+Claro, tener en cuenta una cosa.
+
+902
+00:44:38,079 --> 00:44:43,079
+Como dije antes, Chat GPT está entrenado en base a datos de internet, libros y un montón de cosas.
+
+903
+00:44:43,079 --> 00:44:45,079
+Pero su conocimiento se para en 2019.
+
+904
+00:44:45,079 --> 00:44:48,079
+O sea, a partir de 2019 no sabe nada.
+
+905
+00:44:48,079 --> 00:44:51,079
+Porque el set de datos que se usó para entrenarlo es ese.
+
+906
+00:44:51,079 --> 00:44:53,079
+Lo que ha hecho Bing es muy distinto.
+
+907
+00:44:53,079 --> 00:44:59,079
+Lo que ha hecho Bing es usar Chat GPT tal como viene, pero meter la información extra en tiempo real de búsquedas que hacen internet.
+
+908
+00:44:59,079 --> 00:45:03,079
+O sea, buscando cosas en Bing, páginas web relacionadas con lo que tú estás diciendo.
+
+909
+00:45:03,079 --> 00:45:08,079
+Se las mete para que Chat GPT las lea, las procesas y las resuma y luego las integre dentro de su respuesta.
+
+910
+00:45:08,079 --> 00:45:14,079
+Por lo cual, Bing Chat, que sería pues este Chat GPT con acceso a internet, puede contestar a cosas de actualidad.
+
+911
+00:45:14,079 --> 00:45:17,079
+Y lo que puede hacer, la verdad, es muy impresionante.
+
+912
+00:45:17,079 --> 00:45:23,079
+Esto ha dejado bastante mal a Google, que por cierto es la empresa más importante del mundo de Inteligencia Artificial.
+
+913
+00:45:23,079 --> 00:45:29,079
+De hecho, como te dije antes, casi todas las tecnologías que están detrás de GPT fueron desarrolladas por investigadores de Google.
+
+914
+00:45:29,079 --> 00:45:33,079
+Y esto nos lleva a otra pregunta que probablemente se estés haciendo ahora mismo.
+
+915
+00:45:33,079 --> 00:45:40,079
+¿Por qué Google o Apple o cualquiera de estas empresas grandes tecnológicas no ha sacado algo como GPT antes?
+
+916
+00:45:40,079 --> 00:45:47,079
+Bueno, Google y otras empresas tienen grandes modelos de lenguaje como GPT, lo que no tienen es un servicio como Chat GPT, ¿vale?
+
+917
+00:45:47,079 --> 00:45:54,079
+La respuesta de Google a por qué no tienen eso y que además tiene todo el sentido del mundo es que no se pueden permitir el rujo de sacar algo así.
+
+918
+00:45:54,079 --> 00:45:59,079
+O sea, pensad que estas inteligencias artificiales aprenden por su cuenta y es bastante difícil controlarlo, ¿no?
+
+919
+00:45:59,079 --> 00:46:06,079
+GPT, por ejemplo, fue entrenada con millones de datos y evidentemente dentro de esos datos no se ha revisado todo, no se ha revisado uno por uno.
+
+920
+00:46:06,079 --> 00:46:15,079
+Y eso significa que fácilmente puede dar respuestas racistas que te ayuden a cometer crímenes que propongan cosas inmorales o directamente ilegales.
+
+921
+00:46:15,079 --> 00:46:22,079
+Esto en Chat GPT ha pasado desde el principio de hecho y ahora se está controlando mucho, o sea, a día a día van ajustando, van bloqueando cosas, frases,
+
+922
+00:46:22,079 --> 00:46:31,079
+respuestas, lo van cortando por todos lados, pero al principio era bastante heavy y aún hoy en día sale noticias sobre cosas raras que contesta Chat GPT
+
+923
+00:46:31,079 --> 00:46:33,079
+y también sobre todo Bing, eh, Bing está bastante salvaje.
+
+924
+00:46:33,079 --> 00:46:39,079
+OpenAI, por otra parte, es una startup. Ese problema no es tan dramático o polémico como sería para Google.
+
+925
+00:46:39,079 --> 00:46:45,079
+Al final es una startup de inteligencia artificial y está para eso, para innovar y para hacer una tortilla, pues hay que romper algunos juegos.
+
+926
+00:46:45,079 --> 00:46:53,079
+No tienen realmente tantas políticas internas, ni tanta imagen que cuidar, ni tanta burocracia a la hora de lanzar un producto y por eso pues muchas veces vemos que empresas muy pequeñas
+
+927
+00:46:53,079 --> 00:46:59,079
+hacen cosas que otras empresas mucho más grandes y que tienen todos los recursos para hacerlas, pues no las hacen.
+
+928
+00:46:59,079 --> 00:47:07,079
+Pero lo que sí está claro es que en Microsoft se está poniendo mucho las pilas y que estos últimos años ha mejorado mucho su cloud, ha comprado muchas empresas
+
+929
+00:47:07,079 --> 00:47:13,079
+y ha puesto mucho esfuerzo en la inteligencia artificial. Esta apuesta por OpenAI es una clara señal de que van a por Google.
+
+930
+00:47:13,079 --> 00:47:23,079
+Y todo este tipo de empresas, Apple, Microsoft, Google, Tesla, están inmediando millones en este tipo de tecnologías de inteligencia artificial porque saben que el futuro va por ahí.
+
+931
+00:47:23,079 --> 00:47:28,079
+Todo esto suena muy bien, pero todavía no estamos en ese punto.
+
+932
+00:47:28,079 --> 00:47:34,079
+GPT, ChatGPT, BingChat y todas sus variantes aún están un poco lejos de poder sustituir un buscador.
+
+933
+00:47:34,079 --> 00:47:42,079
+¿Por qué? Bueno, piénsalo de esta manera. Hemos dicho que GPT funciona con conceptos relacionados y cosas que le suenan internamente que pueden estar relacionadas las unas con las otras.
+
+934
+00:47:42,079 --> 00:47:48,079
+Bueno, pues resulta que por culpa de esto, la información que nos da ChatGPT no siempre es verdad.
+
+935
+00:47:48,079 --> 00:47:55,079
+Es cierto que todos los mensajes que nos escriben ChatGPT son verosímiles, o sea, se parecen algo que es verdad, pero no siempre son verdad.
+
+936
+00:47:55,079 --> 00:47:59,079
+Son agrupaciones de cosas que creen que tienen sentido que vayan juntas.
+
+937
+00:47:59,079 --> 00:48:04,079
+Un ejemplo es cuando le pedí que me resuma un guión sobre la guerra de los chips en el que llevamos meses trabajando,
+
+938
+00:48:04,079 --> 00:48:13,079
+en el que mencionamos por encima en una frase creo que es la crisis de los coches, de que por culpa de que no hay chips, pues la industria de los coches está perjudicada.
+
+939
+00:48:13,079 --> 00:48:20,079
+Y cuando me dio el resumen, se inventó un montón de cosas. Por ejemplo, me contó 40.000 cosas sobre los coches, o sea nada que ver con nada de lo que yo decía en el vídeo.
+
+940
+00:48:20,079 --> 00:48:26,079
+O por ejemplo, le pedí que me escribamos un guión sobre la Steam Deck y empezó a cruzar datos, a decir cosas que no son ciertas,
+
+941
+00:48:26,079 --> 00:48:31,079
+y lo hace de esta manera porque al final lo que está haciendo son consultas dentro del envedingo, o sea, están mezclando conceptos.
+
+942
+00:48:31,079 --> 00:48:37,079
+Hay cosas que él cree que están relacionadas, pero que no sabe exactamente si están bien relacionadas. No es infalible.
+
+943
+00:48:37,079 --> 00:48:42,079
+Y es una gran fuente de desinformación. A veces incluso te dice lo que quieres oír.
+
+944
+00:48:42,079 --> 00:48:49,079
+Es más, ¿te acuerdas que antes te dije que Google puso la excusa de que no podía permitirse el lujo de sacar una inteligencia artificial como lo hizo OpenAI?
+
+945
+00:48:49,079 --> 00:48:57,079
+Bueno, pues resulta que hace nada presentaron a Bard, que es la competencia de Google a chat gpt, y en su primer vídeo promocional ya cometió un error.
+
+946
+00:48:57,079 --> 00:49:02,079
+Dijo que el telescopio James Webb hizo fotos de exoplanetas, cosa que es mentira.
+
+947
+00:49:02,079 --> 00:49:12,079
+Esto hizo caer en bolsa a Google un 8%, que básicamente son 100.000 millones de dólares, por lo cual como podéis ver, pues es bastante grave un error de ese tipo.
+
+948
+00:49:12,079 --> 00:49:18,079
+Ahora, yo lo que creo es que este tipo de problemas no son tan fáciles de arreglar, o sea, tal y como funcionan los transformers,
+
+949
+00:49:18,079 --> 00:49:24,079
+si piensas en todo lo que hemos visto este vídeo, es normal que la información no sea exacta, porque el sistema no es exacto,
+
+950
+00:49:24,079 --> 00:49:31,079
+no es una forma super eficiente de guardar información, consultarla y recibirla, sino que es eso, texto que parece verdad.
+
+951
+00:49:31,079 --> 00:49:39,079
+Básicamente lo que necesitamos ahora mismo son un montón de parches humanos que corrijen cosas, que cierran cosas, que le impiden hacer cosas, tirar por ciertos caminos,
+
+952
+00:49:39,079 --> 00:49:45,079
+y esto no es escalable, y no es por ser agua fiestas, pero puede ser que pase en varios años antes de que se pueda solucionar este problema.
+
+953
+00:49:45,079 --> 00:49:50,079
+En cualquier caso, lo que está claro es que estamos delante de una guerra, una guerra entre tecnológicas,
+
+954
+00:49:50,079 --> 00:49:58,079
+una guerra que va a ganar la primera que sea capaz de dominar el juego de las inteligencias artificiales, sobre todo los buscadores semánticos y el uso de Internet.
+
+955
+00:49:58,079 --> 00:50:02,079
+Ese día va a llegar, ¿qué tan lejos estamos? Bueno, pues el tiempo nos lo dirá.
+
+956
+00:50:02,079 --> 00:50:11,079
+De momento yo te animo a que pruebes chat, gpt, ¿vale? Regístrate, úsalo para tu trabajo, úsalo para lo que quieras, pero no te fíes de la información porque podría estar mal.
+
+957
+00:50:11,079 --> 00:50:19,079
+Y con esto me despido. Espero que te haya gustado este vídeo, que hayas entendido un poco de qué va este tema, de dónde sale esa información,
+
+958
+00:50:19,079 --> 00:50:22,079
+cómo puede existir este tipo de inteligencia artificial que parece brujería.
+
+959
+00:50:22,079 --> 00:50:29,079
+Y si te ha gustado este vídeo y quieres ver más como este, te recomiendo que te suscribas a este canal, me dejes una manito para arriba y nos vemos en el próximo.
+
+960
+00:50:32,079 --> 00:50:43,079
+¡Hasta la próxima!
+

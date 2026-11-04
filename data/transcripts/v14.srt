@@ -1,0 +1,336 @@
+1
+00:00:00,000 --> 00:00:08,199
+Le escribes algo personal a chatgpt y te responde clavado, como si te conociera, parece que te entiende, parece que te recuerda.
+
+2
+00:00:09,500 --> 00:00:18,500
+Pero ahí dentro no hay nadie pensando, hay un truco rarísimo y cuando lo veas no podrás dejar de verlo, en 5 minutos lo entiendes, pero en simple.
+
+3
+00:00:18,500 --> 00:00:24,800
+Lo primero, el modelo no escribe la frase entera de un tirón, la construye una palabra cada vez,
+
+4
+00:00:25,300 --> 00:00:36,299
+escribe una, la reelee toda y elige la siguiente más probable, por eso de escribiendo no es decoración, es literalmente lo que está pasando.
+
+5
+00:00:37,799 --> 00:00:44,799
+Y como aprendió, rellenando huecos millones de veces, ella giró ¿qué?
+
+6
+00:00:45,799 --> 00:00:54,799
+Uno de los primeros grandes modelos, en 2020, se entrenó con 300 mil millones de fichas, la mayoría sacadas de internet.
+
+7
+00:00:55,799 --> 00:00:58,299
+Pero lo raro, ni siquiera ve palabras.
+
+8
+00:00:58,799 --> 00:01:00,299
+Ve fichas.
+
+9
+00:01:00,799 --> 00:01:04,299
+Trossea el texto en piezas, los tokens.
+
+10
+00:01:04,799 --> 00:01:07,299
+A veces una palabra entera, a veces un cachito.
+
+11
+00:01:07,299 --> 00:01:15,799
+La caja de aquel modelo tenía unas 50 mil piezas distintas, si le pides que cuente las letras de una palabra puede fallar.
+
+12
+00:01:16,299 --> 00:01:18,799
+No ve letras, ve la ficha entera.
+
+13
+00:01:19,299 --> 00:01:23,799
+Y como se pensaron en inglés, el castellano gasta más fichas.
+
+14
+00:01:26,299 --> 00:01:29,799
+¿Y por qué nunca te responde igual dos veces?
+
+15
+00:01:30,299 --> 00:01:36,299
+No elige la palabra, tiene una lista de candidatas con sus probabilidades
+
+16
+00:01:36,299 --> 00:01:37,799
+y tira un dado.
+
+17
+00:01:38,299 --> 00:01:41,799
+Un dado cargado con un mando, la temperatura.
+
+18
+00:01:42,299 --> 00:01:43,799
+Bájala y vá a lo seguro.
+
+19
+00:01:44,299 --> 00:01:46,799
+Súbela y se atreve con palabras raras.
+
+20
+00:01:48,299 --> 00:01:54,799
+Y eso de razonar paso a paso, pieles que piensen paso a paso y aciertas mucho más.
+
+21
+00:01:55,299 --> 00:02:05,799
+Y está medido, en un estudio de 2022, un mismo modelo, sin tocarle nada por dentro, pasó del 18% en mate al 79%.
+
+22
+00:02:06,299 --> 00:02:09,300
+El cambio, una sola frase mágica.
+
+23
+00:02:09,800 --> 00:02:11,300
+Pensemos paso a paso.
+
+24
+00:02:12,800 --> 00:02:13,800
+¿Por qué?
+
+25
+00:02:14,300 --> 00:02:16,300
+El modelo relee todo lo que va escribiendo.
+
+26
+00:02:16,800 --> 00:02:21,800
+Cada paso escrito se convierte en una nota que él mismo relee para el siguiente.
+
+27
+00:02:22,300 --> 00:02:24,300
+Escribir es su forma de pensar.
+
+28
+00:02:25,300 --> 00:02:31,300
+Eso sí, hasta sus creadores descubrieron que a veces esos pasos ordenados son puro teatro.
+
+29
+00:02:31,800 --> 00:02:35,800
+Ya tenía la respuesta y se inventa el razonamiento bonito después.
+
+30
+00:02:36,300 --> 00:02:37,800
+Esa es la capa más peligrosa.
+
+31
+00:02:38,300 --> 00:02:41,800
+Cuando no sabe algo, casi nunca dice no sé, inventa.
+
+32
+00:02:42,300 --> 00:02:43,800
+Con una seguridad total.
+
+33
+00:02:44,300 --> 00:02:45,300
+¿Por qué?
+
+34
+00:02:45,800 --> 00:02:48,800
+Un estudio lo compara con un alumno en un examen difícil.
+
+35
+00:02:49,300 --> 00:02:51,800
+Si puntúan responder y nunca por dejarlo en blanco.
+
+36
+00:02:52,300 --> 00:02:53,300
+¿Qué haces?
+
+37
+00:02:53,800 --> 00:02:54,800
+Adivinas.
+
+38
+00:02:55,300 --> 00:02:56,800
+A los modelos los entrenamos parecido.
+
+39
+00:02:57,300 --> 00:02:59,300
+Adivinar con aplomo le sale a cuenta.
+
+40
+00:03:00,300 --> 00:03:01,800
+Pasó de verdad.
+
+41
+00:03:01,800 --> 00:03:07,300
+En 2023, un abogado veterano usó chat gpt para buscar casos para un juicio.
+
+42
+00:03:07,800 --> 00:03:11,300
+Le dio seis sentencias perfectas e inventadas.
+
+43
+00:03:11,800 --> 00:03:14,800
+Desconfiado le preguntó ¿Son reales?
+
+44
+00:03:15,300 --> 00:03:17,300
+Chat gpt respondió que sí.
+
+45
+00:03:17,800 --> 00:03:20,300
+El juez los multó a él y a su bufete.
+
+46
+00:03:20,800 --> 00:03:22,800
+Chat gpt no estaba buscando nada.
+
+47
+00:03:23,300 --> 00:03:25,300
+Completaba lo más plausible.
+
+48
+00:03:25,800 --> 00:03:27,300
+Y tras ¿Son de verdad?
+
+49
+00:03:27,800 --> 00:03:29,800
+Lo más plausible es sí.
+
+50
+00:03:29,800 --> 00:03:32,300
+Y ahora el giro que lo cambia todo.
+
+51
+00:03:32,800 --> 00:03:35,300
+¿Recuerdas que parecía que te recordaba?
+
+52
+00:03:35,800 --> 00:03:36,800
+No te recuerda.
+
+53
+00:03:37,300 --> 00:03:38,300
+Nada.
+
+54
+00:03:38,800 --> 00:03:40,800
+Imagínate una torco en amnesia total.
+
+55
+00:03:41,300 --> 00:03:46,800
+Antes de cada frase, alguien le pone delante el guión entero y él lo releve de cero.
+
+56
+00:03:47,300 --> 00:03:49,800
+Tu mensaje nuevo es solo la última página.
+
+57
+00:03:50,300 --> 00:03:51,800
+Eso es chat gpt.
+
+58
+00:03:52,300 --> 00:03:58,800
+Cada turno el sistema le reenvía la charla completa y la procesa como si fuera la primera vez que la ve.
+
+59
+00:03:59,800 --> 00:04:03,300
+Por eso en los chats larguísimos olvida el principio.
+
+60
+00:04:03,800 --> 00:04:05,800
+Las primeras páginas ya no caben.
+
+61
+00:04:06,800 --> 00:04:10,800
+Aquel modelo solo podía mirar unas 1500 palabras de golpe.
+
+62
+00:04:11,800 --> 00:04:13,800
+¿Y la famosa memoria?
+
+63
+00:04:14,300 --> 00:04:17,800
+Notas que el sistema guarda y le pede la primera página del guión.
+
+64
+00:04:18,300 --> 00:04:21,800
+Hasta cuando te recuerda, no te recuerda.
+
+65
+00:04:22,300 --> 00:04:23,800
+Le dejaron un post it.
+
+66
+00:04:24,300 --> 00:04:25,300
+Así que ya lo sabes.
+
+67
+00:04:25,800 --> 00:04:27,800
+Chat gpt no piensa frases.
+
+68
+00:04:27,800 --> 00:04:31,300
+Escribe una ficha cada vez tirando un dado cargado.
+
+69
+00:04:31,800 --> 00:04:34,300
+No busca completa lo más plausible.
+
+70
+00:04:34,800 --> 00:04:35,800
+Y no te recuerda.
+
+71
+00:04:36,300 --> 00:04:38,800
+Releé el guión entero como ese actor con amnesia.
+
+72
+00:04:40,300 --> 00:04:42,300
+1966.
+
+73
+00:04:42,800 --> 00:04:44,300
+Un programa sencillísimo.
+
+74
+00:04:44,800 --> 00:04:45,300
+El Aisa.
+
+75
+00:04:45,800 --> 00:04:47,300
+Solo le daba la vuelta a tus frases.
+
+76
+00:04:47,800 --> 00:04:51,800
+Su creador contó que su propia secretaria, sabiendo que era un programa,
+
+77
+00:04:52,300 --> 00:04:55,800
+le pidió salir de la habitación para hablar con el Aisa a solas.
+
+78
+00:04:55,800 --> 00:05:01,300
+Llevamos 60 años viendo una mente donde solo hay un mecanismo de texto.
+
+79
+00:05:02,300 --> 00:05:05,800
+Cuéntame en comentarios qué le has preguntado a Chat gpt,
+
+80
+00:05:06,300 --> 00:05:07,800
+creyendo que te entendía.
+
+81
+00:05:08,300 --> 00:05:10,300
+Y el próximo tema enredado lo eliges tú.
+
+82
+00:05:10,800 --> 00:05:12,800
+El más pedido es el que toca.
+
+83
+00:05:13,300 --> 00:05:14,300
+Pero en simple.
+
+84
+00:05:14,800 --> 00:05:16,300
+Ya sabes dónde estamos.
+

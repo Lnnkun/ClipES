@@ -1,0 +1,952 @@
+1
+00:00:00,000 --> 00:00:03,160
+Si yo te digo que el gato mauuya y el perro, el perro ¿qué hace?
+
+2
+00:00:03,680 --> 00:00:06,679
+La gran mujer de ustedes va a decir que el perro ladra, pero de pronto no,
+
+3
+00:00:06,679 --> 00:00:11,560
+de pronto el gato mauuya y el perro se asusta, de pronto el gato mauuya y el perro no mauuya.
+
+4
+00:00:11,759 --> 00:00:15,400
+Todas son opciones completamente válidas, pero nuestra inteligencia nos dice
+
+5
+00:00:15,560 --> 00:00:19,480
+que la fórmula que este certijo se resuelve es que el gato mauuya y el perro ladra.
+
+6
+00:00:19,559 --> 00:00:20,960
+¿Cómo hicimos esto?
+
+7
+00:00:21,160 --> 00:00:24,080
+Esto lo hacemos a través de algo que se llama la atención.
+
+8
+00:00:24,120 --> 00:00:27,760
+Le ponemos atención a ciertas palabras y a otras no.
+
+9
+00:00:28,000 --> 00:00:31,280
+Esto se puede expresar matemáticamente en la ecuación que ustedes están viendo
+
+10
+00:00:31,280 --> 00:00:32,399
+en este momento en pantalla.
+
+11
+00:00:32,399 --> 00:00:35,359
+Lo que vamos a hacer es entender los componentes de esa ecuación,
+
+12
+00:00:35,480 --> 00:00:38,359
+porque es la forma en la que funcionan los grandes modelos de lenguaje,
+
+13
+00:00:38,480 --> 00:00:40,560
+la inteligencia artificial moderna.
+
+14
+00:00:40,679 --> 00:00:44,600
+Lo primero que tenemos que hacer es agarrar todo el cuerpo de lenguaje de la
+
+15
+00:00:44,600 --> 00:00:47,160
+cultura humana y romperlo en pedacitos.
+
+16
+00:00:47,359 --> 00:00:50,560
+Vamos a romper todas las palabras, todas las letras,
+
+17
+00:00:50,560 --> 00:00:56,520
+todo lo que existe en la cultura humana en letras, sílabas y palabras.
+
+18
+00:00:56,720 --> 00:01:00,320
+Ustedes dirán que estos son una cantidad de variaciones infinita,
+
+19
+00:01:00,320 --> 00:01:01,920
+pero el lenguaje no es infinito.
+
+20
+00:01:02,000 --> 00:01:04,840
+Efectivamente, existen permutaciones casi infinitas de las letras,
+
+21
+00:01:04,840 --> 00:01:07,480
+pero la realidad es que cuando uno toma todos los libres escritos,
+
+22
+00:01:07,480 --> 00:01:10,640
+todo el internet, todos los emails, todo lo que está en Google,
+
+23
+00:01:10,640 --> 00:01:13,760
+todo lo que está en la Wikipedia, todo lo que está en redes, foros, etcétera.
+
+24
+00:01:14,240 --> 00:01:17,439
+Uno se va a cuenta que, por ejemplo, en el caso del lenguaje inglés,
+
+25
+00:01:17,719 --> 00:01:21,320
+hay una más o menos cantidad de 50.000 tokens.
+
+26
+00:01:21,680 --> 00:01:25,920
+Si le agregamos otros lenguajes, si le agregamos lenguajes de programación
+
+27
+00:01:25,960 --> 00:01:28,640
+u otros tipos de texto, el número aumenta bastante.
+
+28
+00:01:28,760 --> 00:01:31,799
+Típicamente, los sistemas de traducción, por ejemplo,
+
+29
+00:01:31,840 --> 00:01:36,680
+usan entre 40.000 a 50.000 tokens y los grandes modelos de lenguaje
+
+30
+00:01:36,879 --> 00:01:40,680
+como GPT-4, Lama y los otros grandes modelos que existen
+
+31
+00:01:40,879 --> 00:01:46,960
+pueden usar hasta 256.000 tokens en sus tokens del vocabulario del lenguaje.
+
+32
+00:01:47,000 --> 00:01:50,120
+Pero por ahora, ten en mente que lo que hacemos es que agarramos las palabras
+
+33
+00:01:50,359 --> 00:01:52,159
+y las dividimos en pedacitos.
+
+34
+00:01:52,399 --> 00:01:56,239
+Entonces, por ejemplo, la palabra satisfacción tiene la palabra acción
+
+35
+00:01:56,359 --> 00:02:00,479
+y acción es un token, pero la letra F puede ser otro token.
+
+36
+00:02:00,719 --> 00:02:04,479
+El is de satisfacción es un token y el sat es otro token.
+
+37
+00:02:04,640 --> 00:02:06,200
+Y era que tengo cada uno de esos tokens.
+
+38
+00:02:06,319 --> 00:02:10,560
+Lo siguiente que tengo que hacer es evaluar la correlación que existe
+
+39
+00:02:10,680 --> 00:02:12,240
+entre token y token.
+
+40
+00:02:12,599 --> 00:02:16,439
+Entonces, imagina que tengo el token gato, es la palabra gato.
+
+41
+00:02:16,840 --> 00:02:21,240
+Y quiero buscar la palabra gato que tan cercana en todo el lenguaje
+
+42
+00:02:21,280 --> 00:02:22,879
+está a otros conceptos.
+
+43
+00:02:23,159 --> 00:02:26,200
+Entonces, por ejemplo, imaginen que esto fuera un plano cartesiano
+
+44
+00:02:26,320 --> 00:02:31,120
+con un eje x que va de cero hasta n, donde n es el número de tokens
+
+45
+00:02:31,240 --> 00:02:35,840
+que existen. Entonces, la palabra gato en el eje animal
+
+46
+00:02:36,040 --> 00:02:37,680
+estaría muy cerca al cero.
+
+47
+00:02:37,960 --> 00:02:41,360
+Entonces, yo pongo que gato con su correlación animal es un cero.
+
+48
+00:02:41,680 --> 00:02:45,280
+Imagina que tengo una segunda dimensión como si fuera un eje x, y
+
+49
+00:02:45,520 --> 00:02:47,600
+y estuviera la palabra automóvil.
+
+50
+00:02:47,719 --> 00:02:51,040
+Gato respecto automóvil muy probablemente está tan arriba
+
+51
+00:02:51,039 --> 00:02:53,799
+como sea posible, porque gato no está cerca de la palabra automóvil.
+
+52
+00:02:54,079 --> 00:02:58,680
+Y ahora imagina que tengo una tercera dimensión y tengo el eje amor.
+
+53
+00:02:58,919 --> 00:03:02,280
+No ama a los gatos, pero uno no ama a los gatos más que a los bebés.
+
+54
+00:03:02,519 --> 00:03:05,359
+Entonces, gato no va a estar en el cero de la palabra amor,
+
+55
+00:03:05,560 --> 00:03:07,159
+pero de pronto sí va a estar en el diez.
+
+56
+00:03:07,399 --> 00:03:12,359
+Y así lo hago para todas las palabras que existen,
+
+57
+00:03:12,639 --> 00:03:14,120
+para todos los tokens.
+
+58
+00:03:14,359 --> 00:03:18,759
+A partir de qué tan cercanas están las palabras, con otras palabras,
+
+59
+00:03:18,879 --> 00:03:20,120
+en el lenguaje.
+
+60
+00:03:20,520 --> 00:03:24,360
+Esto es ubicarlo en un espacio en el dimensional visualmente.
+
+61
+00:03:24,719 --> 00:03:27,039
+Los humanos solamente podemos ver tres dimensiones,
+
+62
+00:03:27,319 --> 00:03:29,640
+pero un computador no tiene problemas en guardar
+
+63
+00:03:29,879 --> 00:03:35,039
+las 300 mil millones de dimensiones de gpt3 o las 50 mil dimensiones
+
+64
+00:03:35,039 --> 00:03:37,200
+de todos los tokens que requiere un traductor.
+
+65
+00:03:37,599 --> 00:03:42,280
+Entonces, cada palabra tiene un vector o un número de números
+
+66
+00:03:42,560 --> 00:03:45,240
+que me muestra la cercanía entre otras palabras
+
+67
+00:03:45,439 --> 00:03:47,520
+y se ubican de manera multidimensional.
+
+68
+00:03:47,719 --> 00:03:49,680
+Y eso es toquenizar el lenguaje.
+
+69
+00:03:49,840 --> 00:03:53,960
+Esto crea un efecto muy interesante y es que palabras similares
+
+70
+00:03:54,240 --> 00:03:57,680
+van a estar en estos espacios multidimensionales
+
+71
+00:03:57,920 --> 00:03:59,879
+muy cerca de otras palabras similares.
+
+72
+00:04:00,080 --> 00:04:03,120
+Entonces, por ejemplo, la palabra gato, perro y lobo
+
+73
+00:04:03,240 --> 00:04:06,240
+van a estar muy cerca entre sí, porque son mamíferos,
+
+74
+00:04:06,319 --> 00:04:09,360
+porque están en español, porque son animales
+
+75
+00:04:09,560 --> 00:04:13,240
+y la palabra banano o manzana también va a estar muy cerca entre sí.
+
+76
+00:04:13,560 --> 00:04:17,840
+El otro fenómeno interesante que tiene esto es que las palabras
+
+77
+00:04:18,000 --> 00:04:21,359
+pueden tener vectores. Un vector es una dirección
+
+78
+00:04:21,439 --> 00:04:24,159
+en ese plano cartesiano multidimensional
+
+79
+00:04:24,239 --> 00:04:26,359
+que se parecen mucho una con la otra.
+
+80
+00:04:26,399 --> 00:04:30,639
+Entonces, por ejemplo, rey y reina tienen una conexión
+
+81
+00:04:30,679 --> 00:04:32,879
+muy similar a hombre-mujer.
+
+82
+00:04:33,199 --> 00:04:36,759
+Ese vector muy probablemente es el vector de la palabra género.
+
+83
+00:04:37,120 --> 00:04:40,399
+O, por ejemplo, la palabra caminé y caminar
+
+84
+00:04:40,679 --> 00:04:43,439
+va a estar muy similar a nadé y nadar,
+
+85
+00:04:43,600 --> 00:04:46,560
+porque el vector de tiempo presente o pasado
+
+86
+00:04:46,759 --> 00:04:48,079
+los va a estar muy cerca.
+
+87
+00:04:48,360 --> 00:04:51,719
+O diferentes países y sus capitales,
+
+88
+00:04:51,879 --> 00:04:56,120
+el vector, la coordenada, la serie de coordenadas que apuntan
+
+89
+00:04:56,319 --> 00:04:59,600
+entre país y ciudad capital, van a ser muy similares.
+
+90
+00:04:59,879 --> 00:05:02,639
+Y si yo agarro los números que corresponden
+
+91
+00:05:02,839 --> 00:05:07,360
+al vector entre Italia y Roma y los llevo a Colombia,
+
+92
+00:05:07,439 --> 00:05:12,240
+muy probablemente me va a apuntar muy cerca o exactamente hacia Bogotá.
+
+93
+00:05:12,720 --> 00:05:15,720
+Esto es convertir las palabras
+
+94
+00:05:16,280 --> 00:05:19,079
+en expresiones matemáticas que se pueden sumar o restar.
+
+95
+00:05:19,280 --> 00:05:21,079
+Y eso nos permite hacer cosas increíbles.
+
+96
+00:05:21,120 --> 00:05:24,800
+Por ejemplo, mamá menos género, probablemente me da pariente.
+
+97
+00:05:24,920 --> 00:05:27,879
+Pariente más masculino, probablemente me da padre.
+
+98
+00:05:28,120 --> 00:05:32,079
+O la palabra regente más mujer, probablemente me da igual a reina.
+
+99
+00:05:32,199 --> 00:05:34,120
+Y regente más hombre, rey.
+
+100
+00:05:34,560 --> 00:05:39,759
+Lo siguiente que tengo que hacer es crear una red de pesos
+
+101
+00:05:39,879 --> 00:05:43,439
+de probabilidad estadística donde las palabras
+
+102
+00:05:43,560 --> 00:05:47,399
+estén estadísticamente conectadas entre sí, los tokens realmente.
+
+103
+00:05:47,599 --> 00:05:50,159
+Siempre que llegan palabras, me refiero a los tokens.
+
+104
+00:05:50,279 --> 00:05:54,639
+Y los tokens son palabras, sílabas o letras de todo el lenguaje de la cultura humana.
+
+105
+00:05:54,839 --> 00:05:57,839
+Así como usamos todo el lenguaje de la cultura humana
+
+106
+00:05:58,000 --> 00:05:59,279
+para crear nuestros tokens,
+
+107
+00:05:59,439 --> 00:06:01,959
+ahora necesitamos usar todo el lenguaje de la cultura humana
+
+108
+00:06:02,159 --> 00:06:05,519
+para agregar la probabilidad de conexión entre cada uno de ellos.
+
+109
+00:06:05,680 --> 00:06:08,079
+Con el lenguaje tokenizado, el siguiente de paso
+
+110
+00:06:08,240 --> 00:06:13,039
+es tratar de encontrar la probabilidad en la que una palabra ocurre después de otra.
+
+111
+00:06:13,240 --> 00:06:16,240
+Como nosotros tenemos todo el lenguaje de la cultura humana
+
+112
+00:06:16,359 --> 00:06:19,879
+en libros, en internet, en las redes, en la wikipedia,
+
+113
+00:06:20,000 --> 00:06:23,439
+en tantos otros lugares, las empresas de inteligencia artificial
+
+114
+00:06:23,599 --> 00:06:26,799
+toman esta fuente de datos, la cultura humana,
+
+115
+00:06:26,919 --> 00:06:30,560
+los textos que hemos escrito y buscan expresar de una manera matemática
+
+116
+00:06:30,680 --> 00:06:33,879
+la probabilidad de que una letra vaya después de cierta otra letra,
+
+117
+00:06:34,000 --> 00:06:36,319
+que una palabra vaya después de cierta otra palabra.
+
+118
+00:06:36,560 --> 00:06:39,279
+Esto se conoce como el corpus del lenguaje
+
+119
+00:06:39,439 --> 00:06:43,000
+o los datos de entrenamiento con el que los voy a entrenar.
+
+120
+00:06:43,599 --> 00:06:45,680
+Y divido esto en dos pedazos.
+
+121
+00:06:45,800 --> 00:06:51,879
+Un 70% lo uso para entrenar y otro 30%, el 30% restante, lo uso para probar.
+
+122
+00:06:52,240 --> 00:06:55,839
+De tal manera que este primer 70% entrena mi red neuronal
+
+123
+00:06:56,039 --> 00:06:59,480
+y luego esa red neuronal le hago pruebas con el 30% restante.
+
+124
+00:06:59,680 --> 00:07:03,439
+Y si me da lo mismo y se comporta igual, es que el entrenamiento queda bien.
+
+125
+00:07:03,600 --> 00:07:06,600
+Una red neuronal es un mecanismo estadístico
+
+126
+00:07:06,879 --> 00:07:11,000
+para encontrar los patrones escondidos entre los datos.
+
+127
+00:07:11,240 --> 00:07:12,639
+En el lenguaje, por ejemplo,
+
+128
+00:07:12,800 --> 00:07:17,199
+nosotros sabemos que hay una conexión entre adverbios, sílabas,
+
+129
+00:07:17,399 --> 00:07:22,879
+adjetivos, sustantivos y muchos otros patrones que emergen simplemente
+
+130
+00:07:23,079 --> 00:07:26,040
+de la posición de las letras, las sílabas y las palabras,
+
+131
+00:07:26,159 --> 00:07:27,480
+lo que nosotros llamamos tokens.
+
+132
+00:07:27,759 --> 00:07:30,360
+Así que una red neuronal es un proceso que tiene.
+
+133
+00:07:30,600 --> 00:07:34,199
+Una capa de entrada, unas capas escondidas y una capa de salida.
+
+134
+00:07:34,520 --> 00:07:39,040
+La capa de entrada son todos los tokens que corresponden
+
+135
+00:07:39,160 --> 00:07:44,080
+al vocabulario de entrenamiento a nuestros vectores de lenguaje
+
+136
+00:07:44,319 --> 00:07:45,759
+que aprendimos en el paso anterior.
+
+137
+00:07:45,960 --> 00:07:48,120
+Y la capa de salida es exactamente lo mismo.
+
+138
+00:07:48,360 --> 00:07:51,480
+La idea es predecir a partir de unas palabras de entrada,
+
+139
+00:07:51,720 --> 00:07:53,600
+cuál sería la palabra de salida.
+
+140
+00:07:54,120 --> 00:07:59,520
+Las capas intermedias o capas escondidas son funciones matemáticas
+
+141
+00:07:59,599 --> 00:08:04,479
+de interconexión que detectan estos patrones y que van modificando
+
+142
+00:08:04,680 --> 00:08:08,159
+unos números estadísticos para cambiar la capa de salida.
+
+143
+00:08:08,359 --> 00:08:12,279
+Estos patrones se van ajustando en el periodo de entrenamiento
+
+144
+00:08:12,560 --> 00:08:17,120
+a medida que nuestra red neuronal lee todo el cuerpo del lenguaje
+
+145
+00:08:17,319 --> 00:08:21,719
+de la cultura humana va entendiendo que muy probablemente después de la palabra
+
+146
+00:08:21,919 --> 00:08:25,680
+yo puede seguir la palabra amo que muy probablemente después de la palabra
+
+147
+00:08:25,759 --> 00:08:30,800
+mi mamá sigue la palabra me y todo hacia ajuste de entendimiento
+
+148
+00:08:31,000 --> 00:08:35,480
+de patrones del lenguaje como el patrón de rimar, el patrón de programar,
+
+149
+00:08:35,680 --> 00:08:40,680
+el patrón de escribir lenguaje de marketing se va expresando matemáticamente
+
+150
+00:08:40,879 --> 00:08:45,159
+para generar esta estructura final que se vuelve la red neuronal de un gran
+
+151
+00:08:45,360 --> 00:08:45,960
+modelo de lenguaje.
+
+152
+00:08:46,159 --> 00:08:51,399
+Estos son miles de millones de parámetros que son los pesos de cada uno de estas
+
+153
+00:08:51,600 --> 00:08:53,159
+letras que nosotros llamamos neuronas.
+
+154
+00:08:53,439 --> 00:08:58,360
+Estos miles de millones de parámetros toman muchísimo tiempo y es parte de la razón
+
+155
+00:08:58,559 --> 00:09:00,839
+para que la inteligencia artificial se demoró tanto en llegar,
+
+156
+00:09:01,039 --> 00:09:05,319
+porque aunque estos algoritmos son viejos, nacieron en los años 50, se fueron
+
+157
+00:09:05,519 --> 00:09:09,839
+optimizando en los 90, no es hasta ahora que tenemos suficientes chips y suficiente
+
+158
+00:09:10,039 --> 00:09:12,719
+memoria RAM para entrenar una red neuronal de este estilo.
+
+159
+00:09:12,919 --> 00:09:15,000
+Esto es mucho más complejo y tiene otras
+
+160
+00:09:15,199 --> 00:09:20,159
+ecuaciones matemáticas por dentro en las que ahondamos con más detalle en la clase
+
+161
+00:09:20,159 --> 00:09:23,399
+de redes neuronales del curso de fundamentos de ingeniería de software.
+
+162
+00:09:23,600 --> 00:09:27,679
+Y por supuesto, lo podemos ver en nivel código y matemático en los cursos de
+
+163
+00:09:27,879 --> 00:09:29,759
+redes neuronales y machine learning de Platte.
+
+164
+00:09:29,959 --> 00:09:31,559
+Pero esto no es suficiente.
+
+165
+00:09:31,759 --> 00:09:35,439
+Con sólo entrenar una red neuronal y tener todos los tokens puedo programar,
+
+166
+00:09:35,639 --> 00:09:40,959
+por ejemplo, un traductor, pero no puedo hacer que el gato mauille o que el perro
+
+167
+00:09:41,159 --> 00:09:46,039
+ladre todavía no ha logrado completar todos los datos que necesito para generar
+
+168
+00:09:46,240 --> 00:09:48,240
+un sistema de predicción efectivo.
+
+169
+00:09:48,440 --> 00:09:52,399
+En general, la razón por la que no se puede es porque tendría que multiplicar por
+
+170
+00:09:52,600 --> 00:09:55,200
+cada una de las letras, por cada uno de los tokens, por cada una de las palabras
+
+171
+00:09:55,399 --> 00:09:58,440
+y sílabas que tengo acá expresadas todas las variaciones.
+
+172
+00:09:58,639 --> 00:10:03,759
+Y esto es un problema N a la N que tomaría una cantidad de memoria RAM de CPU,
+
+173
+00:10:03,960 --> 00:10:08,919
+GPU y chips in gente, pero no necesito hacerlo para todas.
+
+174
+00:10:09,120 --> 00:10:12,399
+Solamente necesito hacerlo para las palabras más importantes.
+
+175
+00:10:12,600 --> 00:10:16,039
+Cuando tú dices que el gato mauille y el perro
+
+176
+00:10:16,319 --> 00:10:18,919
+hay una palabra particular que le pones más atención.
+
+177
+00:10:19,120 --> 00:10:22,879
+Probablemente es la palabra mauya y hay otra palabra que le pones atención.
+
+178
+00:10:23,079 --> 00:10:24,639
+Probablemente esa palabra gato.
+
+179
+00:10:24,839 --> 00:10:25,919
+Así funciona tu mente.
+
+180
+00:10:26,120 --> 00:10:30,039
+Tú no leíste todo el texto, solo te enfocas en los elementos más importantes
+
+181
+00:10:30,240 --> 00:10:33,959
+para predecir la siguiente palabra y esta manera de completar el texto.
+
+182
+00:10:34,159 --> 00:10:38,319
+Esto se le conoce como el modelo de atención y funciona la siguiente manera.
+
+183
+00:10:38,519 --> 00:10:44,000
+Existe un query, un key y un value, una consulta, una llave y un valor.
+
+184
+00:10:44,200 --> 00:10:46,759
+Esto que tenemos acá, el gato mauille y el perro.
+
+185
+00:10:46,960 --> 00:10:51,960
+Esto es un prompt, el prompt que tú escribes en chat gpt o en donde sea.
+
+186
+00:10:52,159 --> 00:10:56,879
+El prompt, lo que haces es ver el último token, la última palabra.
+
+187
+00:10:57,080 --> 00:11:00,480
+En este caso es perro y de ese último token va a
+
+188
+00:11:00,679 --> 00:11:05,120
+evaluar a lo largo de todo el resto del prompt, todo lo que escrito.
+
+189
+00:11:05,320 --> 00:11:12,399
+Cuáles son los tokens de mayor significancia que están más cerca del último?
+
+190
+00:11:12,600 --> 00:11:13,840
+Cómo saben que está más cerca?
+
+191
+00:11:14,039 --> 00:11:16,319
+Porque están en el plano cartesiano del espacio
+
+192
+00:11:16,519 --> 00:11:17,879
+neidimensional de tokens.
+
+193
+00:11:18,079 --> 00:11:23,879
+Entonces la palabra perro está muy cerca de la palabra mauya y está definitivamente
+
+194
+00:11:24,079 --> 00:11:25,319
+cerca de la palabra gato.
+
+195
+00:11:25,519 --> 00:11:30,840
+Estas palabras que son cercanas a la palabra perro las volvemos la llave.
+
+196
+00:11:31,039 --> 00:11:33,799
+Y luego la V es el valor.
+
+197
+00:11:34,000 --> 00:11:40,720
+Ese valor es una ecuación matemática que multiplica y mueve las matrices de los
+
+198
+00:11:40,759 --> 00:11:45,840
+números de puntería de la palabra perro y de la palabra mauya y gato a través de
+
+199
+00:11:46,040 --> 00:11:47,320
+una función de activación.
+
+200
+00:11:47,519 --> 00:11:52,960
+Lo importante es que sabe termina siendo un vector que usando la palabra mauya y
+
+201
+00:11:53,160 --> 00:11:56,960
+la palabra gato junto con la palabra perro, que es la última palabra del prompt,
+
+202
+00:11:57,160 --> 00:12:02,879
+apunta a la probabilidad más alta de una palabra que continúe.
+
+203
+00:12:03,080 --> 00:12:06,920
+Esto genera otro vector de probabilidades que genera una serie de palabras.
+
+204
+00:12:07,120 --> 00:12:10,680
+Puede que el perro ladre, que el perro es, que el perro llora o que el perro no.
+
+205
+00:12:10,759 --> 00:12:15,200
+Esta probabilidad es lo que termina siendo que eventualmente elijamos la palabra
+
+206
+00:12:15,399 --> 00:12:17,560
+ladra porque tiene el mayor porcentaje.
+
+207
+00:12:17,759 --> 00:12:22,279
+Pero los grandes molos del lenguaje no eligen solamente la palabra de mayor probabilidad.
+
+208
+00:12:22,480 --> 00:12:24,720
+Los molos del lenguaje tienen algo que se llama temperatura,
+
+209
+00:12:24,920 --> 00:12:28,519
+porque la creatividad no funciona siendo siempre lo mismo.
+
+210
+00:12:28,720 --> 00:12:31,399
+Para que haya un nivel de inteligencia, tiene que haber un cierto nivel de
+
+211
+00:12:31,600 --> 00:12:35,240
+creatividad, por ende a veces tengo que elegir la segunda o la tercera opción.
+
+212
+00:12:35,440 --> 00:12:38,879
+Los grandes molos del lenguaje a veces, de manera aleatoria,
+
+213
+00:12:39,039 --> 00:12:40,519
+eligen la segunda o la tercera opción.
+
+214
+00:12:40,720 --> 00:12:45,279
+Y es por esto que no son deterministas que no generan el mismo texto todo el tiempo,
+
+215
+00:12:45,480 --> 00:12:47,639
+pero generan textos muy similares.
+
+216
+00:12:47,840 --> 00:12:52,240
+Sin embargo, esto solamente sirve para autocompletar los primeros GPT o
+
+217
+00:12:52,439 --> 00:12:56,519
+Generative Pre-Train Transformers, que son estos modelos que integran la red
+
+218
+00:12:56,720 --> 00:12:59,879
+neuronal, los tokens, el espacio en la dimensión, la atención.
+
+219
+00:13:00,080 --> 00:13:03,279
+Uno les colocaba un texto y tenían que completarlo.
+
+220
+00:13:03,480 --> 00:13:05,159
+No se comportaban como un chat.
+
+221
+00:13:05,360 --> 00:13:10,959
+Lo que hizo PNEI es que contrató a 6.000 personas en África para hablar con el
+
+222
+00:13:11,159 --> 00:13:16,439
+modelo y regañarlo cuando el modelo no se comportaba como un chat y recompensarlo
+
+223
+00:13:16,639 --> 00:13:18,120
+cuando el modelo se comportaba como un chat.
+
+224
+00:13:18,319 --> 00:13:23,559
+Esto recalibró las neuronas del modelo para enseñarle al modelo a responder
+
+225
+00:13:23,759 --> 00:13:26,360
+como un chat o como no un chat.
+
+226
+00:13:26,559 --> 00:13:29,159
+Esto se conoce como RLHF,
+
+227
+00:13:29,360 --> 00:13:31,879
+reinforcement learning with human feedback.
+
+228
+00:13:32,039 --> 00:13:36,039
+Y es la forma en la que los modelos aprenden a hablar como un chat.
+
+229
+00:13:36,240 --> 00:13:42,439
+Esto incluye aprender cuando dejar de hablar, cuando dejar de generar resultados.
+
+230
+00:13:42,639 --> 00:13:47,039
+Esta es la razón por la que chat GPT responde muchas veces en listas de
+
+231
+00:13:47,240 --> 00:13:52,279
+viñetas o por la que Anthropic, Cloud y Gemini tienen respuestas tan diferentes
+
+232
+00:13:52,480 --> 00:13:55,159
+en su personalidad a la personalidad que tiene Cloud.
+
+233
+00:13:55,360 --> 00:13:58,440
+Hay varios cursos de Platzi de procesamiento de lenguaje natural que te
+
+234
+00:13:58,520 --> 00:14:02,400
+lo explican más a fondo, pero el curso más importante es el curso de fundamentos
+
+235
+00:14:02,600 --> 00:14:07,000
+de LLMS que te enseña de punta a punta cómo construir esto,
+
+236
+00:14:07,200 --> 00:14:10,680
+cómo instalarlo en tu computadora y cómo ser un ingeniero que está construyendo
+
+237
+00:14:10,880 --> 00:14:13,960
+la frontera del conocimiento, que hoy en día es la inteligencia artificial
+
+238
+00:14:14,160 --> 00:14:15,800
+generativa con grandes modelos de lenguaje.
+
