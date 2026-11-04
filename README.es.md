@@ -1,3 +1,5 @@
+<img src="assets/banner.svg" alt="ClipES" width="100%"/>
+
 # ClipES
 
 > Convierte vídeos de divulgación de IA en español en una base de conocimiento consultable: pregunta y obtén respuesta, con fuente y minuto exacto, con enlace directo a ese momento del vídeo.

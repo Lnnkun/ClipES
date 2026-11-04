@@ -1,3 +1,5 @@
+<img src="assets/banner.svg" alt="ClipES" width="100%"/>
+
 # ClipES
 
 > 把西语 AI 科普视频变成一个能问答的知识库——提问即答,带时间戳出处,点开直接跳到视频对应时刻。

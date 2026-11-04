@@ -1,0 +1,38 @@
+<svg width="1200" height="300" viewBox="0 0 1200 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a1035"/>
+      <stop offset="55%" stop-color="#2a1458"/>
+      <stop offset="100%" stop-color="#4a1d7a"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff6b6b"/>
+      <stop offset="100%" stop-color="#ffd166"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="300" fill="url(#bg)"/>
+
+  <!-- 装饰：若干散落的「检索片段卡片」，呼应 RAG 的概念 -->
+  <g opacity="0.14">
+    <rect x="880" y="40" width="230" height="50" rx="8" fill="#ffffff"/>
+    <rect x="950" y="110" width="200" height="50" rx="8" fill="#ffffff"/>
+    <rect x="860" y="180" width="240" height="50" rx="8" fill="#ffffff"/>
+    <rect x="970" y="235" width="180" height="40" rx="8" fill="#ffffff"/>
+  </g>
+
+  <!-- 播放按钮图标 -->
+  <circle cx="110" cy="150" r="54" fill="none" stroke="url(#accent)" stroke-width="4"/>
+  <path d="M96 124 L140 150 L96 176 Z" fill="url(#accent)"/>
+
+  <!-- 标题 -->
+  <text x="195" y="140" font-family="Segoe UI, Arial, sans-serif" font-size="64" font-weight="700" fill="#ffffff">ClipES</text>
+
+  <!-- 时间戳徽标，呼应「带时间戳出处」 -->
+  <rect x="198" y="158" width="118" height="30" rx="15" fill="url(#accent)"/>
+  <text x="257" y="179" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="600" fill="#1a1035" text-anchor="middle">02:15</text>
+
+  <!-- 副标题 -->
+  <text x="195" y="222" font-family="Segoe UI, Arial, sans-serif" font-size="24" fill="#e8e3f5">Pregunta sobre vídeos en español. Recibe la respuesta con fuente y minuto exacto.</text>
+  <text x="195" y="256" font-family="Segoe UI, Arial, sans-serif" font-size="18" fill="#b8aed6">Whisper · Embeddings · RAG · FastAPI · Streamlit</text>
+</svg>
